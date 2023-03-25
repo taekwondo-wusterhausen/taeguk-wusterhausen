@@ -1,0 +1,26 @@
+{
+    "name": "taeguk-wusterhausen",
+    "description": "Website for https://taekwondo-wusterhausen.de",
+    "type": "module",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jneuendorf/taeguk-wusterhausen.git"
+    },
+    "author": "Jim Neuendorf <jim.neuendorf@gmx.de>",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/jneuendorf/taeguk-wusterhausen/issues"
+    },
+    "homepage": "https://taekwondo-wusterhausen.de",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "astro": "^2.1.7"
+    }
+}
