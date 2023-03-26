@@ -62,7 +62,7 @@ import MenuLink from '@components/menu/MenuLink.astro'
                         route="/taekwondo/one-step-sparring"
                     />
                     <MenuLink label="Wettkampf" route="/taekwondo/sparring" />
-                    <SubMenu2 label="Formen" parentLabel="Formen">
+                    <SubMenu2 label="Formen" parentLabel="Formen" routePrefix="/taekwondo/poomse">
                         <MenuLink
                             label="Was ist Poomse?"
                             route="/taekwondo/poomse"
@@ -72,7 +72,7 @@ import MenuLink from '@components/menu/MenuLink.astro'
                             route="/taekwondo/poomse/overview"
                         />
                     </SubMenu2>
-                    <SubMenu2 label="Selbstverteidigung">
+                    <SubMenu2 label="Selbstverteidigung"  routePrefix="/taekwondo/self-defense">
                         <MenuLink
                             label="SV-Konzept DTU"
                             route="/taekwondo/self-defense/concept"
@@ -88,28 +88,29 @@ import MenuLink from '@components/menu/MenuLink.astro'
                         route="/taekwondo/terminology"
                     />
                 </SubMenu>
-                <SubMenu label="Training">
+                <SubMenu label="Training" routePrefix="/training">
                     <MenuLink label="Zeiten" route="/training/hours" />
                     <MenuLink label="Anfahrt" route="/training/journey" />
                 </SubMenu>
                 <MenuLink label="Termine" route="/dates" isTopLevel />
                 <MenuLink label="Prüfungskatalog" route="/catalog" isTopLevel />
-                <SubMenu label="Regelwerke">
-                    <MenuLink label="Vereinssatzung" route="/club-rules" />
-                    <MenuLink label="Finanzordnung" route="/financial" />
-                    <MenuLink label="Wettkampf" route="/competition" />
-                    <MenuLink label="Prüfung" route="/exam-rules" />
+                <SubMenu label="Regelwerke" routePrefix="/rules">
+                    <MenuLink label="Vereinssatzung" route="/rules/club" />
+                    <MenuLink label="Finanzordnung" route="/rules/financial" />
+                    <MenuLink label="Wettkampf" route="/rules/competition" />
+                    <MenuLink label="Prüfung" route="/rules/exam" />
                 </SubMenu>
-                <SubMenu label="Verein">
-                    <MenuLink label="Mitglied werden" route="/join" />
-                    <MenuLink label="Vorstand" route="/" />
-                    <MenuLink label="Kontakt" route="/contact" />
-                    <MenuLink label="Impressum" route="/imprint" />
-                    <MenuLink label="Datenschutz" route="/privacy" />
-                    <MenuLink label="Links" route="/links" />
+                <SubMenu label="Verein" routePrefix="/club">
+                    <MenuLink label="Mitglied werden" route="/club/join" />
+                    <MenuLink label="Vorstand" route="/club/board" />
+                    <MenuLink label="Kontakt" route="/club/contact" />
+                    <MenuLink label="Impressum" route="/club/imprint" />
+                    <MenuLink label="Datenschutz" route="/club/privacy" />
+                    <MenuLink label="Links" route="/club/links" />
                 </SubMenu>
-                <SubMenu label="Medien">
-                    <MenuLink label="" route="/" />
+                <SubMenu label="Medien" routePrefix="/media">
+                    <MenuLink label="Gallerie" route="/media/gallery" />
+                    <MenuLink label="Presse" route="/media/press" />
                 </SubMenu>
             </ul>
         </div>
