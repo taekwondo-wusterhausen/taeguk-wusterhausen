@@ -5,9 +5,11 @@ interface Props {
     label: string
     route: string
     parentLabel: string
+    routePrefix: string
 }
 
-const { label, route, parentLabel } = Astro.props
+const { label, route, parentLabel, routePrefix } = Astro.props
+const isActive = Astro.url.pathname.startsWith(routePrefix)
 ---
 
 <li aria-labelledby={`${parentLabel}Link`}>
@@ -16,7 +18,9 @@ const { label, route, parentLabel } = Astro.props
         data-dropdown-toggle={`${label}Dropdown`}
         data-dropdown-placement="right-start"
         type="button"
-        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+        class={'flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white' +
+            ' ' +
+            (isActive ? 'text-lime-500' : '')}
     >
         {label}
         <!-- Chevron right -->

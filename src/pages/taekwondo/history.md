@@ -2,6 +2,7 @@
 layout: '@layouts/Layout.astro'
 title: 'Geschichte'
 ---
+
 # Geschichte
 
 ## Taekwondo - ein Blick in die Vergangenheit
@@ -18,8 +19,6 @@ Nach dem zweiten Weltkrieg und der Teilung in Nord- und Südkorea, begann auch f
 Im April 1955 einigten sich die führenden Kampfsportexperten auf den Namen Taekwon-Do. 1971 wurde Taekwondo in Korea als Nationalsportart anerkannt und 1973 wurde die WTF offiziell gegründet. Im Mai 1973 wurde in der Sportarena des Kukkiwon, dem Taekwondozentrum der World Taekwondo Federation (WTF), die erste offizielle Weltmeisterschaft der Herren ausgetragen. Seit dieser Zeit werden diese im zweijährigen Rhythmus wiederholt. Seit 1979 gehen auch Frauen bei Weltmeisterschaften an den Start.
 Am 20.06.1981 wurde die Deutsche Taekwondo Union (DTU) gegründet. Wurde bisher nur Wettkampftaekwondo auf Weltebene ausgetragen, so wird 2006 auch die erste lange erwartete Weltmeisterschaft Formen stattfinden.
 
-
-
 ## Ursprung und Bedeutung der Flagge von Südkorea
 
 Die Flagge der heutigen Republik Süd-Korea, die bereits im Jahre 1883 offiziell eingeführt wurde, wird in der koreanischen Sprache _Tae Geuk Ki_ genannt.
@@ -34,7 +33,6 @@ Vier dieser Symbole. so genannte Trigramme, die auf koreanisch Kwae genannt werd
 4. unten rechts befindet sich _Kun_, das Empfangende, es hat sechs halbe Striche. Kun steht für das Element der Erde und steht symbolhaft für die Hingabe.
 
 Die Farbe Weiß steht für die Reinheit der Gedanken, ist aber auch die traditionelle Farbe der koreanischen Nation.
-
 
 <div class="md:container mx-auto prose-img:inline prose-img:m-0">
     <table>
