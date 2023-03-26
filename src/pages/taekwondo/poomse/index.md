@@ -1,0 +1,22 @@
+---
+layout: '@layouts/Layout.astro'
+title: 'Was ist Poomse?'
+---
+
+# Was ist Poomse?
+
+Poomse ist die stilisierte Form eines Kampfes gegen mehrere gedachte Gegner. Sie ist geeignet, Beherrschung der Technik und besonders die innere Haltung zu schulen: Atmung, Ruhe, Gelassenheit, Sicherheit, Entschlusskraft, Kampfgeist und Rhythmus.
+
+Die Poomsae sind auch ideal zum Durchtrainieren des ganzen Körpers, weil in ihnen alle Techniken in ganz genau festgelegter Reihenfolge auftauchen. Vor allem durch das Studium der Poomsae erlangt man Harmonie und Rhythmus, gelangt zu innerer Gelassenheit, Sicherheit und Ausstrahlung. Die Koordinationsfähigkeit und die Konzentrationsfähigkeit werden durch das Erlernen und Üben von Poomsae ebenfalls gesteigert.
+
+-   Jede Technik und jede Bewegung einer Poomse ist in Reihenfolge und Richtung genau festgelegt
+-   Jede Poomse beginnt mit einer Abwehrtechnik. Das soll den defensiven Charakter dieser Kampfkunst unterstreichen
+-   Jede Poomse beginnt und endet an demselben Punkt
+-   Jede Poomse läuft nach einem ganz bestimmten Schrittdiagramm ab
+-   Jede Technik und Bewegung der Poomse, ob Angriffs- oder Blocktechnik, muss in ihrer Bedeutung klar verstanden sein und so zunächst bewusst und später unbewusst ausgeführt werden
+
+Studiere und übe deshalb die verschiedenen Anwendungsmöglichkeiten mit einem Partner.
+
+Motto: Nur so wird Poomse mit Leben erfüllt - auch Poomse ist Kampf!
+
+Die Bewusstheit beim Vorführen einer Poomse erstreckt sich auch darauf, dass jede Technik gezielt ausgeführt wird, dass man die imaginären Gegner und ihre Angriffe ganz bewusst "sieht" und entsprechend reagiert. Diese Wachsamkeit ist auch besonders wichtig am Schluss einer Poomse, wo man voller kampfbereiter Wachsamkeit noch einige Sekunden in der letzten Technik verharrt und erst dann, wenn kein "Angriff" mehr erfolgt, langsam und ruhig wieder die Grundstellung einnimmt und sich dabei vollkommen löst (Entspannung), äußerlich (Muskeln) und innerlich (Geist, Seele).
