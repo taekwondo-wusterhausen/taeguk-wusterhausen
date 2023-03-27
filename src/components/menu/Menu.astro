@@ -61,8 +61,12 @@ import MenuLink from '@components/menu/MenuLink.astro'
                         label="Schrittkampf"
                         route="/taekwondo/one-step-sparring"
                     />
-                    <MenuLink label="Wettkampf" route="/taekwondo/sparring" />
-                    <SubMenu2 label="Formen" parentLabel="Formen" routePrefix="/taekwondo/poomse">
+                    <MenuLink label="Vollkontakt" route="/taekwondo/sparring" />
+                    <SubMenu2
+                        label="Formen"
+                        parentLabel="Formen"
+                        routePrefix="/taekwondo/poomse"
+                    >
                         <MenuLink
                             label="Was ist Poomse?"
                             route="/taekwondo/poomse"
@@ -72,11 +76,20 @@ import MenuLink from '@components/menu/MenuLink.astro'
                             route="/taekwondo/poomse/overview"
                         />
                     </SubMenu2>
-                    <SubMenu2 label="Selbstverteidigung"  routePrefix="/taekwondo/self-defense">
+                    <SubMenu2
+                        label="Selbstverteidigung"
+                        routePrefix="/taekwondo/self-defense"
+                    >
                         <MenuLink
+                            label="Allgemein"
+                            route="/taekwondo/self-defense"
+                        />
+                        {
+                            /* <MenuLink
                             label="SV-Konzept DTU"
                             route="/taekwondo/self-defense/concept"
-                        />
+                        /> */
+                        }
                         <MenuLink
                             label="Notwehr"
                             route="/taekwondo/self-defense/legal"

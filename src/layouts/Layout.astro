@@ -41,7 +41,7 @@ const { title, frontmatter } = Astro.props
         />
         <title>{title || frontmatter.title}</title>
     </head>
-    <body class="antialiased">
+    <body class="antialiased mb-4">
         <Menu />
         <div class="container md:mx-auto pt-12 mt-4">
             <article
@@ -78,4 +78,10 @@ const { title, frontmatter } = Astro.props
     /* nav {
         background-color: #ccffcc;
     } */
+    .prose ol > li > ol {
+        list-style-type: upper-roman;
+    }
+    .prose :where(ul > li):not(:where([class~='not-prose'] *))::marker {
+        color: var(--tw-prose-counters);
+    }
 </style>
