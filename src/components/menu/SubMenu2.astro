@@ -12,10 +12,10 @@ const { label, route, parentLabel, routePrefix } = Astro.props
 const isActive = Astro.url.pathname.startsWith(routePrefix)
 ---
 
-<li aria-labelledby={`${parentLabel}Link`}>
+<li aria-labelledby=`${parentLabel}Link`>
     <button
-        id={`${label}Button`}
-        data-dropdown-toggle={`${label}Dropdown`}
+        id=`${label}Button`
+        data-dropdown-toggle=`${label}Dropdown`
         data-dropdown-placement="right-start"
         type="button"
         class={'flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white' +
@@ -38,12 +38,12 @@ const isActive = Astro.url.pathname.startsWith(routePrefix)
         </svg>
     </button>
     <div
-        id={`${label}Dropdown`}
+        id=`${label}Dropdown`
         class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
     >
         <ul
             class="py-2 text-sm text-gray-700 dark:text-gray-200"
-            aria-labelledby={`${label}Button`}
+            aria-labelledby=`${label}Button`
         >
             <slot />
         </ul>

@@ -22,6 +22,7 @@
         "format": "prettier --write *.config.*js src/"
     },
     "dependencies": {
+        "@astrojs/mdx": "^0.18.2",
         "@astrojs/sitemap": "^1.2.1",
         "@astrojs/tailwind": "^3.1.1",
         "@tailwindcss/typography": "^0.5.9",

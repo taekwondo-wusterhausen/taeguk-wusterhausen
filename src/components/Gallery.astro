@@ -1,0 +1,28 @@
+---
+/** https://flowbite.com/docs/components/gallery/ */
+interface Props {
+    images: (string | { src: string; alt: string })[]
+    cols?: number
+}
+
+const { BASE_URL } = import.meta.env
+const { images, cols = 3 } = Astro.props
+---
+
+<div class={`grid grid-cols-${cols} gap-4`}>
+    {
+        images
+            .map((img) =>
+                typeof img === 'string' ? { src: img, alt: '' } : img,
+            )
+            .map(({ src, alt }) => (
+                <div>
+                    <img
+                        class="h-auto max-w-full rounded-lg opacity-95 hover:opacity-100 hover:shadow-xl"
+                        src={`${import.meta.env.BASE_URL}${src}`}
+                        alt={alt}
+                    />
+                </div>
+            ))
+    }
+</div>

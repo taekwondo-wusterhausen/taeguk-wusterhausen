@@ -1,16 +1,20 @@
 ---
+import { Debug } from 'astro/components'
+
 import SubMenu from '@components/menu/SubMenu.astro'
 import SubMenu2 from '@components/menu/SubMenu2.astro'
 import MenuLink from '@components/menu/MenuLink.astro'
+
+const { BASE_URL } = import.meta.env
 ---
 
 <nav
     class="fixed w-full z-20 top-0 left-0 border-b px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
 >
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="/" class="flex items-center">
+        <a href={BASE_URL} class="flex items-center">
             <img
-                src="/logo.png"
+                src={`${BASE_URL}logo.png`}
                 class="h-6 mr-3 sm:h-10"
                 alt="Taeguk e. V. Logo"
             />
@@ -49,82 +53,141 @@ import MenuLink from '@components/menu/MenuLink.astro'
             <ul
                 class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
             >
-                <SubMenu label="Taekwondo" routePrefix="/taekwondo">
-                    <MenuLink label="Allgemein" route="/taekwondo" />
-                    <MenuLink label="Geschichte" route="/taekwondo/history" />
+                <SubMenu label="Taekwondo" routePrefix={`${BASE_URL}taekwondo`}>
+                    <MenuLink
+                        label="Allgemein"
+                        route={`${BASE_URL}taekwondo`}
+                    />
+                    <MenuLink
+                        label="Geschichte"
+                        route={`${BASE_URL}taekwondo/history`}
+                    />
                     <MenuLink
                         label="Grundschule"
-                        route="/taekwondo/techniques"
+                        route={`${BASE_URL}taekwondo/techniques`}
                     />
                     <MenuLink
                         label="Schrittkampf"
-                        route="/taekwondo/one-step-sparring"
+                        route={`${BASE_URL}taekwondo/one-step-sparring`}
                     />
-                    <MenuLink label="Vollkontakt" route="/taekwondo/sparring" />
+                    <MenuLink
+                        label="Vollkontakt"
+                        route={`${BASE_URL}taekwondo/sparring`}
+                    />
                     <SubMenu2
                         label="Formen"
                         parentLabel="Formen"
-                        routePrefix="/taekwondo/poomse"
+                        routePrefix={`${BASE_URL}taekwondo/poomse`}
                     >
                         <MenuLink
                             label="Was ist Poomse?"
-                            route="/taekwondo/poomse"
+                            route={`${BASE_URL}taekwondo/poomse`}
                         />
                         <MenuLink
                             label="Übersicht"
-                            route="/taekwondo/poomse/overview"
+                            route={`${BASE_URL}taekwondo/poomse/overview`}
                         />
                     </SubMenu2>
                     <SubMenu2
                         label="Selbstverteidigung"
-                        routePrefix="/taekwondo/self-defense"
+                        routePrefix={`${BASE_URL}taekwondo/self-defense`}
                     >
                         <MenuLink
                             label="Allgemein"
-                            route="/taekwondo/self-defense"
+                            route={`${BASE_URL}taekwondo/self-defense`}
                         />
                         {
                             /* <MenuLink
                             label="SV-Konzept DTU"
-                            route="/taekwondo/self-defense/concept"
+                            route={`${BASE_URL}taekwondo/self-defense/concept`}
                         /> */
                         }
                         <MenuLink
                             label="Notwehr"
-                            route="/taekwondo/self-defense/legal"
+                            route={`${BASE_URL}taekwondo/self-defense/legal`}
                         />
                     </SubMenu2>
-                    <MenuLink label="Bruchtest" route="/taekwondo/breaking" />
+                    <MenuLink
+                        label="Bruchtest"
+                        route={`${BASE_URL}taekwondo/breaking`}
+                    />
                     <MenuLink
                         label="Terminologie"
-                        route="/taekwondo/terminology"
+                        route={`${BASE_URL}taekwondo/terminology`}
                     />
                 </SubMenu>
-                <SubMenu label="Training" routePrefix="/training">
-                    <MenuLink label="Zeiten" route="/training/hours" />
-                    <MenuLink label="Anfahrt" route="/training/journey" />
+                <SubMenu label="Training" routePrefix={`${BASE_URL}training`}>
+                    <MenuLink
+                        label="Zeiten"
+                        route={`${BASE_URL}training/hours`}
+                    />
+                    <MenuLink
+                        label="Anfahrt"
+                        route={`${BASE_URL}training/journey`}
+                    />
                 </SubMenu>
-                <MenuLink label="Termine" route="/dates" isTopLevel />
-                <MenuLink label="Prüfungskatalog" route="/catalog" isTopLevel />
-                <SubMenu label="Regelwerke" routePrefix="/rules">
-                    <MenuLink label="Vereinssatzung" route="/rules/club" />
-                    <MenuLink label="Finanzordnung" route="/rules/financial" />
-                    <MenuLink label="Wettkampf" route="/rules/competition" />
-                    <MenuLink label="Prüfung" route="/rules/exam" />
+                <MenuLink
+                    label="Termine"
+                    route={`${BASE_URL}dates`}
+                    isTopLevel
+                />
+                <MenuLink
+                    label="Prüfungskatalog"
+                    route={`${BASE_URL}catalog`}
+                    isTopLevel
+                />
+                <SubMenu label="Regelwerke" routePrefix={`${BASE_URL}rules`}>
+                    <MenuLink
+                        label="Vereinssatzung"
+                        route={`${BASE_URL}rules/club`}
+                    />
+                    <MenuLink
+                        label="Finanzordnung"
+                        route={`${BASE_URL}rules/financial`}
+                    />
+                    <MenuLink
+                        label="Wettkampf"
+                        route={`${BASE_URL}rules/competition`}
+                    />
+                    <MenuLink label="Prüfung" route={`${BASE_URL}rules/exam`} />
                 </SubMenu>
-                <SubMenu label="Verein" routePrefix="/club">
-                    <MenuLink label="Mitglied werden" route="/club/join" />
-                    <MenuLink label="Vorstand" route="/club/board" />
-                    <MenuLink label="Kontakt" route="/club/contact" />
-                    <MenuLink label="Impressum" route="/club/imprint" />
-                    <MenuLink label="Datenschutz" route="/club/privacy" />
-                    <MenuLink label="Links" route="/club/links" />
+                <SubMenu label="Verein" routePrefix={`${BASE_URL}club`}>
+                    <MenuLink
+                        label="Mitglied werden"
+                        route={`${BASE_URL}club/join`}
+                    />
+                    <MenuLink
+                        label="Vorstand"
+                        route={`${BASE_URL}club/board`}
+                    />
+                    <MenuLink
+                        label="Kontakt"
+                        route={`${BASE_URL}club/contact`}
+                    />
+                    <MenuLink
+                        label="Impressum"
+                        route={`${BASE_URL}club/imprint`}
+                    />
+                    <MenuLink
+                        label="Datenschutz"
+                        route={`${BASE_URL}club/privacy`}
+                    />
+                    <MenuLink label="Links" route={`${BASE_URL}club/links`} />
                 </SubMenu>
-                <SubMenu label="Medien" routePrefix="/media">
-                    <MenuLink label="Gallerie" route="/media/gallery" />
-                    <MenuLink label="Presse" route="/media/press" />
+                <SubMenu label="Medien" routePrefix={`${BASE_URL}media`}>
+                    <MenuLink
+                        label="Gallerie"
+                        route={`${BASE_URL}media/gallery`}
+                    />
+                    <MenuLink label="Presse" route={`${BASE_URL}media/press`} />
                 </SubMenu>
             </ul>
         </div>
     </div>
 </nav>
+
+<!-- <div class="mt-20">
+    <Debug
+        route={`${import.meta.env.BASE_URL}taekwondo/one-step-sparring`}
+    />
+</div> -->

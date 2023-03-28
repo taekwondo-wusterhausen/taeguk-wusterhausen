@@ -1,10 +1,11 @@
 ---
 import Menu from '@components/menu/Menu.astro'
 
-export interface Props {
+interface Props {
     title: string
 }
 
+const { BASE_URL } = import.meta.env
 const { title, frontmatter } = Astro.props
 ---
 
@@ -16,22 +17,26 @@ const { title, frontmatter } = Astro.props
         <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/apple-touch-icon.png"
+            href={`${BASE_URL}apple-touch-icon.png`}
         />
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href={`${BASE_URL}favicon-32x32.png`}
         />
         <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/favicon-16x16.png"
+            href={`${BASE_URL}favicon-16x16.png`}
         />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="manifest" href={`${BASE_URL}site.webmanifest`} />
+        <link
+            rel="mask-icon"
+            href={`${BASE_URL}safari-pinned-tab.svg`}
+            color="#5bbad5"
+        />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="generator" content={Astro.generator} />
