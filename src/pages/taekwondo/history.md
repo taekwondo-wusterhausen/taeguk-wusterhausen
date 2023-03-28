@@ -16,8 +16,9 @@ Aus allen bekannten und von Generation zu Generation überlieferten Techniken en
 
 Von 1909 bis 1945, also während der japanischen Besatzungszeit, wurde die Ausübung aller koreanischen Kampfkünste verboten. Viele Koreaner trainierten deshalb heimlich. So wurde Taekwondo zum wichtigen Bestandteil der koreanischen Identität. Bereits ein Jahr nach der Befreiung gab es die ersten Versammlungen der größten Kampfsportschulen, bei denen versucht wurde, alle Kampfstile zu vereinen.
 Nach dem zweiten Weltkrieg und der Teilung in Nord- und Südkorea, begann auch für Taekwondo ein geteiltes Zeitalter. In Nordkorea entwickelte sich unter General Choi Hong Hi das ITF (International Taekwondo Federation) System, in Südkorea unter Kim Un-Yong das WTF (World Taekwondo Federation) Taekwondo.
-Im April 1955 einigten sich die führenden Kampfsportexperten auf den Namen Taekwon-Do. 1971 wurde Taekwondo in Korea als Nationalsportart anerkannt und 1973 wurde die WTF offiziell gegründet. Im Mai 1973 wurde in der Sportarena des Kukkiwon, dem Taekwondozentrum der World Taekwondo Federation (WTF), die erste offizielle Weltmeisterschaft der Herren ausgetragen. Seit dieser Zeit werden diese im zweijährigen Rhythmus wiederholt. Seit 1979 gehen auch Frauen bei Weltmeisterschaften an den Start.
+Im April 1955 einigten sich die führenden Kampfsportexperten auf den Namen Taekwondo. 1971 wurde Taekwondo in Korea als Nationalsportart anerkannt und 1973 wurde die WTF offiziell gegründet. Im Mai 1973 wurde in der Sportarena des Kukkiwon, dem Taekwondozentrum der World Taekwondo Federation (WTF), die erste offizielle Weltmeisterschaft der Herren ausgetragen. Seit dieser Zeit werden diese im zweijährigen Rhythmus wiederholt. Seit 1979 gehen auch Frauen bei Weltmeisterschaften an den Start.
 Am 20.06.1981 wurde die Deutsche Taekwondo Union (DTU) gegründet. Wurde bisher nur Wettkampftaekwondo auf Weltebene ausgetragen, so wird 2006 auch die erste lange erwartete Weltmeisterschaft Formen stattfinden.
+Seit 2004 heißt die WTF nur noch "World Taekwondo" (WT) und hat den Präsidenten Choue Chung-won.
 
 ## Ursprung und Bedeutung der Flagge von Südkorea
 
