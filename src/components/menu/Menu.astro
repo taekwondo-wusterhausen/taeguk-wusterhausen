@@ -1,5 +1,4 @@
 ---
-import logo from '@assets/logo.png'
 import SubMenu from '@components/menu/SubMenu.astro'
 import SubMenu2 from '@components/menu/SubMenu2.astro'
 import MenuLink from '@components/menu/MenuLink.astro'
@@ -11,7 +10,7 @@ import MenuLink from '@components/menu/MenuLink.astro'
     <div class="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center">
             <img
-                src={logo.src}
+                src="/logo.png"
                 class="h-6 mr-3 sm:h-10"
                 alt="Taeguk e. V. Logo"
             />
@@ -129,4 +128,3 @@ import MenuLink from '@components/menu/MenuLink.astro'
         </div>
     </div>
 </nav>
-<!-- Non sticky navbar for correct spacing -->
