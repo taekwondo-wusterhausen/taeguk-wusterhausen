@@ -1,0 +1,46 @@
+---
+/** https://flowbite.com/docs/components/card/#card-with-list */
+import RefLink from '@components/RefLink.astro'
+
+interface Props {
+    events: { name: string; date: string; location: string }[]
+}
+
+const { events } = Astro.props
+---
+
+<div
+    class="mx-auto max-w-md px-4 py-2 sm:px-8 sm:py-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+>
+    <div class="flex items-center justify-between mb-4">
+        <h5
+            class="text-xl font-bold leading-none text-gray-900 dark:text-white"
+        >
+            Anstehende Termine
+        </h5>
+        <RefLink href="club/dates" text="alle Termine" />
+    </div>
+    <div class="flow-root">
+        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+            {
+                events.map(({ name, date, location }) => (
+                    <li class="py-3 sm:py-4 hover:bg-lime-50 rounded">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    {date}
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    {location}
+                                </p>
+                            </div>
+                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                {name}
+                            </div>
+                        </div>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</div>

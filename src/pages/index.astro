@@ -1,38 +1,43 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import EventsCard from '@components/EventsCard.astro'
+import RefLink from '@components/RefLink.astro'
+import Taeguk from '@components/Taeguk.astro'
+
+const { BASE_URL } = import.meta.env
 ---
 
-<Layout title="Startseite">
-    <main>
-        <p>
-            Willkommen auf den Seiten des Brandenburger Taekwondo-Vereins Taeguk
-            e.&thinsp;V. Wusterhausen/Dosse
-        </p>
-    </main>
+<Layout title="Startseite" prose={false}>
+    <EventsCard
+        events={[
+            {
+                name: '1. Kupprüfung 2023',
+                date: '01.04.',
+                location: 'kleine Halle',
+            },
+        ]}
+    />
+    <div class="flex justify-between mt-8">
+        <div class="flex-none w-12 sm:w-16 md:w-auto">
+            <img src={`${BASE_URL}logos/tvbb_small.png`} />
+        </div>
+        <article
+            class="flex-auto px-10 text-center prose md:text-base lg:text-lg"
+        >
+            <p>
+                Willkommen auf den Seiten des Brandenburger Taekwondo-Vereins <Taeguk
+                /> Wusterhausen&#8239;/&#8239;Dosse.
+            </p>
+            <p>
+                Hier erhaltet ihr Informationen über die olympische koreanische
+                Kampfsportart Taekwondo und die Aktivitäten unseres Vereins.
+                Viel Spaß beim Besuch unserer Internetpräsenz wünscht der <Taeguk
+                />
+                Wusterhausen
+            </p>
+        </article>
+        <div class="flex-none w-12 sm:w-16 md:w-auto">
+            <img src={`${BASE_URL}logos/tjbb.png`} />
+        </div>
+    </div>
 </Layout>
-
-<style>
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 60ch;
-    }
-    h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin: 0;
-    }
-    .text-gradient {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
-    }
-    .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 1rem;
-        padding: 0;
-    }
-</style>

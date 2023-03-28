@@ -3,10 +3,12 @@ import Menu from '@components/menu/Menu.astro'
 
 interface Props {
     title: string
+    /** For rendering Markdown */
+    prose?: boolean
 }
 
 const { BASE_URL } = import.meta.env
-const { title, frontmatter } = Astro.props
+const { frontmatter, title, prose = true } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -46,15 +48,19 @@ const { title, frontmatter } = Astro.props
         />
         <title>{title || frontmatter.title}</title>
     </head>
-    <body class="antialiased mb-4">
+    <body class="antialiased mt-10 md:mt-14">
         <Menu />
-        <div class="container md:mx-auto pt-12 mt-4">
-            <article
-                class="prose max-w-none md:prose-base lg:prose-lg dark:prose-invert prose-p:text-justify"
-            >
-                <slot />
-            </article>
-        </div>
+        <main class="container md:mx-auto py-4">
+            {
+                prose ? (
+                    <article class="prose max-w-none md:prose-base lg:prose-lg dark:prose-invert prose-p:text-justify">
+                        <slot />
+                    </article>
+                ) : (
+                    <slot />
+                )
+            }
+        </main>
         <script
             is:inline
             src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
@@ -70,6 +76,7 @@ const { title, frontmatter } = Astro.props
             #da62c4 30%,
             white 60%
         );
+        /* --color-highlight: var(); */
     }
     html {
         font-family: system-ui, sans-serif;

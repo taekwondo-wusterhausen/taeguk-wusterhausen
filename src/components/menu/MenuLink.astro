@@ -5,13 +5,15 @@ interface Props {
     isTopLevel?: boolean
 }
 
+const { BASE_URL } = import.meta.env
 const { label, route, isTopLevel = false } = Astro.props
-const isActive = route === Astro.url.pathname
+const wholeRoute = BASE_URL + route
+const isActive = wholeRoute === Astro.url.pathname
 ---
 
 <li>
     <a
-        href={route}
+        href={wholeRoute}
         class={'block py-2 hover:bg-gray-100 dark:hover:text-white' +
             ' ' +
             (isTopLevel
