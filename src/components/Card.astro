@@ -1,0 +1,25 @@
+---
+/** https://flowbite.com/docs/components/card/#card-with-list */
+import RefLink from '@components/RefLink.astro'
+
+interface Props {
+    heading: string
+    classList?: any
+}
+
+const { heading, classList = "" } = Astro.props
+---
+
+<div class="rounded-lg">
+    <div class:list={[
+        "p-6 bg-white shadow dark:bg-gray-800 rounded-lg",
+        ...classList,
+    ]}>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {heading}
+        </h5>
+        <slot />
+    </div>
+    <slot name="below" />
+</div>
+
