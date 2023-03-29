@@ -93,6 +93,9 @@ const { frontmatter, title, prose = true } = Astro.props
     .prose ol > li > ol {
         list-style-type: upper-roman;
     }
+    .prose ol > li > ol > li > ol {
+        list-style-type: lower-roman;
+    }
     .prose :where(ul > li):not(:where([class~='not-prose'] *))::marker {
         color: var(--tw-prose-counters);
     }

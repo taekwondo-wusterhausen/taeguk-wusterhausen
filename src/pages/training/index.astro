@@ -10,7 +10,9 @@ const { BASE_URL } = import.meta.env
 <Layout title="Training">
     <h1 class="">Training</h1>
     <div class="not-prose">
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-6">
+        <div
+            class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-6"
+        >
             <Card heading="Zeiten">
                 <div class="font-normal text-gray-700 dark:text-gray-400">
                     <p class="font-normal text-gray-700 dark:text-gray-400">
@@ -19,7 +21,9 @@ const { BASE_URL } = import.meta.env
                     </p>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
                         Mi: 17:30 Uhr - 19:00 Uhr<br />
-                        <span class="text-sm italic">Fortgeschrittene und Ältere</span>
+                        <span class="text-sm italic"
+                            >Fortgeschrittene und Ältere</span
+                        >
                     </p>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
                         Fr: 17:30 Uhr - 19:00 Uhr<br />
@@ -31,25 +35,28 @@ const { BASE_URL } = import.meta.env
                 <p class="font-normal text-gray-700 dark:text-gray-400">
                     Kinder (bis 15 Jahre): 16&nbsp;€ pro Monat<br />
                     Jugend / Erwachsene: 19&nbsp;€ pro Monat<br />
-                    <span class="text-sm italic">Ein Monat kostenloses Schnuppertraining!</span>
+                    <span class="text-sm italic"
+                        >Ein Monat kostenloses Schnuppertraining!</span
+                    >
                 </p>
                 <RefLink href="club/join" text="Schnupper mal rein!" />
             </Card>
             <div>
-            <Card heading="Dojang" classList={["rounded-b-none"]}>
-                <p class="font-normal text-gray-700 dark:text-gray-400">
-                    Dossehalle Wusterhausen<br />
-                    Zur Dossehalle 6<br />
-                    16868 Wusterhausen/Dosse
-                </p>
-                <span class="not-prose" slot="below">
-                    <img
-                        class="rounded-b-lg"
-                        src={`${BASE_URL}trainingsgruppe.jpg`}
-                    />
-                </span>
-            </Card>
-            <div>
+                <Card heading="Dojang" classList={['rounded-b-none']}>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Dossehalle Wusterhausen<br />
+                        Zur Dossehalle 6<br />
+                        16868 Wusterhausen/Dosse
+                    </p>
+                    <span class="not-prose" slot="below">
+                        <img
+                            class="rounded-b-lg"
+                            src={`${BASE_URL}trainingsgruppe.jpg`}
+                        />
+                    </span>
+                </Card>
+                <div></div>
+            </div>
         </div>
     </div>
 </Layout>
