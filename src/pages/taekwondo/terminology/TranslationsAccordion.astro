@@ -1,0 +1,23 @@
+---
+import AccordionItem from '@components/AccordionItem.astro'
+
+const tables = await Astro.glob('./de/*.md?')
+console.log(tables.length)
+---
+
+<div
+    class="max-w-screen-lg prose prose-table:w-full hover:prose-tr:bg-slate-100"
+    data-accordion="collapse"
+>
+    {
+        tables.map((table, index) => (
+            <AccordionItem
+                heading={table.frontmatter.title}
+                isFirst={index === 0}
+                isLast={index === tables.length - 1}
+            >
+                <table.Content />
+            </AccordionItem>
+        ))
+    }
+</div>
