@@ -1,0 +1,9 @@
+---
+interface Props {
+    src: string
+}
+
+const { BASE_URL } = import.meta.env
+const { src, ...props } = Astro.props
+---
+<image src={import.meta.env.BASE_URL + src} {...props} />

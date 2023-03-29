@@ -1,0 +1,24 @@
+---
+layout: '@layouts/Layout.astro'
+title: 'Terminologie'
+---
+
+import Accordion from '@components/Accordion.astro'
+import RefLink from '@components/RefLink.astro'
+import {Content as C} from './test.md'
+
+# Terminologie
+
+Sämtliche Übungen werden in der Muttersprache desTaekwondo gelehrt. So ist die internationale Verständigung problemlos möglich. Die Überprüfung der Kenntnis der koreanischen Fachbegriffe ist auch Bestandteil der Gürtelprüfungen.
+
+## Kleines Wörterbuch: koreanisch - deutsch
+
+_(Nicht alphabetisch, ohne Anspruch auf Vollständigkeit.)_
+
+<RefLink href="club/exam-catalog" text="Prüfungsbezogene Übersicht" />
+<Accordion
+    items={[
+        // { heading: 'Grundbegriffe', content: <h1>asdf</h1> },
+        { heading: 'Grundbegriffe2', content: <C /> },
+    ]}
+/>
