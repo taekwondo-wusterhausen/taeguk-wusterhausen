@@ -15,31 +15,31 @@ const { BASE_URL } = import.meta.env
         >
             <Card heading="Zeiten">
                 <div class="font-normal text-gray-700 dark:text-gray-400">
-                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                    <p>
                         Mo: 17:30 Uhr - 19:00 Uhr<br />
                         <span class="text-sm italic">alle Mitglieder</span>
                     </p>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                    <p>
                         Mi: 17:30 Uhr - 19:00 Uhr<br />
                         <span class="text-sm italic"
                             >Fortgeschrittene und Ältere</span
                         >
                     </p>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                    <p>
                         Fr: 17:30 Uhr - 19:00 Uhr<br />
                         <span class="text-sm italic">Anfänger und Jüngere</span>
                     </p>
                 </div>
             </Card>
             <Card heading="Mitgliedsbeitrag">
-                <p class="font-normal text-gray-700 dark:text-gray-400">
+                <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">
                     Kinder (bis 15 Jahre): 16&nbsp;&euro; pro Monat<br />
                     Jugend / Erwachsene: 19&nbsp;&euro; pro Monat<br />
                     <span class="text-sm italic"
                         >Ein Monat kostenloses Schnuppertraining!</span
                     >
                 </p>
-                <RefLink href="club/join" text="Schnupper mal rein!" />
+                <RefLink href="club/join" text="Schnupper mal rein!" appearance="button" />
             </Card>
             <div>
                 <Card heading="Dojang" classList={['rounded-b-none']}>
