@@ -1,0 +1,71 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Card from '@components/Card.astro'
+import DownloadLink from '@components/DownloadLink.astro'
+import RefLink from '@components/RefLink.astro'
+---
+
+<Layout title="Mitglied werden">
+    <h1>Mitglied werden</h1>
+    <div
+        class="not-prose inline-flex p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+        role="alert"
+    >
+        <svg
+            aria-hidden="true"
+            class="w-5 h-5 mr-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+            ></path>
+        </svg>
+        <span>
+            Ausdruck bitte auf <strong>einem Blatt</strong>: Vorderseite Antrag,
+            Rückseite Einverständniserklärung
+        </span>
+    </div>
+    <div class="not-prose">
+        <div
+            class="grid max-w-3xl grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:gap-6"
+        >
+            <Card heading="Kinder">
+                Antragsformular für Kinder<br />
+                <span class="text-sm italic">(bis einschließlich 15 Jahre)</span
+                >
+                <br />
+                16&nbsp;&euro; pro Monat
+                <br />
+                <DownloadLink
+                    href="pdfs/join/kids.pdf"
+                    text="PDF herunterladen"
+                    download="Antragsformular für Kinder.pdf"
+                />
+            </Card>
+            <Card heading="Erwachsene">
+                Antragsformular für Erwachsene<br />
+                <span class="text-sm italic">(ab 16 Jahre)</span>
+                <br />
+                19&nbsp;&euro; pro Monat
+                <br />
+                <DownloadLink
+                    href="pdfs/join/adults.pdf"
+                    text="PDF herunterladen"
+                    download="Antragsformular für Erwachsene.pdf"
+                />
+            </Card>
+        </div>
+    </div>
+    <p>
+        Bei Fragen kannst du uns gern <RefLink
+            href="club/contact"
+            text="kontaktieren"
+        />
+    </p>
+</Layout>

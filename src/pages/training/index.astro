@@ -8,7 +8,7 @@ const { BASE_URL } = import.meta.env
 ---
 
 <Layout title="Training">
-    <h1 class="">Training</h1>
+    <h1>Training</h1>
     <div class="not-prose">
         <div
             class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 lg:gap-6"
@@ -39,7 +39,11 @@ const { BASE_URL } = import.meta.env
                         >Ein Monat kostenloses Schnuppertraining!</span
                     >
                 </p>
-                <RefLink href="club/join" text="Schnupper mal rein!" appearance="button" />
+                <RefLink
+                    href="club/join"
+                    text="Schnupper mal rein!"
+                    appearance="button"
+                />
             </Card>
             <div>
                 <Card heading="Dojang" classList={['rounded-b-none']}>
