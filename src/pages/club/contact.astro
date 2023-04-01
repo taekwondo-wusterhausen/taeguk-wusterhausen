@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import Card from '@components/Card.astro'
+import EmailLink from '@components/links/EmailLink.astro'
 import RefLink from '@components/links/RefLink.astro'
 ---
 
@@ -19,26 +20,8 @@ import RefLink from '@components/links/RefLink.astro'
                     033979 / 13739
                 </a>
                 <br />
-                E-Mail: <a
-                    id="email"
-                    role="button"
-                    class="text-blue-600 dark:text-blue-500 hover:underline"
-                >
-                    info(ät)taekwondo-wusterhausen.de
-                </a>
+                E-Mail: <EmailLink email="info(ät)taekwondo-wusterhausen.de" />
             </p>
         </Card>
     </div>
 </Layout>
-
-<script>
-    {
-        /* Obfuscation to avoid crawlers from getting the email address. */
-    }
-    const at = '@'
-    document.querySelector('#email').addEventListener('click', () => {
-        const pieces = ['mail', 'to:']
-        const address = 'info(ät)taekwondo-wusterhausen.de'.replace('(ät)', at)
-        window.location.href = pieces.join('') + address
-    })
-</script>

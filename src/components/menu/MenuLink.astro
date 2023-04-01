@@ -6,7 +6,7 @@ interface Props {
 }
 
 const { BASE_URL } = import.meta.env
-const { label, route, isTopLevel = false } = Astro.props
+const { label, route, isTopLevel = false, class: className } = Astro.props
 const wholeRoute = BASE_URL + route
 const isActive = wholeRoute === Astro.url.pathname
 ---
@@ -14,15 +14,15 @@ const isActive = wholeRoute === Astro.url.pathname
 <li>
     <a
         href={wholeRoute}
-        class={'block py-2 hover:bg-gray-100 dark:hover:text-white' +
-            ' ' +
+        class:list={[
+            'block py-2 hover:bg-gray-100 dark:hover:text-white',
+            className,
             (isTopLevel
                 ? 'pl-3 pr-4 text-gray-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent'
-                : 'px-4 dark:hover:bg-gray-600') +
-            ' ' +
-            (isActive ? 'text-lime-500' : '')}
+                : 'px-4 dark:hover:bg-gray-600'),
+            {'text-lime-500': isActive},
+        ]}
     >
         {label}
-        <!-- The current URL pathname is: {Astro.url.pathname} -->
     </a>
 </li>

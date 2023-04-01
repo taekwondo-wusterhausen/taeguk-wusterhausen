@@ -15,19 +15,19 @@ const { BASE_URL } = import.meta.env
         >
             <Card heading="Zeiten">
                 <div class="font-normal text-gray-700 dark:text-gray-400">
-                    <p>
+                    <p class="mb-4">
                         Mo: 17:30 Uhr - 19:00 Uhr<br />
-                        <span class="text-sm italic">alle Mitglieder</span>
+                        <span class="text-sm italic">(alle Mitglieder)</span>
                     </p>
-                    <p>
+                    <p class="mb-4">
                         Mi: 17:30 Uhr - 19:00 Uhr<br />
                         <span class="text-sm italic"
-                            >Fortgeschrittene und Ältere</span
+                            >(Fortgeschrittene und Ältere)</span
                         >
                     </p>
                     <p>
                         Fr: 17:30 Uhr - 19:00 Uhr<br />
-                        <span class="text-sm italic">Anfänger und Jüngere</span>
+                        <span class="text-sm italic">(Anfänger und Jüngere)</span>
                     </p>
                 </div>
             </Card>
@@ -46,7 +46,7 @@ const { BASE_URL } = import.meta.env
                 />
             </Card>
             <div>
-                <Card heading="Dojang" classList={['rounded-b-none']}>
+                <Card heading="Dojang" classInner="rounded-b-none">
                     <p class="font-normal text-gray-700 dark:text-gray-400">
                         Dossehalle Wusterhausen<br />
                         Zur Dossehalle 6<br />

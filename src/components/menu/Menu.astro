@@ -123,14 +123,18 @@ const { BASE_URL } = import.meta.env
                     <!-- <MenuLink label="Prüfung" route="rules/exam" /> -->
                 </SubMenu>
                 <SubMenu label="Verein" routePrefix="club">
-                    <MenuLink label="Mitglied werden" route="club/join" />
+                    <MenuLink
+                        label="Mitglied werden"
+                        route="club/join"
+                        class="font-bold"
+                    />
                     <MenuLink label="Termine" route="club/dates" />
                     <MenuLink
                         label="Prüfungskatalog"
                         route="club/exam-catalog"
                     />
                     <MenuLink label="Vorstand" route="club/board" />
-                    <MenuLink label="Kontakt" route="club/contact" />
+                    <!-- <MenuLink label="Kontakt" route="club/contact" /> -->
                     <MenuLink label="Impressum" route="club/imprint" />
                     <MenuLink label="Datenschutz" route="club/privacy" />
                     <MenuLink label="Links" route="club/links" />

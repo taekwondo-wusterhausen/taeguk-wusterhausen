@@ -4,17 +4,17 @@ import RefLink from '@components/links/RefLink.astro'
 
 interface Props {
     heading: string
-    classList?: any
+    classInner?: string
 }
 
-const { heading, classList = '' } = Astro.props
+const { heading, class: className, classInner } = Astro.props
 ---
 
-<div class="rounded-lg">
+<div class={className}>
     <div
         class:list={[
             'p-6 bg-white shadow dark:bg-gray-800 rounded-lg',
-            ...classList,
+            classInner,
         ]}
     >
         <h5

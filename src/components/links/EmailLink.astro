@@ -1,0 +1,32 @@
+---
+interface Props {
+    email: string
+}
+
+const { email } = Astro.props
+---
+
+<a
+    role="button"
+    class="email-link text-blue-600 dark:text-blue-500 hover:underline"
+    data-email={email}
+>
+    {email}
+</a>
+
+<script>
+    /**
+     * Obfuscate to avoid crawlers from getting the email address.
+     */
+    function generateHref(email: string): string {
+        const pieces = ['mail', 'to:']
+        const address = email.replace('(ät)', '@')
+        return pieces.join('') + address
+    }
+
+    document.querySelectorAll('.email-link').forEach((link: HTMLAnchorElement) => {
+        link.addEventListener('click', () => {
+            window.location.href = generateHref(link.dataset.email)
+        })
+    })
+</script>
