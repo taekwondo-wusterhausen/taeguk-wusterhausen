@@ -24,9 +24,11 @@ const { email } = Astro.props
         return pieces.join('') + address
     }
 
-    document.querySelectorAll('.email-link').forEach((link: HTMLAnchorElement) => {
-        link.addEventListener('click', () => {
-            window.location.href = generateHref(link.dataset.email)
+    document
+        .querySelectorAll('.email-link')
+        .forEach((link: HTMLAnchorElement) => {
+            link.addEventListener('click', () => {
+                window.location.href = generateHref(link.dataset.email)
+            })
         })
-    })
 </script>

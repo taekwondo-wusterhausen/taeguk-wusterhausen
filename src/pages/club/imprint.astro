@@ -1,6 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import Card from '@components/Card.astro'
+import Card from '@components/cards/Card.astro'
 import EmailLink from '@components/links/EmailLink.astro'
 import Taeguk from '@components/Taeguk.astro'
 ---
@@ -11,7 +11,9 @@ import Taeguk from '@components/Taeguk.astro'
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="grid gap-4">
                 <Card heading="Kontakt">
-                    <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">
+                    <p
+                        class="font-normal text-gray-700 dark:text-gray-400 mb-4"
+                    >
                         TKD-Verein <Taeguk />
                         <br />
                         c/o Marko Neuendorf
@@ -29,7 +31,9 @@ import Taeguk from '@components/Taeguk.astro'
                             033979 / 13739
                         </a>
                         <br />
-                        E-Mail: <EmailLink email="info(ät)taekwondo-wusterhausen.de" />
+                        E-Mail: <EmailLink
+                            email="info(ät)taekwondo-wusterhausen.de"
+                        />
                     </p>
                 </Card>
                 <Card heading="Gerichtsstand">
@@ -77,6 +81,17 @@ import Taeguk from '@components/Taeguk.astro'
 
     <h2>Erklärung</h2>
     <p>
-        Mit Urteil vom 12. Mai 1998 hat das Landgericht Hamburg entschieden, dass man durch die Ausbringung eines Links die Inhalte der gelinkten Seite ggf. mit zu verantworten hat. Dies kann - so das LG - nur dadurch verhindert werden, dass man sich ausdrücklich von diesen Inhalten distanziert. Wir haben auf diesen Seiten Links zu anderen Seiten im Internet gelegt. Für all diese Links gilt: Wir möchten ausdrücklich betonen, dass wir keinerlei Einfluss auf die Gestaltung und die Inhalte der verlinkten Seiten haben. Deshalb distanzieren wir uns hiermit ausdrücklich von allen Inhalten aller verlinkten Seiten auf dieser Homepage und machen uns deren Inhalte nicht zu eigen. Diese Erklärung gilt für alle auf dieser Homepage verwendeten Links und für alle Inhalte der Seiten, zu denen diese Links oder Banner führen.
+        Mit Urteil vom 12. Mai 1998 hat das Landgericht Hamburg entschieden,
+        dass man durch die Ausbringung eines Links die Inhalte der gelinkten
+        Seite ggf. mit zu verantworten hat. Dies kann - so das LG - nur dadurch
+        verhindert werden, dass man sich ausdrücklich von diesen Inhalten
+        distanziert. Wir haben auf diesen Seiten Links zu anderen Seiten im
+        Internet gelegt. Für all diese Links gilt: Wir möchten ausdrücklich
+        betonen, dass wir keinerlei Einfluss auf die Gestaltung und die Inhalte
+        der verlinkten Seiten haben. Deshalb distanzieren wir uns hiermit
+        ausdrücklich von allen Inhalten aller verlinkten Seiten auf dieser
+        Homepage und machen uns deren Inhalte nicht zu eigen. Diese Erklärung
+        gilt für alle auf dieser Homepage verwendeten Links und für alle Inhalte
+        der Seiten, zu denen diese Links oder Banner führen.
     </p>
 </Layout>
