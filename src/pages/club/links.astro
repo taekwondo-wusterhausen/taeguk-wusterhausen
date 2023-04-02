@@ -1,0 +1,118 @@
+---
+import Layout from '@layouts/Layout.astro'
+import RefLink from '@components/links/RefLink.astro'
+import LinkCard from '@components/cards/LinkCard.astro'
+---
+
+<Layout title="Links">
+    <h1>Links</h1>
+    <div class="not-prose">
+        <blockquote
+            class="p-4 mb-4 border-l-4 rounded-r-lg border-gray-400 bg-gray-50 bg-opacity-50 dark:border-gray-500 dark:bg-gray-800"
+        >
+            <p
+                class="text-sm italic font-normal leading-relaxed text-gray-900 dark:text-white"
+            >
+                Mit Urteil vom 12. Mai 1998 hat das Landgericht Hamburg
+                entschieden, dass man durch die Ausbringung eines Links die
+                Inhalte der gelinkten Seite ggf. mit zu verantworten hat. Dies
+                kann - so das LG - nur dadurch verhindert werden, dass man sich
+                ausdrücklich von diesen Inhalten distanziert. Auf verschiedenen
+                Seiten dieser Homepage befinden sich Links zu anderen Seiten im
+                Internet. Für all diese Links gilt: Ich möchte ausdrücklich
+                betonen, dass ich keinerlei Einfluss auf die Gestaltung und die
+                Inhalte der gelinkten Seiten habe. Deshalb distanziere ich mich
+                hiermit ausdrücklich von allen Inhalten aller gelinkten Seiten
+                auf dieser Homepage und mache mir ihrer Inhalte nicht zueigen.
+                Diese Erklärung gilt für alle auf dieser Homepage ausgebrachten
+                Links. Der Autor dieser Seite trägt keine Verantwortung für die
+                Art, wie die hier zur Verfügung gestellten Informationen genutzt
+                werden.
+            </p>
+        </blockquote>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto max-w-fit">
+            <LinkCard
+                href="https://www.dtu.de/"
+                external
+                src="logos/dtu.png"
+                alt="DTU e. V."
+            >
+                <h5
+                    class="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                    Deutsche Taekwondo Union (DTU)
+                </h5>
+                <p class="mb-2 text-sm">(Bundesverband)</p>
+                <p
+                    class="font-normal no-underline text-gray-700 dark:text-gray-400"
+                >
+                    In der DTU sind alle Landesverbände Deutschlands vertreten.
+                </p>
+            </LinkCard>
+            <LinkCard
+                href="https://tvbb.info/"
+                external
+                src="logos/tvbb.png"
+                alt="TVBB e. V."
+            >
+                <h5
+                    class="mb-1 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                    Taekwondo Verband Berlin Brandenburg (TVBB)
+                </h5>
+                <p class="mb-2 text-sm">(Landesverband)</p>
+                <p
+                    class="font-normal no-underline text-gray-700 dark:text-gray-400"
+                >
+                    Der TVBB ist dem Taekwondo-Bundesverband, der Deutsche
+                    Taekwondo Union (DTU) angeschlossen.
+                </p>
+            </LinkCard>
+            <LinkCard
+                href="https://www.facebook.com/profile.php?id=100042181483995"
+                external
+                src="logos/tjbb.png"
+                alt="TJBB"
+            >
+                <h5
+                    class="mb-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                    Taekwondo Jugend Berlin Brandenburg (TJBB)
+                </h5>
+                <p class="mb-2 text-sm">(Jugendorganisation)</p>
+                <p
+                    class="mb-3 font-normal no-underline text-gray-700 dark:text-gray-400"
+                >
+                    Die TJBB ist dem TVBB angeschlossen.
+                </p>
+            </LinkCard>
+            <LinkCard
+                href="https://www.kwon.com/"
+                external
+                src="logos/kwon.png"
+                alt="KWON KG"
+            >
+                <h5
+                    class="mb-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                    KWON
+                </h5>
+                <p class="mb-2 text-sm">(Kampfsportausstatter)</p>
+                <p
+                    class="mb-3 font-normal no-underline text-gray-700 dark:text-gray-400"
+                >
+                    "Touch the spirit"
+                </p>
+            </LinkCard>
+        </div>
+    </div>
+
+    <p>
+        <RefLink
+            href="https://www.dtu.de/verband/landesverbaende"
+            text="Alle Landesverbände der DTU"
+            external
+        />
+    </p>
+</Layout>
