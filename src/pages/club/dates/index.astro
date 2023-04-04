@@ -1,0 +1,108 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Taeguk from '@components/Taeguk.astro'
+import { Content as DatesTable } from './dates.md'
+---
+
+<Layout title="Links">
+    <h1>Jahresplanung des <Taeguk /> 2023</h1>
+    <div class="dates-table hover:prose-tr:bg-slate-100">
+        <DatesTable />
+    </div>
+    {/* Used for inserting into table cells (for convenience) */}
+    <div id="event-icon" class="hidden">
+        <svg
+            aria-hidden="true"
+            class="w-5 h-5 ml-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
+            ></path>
+        </svg>
+    </div>
+</Layout>
+
+<script>
+    import * as ics from 'ics'
+
+    const YEAR = 2023
+    const FILENAME_MAX_LENGTH = 35
+
+    /**
+     * Parses a German date string, e.g. '10.' or '10.11.'
+     */
+    function parsePartialDate(date: string): [number, number, number] {
+        const [day, month] = date
+            .split('.')
+            .map((piece) => parseInt(piece, 10))
+            .map((num) => (isNaN(num) ? undefined : num))
+        return [YEAR, month, day]
+    }
+
+    function createEvent(event: ics.EventAttributes): Promise<string> {
+        return new Promise((resolve, reject) => {
+            ics.createEvent(event, (error, value) => {
+                if (error) {
+                    reject(error)
+                } else {
+                    resolve(value)
+                }
+            })
+        })
+    }
+
+    /**
+     * See https://github.com/adamgibbons/ics#using-esmodules--in-the-browser
+     */
+    async function createEventLink(
+        event: ics.EventAttributes,
+    ): Promise<HTMLAnchorElement> {
+        const filename = `${
+            event.title
+                ? event.title.length > FILENAME_MAX_LENGTH
+                    ? event.title.slice(0, FILENAME_MAX_LENGTH)
+                    : event.title
+                : 'TKD-Event'
+        }.ics`
+        const file = new File([await createEvent(event)], filename, {
+            type: 'plain/text',
+        })
+        const url = URL.createObjectURL(file)
+        const anchor = document.createElement('a')
+        anchor.href = url
+        anchor.download = filename
+        anchor.innerHTML = document.querySelector('#event-icon').innerHTML
+        return anchor
+    }
+
+    document
+        .querySelectorAll('.dates-table tbody tr')
+        .forEach(async (tr: HTMLTableRowElement) => {
+            const cells = Array.from(tr.childNodes)
+            const date = cells[0].textContent
+            const name = cells[1].textContent
+            const location = cells[2].textContent
+            if (date && name && location) {
+                let [start, end] = date.split('-').map(parsePartialDate)
+                // Fill in month from end if missing, i.e. '01. - 03.01.'
+                if (!start[1]) {
+                    start[1] = end[1]
+                }
+                const event = {
+                    start,
+                    end,
+                    title: name,
+                    location,
+                }
+                const td = tr.lastChild as HTMLTableCellElement
+                td.appendChild(await createEventLink(event))
+            }
+        })
+</script>
