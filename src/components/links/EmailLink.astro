@@ -16,7 +16,7 @@ const { email } = Astro.props
 
 <script>
     /**
-     * Obfuscate to avoid crawlers from getting the email address.
+     * Obfuscate to avoid crawlers from getting the email address easily.
      */
     function generateHref(email: string): string {
         const pieces = ['mail', 'to:']

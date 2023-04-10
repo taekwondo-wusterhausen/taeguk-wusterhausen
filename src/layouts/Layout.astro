@@ -3,12 +3,13 @@ import Menu from '@components/menu/Menu.astro'
 
 interface Props {
     title: string
+    initFlowbite?: boolean
     /** For rendering Markdown */
     prose?: boolean
 }
 
 const { BASE_URL } = import.meta.env
-const { frontmatter, title, prose = true } = Astro.props
+const { frontmatter, title, initFlowbite = true, prose = true } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -61,12 +62,30 @@ const { frontmatter, title, prose = true } = Astro.props
                 )
             }
         </main>
-        <script
-            is:inline
-            src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
-        ></script>
+        <init-flowbite data-should-init={initFlowbite ? 'true' : 'false'}
+        ></init-flowbite>
     </body>
 </html>
+
+<script>
+    // Dont import from 'flowbite' because of auto-init side effects.
+    import { initFlowbite } from 'flowbite/lib/esm/components'
+
+    /** See https://docs.astro.build/en/guides/client-side-scripts/#pass-frontmatter-variables-to-scripts */
+    class InitFlowbite extends HTMLElement {
+        constructor() {
+            super()
+            if (this.dataset.shouldInit === 'true') {
+                console.log('initializing flowbite')
+                // TODO: Use CDN: https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.js
+                initFlowbite()
+            }
+        }
+    }
+
+    customElements.define('init-flowbite', InitFlowbite)
+</script>
+
 <style is:global>
     :root {
         --accent: 124, 58, 237;

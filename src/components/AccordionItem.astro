@@ -1,27 +1,34 @@
 ---
 /** https://flowbite.com/docs/components/accordion/ */
+import { toId } from './utils'
 
 interface Props {
     heading: string
+    parents?: string[]
     isFirst?: boolean
     isLast?: boolean
 }
 
-const { heading, isFirst = false, isLast = false } = Astro.props
+const { heading, parents = [], isFirst = false, isLast = false } = Astro.props
+
+// const headingId = createHash('sha256').update(heading).digest('hex')
+const id = [...parents, heading].map(toId).join('--')
 ---
 
-<span class="not-prose">
-    <h2 id={`accordion-collapse-heading-${heading}`}>
+<div class="inline not-prose accordion-collapse-heading-wrapper">
+    <h2 id={`accordion-collapse-heading--${id}`}>
         <button
             type="button"
             class:list={[
-                'flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200',
+                'flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border rounded-xl border-gray-200',
+                'aria-expanded:rounded-b-none',
                 'focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800',
                 { 'rounded-t-xl': isFirst },
-                { 'border-b-0': !isLast },
+                { 'border-t-0 rounded-t-none': !isFirst },
+                { 'rounded-b-none': !isLast },
             ]}
-            data-accordion-target={`#accordion-collapse-body-${heading}`}
-            aria-controls={`accordion-collapse-body-${heading}`}
+            data-accordion-target={`#accordion-collapse-body--${id}`}
+            aria-controls={`accordion-collapse-body--${id}`}
         >
             <span>{heading}</span>
             <svg
@@ -38,15 +45,16 @@ const { heading, isFirst = false, isLast = false } = Astro.props
             </svg>
         </button>
     </h2>
-</span>
+</div>
 <div
-    id={`accordion-collapse-body-${heading}`}
+    id={`accordion-collapse-body--${id}`}
     class="hidden"
-    aria-labelledby={`accordion-collapse-heading-${heading}`}
+    aria-labelledby={`accordion-collapse-heading--${id}`}
 >
     <div
         class:list={[
-            'px-8 py-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900',
+            'px-8 py-5 border border-t-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900',
+            { 'rounded-b-xl': isLast },
             { 'border-b-0': !isLast },
         ]}
     >

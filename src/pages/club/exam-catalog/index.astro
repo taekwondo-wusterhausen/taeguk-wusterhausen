@@ -1,0 +1,149 @@
+---
+import Layout from '@layouts/Layout.astro'
+import DownloadLink from '@components/links/DownloadLink.astro'
+import { toId } from '@components/utils'
+
+import Section, { Section as SectionType } from './Section.astro'
+import Content, { Content as ContentType } from './Content.astro'
+
+const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
+    (section) => ({
+        id: toId(section.title),
+        ...section,
+    }),
+)
+---
+
+<Layout title="Prüfungskatalog" initFlowbite={false}>
+    <h1>Mindestanforderungen und Technikkatalog</h1>
+    <p>
+        <DownloadLink
+            href="pdfs/pruefungskatalog.pdf"
+            text="PDF herunterladen"
+            download="Prüfungskatalog.pdf"
+        />
+    </p>
+    <p class="text-sm italic">
+        Anforderungen und Katalog stellen lediglich eine Empfehlung des
+        Vorstandes in Absprache mit dem Landesprüfungsreferenten des TVBB dar.
+    </p>
+    <div class="border-b border-gray-200 dark:border-gray-700 not-prose">
+        <ul
+            class="flex flex-wrap -mb-px text-sm font-medium text-center"
+            id="myTab"
+            data-tabs-toggle="#myTabContent"
+            role="tablist"
+        >
+            {
+                sections.map((section, index) => (
+                    <li class="mr-2" role="presentation">
+                        <button
+                            class="inline-flex p-4 border-b-2 rounded-t-lg group"
+                            id={`${section.id}-tab`}
+                            data-tabs-target={`#${section.id}`}
+                            type="button"
+                            role="tab"
+                            aria-controls={section.id}
+                            aria-selected="false"
+                        >
+                            <svg
+                                aria-hidden="true"
+                                class="w-3 h-3 mt-1 mr-2 opacity-90 group-hover:stroke-[4px] group-hover:opacity-100"
+                                fill={section.colors[0]}
+                                stroke={section.colors[1]}
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                            {section.title}
+                        </button>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+    <div id="myTabContent">
+        {
+            sections.map((section) => (
+                <div
+                    class="hidden p-4 shadow-sm rounded-lg rounded-t-none bg-gray-50 dark:bg-gray-800"
+                    id={section.id}
+                    role="tabpanel"
+                    aria-labelledby={`${section.id}-tab`}
+                >
+                    <>
+                        {section.content?.map((content) => (
+                            <Content content={content} />
+                        ))}
+                    </>
+                    <div
+                        class="max-w-screen-lg prose prose-table:w-full hover:prose-tr:bg-slate-100"
+                        data-accordion="collapse"
+                    >
+                        {section.sections?.map((subSection, index) => (
+                            <Section
+                                {...subSection}
+                                isFirst={index === 0}
+                                isLast={index === section.sections.length - 1}
+                                parents={[section.title]}
+                            />
+                        ))}
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</Layout>
+
+<script>
+    import { initTabs } from 'flowbite/lib/esm/components/tabs'
+    import Accordion from 'flowbite/lib/esm/components/accordion'
+    import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
+
+    initTabs()
+
+    document
+        .querySelectorAll('[data-accordion]')
+        .forEach(function ($accordionEl) {
+            var alwaysOpen = $accordionEl.getAttribute('data-accordion')
+            var activeClasses = $accordionEl.getAttribute('data-active-classes')
+            var inactiveClasses = $accordionEl.getAttribute(
+                'data-inactive-classes',
+            )
+            const targetCandidates = [
+                ...$accordionEl.querySelectorAll('[data-accordion-target]'),
+            ] as HTMLElement[]
+            // Group items by closest accordion parent to make nested accordions work.
+            const items = targetCandidates
+                .filter(
+                    ($triggerEl) =>
+                        $triggerEl.closest('[data-accordion]') === $accordionEl,
+                )
+                .map(($triggerEl) => ({
+                    id: $triggerEl.getAttribute('data-accordion-target'),
+                    triggerEl: $triggerEl,
+                    targetEl: document.querySelector(
+                        $triggerEl.getAttribute('data-accordion-target'),
+                    ),
+                    iconEl: $triggerEl.querySelector('[data-accordion-icon]'),
+                    active:
+                        $triggerEl.getAttribute('aria-expanded') === 'true'
+                            ? true
+                            : false,
+                })) as AccordionItem[]
+
+            new Accordion(items, {
+                alwaysOpen: alwaysOpen === 'open' ? true : false,
+                activeClasses: activeClasses
+                    ? activeClasses
+                    : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
+                inactiveClasses: inactiveClasses
+                    ? inactiveClasses
+                    : 'text-gray-500 dark:text-gray-400',
+            })
+        })
+</script>

@@ -1,0 +1,90 @@
+---
+// prettier-ignore
+export type Content = { text: string }
+| { html: string }
+| { enumerate: Content[] }
+| { itemize: Content[] }
+| { table: { head?: Content[][], body: Content[][] } }
+// NOTE: Indentation break astro compiler
+
+export interface Props {
+    content: Content
+}
+
+function isText(content: Content): content is { text: string } {
+    return 'text' in content
+}
+
+function isHtml(content: Content): content is { html: string } {
+    return 'html' in content
+}
+
+function isEnumeration(content: Content): content is { enumerate: Content[] } {
+    return 'enumerate' in content
+}
+
+function isItemization(content: Content): content is { itemize: Content[] } {
+    return 'itemize' in content
+}
+
+function isTable(
+    content: Content,
+): content is { table: { head?: Content[][]; body: Content[][] } } {
+    return 'table' in content
+}
+
+const { content } = Astro.props
+---
+
+<>
+    {
+        isText(content) ? (
+            <p>{content.text}</p>
+        ) : isHtml(content) ? (
+            <span set:html={content.html} />
+        ) : isEnumeration(content) ? (
+            <ol>
+                {content.enumerate.map((item) => (
+                    <li>
+                        <Astro.self content={item} />
+                    </li>
+                ))}
+            </ol>
+        ) : isItemization(content) ? (
+            <ul>
+                {content.itemize.map((item) => (
+                    <li>
+                        <Astro.self content={item} />
+                    </li>
+                ))}
+            </ul>
+        ) : isTable(content) ? (
+            <table>
+                {content.table.head && (
+                    <thead>
+                        {content.table.head.map((row) => (
+                            <tr>
+                                {row.map((cell) => (
+                                    <th>
+                                        <Astro.self content={cell} />
+                                    </th>
+                                ))}
+                            </tr>
+                        ))}
+                    </thead>
+                )}
+                <tbody>
+                    {content.table.body.map((row) => (
+                        <tr>
+                            {row.map((cell) => (
+                                <td>
+                                    <Astro.self content={cell} />
+                                </td>
+                            ))}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        ) : null
+    }
+</>

@@ -1,0 +1,58 @@
+---
+import AccordionItem from '@components/AccordionItem.astro'
+import Content, { Content as ContentType } from './Content.astro'
+
+export interface Section {
+    title: string
+    isFirst: boolean
+    isLast: boolean
+    colors?: [string, string]
+    parents?: string[]
+    content?: ContentType[]
+    sections?: Section[]
+}
+
+interface Props extends Section {}
+
+const {
+    title,
+    isFirst,
+    isLast,
+    parents = [],
+    content: contents = [],
+    sections = [],
+} = Astro.props
+---
+
+<>
+    {
+        title && (
+            <AccordionItem
+                heading={title}
+                isFirst={isFirst}
+                isLast={isLast}
+                parents={parents}
+            >
+                {contents.length > 0 && (
+                    <>
+                        {contents.map((content) => (
+                            <Content content={content} />
+                        ))}
+                    </>
+                )}
+                {sections.length > 0 && (
+                    <div data-accordion="collapse">
+                        {sections.map((section, index) => (
+                            <Astro.self
+                                {...section}
+                                isFirst={index === 0}
+                                isLast={index === sections.length - 1}
+                                parents={[...parents, title]}
+                            />
+                        ))}
+                    </div>
+                )}
+            </AccordionItem>
+        )
+    }
+</>
