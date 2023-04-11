@@ -4,7 +4,7 @@ import DownloadLink from '@components/links/DownloadLink.astro'
 import { toId } from '@components/utils'
 
 import Section, { Section as SectionType } from './Section.astro'
-import Content, { Content as ContentType } from './Content.astro'
+import Content from './Content.astro'
 
 const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     (section) => ({
@@ -38,7 +38,7 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                 sections.map((section, index) => (
                     <li class="mr-2" role="presentation">
                         <button
-                            class="inline-flex p-4 border-b-2 rounded-t-lg group"
+                            class="inline-flex p-4 border-b-2 rounded-t-lg"
                             id={`${section.id}-tab`}
                             data-tabs-target={`#${section.id}`}
                             type="button"
@@ -48,16 +48,29 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                         >
                             <svg
                                 aria-hidden="true"
-                                class="w-3 h-3 mt-1 mr-2 opacity-90 group-hover:stroke-[4px] group-hover:opacity-100"
-                                fill={section.colors[0]}
-                                stroke={section.colors[1]}
+                                class="w-3 h-3 mt-1 mr-2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 stroke-width="3"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
-                                <circle cx="12" cy="12" r="10" />
+                                <clipPath id="cut-off">
+                                    <rect x="12" y="0" width="12" height="24" />
+                                </clipPath>
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="11"
+                                    fill={section.colors[0]}
+                                />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="11"
+                                    fill={section.colors[1]}
+                                    clip-path="url(#cut-off)"
+                                />
                             </svg>
                             {section.title}
                         </button>

@@ -5,32 +5,33 @@ export type Content = { text: string }
 | { enumerate: Content[] }
 | { itemize: Content[] }
 | { table: { head?: Content[][], body: Content[][] } }
+| undefined // For some reason the content is undefined when building
 // NOTE: Indentation break astro compiler
 
-export interface Props {
+interface Props {
     content: Content
 }
 
 function isText(content: Content): content is { text: string } {
-    return 'text' in content
+    return content && 'text' in content
 }
 
 function isHtml(content: Content): content is { html: string } {
-    return 'html' in content
+    return content && 'html' in content
 }
 
 function isEnumeration(content: Content): content is { enumerate: Content[] } {
-    return 'enumerate' in content
+    return content && 'enumerate' in content
 }
 
 function isItemization(content: Content): content is { itemize: Content[] } {
-    return 'itemize' in content
+    return content && 'itemize' in content
 }
 
 function isTable(
     content: Content,
 ): content is { table: { head?: Content[][]; body: Content[][] } } {
-    return 'table' in content
+    return content && 'table' in content
 }
 
 const { content } = Astro.props
