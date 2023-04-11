@@ -1,7 +1,8 @@
 title: 9. Kup
 colors:
   - white
-  - yellow
+  - gold
+icon: belts/9.png
 content:
   - text: Diese Kombination ist selten zu sehen, da dieser Grad oft übersprungen wird.
   - text: Die Grundtechniken sollten gekonnt und gekannt werden. Die Prüflinge sollen die Techniken nicht nur vorzeigen können, sondern auch deren Fachbezeichnungen (deutsch / koreanisch) wissen. Diese Grundtechniken sollten nicht in einem isolierten Programm vorgeführt werden sondern sollen in der Anwendung im 1-Schritt-Kampf auftreten (Stellungen / Handtechniken) sowie an der Pratze angewendet werden (Beintechniken).
@@ -29,18 +30,48 @@ sections:
           - text: siehe Theorie zum 10. Kup
       - title: Fachbegriffe (Terminologie) der Grundtechniken auf deutsch und koreanisch
         content:
-          - html: <h4>Kicks / Fußschwünge</h4>
-          - table:
-              body:
-                - [html: Ap Chagi, html: (Vorwärtsfußtritt)]
-                - [html: Miro Chagi, html: (Stopp- / Schubtritt)]
-                - [html: Ap Chaolligi, html: (Fußhochschwung vorwärts)]
-                - [
-                    html: An Chaolligi,
-                    html: (Beinschwung / Kreisfußschlag von außen nach innen),
-                  ]
-                - [
-                    html: Bakkat Chaolligi,
-                    html: (Beinschwung / Kreisfußschlag von innen nach außen),
-                  ]
-          - html: <table><tr><td><b>Kicks / Fu&szlig;schw&uuml;nge</b><br /></td></tr><tr><td>Ap Chagi</td><td>(Vorw&auml;rtsfu&szlig;tritt)</td></tr><tr><td>Miro Chagi</td><td>(Stopp- / Schubtritt)</td></tr><tr><td>Ap Chaolligi</td><td>(Fu&szlig;hochschwung vorw&auml;rts)</td></tr><tr><td>An Chaolligi</td><td>(Beinschwung / Kreisfu&szlig;schlag von au&szlig;en nach innen)</td></tr><tr><td>Bakkat Chaolligi</td><td>(Beinschwung / Kreisfu&szlig;schlag von innen nach au&szlig;en)</td></tr><tr><td><b>Handtechnicken / Bl&ouml;cke</b><br /></td></tr><tr><td>Baro / Bandae Momtong Jirugi</td><td>(Fauststo&szlig; K&ouml;rpermitte)</td></tr><tr><td>Baro / Bandae Olgul Jirugi</td><td>(Fauststo&szlig; zum Kopf)</td></tr><tr><td>Sonnal An Chigi</td><td>(Handkantenschlag)</td></tr><tr><td>Sonnal Yop Chigi</td><td>(Handkantenschlag zur Seite)</td></tr><tr><td>Arae Makki</td><td>(Tiefblock)</td></tr><tr><td>An Makki</td><td>(K&ouml;rpermittel-Block von au&szlig;en nach innen)</td></tr><tr><td>Olgul Makki</td><td>(Kopfblock)</td></tr><tr><td>Arae Heycho Makki</td><td>(Keilblock nach unten)</td></tr><tr><td><b>Stellungen</b><br /></td></tr><tr><td>Apsogi</td><td>(kleine Schrittstellung)</td></tr><tr><td>Apgubi Sogi</td><td>(gro&szlig;e Schrittstellung)</td></tr><tr><td>Narahni Sogi</td><td>(kleine Parallelstellung</td></tr><tr><td>Moa Sogi</td><td>(geschlossene Stellung)</td></tr><tr><td>CharyotSogi</td><td>(Achtungstellung)</td></tr><tr><td>Juchum Sogi</td><td>(gro&szlig;e Parallel- / Reiterstellung)</td></tr></table>
+          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+  - title: Handtechnicken
+    content:
+      - html: <h5>Angriff</h5>
+      - table:
+          body:
+            - [html: Baro / Bandae Momtong Jirugi, html: Fauststoß Körpermitte]
+            - [html: Baro / Bandae Olgul Jirugi, html: Fauststoß zum Kopf]
+            - [html: Sonnal An Chigi, html: Handkantenschlag]
+            - [html: Sonnal Yop Chigi, html: Handkantenschlag zur Seite]
+      - html: <h5>Abwehr</h5>
+      - table:
+          body:
+            - [html: Arae Makki, html: Tiefblock]
+            - [html: An Makki, html: Körpermittel-Block von außen nach innen]
+            - [html: Olgul Makki, html: Kopfblock]
+            - [html: Arae Heycho Makki, html: Keilblock nach unten]
+  - title: Fußtechniken
+    content:
+      - table:
+          body:
+            - [html: Ap Chagi, html: Vorwärtsfußtritt]
+            - [html: Miro Chagi, html: Stopp- / Schubtritt]
+            - [html: Ap Chaolligi, html: Fußhochschwung vorwärts]
+            - [
+                html: An Chaolligi,
+                html: Beinschwung / Kreisfußschlag von außen nach innen,
+              ]
+            - [
+                html: Bakkat Chaolligi,
+                html: Beinschwung / Kreisfußschlag von innen nach außen,
+              ]
+  - title: Stellungen
+    content:
+      - table:
+          body:
+            - [html: Apsogi, html: kleine Schrittstellung]
+            - [html: Apkubi Sogi, html: große Schrittstellung]
+            - [html: Narahni Sogi, html: kleine Parallelstellung]
+            - [html: Moa Sogi, html: geschlossene Stellung]
+            - [html: Charyot Sogi, html: Achtungstellung]
+            - [html: Juchum Sogi, html: große Parallel- / Reiterstellung]
+  - title: Step-Schule
+    content:
+      - text: mit oder ohne Partner (2 bisher erlernte Grundtechniken mit Auslagewechsel)
