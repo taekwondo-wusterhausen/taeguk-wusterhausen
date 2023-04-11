@@ -46,21 +46,33 @@ sections:
       - html: <h5>Angriff</h5>
       - table:
           body:
-            - [html: Momtong Dubon Jirugi, html: Doppelfauststoß zum Solarplexus]
+            - [
+                html: Momtong Dubon Jirugi,
+                html: Doppelfauststoß zum Solarplexus,
+              ]
             - [html: Olgul Dubon Jirugi, html: Doppelfauststoß zum Kopf]
       - html: <h5>Abwehr</h5>
       - table:
           body:
-            - [html: Momtong Bakkat (Palmok) Makki, html: Mitteblock von innen nach außen]
+            - [
+                html: Momtong Bakkat (Palmok) Makki,
+                html: Mitteblock von innen nach außen,
+              ]
             - [html: Momtong Heycho Makki, html: Keilblock zur Körpermitte]
   - title: Fußtechniken
     content:
       - table:
           body:
-            - [html: (Paldung) Dollyo Chagi, html: Halbkreisfußtritt mit dem Fußspann]
+            - [
+                html: (Paldung) Dollyo Chagi,
+                html: Halbkreisfußtritt mit dem Fußspann,
+              ]
             - [html: Yop Chagi, html: Seitwärtsfußtritt]
             - [html: Naeryo Chagi, html: Abwärtsschlag]
-            - [html: Bakkat Naeryo Chagi, html: Abwärtsschlag von innen nach außen]
+            - [
+                html: Bakkat Naeryo Chagi,
+                html: Abwärtsschlag von innen nach außen,
+              ]
             - [html: An Naeryo Chagi, html: Abwärtsschlag von außen nach innen]
   - title: Stellungen
     content:
@@ -71,4 +83,3 @@ sections:
   - title: Step-Schule
     content:
       - text: mit oder ohne Partner (2 bisher erlernte Grundtechniken mit und ohne Auslagewechsel, Ausfall-Schritt, One-Step, Drehung, Vorwärts- / Rückwärts-Step
-

@@ -42,6 +42,7 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                             class="inline-flex p-4 border-b-2 rounded-t-lg"
                             id={`${section.id}-tab`}
                             data-tabs-target={`#${section.id}`}
+                            data-popover-target={`popover-${section.id}`}
                             type="button"
                             role="tab"
                             aria-controls={section.id}
@@ -75,6 +76,21 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                             </svg>
                             {section.title}
                         </button>
+                        {/* POPOVER */}
+                        {section.icon && (
+                            <div
+                                data-popover
+                                id={`popover-${section.id}`}
+                                role="tooltip"
+                                class="absolute z-10 invisible inline-block w-20 p-4 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
+                            >
+                                <RelImage
+                                    src={section.icon}
+                                    class="w-12 mx-auto"
+                                />
+                                <div data-popper-arrow />
+                            </div>
+                        )}
                     </li>
                 ))
             }
@@ -89,9 +105,11 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     role="tabpanel"
                     aria-labelledby={`${section.id}-tab`}
                 >
-                    {section.icon && <div class="absolute top-0 right-0 m-4 w-10 not-prose">
-                        <RelImage src={section.icon} />
-                    </div>}
+                    {/* section.icon && (
+                        <div class="absolute top-0 right-0 m-4 w-10 not-prose">
+                            <RelImage src={section.icon} />
+                        </div>
+                    )*/}
                     <>
                         {section.content?.map((content) => (
                             <Content content={content} />
@@ -118,10 +136,12 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
 
 <script>
     import { initTabs } from 'flowbite/lib/esm/components/tabs'
+    import { initPopovers } from 'flowbite/lib/esm/components/popover'
     import Accordion from 'flowbite/lib/esm/components/accordion'
     import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
 
     initTabs()
+    initPopovers()
 
     document
         .querySelectorAll('[data-accordion]')
