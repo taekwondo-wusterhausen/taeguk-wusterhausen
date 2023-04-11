@@ -55,7 +55,6 @@ const id = [...parents, heading].map(toId).join('--')
         class:list={[
             'px-8 py-5 border border-t-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900',
             { 'rounded-b-xl': isLast },
-            { 'border-b-0': !isLast },
         ]}
     >
         <slot />

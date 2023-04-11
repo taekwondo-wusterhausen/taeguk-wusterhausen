@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import DownloadLink from '@components/links/DownloadLink.astro'
+import RelImage from '@components/RelImage.astro'
 import { toId } from '@components/utils'
 
 import Section, { Section as SectionType } from './Section.astro'
@@ -83,11 +84,14 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
         {
             sections.map((section) => (
                 <div
-                    class="hidden p-4 shadow-sm rounded-lg rounded-t-none bg-gray-50 dark:bg-gray-800"
+                    class="hidden relative p-4 shadow-sm rounded-lg rounded-t-none bg-gray-50 dark:bg-gray-800"
                     id={section.id}
                     role="tabpanel"
                     aria-labelledby={`${section.id}-tab`}
                 >
+                    {section.icon && <div class="absolute top-0 right-0 m-4 w-10 not-prose">
+                        <RelImage src={section.icon} />
+                    </div>}
                     <>
                         {section.content?.map((content) => (
                             <Content content={content} />
