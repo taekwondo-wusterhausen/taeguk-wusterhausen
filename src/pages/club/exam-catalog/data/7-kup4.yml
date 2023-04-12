@@ -1,0 +1,102 @@
+title: 4. Kup
+colors:
+  - blue
+  - blue
+icon: belts/4.png
+content:
+  - text: Mann oder Frau zählt zu den Fortgeschrittenen, denn die Farbe Blau steht für den Himmel - und dem streckt sich die Pflanze entgegen.
+  - text: '* formenerklärend: bei den Partnerübungen werden Bewegungsfolgen aus einer Poomse entnommen und in das Ilbo Taeryon eingefügt. Dabei können Technik-Veränderungen durchaus stattfinden. Ilbo Taeryon-Techniken müssen beidseitig beherrscht werden, das bedeutet, es wird sowohl links- und rechtsseitig angegriffen, wobei die gezeigten Techniken unterschiedlich sein können.'
+sections:
+  - title: Theorie
+    sections:
+      - title: Wiederholung Notwehrparagraph / Rechtsgrundlagen
+        content:
+          - html: <a href="#">siehe Notwehr</a>
+      - title: Welchen Sinn haben "formenerklärenden Übungen" im 1-Schritt-Kampf?
+        content:
+          - text: Bei formenerklärenden Partnerübungen werden Bewegungsfolgen aus einer Poomse entnommen und in das Ilbo Taeryon eingefügt. Dabei können Technik-Veränderungen durchaus stattfinden. Ilbo Taeryon-Techniken müssen beidseitig beherrscht werden, das bedeutet, es wird sowohl links- und rechtsseitig angegriffen, wobei die gezeigten Techniken unterschiedlich sein können. Dadurch soll das Verständnis der zwangsläufigen Abfolge einer Verteidigungshandlung und dem Aspekt der für Taekwondo typischen Defensiv-Haltung - erst passive Verteidigung (Block oder Ausweichen), dann aktive Verteidigung (Konter/Gegenangriff) geweckt und gestärkt werden. Da sich diese Bewegungsabläufe in jeder Poomse wiederholen, sind formenerklärende Ilbo Taeryons eine gute Ergänzung zu den formenorientierten Übungen.
+      - title: Was ist eine Strategie bzw. Taktik? (2 Beispiele)
+        content:
+          - text: Intelligentes Wettkampfverhalten setzt eine Wettkampfstrategie voraus. Unter Wettkampfstrategie versteht man das taktische Vorgehen während eines Wettkampfes. Sie beinhaltet einen schon vor dem Wettkampf erstellten Plan über Vorgehen und Verhalten während des Kampfes. Eine sportliche Taktik / Strategie ist die Gesamtheit der sportlichen Handlungen, die unter Beachtung
+          - itemize:
+              - html: der Wettkampfregeln
+              - html: des Gegnerverhaltens sowie
+              - html: der äußeren Bedingungen
+          - text: auf die volle Nutzung der eigenen Leistung im Sinne eines bestmöglichen Wettkampfergebnisses oder einer optimalen Leistung ausgerichtet sind.
+          - text: 'Die konkrte Handlung läuft in 5 Phasen ab:'
+          - enumerate:
+              - html: Wahrnehmung der Situation
+              - html: Interpretation der Situation
+              - html: Erstellen eines Aktionsprogramms
+              - html: Umsetzung des Aktionsprogramms
+              - html: Ergebnisanalyse
+          - text: 'Beispiele:'
+          - enumerate:
+              - html: direkter Angriff (ohne Vorbewegung), z. B. Paltung Hinterfuß
+              - html: Angriff mit Vorbewegung, z. B. Auslagewechsel-Paltung Hinterfuß
+              - html: Finte (indirekter Angriff), z. B. Doppel-Paltung, wobei 1. Kick nur der Täuschung dient
+              - html: direkter Konter (ohne Vorbewegung), z. B. Dwit-Chagi gegen Paltung
+              - html: provozierter Konter (Gegner locken), z. B. Paltung provozieren und diesen mit Doppel-Paltung abkontern
+          - text: Dei der Planung der Strategie ist der gegenerische Kampfstil zu berücksichtigen (z. B. Konterkämpfer). Die Strategie ist mit dem Coach abzustimmen und wird im eigentlichen Wettkampf häufig durch diesen vorgegeben bzw. empfohlen.
+      - title: Wettkampfregeln / Kampfleitergesten
+        content:
+          - html: <a href="#">siehe WOT</a>
+      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
+        content:
+          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+  - title: Poomse
+    content:
+      - html: <strong>Taeguk Sa-Chang</strong> (20 Bewegungen)
+      - text: Die Bewegungen der Taeguk Sa-Chang stellen einen erheblichen Fortschritt gegenüber den ersten drei Formen dar. Ihr Symbol "Jin" steht für den Donner. Donner und Blitze flößen dem Menschen Furcht ein. Der Donner steht für Neubeginn und Bewegung, bedeutet aber gleichzeitig auch Kraft und Macht. Das Prinzip des Donners kommt in den kräftigen Stellungen mit selbstbewussten Block- und Schlagbewegungen zum Ausdruck. Wie der Donner Regen mit sich bringt und so die Luft bei einem Gewitter bereinigt, so beginnt die Sa-Chang, dem Schüler das richtige Verständnis der Taekwondo-Techniken zu vermitteln.
+  - title: Fußtechniken
+    content:
+      - table:
+          body:
+            - [html: Mom (Pandae) Dollyo Chagi, html: Fersendrehschlag]
+            - [html: Twio Yop Chagi, html: gesprungener Seitwärtsfußtritt]
+            - [html: Twio An Naeryo Chagi, html: gesprungenerAbwärtsfußtritt von außen nach innen]
+            - [html: Twio Bakkat Naeryo Chagi, html: gesprungener Abwärtsfußtritt von innen nach außen]
+  - title: Handtechnicken
+    content:
+      - html: <h5>Angriff</h5>
+      - table:
+          body:
+            - [html: Kaljabi Mok Chigi, html: Schlag mit Daumen-Zeigefinger-Spanne zum Hals]
+            - [html: Olgul Mejumok Naeryo (Mok) Chigi, html: Faustaußenseite-Kopfschlag abwärts (Halshöhe)]
+            - [html: Momtong Palkup Pyojok Chigi, html: Ellenbogenschlag zum Körper auf den Punkt]
+      - html: <h5>Abwehr</h5>
+      - table:
+          body:
+            - [html: Godoro Sonnal Bakkat Makki, html: Handkantenblock mit Unterstützung]
+            - [html: Godoro Bakkat Makki, html: Außenblock mit Unterstützung]
+            - [html: Bantangson Ollyo Makki, html: Aufwärtsblock mit Handballen]
+            - [html: Otgoro Arae Makki, html: Kreuzblock nach unten]
+            - [html: Otgoro Olgul Makki, html: Kreuzblock nach oben]
+            - [html: (Momtong-) Batangson An Makki, html: Körperinnenblock mit Handballen]
+            - [html: Murup Makki, html: Knieabwehr]
+  - title: Stellungen
+    content:
+      - table:
+          body:
+            - [html: Apkkoa Sogi, html: Überkreuzstellung - Seitwärtsbewegung (unterstützender Fuß vorne)]
+            - [html: Dwitkkoa Sogi, html: Überkreuzstellung - Vorwärtsbewegung (unterstützender Fuß hinten)]
+  - title: 1-Schritt-Kampf (Ilbo Taeryon)
+    content:
+      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
+      - text: Techniken aus den Formen 1 - 4
+  - title: Freikampf (Kyorugi)
+    content:
+      - html: <h4>Übungen mit Rollenteilung</h4>
+      - text: A = offensiv, B = defensiv-passiv oder defensiv-aktiv
+      - html: <h4>Übungen mit Aufgabenstellung</h4>
+      - itemize:
+        - html: 1 x 1 vorzeitig, wobei mehrere vorgegebene Techniken zur Auswahl stehen
+        - html: 1 x 1 x 1 nachzeitig, gleichzeitig, vorzeitig bei freier Technikwahl
+      - text: Ziel der Übung ist es, dass der Angreifer lernt, unmittelbar nach seinem Angriff wieder beweglich und verteidigungsbereit zu sein.
+  - title: Selbstverteidigung (Hosinsul)
+    content:
+      - text: Programm wie beim 5. Kup mit freier Abwehr aus allen Distanzen (Würgen am Boden seitlich/von hinten (hinter dem liegenden Opfer sitzend)/rittlings (auf dem Opfer)/Verteidiger auf dem Bauch liegend/rittlings sitzend auf den Armen und Würgen am Hals/fassen am Revers am Boden zwischen den Beinen). Jedoch sollte der Angriff einmal langsam und einmal schnell vorgeführt und gelöst werden.
+      - text: Durch dieses schrittweise Heranführen über den 6. und 7. Kup sowie über die längere Übungszeit dieses Programms (5. und 4. Kup) erreicht der Prüfling eine höhere Sicherheit, welche wiederum eine wichtige Voraussetzung für eine wirkungsvolle SV ist.
+  - title: Bruchtest (Kyokpa)
+    content:
+      - text: '1 Technik: Ap Chagi / Dwit Chagi / Sonnal Bakkat Chigi'
