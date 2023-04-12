@@ -10,6 +10,7 @@ sections:
     sections:
       - title: Notwehrbegriff
         content:
+          - html: <a href="#">siehe Notwehr</a>
           - text: Notwehr ist ein Begriff der Rechtssprache. Er bezeichnet die Verteidigung eines Menschen, die zur Abwehr eines rechtswidrigen, gegenwärtigen Angriffs durch einen anderen Menschen erforderlich ist (§ 32 StGB, § 227 BGB). Notwehr ist nicht strafbar und gilt auch im Zivilrecht nicht als unerlaubte Handlung. Unter einem Angriff versteht man dabei jede Bedrohung rechtlich geschützter Interessen durch menschliches Verhalten. Ein Angriff ist gegenwärtig, sobald diese Bedrohung unmittelbar bevorsteht, gerade stattfindet oder noch andauert. In jedem Fall entfällt die Rechtswidrigkeit des Angriffs immer dann, wenn zugunsten des Angreifers selbst ein Rechtfertigungsgrund eingreift (etwa Notwehr oder Notstand). Wenn bspw. ein Angegriffener eine Sache eines Dritten zuhilfe nimmt, um einen tätlichen Angriff gegen seine Person abzuwehren, darf der Dritte seinerseits nicht dem Angegriffenen die Sache wegnehmen. Für den Dritten liegt keine Notwehrlage vor, da die Verwendung und ggf. Beschädigung der Sache durch den Angegriffenen aufgrund dessen Notwehrlage gerechtfertigt ist. Eine Notwehr gegen eine Notwehrhandlung ist nicht möglich. Kennzeichnend für die Notwehr sind eine Notwehrlage und eine Notwehrhandlung.
           - html: <h5>Notwehrlage</h5>
           - text: Eine Notwehrlage ist gegeben, wenn sich der Angriff gegen Leben, Körper, Gesundheit, Freiheit, Eigentum oder andere Rechtsgüter richtet. Der Angriff muss gegenwärtig sein, er darf noch nicht beendet sein (Rache ist also keine Notwehr). Eine Notwehrhandlung ist jedoch nur gerechtfertigt, wenn sie geeignet und erforderlich ist, den Angriff abzuwehren. Unerheblich ist, ob der Verteidiger selbst oder ein anderer angegeriffen wird; im zweiten Fall spricht man von Nothilfe.
@@ -31,21 +32,21 @@ sections:
       - title: Fachbegriffe der Step-Schule
         content:
           - itemize:
-              - text: Steppen auf der Stelle
-              - text: Auslagenwechsel
-              - text: Slide-Step
-              - text: Ein-Schritt-Technik One-Step
-              - text: Zwei-Schritt-Technik Two-Step
-              - text: Jagd-Step
-              - text: Rückwärts-Step
-              - text: X-Step / Kreuz-Step
-              - text: Seit-Step
+              - html: Steppen auf der Stelle
+              - html: Auslagenwechsel
+              - html: Slide-Step
+              - html: Ein-Schritt-Technik One-Step
+              - html: Zwei-Schritt-Technik Two-Step
+              - html: Jagd-Step
+              - html: Rückwärts-Step
+              - html: X-Step / Kreuz-Step
+              - html: Seit-Step
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
           - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
   - title: Poomse
     content:
-      - html: <strong>Taeguk Il Chang</strong> (18 Bewegungen)
+      - html: <strong>Taeguk Il-Chang</strong> (18 Bewegungen)
       - text: Das Trigramm (Symbol "Keon") der ersten Form besteht aus drei ungebrochenen, männlichen Linien. Es steht für reines Yin und wird durch den Himmel und das Licht symbolisiert. Im I-Ging wird dem Himmel die Zeugungskraft zugeschrieben, im Gegensatz zur empfangenen Erde. Allgemeiner steht der Himmel für die Schöpfung und den Anfang des Seins. So ist auch Taeguk Il-Chang der Anfang und die Quelle aller weiterer Entwicklungen im Taekwondo. Die Form sollte in kraftvoller Frische in dem Bewusstsein ausgeführt werden, dass man etwas Neues beginnt.
   - title: Fußtechniken
     content:
@@ -55,14 +56,14 @@ sections:
             - [html: Paldung Chagi, html: 45°-Kick mit dem Fußspann]
   - title: Handtechnicken
     content:
-      - html: <h5>Angriff</h5>
+      - html: <h4>Angriff</h4>
       - table:
           body:
             - [
                 html: Sonnal An Chigi,
                 html: Handkantenschlag von außen nach innen,
               ]
-      - html: <h5>Abwehr</h5>
+      - html: <h4>Abwehr</h4>
       - table:
           body:
             - [
@@ -78,10 +79,10 @@ sections:
     content:
       - text: Wiederholung der Steps vom 8. Kup, mit Partner
       - itemize:
-          - text: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
-          - text: Two-Step
-          - text: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
-          - text: Jagd-Step (Gleiten mit dem Standbein)
+          - html: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
+          - html: Two-Step
+          - html: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
+          - html: Jagd-Step (Gleiten mit dem Standbein)
   - title: Pratzenübungen
     content:
       - text: formen- oder wettkampforientiert, bisheriges Grundtechnikprogramm sowie Halbkreistritte bei angewandter Step-Schule (2x treffen mit Auslagewechsel)
@@ -90,24 +91,24 @@ sections:
       - text: formenorientiert - 5 Aktionen rechts / links (2x Hand-, 2x Fußtechniken). Vorführung eines technisch-praktischen Programms gegen Angriffe mit Halbkreistritt.
       - html: <h4>Angriff</h4>
       - itemize:
-        - text: Halbkreistritt
+        - html: Halbkreistritt
       - html: <h4>Verteidigung</h4>
       - itemize:
-        - text: Fauststoß
-        - text: Vorwärtsfußstoß
-        - text: Abwärts-, Kreis-, Halbkreisfußschlag
+        - html: Fauststoß
+        - html: Vorwärtsfußstoß
+        - html: Abwärts-, Kreis-, Halbkreisfußschlag
       - html: <h4>Verteidigungsprinzipien</h4>
       - itemize:
-        - text: räumlich vielfältiges Ausweichen
-        - text: Ausweichen mit / ohne Abwehr bzw. Deckung
-        - text: 1 Gegentechnik nachzeitig
+        - html: räumlich vielfältiges Ausweichen
+        - html: Ausweichen mit / ohne Abwehr bzw. Deckung
+        - html: 1 Gegentechnik nachzeitig
   - title: Freikampf (Kyorugi)
     content:
       - itemize:
-        - text: wechselseitige Technikübung nach dem Rhythmus 1x1, Ausführung links und rechts
-        - text: Prinzip "Ausweichen und Wiederkommen" bei der Ausführung "1x1-nachzeitig"
-        - text: Technikausführung mit gleichzeitiger Deckung zur Eigensicherung" bei der Ausführung "1x1-gleichzeitig"
-        - text: 'Die Techniken sind für beide Partner gleich und vorher festzulegen: Ap Chagi / Dollyo Chagi / Paldung Chagi / Naeryo Chagi'
+        - html: wechselseitige Technikübung nach dem Rhythmus 1x1, Ausführung links und rechts
+        - html: Prinzip "Ausweichen und Wiederkommen" bei der Ausführung "1x1-nachzeitig"
+        - html: Technikausführung mit gleichzeitiger Deckung zur Eigensicherung" bei der Ausführung "1x1-gleichzeitig"
+        - html: 'Die Techniken sind für beide Partner gleich und vorher festzulegen: Ap Chagi / Dollyo Chagi / Paldung Chagi / Naeryo Chagi'
   - title: Selbstverteidigung (Hosinsul)
     content:
       - text: Überprüfung von nicht taekwondo-spezifischen Angriffen wie Halten und Klammern (Haare ziehen von hinten, Schultern von hinten mit beiden Händen festhalten, Schultern von vorn mit gebeugtem / gestrecktem Arm / Armen, Revers mit gewinkeltem / gestrecktem Arm fassen) auf ihre Funktionalität.
