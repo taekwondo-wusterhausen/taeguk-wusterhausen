@@ -31,6 +31,21 @@ sections:
       - title: Fachbegriffe (Terminologie) der Grundtechniken auf deutsch und koreanisch
         content:
           - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+  - title: Fußtechniken
+    content:
+      - table:
+          body:
+            - [html: Ap Chagi, html: Vorwärtsfußtritt]
+            - [html: Miro Chagi, html: Stopp- / Schubtritt]
+            - [html: Ap Chaolligi, html: Fußhochschwung vorwärts]
+            - [
+                html: An Chaolligi,
+                html: Beinschwung / Kreisfußschlag von außen nach innen,
+              ]
+            - [
+                html: Bakkat Chaolligi,
+                html: Beinschwung / Kreisfußschlag von innen nach außen,
+              ]
   - title: Handtechnicken
     content:
       - html: <h5>Angriff</h5>
@@ -47,21 +62,6 @@ sections:
             - [html: An Makki, html: Körpermittel-Block von außen nach innen]
             - [html: Olgul Makki, html: Kopfblock]
             - [html: Arae Heycho Makki, html: Keilblock nach unten]
-  - title: Fußtechniken
-    content:
-      - table:
-          body:
-            - [html: Ap Chagi, html: Vorwärtsfußtritt]
-            - [html: Miro Chagi, html: Stopp- / Schubtritt]
-            - [html: Ap Chaolligi, html: Fußhochschwung vorwärts]
-            - [
-                html: An Chaolligi,
-                html: Beinschwung / Kreisfußschlag von außen nach innen,
-              ]
-            - [
-                html: Bakkat Chaolligi,
-                html: Beinschwung / Kreisfußschlag von innen nach außen,
-              ]
   - title: Stellungen
     content:
       - table:

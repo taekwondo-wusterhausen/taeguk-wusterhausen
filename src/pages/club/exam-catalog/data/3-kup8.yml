@@ -41,6 +41,21 @@ sections:
   - title: Überprüfung Vorprogramm (bisher erlernte Grundschultechniken)
     content:
       - text: siehe 10. und 9. Kup
+  - title: Fußtechniken
+    content:
+      - table:
+          body:
+            - [
+                html: (Paldung) Dollyo Chagi,
+                html: Halbkreisfußtritt mit dem Fußspann,
+              ]
+            - [html: Yop Chagi, html: Seitwärtsfußtritt]
+            - [html: Naeryo Chagi, html: Abwärtsschlag]
+            - [
+                html: Bakkat Naeryo Chagi,
+                html: Abwärtsschlag von innen nach außen,
+              ]
+            - [html: An Naeryo Chagi, html: Abwärtsschlag von außen nach innen]
   - title: Handtechnicken
     content:
       - html: <h5>Angriff</h5>
@@ -59,21 +74,6 @@ sections:
                 html: Mitteblock von innen nach außen,
               ]
             - [html: Momtong Heycho Makki, html: Keilblock zur Körpermitte]
-  - title: Fußtechniken
-    content:
-      - table:
-          body:
-            - [
-                html: (Paldung) Dollyo Chagi,
-                html: Halbkreisfußtritt mit dem Fußspann,
-              ]
-            - [html: Yop Chagi, html: Seitwärtsfußtritt]
-            - [html: Naeryo Chagi, html: Abwärtsschlag]
-            - [
-                html: Bakkat Naeryo Chagi,
-                html: Abwärtsschlag von innen nach außen,
-              ]
-            - [html: An Naeryo Chagi, html: Abwärtsschlag von außen nach innen]
   - title: Stellungen
     content:
       - table:
