@@ -1,0 +1,103 @@
+title: 3. Kup
+colors:
+  - blue
+  - red
+icon: belts/3.png
+content:
+  - text: Der Fortgeschrittene hat sein Können erneut unter Beweis gestellt.
+sections:
+  - title: Theorie
+    sections:
+      - title: Wie muss sich der Angreifer verhalten, wenn sich der Gegner aktiv verteidigen darf?
+        content:
+          - text: Um bei dieser taktischen Vorgabe zu punkten, muss der Angreifer eine Offensiv-Strategie wählen, z. B. einen unberechenbaren Aufbau seiner Angriffe (häufiger Technik- / Auslagenwechsel).
+      - title: Welche Folgen ergeben sich für den Angreifer aus der aktiven Verteidigung bzgl. Angriffsaufbau, -durchführung und -abschluss?
+        content:
+          - html: <h4>Ausgangssituation</h4>
+          - text: Der Verteidiger verhält sich aktiv im Rahmen der Defensiv-Strategie und schränkt durch entsprechend unberechenbares Verhalten die Erfolgswahrscheinlichkeit des offensiven Angreifers wesentlich ein.
+          - html: <h4>Folgen für den Angreifer</h4>
+          - text: Der Angreifer wird durch das strategisch-taktische Verhalten des Verteidigers zur Optimierung der Offensiv-Strategie gezwungen. Das heißt zum Einen, dass er seine Angriffe unberechenbar aufbauen muss und zum anderen, dass diese Angriff ganzheitlich abgesichert ist (Angriffsvorbereitung, -durchführung und -abschluss). Dadurch kann der Angreifer zeigen, dass er die Offensiv-Strategie beherrscht.
+      - title: Was ist eine Finte? Gemeinsamkeiten / Unterschiede "Finte" / "Technik"
+        content:
+          - text: Ein indirekter Angriff wird durch eine Finte (Scheinangriff) eingeleitet. Diese erste Technik dient dabei lediglich der Täuschung und leitet gleichzeitig den direkten Angriff ein.
+          - html: <h4>Gemeinsamkeiten / Unterschiede Technik - Finte</h4>
+          - text: Im Unterschied zur tatsächlichen Technik wird bei einer Finte der Kick lediglich im Ansatz angetäuscht, z. B. wird das Knie wie bei einem vollständig ausgeführten Kick hoch und nach vorne gebracht, um beim Gegner den Eindruck eines Angriffs zu vermitteln.
+      - title: Worin unterscheiden sich "traditionelle" und "moderne" Technikausführungen (z. B. bei traditionellem und modernem 1-Schritt-Kampf)?
+        content:
+          - text: '"Modern" steht hier für den Vollkontakt-Wettkampf. Da viele den Wettkampf als sportliches Taekwondo-Highlight verstehen, ist auch das Training häufig einseitig als Wettkampf-Training ausgerichtet. In der Konsequenz bedeutet dies, dass der traditionelle Bereich, insbesondere der Formenlauf, häufig unzureichend Trainingsbestandteil ist. Um diesem Aspekt Rechnung zu tragen, wurde vor einigen Jahren ein Wahlpflichtbereich bei den Kup-Prüfungen eingeführt. Ab dem 8. Kup kann jeder Prüfling, ob er'
+          - itemize:
+              - html: formenorientiert (traditionell)
+              - html: wettkampforientiert (modern)
+              - html: oder in beiden Wahlpflichtbereichen
+          - text: geprüft werden möchte.
+          - html: <h4>Technikausführung traditionell</h4>
+          - text: Die Übungen werden ausschließlich in traditionellen Stellungen als klassische Grundschultechniken und ohne bzw. mit leichtem Kontakt ausgeführt.
+          - html: <h4>Technikausführung modern</h4>
+          - text: Technikausführung insbesondere bei Freikampf- und Schrittkampfübungen wettkampforientiert, dass heißt aus frei wählbaren Stellungen und Situationen heraus unter dem Einsatz von Freikampftechniken. Hierbei ist leichter Kontakt gefordert.
+      - title: Probleme bei Selbstverteidigung in Bodenlage
+        content:
+          - text: Der Angegriffene liegt am Boden und muss dafür sorgen, dass der Angreifer ihm nicht zu nahe kommt. Es empfiehlt sich, am Boden liegend kickbereit auf den Angreifer zu warten.
+          - enumerate:
+              - html: |
+                  Angreifer steht, Verteidiger ist am Boden:
+                  <ul>
+                    <li>Aufstehen unter Eigensicherung und Verteidigungsstellung einnehmen</li>
+                    <li>Verteidigungspositionen in Bodenlage</li>
+                    <li>Treten und Schlagen in Bodenlage</li>
+                  </ul>
+              - html: |
+                  Angreifer und Verteidiger sind am Boden:
+                  <ul>
+                    <li>
+                      Verteidiger: Rückenlage, Beine geschlossen<br>
+                      Angreifer: Reitsitz, Würgen mit angewinkelten Armen
+                    </li>
+                    <li>
+                      Verteidiger: Rückenlage, Beine auseinander<br>
+                      Angreifer: kniet zwischen den Beinen, würgt mit gestreckten Armen
+                    </li>
+                    <li>
+                      Verteidiger: Rückenlage<br>
+                      Angreifer: würgt von der Seite oder von hinten (Kopfseite)
+                    </li>
+                  </ul>
+      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
+        content:
+          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+  - title: Poomse
+    content:
+      - html: <strong>Taeguk Oh-Chang</strong> (20 Bewegungen)
+      - text: Die fünfte Form wird durch das Symbol "Son" des Windes versinnbildlicht, der schnell und kraftvoll ist, dabei aber unsichtbar. Trotz Stürmen und Tornados hat der Wind eigentlich eine gute Bedeutung. Der Wind verteilt die Saat über die Felder und zerstreut dunkle Wolken. Er symbolisiert die Kraft der Zerstörung, und die des Aufbaus. Die Bewegungen umfassen schnelle und plötzliche Richtungswechsel. Der Ellenbogenschlag und die Hammerfaust werden hier eingeführt. Das Prinzip des Windes wird durch die Wischbewegung der Hammerfaust und am Ende beim Gleiten in die Kreuzstellung dargestellt.
+  - title: Handtechnicken
+    content:
+      - html: <h5>Angriff</h5>
+      - text: Wiederholung der Techniken bis 4. Kup
+      - html: <h5>Abwehr</h5>
+      - table:
+          body:
+            - [html: Olgul (Jebipum) Han Sonnal Bakkat Makki, html: Gesichtsblock mit Handaußenkante / Schwalbenform]
+            - [html: Sonnal Godoro Bakkat Makki, html: Handaußenkanteblock mit Unterstützung]
+  - title: 1-Schritt-Kampf (Ilbo Taeryon)
+    content:
+      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
+      - text: Techniken aus den Formen 1 - 5, sowie Übungen, welche zur Taekwondo-SV hinführen
+  - title: Freikampf (Kyorugi)
+    content:
+      - html: <h4>Übungen mit Rollenteilung</h4>
+      - text: A = offensiv, B = defensiv-aktiv sowohl "auf der Linie" als auch mit "Verlassen der Linie"
+      - html: <h4>Übungen mit Aufgabenstellung</h4>
+      - itemize:
+        - html: 2 x 1 nachzeitig, gleichzeitig
+        - html: Sparring mit einfacher Aufgabenstellung
+      - text: B verhält sich aktiv im Rahmen der Defensiv-Strategie und soll durch entsprechend unberechenbares Verhalten die Erfolgswahrscheinlichkeit des offensiven A wesentlich einschränken.
+      - text: A wird durch das strategisch-taktische Verhalten von B seinerseits zur Optimierung der Offensiv-Strategie gezwungen. Das heißt zum einen, dass er einen Angriff für B unberechenbar aufbauen muss und zum anderen, dass der Angriff ganzheitlich abgesichert ist (Angriffsvorbereitung, -durchführung und -abschluss). Dadurch kann A zeigen, dass er die Offensiv-Strategie beherrscht.
+  - title: Selbstverteidigung (Hosinsul)
+    content:
+      - text: Freie Abwehr von Angriffen aus der langen, mittleren und Nahdistanz sowie aus Bodenlage.
+      - text: Bei Bodenlage liegt der Angegriffene am Boden und muss dafür sorgen, dass der Angreifer ihm nicht zu nahe kommt. Es empfiehlt sich, am Boden liegend kickbereit auf den Angreifer zu warten.
+  - title: Bruchtest (Kyokpa)
+    content:
+      - text: je 1 Hand- und Fußbruchtest
+      - enumerate:
+          - html: 'Hand: Sonnal Bakkat Chigi / Palkup Chigi'
+          - html: 'Fuß: Dollyo Chagi / Yop Chagi / Twio Ap Chagi'

@@ -17,16 +17,16 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
 
 <Layout title="Prüfungskatalog" initFlowbite={false}>
     <h1>Mindestanforderungen und Technikkatalog</h1>
+    <p class="text-sm italic">
+        Anforderungen und Katalog stellen lediglich eine Empfehlung des
+        Vorstandes in Absprache mit dem Landesprüfungsreferenten des TVBB dar.
+    </p>
     <p>
         <DownloadLink
             href="pdfs/pruefungskatalog.pdf"
             text="PDF herunterladen"
             download="Prüfungskatalog.pdf"
         />
-    </p>
-    <p class="text-sm italic">
-        Anforderungen und Katalog stellen lediglich eine Empfehlung des
-        Vorstandes in Absprache mit dem Landesprüfungsreferenten des TVBB dar.
     </p>
     <div class="border-b border-gray-200 dark:border-gray-700 not-prose">
         <ul
