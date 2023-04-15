@@ -1,10 +1,14 @@
 ---
+import { getImage } from 'astro:assets'
+
 import Layout from '@layouts/Layout.astro'
 import EventsCard from '@components/cards/EventsCard.astro'
-import RefLink from '@components/links/RefLink.astro'
 import Taeguk from '@components/Taeguk.astro'
 
+import background from '@assets/bg.png'
+
 const { BASE_URL } = import.meta.env
+const bgImage = await getImage({src: background, format: 'avif'})
 ---
 
 <Layout title="Startseite" prose={false}>
@@ -17,7 +21,11 @@ const { BASE_URL } = import.meta.env
             },
         ]}
     />
-    <div class="flex justify-between mt-8">
+    <div
+        id="mainContainer"
+        class="flex justify-between mt-8"
+        style={`background-image: url(${bgImage.src});`}
+    >
         <div class="flex-none w-12 sm:w-16 md:w-auto">
             <img src={`${BASE_URL}logos/tvbb_small.png`} />
         </div>
@@ -35,7 +43,7 @@ const { BASE_URL } = import.meta.env
                 />
                 Wusterhausen
             </p>
-            <p class="not-prose">
+            <p class="not-prose mt-12">
                 <img class="inline" src={`${BASE_URL}skorea_flag.gif`} />
             </p>
         </article>
@@ -44,3 +52,12 @@ const { BASE_URL } = import.meta.env
         </div>
     </div>
 </Layout>
+
+<style>
+    #mainContainer {
+        background-origin: border-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+</style>
