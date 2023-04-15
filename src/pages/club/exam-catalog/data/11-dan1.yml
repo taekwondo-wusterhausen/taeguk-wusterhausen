@@ -1,0 +1,46 @@
+title: 1. Dan
+colors:
+  - black
+  - gold
+icon: belts/0.png
+content:
+  - html: |
+      <p>
+        Der Inhaber hat die farbigen Entwicklungsstufen durchlaufen und den Status eines Lehrers (Kyosah-nim) erreicht. Die DTU unterteilt hier in <em>Leistungsgrade</em> (1. bis 3. Dan) und <em>Lehrergrade</em> (ab dem 4. Dan). Träger des schwarzen Gürtel werden ab dem 4. Dan Meister (Sabum) genannt. Ab dem 5. Dan ist man Großmeister (Sabum-nim). Der 9. Dan ist der höchste, der in der koreanischen Kampfkunst vergeben wird. Der 10. Dan steht für eine Vollkommenheit, die eigentlich nicht erreicht werden kann. Daher trägt auch ein Großmeister den weißen Tobok, Zeichen lebenslangen Lernens.
+      </p>
+  - text: Dem amtierenden WT-Präsidenten (World Taekwondo) wird der 10. Dan für das Bestehen seiner Amtszeit verliehen.
+sections:
+  - title: Theorie
+    sections:
+      - title: Zulassungsvoraussetzungen nur für 1. Dan (nicht für Poom)
+        content:
+          - enumerate:
+              - html: |
+                  Erste-Hilfe-Lehrgang (8 Doppelstunden - nicht älter als 1 Jahr)<br>
+                  <strong>oder</strong>
+              - html: Kampfrichterlehrgang
+  - title: Poomse
+    content:
+      - html: <strong>Taeguk Pal-Jang</strong> (24 Bewegungen)
+      - text: Das achte und letzte Symbol “Kon” der Taeguk steht für die Erde. Die Erde ist die Mutter des Lebens. Sie macht die Fruchtbarkeit und die Schöpfung des Himmels möglich.
+      # - html: <strong>Poomse Koryo</strong> (30 Bewegungen)
+      # - text: Koryo ist der Name einer Dynastie (918 - 1392 n. Chr.), aus dessen Name sich das Wort Korea abgeleitet hat. Poomse Koryo spiegelt in ihren Bewegungen die geistige Haltung des "Koryo Volkes" wider, das mit Überzeugung und starkem Willen einem mächtigen Gegner widerstand.
+  - title: 1-Schritt-Kampf (Ilbo Taeryon)
+    content:
+      - itemize:
+          - html: formenerorientiert - freies Programm in Angriff und Verteidigung mit technisch anspruchsvollem Schwierigkeitsgrad
+          - html: formerklärend - Techniken aus den Formen 1 - 8 mit höherem Schwierigkeitsgrad
+  - title: Freikampf (Kyorugi)
+    content:
+      - html: <h4>freies Sparring, wobei technisch-taktische Aufgabenstellungen möglich sind</h4>
+      - text: Hier handelt es sich um den sog. "freien Kampf". Dieser kann jedoch wie es auch im Wettkampf der Fall ist, z. B. zwischen den einzelnen Runden mit technisch-taktischen Auf-gaben verbunden werden. So kann man in der Prüfung z.B. 1 Runde frei kämpfen lassen, um dann für die 2. Runde entsprechende technisch-taktische Aufgaben zu stellen und deren Umsetzung zu überprüfen.
+      - text: Das Stellen von technisch-taktischen Aufgaben kann "offen" oder "verdeckt" erfolgen. "Offen" heißt, dass beide Kämpfer die Aufgabe kennen während "verdeckt" bedeutet, dass jeder Kämpfer nur seine Aufgabe kennt - so wie es auch im Wettkampf der Fall ist. Die Aufgabe kann z.B. darin bestehen, die technisch-taktische Aufgabe des Gegners herauszufinden, diese zum Ende der Runde zu formulieren oder sich innerhalb der Runde auf diese Taktik entsprechend einzustellen (Gegentaktik).
+      - text: Ein derartiges Vorgehen ist innerhalb der Prüfung im Interesse der Ausbildung der Disziplin "Kampf" sinnvoll. Zu unterscheiden sind jedoch Breiten- und Leistungssportler z. B. in der Aufgabenstellung.
+  - title: Selbstverteidigung (Hosinsul)
+    content:
+      - text: freie Abwehr gegen unbewaffnete und bewaffnete Angriffe aus verschiedenen Distanzen (ansatzweise unter Zeitdruck, d. h. gegen mehrere Gegner)
+  - title: Bruchtest (Kyokpa)
+    content:
+      - text: 3 Bruchtests mit verschiedenen Techniken
+      - itemize:
+          - html: Hiervon mindestens je eine Hand- und eine Fußtechnik, eine 2er-Kombination muss gezeigt werden.
