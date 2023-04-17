@@ -54,9 +54,15 @@ sections:
       - html: <h4>Abwehr</h4>
       - table:
           body:
-            - [html: Godoro Sonnal Bakkat Makki, html: Handkantenblock mit Unterstützung]
+            - [
+                html: Godoro Sonnal Bakkat Makki,
+                html: Handkantenblock mit Unterstützung,
+              ]
             - [html: Godoro Bakkat Makki, html: Außenblock mit Unterstützung]
-            - [html: Sonnaldung Bakkat Makki, html: Innenhandkantenblock von innen nach außen]
+            - [
+                html: Sonnaldung Bakkat Makki,
+                html: Innenhandkantenblock von innen nach außen,
+              ]
   # - title: Stellungen
   #   content:
   #     - text: Wiederholung der Stellungen bis 8. Kup
@@ -77,24 +83,24 @@ sections:
       - text: formenorientiert - 7 Aktionen rechts / links (3x Hand-, 3x Fußtechniken). Vorführung des erweiterten technisch-taktischen Programms gegen Angriffe mit Halbkreisfußschlag.
       - html: <h4>Angriff</h4>
       - itemize:
-        - html: Halbkreisfußschlag
+          - html: Halbkreisfußschlag
       - html: <h4>Verteidigung</h4>
       - itemize:
-        - html: siehe 7. Kup
-        - html: Seitwärts- / Rückwärtsfußstoß, Drehschlag
+          - html: siehe 7. Kup
+          - html: Seitwärts- / Rückwärtsfußstoß, Drehschlag
       - html: <h4>Verteidigungsprinzipien</h4>
       - itemize:
-        - html: siehe 7. Kup
+          - html: siehe 7. Kup
   - title: Freikampf (Kyorugi)
     content:
       - html: <h4>Übungen mit Rollenteilung</h4>
       - text: A = offensiv, B = defensiv-passiv (Ausweichen mit Deckung)
       - html: <h4>Übungen mit Aufgabenstellung</h4>
       - itemize:
-        - html: B soll den Erfolg (Treffen) der Einzel-) Angriffe von A lediglich durch "Ausweichen auf der Linie" (vor- oder rückwärts) verhindern. A greift mit freier Technik an.
-        - html: A wird als Angreifer festgelegt auf die Bewegungskombination "Drehung und Halbkreisfußschlag", bleibt jedoch frei in der Wahl der Auslage und damit der Drehrichtung. B soll sich durch verteidigen durch "Ausweichen - seitlich" aus der Körperdrehrichtung des Angreifers herausbewegen. Durch diese "spielerische" Übung muss sich B durch "Verlassen der Linie" verteidigen (im Gegensatz zum "Ausweichen auf der Linie").
-        - html: '1 x 1 nachzeitig A: Angriff. B: Ausweichen und wiederkommen'
-        - html: 2 x 2 nachzeitig mit Eigensicherung und vorgegebenen Techniken. Nach dem Ausstieg sollten sich die beiden Partner in freikampfähnlicher Bewegung (ohne Technik) weiterbewegen und von hier aus wieder in 2 x 2 einsteigen.
+          - html: B soll den Erfolg (Treffen) der Einzel-) Angriffe von A lediglich durch "Ausweichen auf der Linie" (vor- oder rückwärts) verhindern. A greift mit freier Technik an.
+          - html: A wird als Angreifer festgelegt auf die Bewegungskombination "Drehung und Halbkreisfußschlag", bleibt jedoch frei in der Wahl der Auslage und damit der Drehrichtung. B soll sich durch verteidigen durch "Ausweichen - seitlich" aus der Körperdrehrichtung des Angreifers herausbewegen. Durch diese "spielerische" Übung muss sich B durch "Verlassen der Linie" verteidigen (im Gegensatz zum "Ausweichen auf der Linie").
+          - html: '1 x 1 nachzeitig A: Angriff. B: Ausweichen und wiederkommen'
+          - html: 2 x 2 nachzeitig mit Eigensicherung und vorgegebenen Techniken. Nach dem Ausstieg sollten sich die beiden Partner in freikampfähnlicher Bewegung (ohne Technik) weiterbewegen und von hier aus wieder in 2 x 2 einsteigen.
       - text: Ziel der Übung ist es, dass der Angreifer lernt, Technikkombinationen in seinen Angriff einzubauen und danach wieder verteidigungsbereit zu sein.
   - title: Selbstverteidigung (Hosinsul)
     content:

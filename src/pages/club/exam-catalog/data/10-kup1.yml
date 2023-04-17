@@ -146,19 +146,34 @@ sections:
       - table:
           body:
             - [html: Yop Chaolligi, html: Seitwärtsschwung]
-            - [html: Dubal Dangsan Ap Chagi, html: zweifacher Vorwärtstritt nacheinander im Sprung]
-            - [html: Twio Mom (Pandae) Dollyo Chagi, html: gesprungener Fersendrehschlag]
+            - [
+                html: Dubal Dangsan Ap Chagi,
+                html: zweifacher Vorwärtstritt nacheinander im Sprung,
+              ]
+            - [
+                html: Twio Mom (Pandae) Dollyo Chagi,
+                html: gesprungener Fersendrehschlag,
+              ]
   - title: Handtechnicken
     content:
       - html: <h5>Angriff</h5>
       - table:
           body:
-            - [html: Olgul Jumok Danggyo Tok Baro Chi Jirugi, html: ziehender Aufwärtsfauststoß zum Kinn]
+            - [
+                html: Olgul Jumok Danggyo Tok Baro Chi Jirugi,
+                html: ziehender Aufwärtsfauststoß zum Kinn,
+              ]
       - html: <h5>Abwehr</h5>
       - table:
           body:
-            - [html: Santul Makki, html: 'Zweiarmblock, kombinierte Oben- / Unten-Abwehr']
-            - [html: Dungjumok Santul Makki, html: 'Abwehr unten, Faustrückenschlag hinten']
+            - [
+                html: Santul Makki,
+                html: 'Zweiarmblock, kombinierte Oben- / Unten-Abwehr',
+              ]
+            - [
+                html: Dungjumok Santul Makki,
+                html: 'Abwehr unten, Faustrückenschlag hinten',
+              ]
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:
       - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)

@@ -52,7 +52,10 @@ sections:
     content:
       - table:
           body:
-            - [html: Apchuk Dollyo Chagi, html: Halbkreistritt mit dem Fußballen]
+            - [
+                html: Apchuk Dollyo Chagi,
+                html: Halbkreistritt mit dem Fußballen,
+              ]
             - [html: Paldung Chagi, html: 45°-Kick mit dem Fußspann]
   - title: Handtechnicken
     content:
@@ -70,8 +73,14 @@ sections:
                 html: Yop Makki,
                 html: nur in Verbindung mit Juchum Sogi / Dwitkubi,
               ]
-            - [html: An Palmok Bakkat Makki, html: Innenunterarmblock von innen nach außen]
-            - [html: Han Sonnal Bakkat Makki, html: Handkantenblock von innen nach außen mit einer Hand]
+            - [
+                html: An Palmok Bakkat Makki,
+                html: Innenunterarmblock von innen nach außen,
+              ]
+            - [
+                html: Han Sonnal Bakkat Makki,
+                html: Handkantenblock von innen nach außen mit einer Hand,
+              ]
   - title: Stellungen
     content:
       - text: Wiederholung der Stellungen bis 8. Kup
@@ -91,24 +100,24 @@ sections:
       - text: formenorientiert - 5 Aktionen rechts / links (2x Hand-, 2x Fußtechniken). Vorführung eines technisch-praktischen Programms gegen Angriffe mit Halbkreistritt.
       - html: <h4>Angriff</h4>
       - itemize:
-        - html: Halbkreistritt
+          - html: Halbkreistritt
       - html: <h4>Verteidigung</h4>
       - itemize:
-        - html: Fauststoß
-        - html: Vorwärtsfußstoß
-        - html: Abwärts-, Kreis-, Halbkreisfußschlag
+          - html: Fauststoß
+          - html: Vorwärtsfußstoß
+          - html: Abwärts-, Kreis-, Halbkreisfußschlag
       - html: <h4>Verteidigungsprinzipien</h4>
       - itemize:
-        - html: räumlich vielfältiges Ausweichen
-        - html: Ausweichen mit / ohne Abwehr bzw. Deckung
-        - html: 1 Gegentechnik nachzeitig
+          - html: räumlich vielfältiges Ausweichen
+          - html: Ausweichen mit / ohne Abwehr bzw. Deckung
+          - html: 1 Gegentechnik nachzeitig
   - title: Freikampf (Kyorugi)
     content:
       - itemize:
-        - html: wechselseitige Technikübung nach dem Rhythmus 1x1, Ausführung links und rechts
-        - html: Prinzip "Ausweichen und Wiederkommen" bei der Ausführung "1x1-nachzeitig"
-        - html: Technikausführung mit gleichzeitiger Deckung zur Eigensicherung" bei der Ausführung "1x1-gleichzeitig"
-        - html: 'Die Techniken sind für beide Partner gleich und vorher festzulegen: Ap Chagi / Dollyo Chagi / Paldung Chagi / Naeryo Chagi'
+          - html: wechselseitige Technikübung nach dem Rhythmus 1x1, Ausführung links und rechts
+          - html: Prinzip "Ausweichen und Wiederkommen" bei der Ausführung "1x1-nachzeitig"
+          - html: Technikausführung mit gleichzeitiger Deckung zur Eigensicherung" bei der Ausführung "1x1-gleichzeitig"
+          - html: 'Die Techniken sind für beide Partner gleich und vorher festzulegen: Ap Chagi / Dollyo Chagi / Paldung Chagi / Naeryo Chagi'
   - title: Selbstverteidigung (Hosinsul)
     content:
       - text: Überprüfung von nicht taekwondo-spezifischen Angriffen wie Halten und Klammern (Haare ziehen von hinten, Schultern von hinten mit beiden Händen festhalten, Schultern von vorn mit gebeugtem / gestrecktem Arm / Armen, Revers mit gewinkeltem / gestrecktem Arm fassen) auf ihre Funktionalität.

@@ -118,15 +118,24 @@ sections:
       - table:
           body:
             - [html: Bituro Chagi, html: Außendrehtritt]
-            - [html: Baldabak Pyojok Sewo Chagi, html: Tritt mit senkrechter Fußsohle auf den Punkt]
+            - [
+                html: Baldabak Pyojok Sewo Chagi,
+                html: Tritt mit senkrechter Fußsohle auf den Punkt,
+              ]
   - title: Handtechnicken
     content:
       - html: <h5>Angriff</h5>
       - table:
           body:
-            - [html: Momtong Du Jumok Jechyo Jirugi, html: beide umgedrehten Fäustestoßen zur Körpermitte]
+            - [
+                html: Momtong Du Jumok Jechyo Jirugi,
+                html: beide umgedrehten Fäustestoßen zur Körpermitte,
+              ]
             # TODO: Handtechnik?
-            - [html: Momtong Murup Ollyo Chigi, html: Knie schlägtaufwärts gegen Solarplexus]
+            - [
+                html: Momtong Murup Ollyo Chigi,
+                html: Knie schlägtaufwärts gegen Solarplexus,
+              ]
       - html: <h5>Abwehr</h5>
       - table:
           body:

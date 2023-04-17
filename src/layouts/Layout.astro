@@ -6,6 +6,7 @@ interface Props {
     initFlowbite?: boolean
     /** For rendering Markdown */
     prose?: boolean
+    class?: string
 }
 
 const { BASE_URL } = import.meta.env
@@ -54,7 +55,12 @@ const { frontmatter, title, initFlowbite = true, prose = true } = Astro.props
         <main class="container md:mx-auto py-4">
             {
                 prose ? (
-                    <article class="prose max-w-none md:prose-base lg:prose-lg dark:prose-invert prose-p:text-justify">
+                    <article
+                        class:list={[
+                            'prose max-w-none md:prose-base lg:prose-lg dark:prose-invert prose-p:text-justify',
+                            frontmatter.class,
+                        ]}
+                    >
                         <slot />
                     </article>
                 ) : (

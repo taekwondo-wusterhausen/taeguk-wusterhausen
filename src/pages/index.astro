@@ -8,7 +8,7 @@ import Taeguk from '@components/Taeguk.astro'
 import background from '@assets/bg.png'
 
 const { BASE_URL } = import.meta.env
-const bgImage = await getImage({src: background, format: 'avif'})
+const bgImage = await getImage({ src: background, format: 'avif' })
 ---
 
 <Layout title="Startseite" prose={false}>
@@ -26,7 +26,7 @@ const bgImage = await getImage({src: background, format: 'avif'})
         class="flex justify-between mt-8"
         style={`background-image: url(${bgImage.src});`}
     >
-        <div class="flex-none w-12 sm:w-16 md:w-auto">
+        <div class="flex-none hidden md:block w-16 md:w-auto">
             <img src={`${BASE_URL}logos/tvbb_small.png`} />
         </div>
         <article
@@ -47,7 +47,7 @@ const bgImage = await getImage({src: background, format: 'avif'})
                 <img class="inline" src={`${BASE_URL}skorea_flag.gif`} />
             </p>
         </article>
-        <div class="flex-none w-12 sm:w-16 md:w-auto">
+        <div class="flex-none hidden md:block w-16 md:w-auto">
             <img src={`${BASE_URL}logos/tjbb.png`} />
         </div>
     </div>

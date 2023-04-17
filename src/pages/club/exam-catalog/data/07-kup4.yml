@@ -54,33 +54,60 @@ sections:
           body:
             - [html: Mom (Pandae) Dollyo Chagi, html: Fersendrehschlag]
             - [html: Twio Yop Chagi, html: gesprungener Seitwärtsfußtritt]
-            - [html: Twio An Naeryo Chagi, html: gesprungenerAbwärtsfußtritt von außen nach innen]
-            - [html: Twio Bakkat Naeryo Chagi, html: gesprungener Abwärtsfußtritt von innen nach außen]
+            - [
+                html: Twio An Naeryo Chagi,
+                html: gesprungenerAbwärtsfußtritt von außen nach innen,
+              ]
+            - [
+                html: Twio Bakkat Naeryo Chagi,
+                html: gesprungener Abwärtsfußtritt von innen nach außen,
+              ]
   - title: Handtechnicken
     content:
       - html: <h5>Angriff</h5>
       - table:
           body:
-            - [html: Kaljabi Mok Chigi, html: Schlag mit Daumen-Zeigefinger-Spanne zum Hals]
-            - [html: Olgul Mejumok Naeryo (Mok) Chigi, html: Faustaußenseite-Kopfschlag abwärts (Halshöhe)]
-            - [html: Momtong Palkup Pyojok Chigi, html: Ellenbogenschlag zum Körper auf den Punkt]
+            - [
+                html: Kaljabi Mok Chigi,
+                html: Schlag mit Daumen-Zeigefinger-Spanne zum Hals,
+              ]
+            - [
+                html: Olgul Mejumok Naeryo (Mok) Chigi,
+                html: Faustaußenseite-Kopfschlag abwärts (Halshöhe),
+              ]
+            - [
+                html: Momtong Palkup Pyojok Chigi,
+                html: Ellenbogenschlag zum Körper auf den Punkt,
+              ]
       - html: <h5>Abwehr</h5>
       - table:
           body:
-            - [html: Godoro Sonnal Bakkat Makki, html: Handkantenblock mit Unterstützung]
+            - [
+                html: Godoro Sonnal Bakkat Makki,
+                html: Handkantenblock mit Unterstützung,
+              ]
             - [html: Godoro Bakkat Makki, html: Außenblock mit Unterstützung]
             - [html: Bantangson Ollyo Makki, html: Aufwärtsblock mit Handballen]
             - [html: Otgoro Arae Makki, html: Kreuzblock nach unten]
             - [html: Otgoro Olgul Makki, html: Kreuzblock nach oben]
-            - [html: (Momtong-) Batangson An Makki, html: Körperinnenblock mit Handballen]
+            - [
+                html: (Momtong-) Batangson An Makki,
+                html: Körperinnenblock mit Handballen,
+              ]
             # TODO: Handtechnik?
             - [html: Murup Makki, html: Knieabwehr]
   - title: Stellungen
     content:
       - table:
           body:
-            - [html: Apkkoa Sogi, html: Überkreuzstellung - Seitwärtsbewegung (unterstützender Fuß vorne)]
-            - [html: Dwitkkoa Sogi, html: Überkreuzstellung - Vorwärtsbewegung (unterstützender Fuß hinten)]
+            - [
+                html: Apkkoa Sogi,
+                html: Überkreuzstellung - Seitwärtsbewegung (unterstützender Fuß vorne),
+              ]
+            - [
+                html: Dwitkkoa Sogi,
+                html: Überkreuzstellung - Vorwärtsbewegung (unterstützender Fuß hinten),
+              ]
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:
       - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
@@ -91,8 +118,8 @@ sections:
       - text: A = offensiv, B = defensiv-passiv oder defensiv-aktiv
       - html: <h4>Übungen mit Aufgabenstellung</h4>
       - itemize:
-        - html: 1 x 1 vorzeitig, wobei mehrere vorgegebene Techniken zur Auswahl stehen
-        - html: 1 x 1 x 1 nachzeitig, gleichzeitig, vorzeitig bei freier Technikwahl
+          - html: 1 x 1 vorzeitig, wobei mehrere vorgegebene Techniken zur Auswahl stehen
+          - html: 1 x 1 x 1 nachzeitig, gleichzeitig, vorzeitig bei freier Technikwahl
       - text: Ziel der Übung ist es, dass der Angreifer lernt, unmittelbar nach seinem Angriff wieder beweglich und verteidigungsbereit zu sein.
   - title: Selbstverteidigung (Hosinsul)
     content:

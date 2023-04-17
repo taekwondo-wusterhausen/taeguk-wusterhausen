@@ -38,12 +38,24 @@ sections:
       - html: <h5>Angriff</h5>
       - table:
           body:
-            - [html: Jebipum Mok Chigi, html: Schlag mit Handaußenkante zum Hals / Schwalbenform]
-            - [html: Pyonsonkut Sewo Chigi, html: Fingerspitzenstoß vertikal mit Nullo Makki]
+            - [
+                html: Jebipum Mok Chigi,
+                html: Schlag mit Handaußenkante zum Hals / Schwalbenform,
+              ]
+            - [
+                html: Pyonsonkut Sewo Chigi,
+                html: Fingerspitzenstoß vertikal mit Nullo Makki,
+              ]
             - [html: Sonkut Ap Chirugi, html: Fingerspitzenstoß horizontal]
             - [html: Du Songarak Ap Chirugi, html: Zweifingerstoß]
-            - [html: Olgul Dungjumok Ap Chigi, html: Schlag mit Faustrücken zum Gesicht]
-            - [html: Olgul Dungjumok Bakkat Chigi, html: Faustrückenschlag zur Seite]
+            - [
+                html: Olgul Dungjumok Ap Chigi,
+                html: Schlag mit Faustrücken zum Gesicht,
+              ]
+            - [
+                html: Olgul Dungjumok Bakkat Chigi,
+                html: Faustrückenschlag zur Seite,
+              ]
       - html: <h5>Abwehr</h5>
       - table:
           body:
@@ -69,11 +81,11 @@ sections:
       - text: formenorientiert - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken). Vorführung eines technisch-praktischen Programms gegen Angriffe mit Halbkreistritt.
       - html: <h4>Verteidigung</h4>
       - itemize:
-        - html: wie beim 6. Kup
-        - html: Erweiterung des technisch-taktischen Programms
+          - html: wie beim 6. Kup
+          - html: Erweiterung des technisch-taktischen Programms
       - html: <h4>Verteidigungsprinzipien</h4>
       - itemize:
-        - html: wie beim 6. Kup
+          - html: wie beim 6. Kup
   - title: Freikampf (Kyorugi)
     content:
       - html: <h4>Übungen mit Rollenteilung</h4>
@@ -81,8 +93,8 @@ sections:
       - html: <h4>Übungen mit Aufgabenstellung</h4>
       - text: 'A greift B mit freier Technik an, B verteidigt sich aktiv auf der Linie, d. h. vor- oder rückwärts gehend wie folgt:'
       - itemize:
-        - html: 1 x 1 vorzeitig mit abgesprochenen Techniken<br>Die Partnerübung wird mit Halbkreisfußschlag 1 x 1 nachzeitig begonnen. A unterbricht mit einer vor- oder gleichzeitigen Gegentechnik den Rhythmus und "steigt somit aus der ursprünglichen Aufgabe aus".<br>Bei dieser Übung kommt es zur flüssigen Anwendung des Programms von Gegentechniken gegen den Angriff mit Halbkreisfußschlag, wie es bei den vorhergehenden Graduierungen innerhalb des 1-Schritt-Kampfes einstudiert und vorgeführt worden ist.
-        - html: '1 x 1 x 1 nachzeitig (A:B:A)<br>A 1: Angriff, B: ausweichen und wiederkommen, A 2: seinerseits nach dem eigenen Angriff sofort ausweichen (Treffer des Zurückschlagens von B vermeiden) und wiederkommen.<br>1 x 1 x 1 nachzeitig heißt, bzgl. der eigenen Verteidigung ist nur der sog. "Nachschlag" erlaubt.'
+          - html: 1 x 1 vorzeitig mit abgesprochenen Techniken<br>Die Partnerübung wird mit Halbkreisfußschlag 1 x 1 nachzeitig begonnen. A unterbricht mit einer vor- oder gleichzeitigen Gegentechnik den Rhythmus und "steigt somit aus der ursprünglichen Aufgabe aus".<br>Bei dieser Übung kommt es zur flüssigen Anwendung des Programms von Gegentechniken gegen den Angriff mit Halbkreisfußschlag, wie es bei den vorhergehenden Graduierungen innerhalb des 1-Schritt-Kampfes einstudiert und vorgeführt worden ist.
+          - html: '1 x 1 x 1 nachzeitig (A:B:A)<br>A 1: Angriff, B: ausweichen und wiederkommen, A 2: seinerseits nach dem eigenen Angriff sofort ausweichen (Treffer des Zurückschlagens von B vermeiden) und wiederkommen.<br>1 x 1 x 1 nachzeitig heißt, bzgl. der eigenen Verteidigung ist nur der sog. "Nachschlag" erlaubt.'
       - text: Ziel der Übung ist es, dass der Angreifer lernt, unmittelbar nach seinem Angriff wieder beweglich und verteidigungsbereit zu sein.
   - title: Selbstverteidigung (Hosinsul)
     content:

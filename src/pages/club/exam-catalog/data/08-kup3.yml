@@ -75,8 +75,14 @@ sections:
       - html: <h5>Abwehr</h5>
       - table:
           body:
-            - [html: Olgul (Jebipum) Han Sonnal Bakkat Makki, html: Gesichtsblock mit Handaußenkante / Schwalbenform]
-            - [html: Sonnal Godoro Bakkat Makki, html: Handaußenkanteblock mit Unterstützung]
+            - [
+                html: Olgul (Jebipum) Han Sonnal Bakkat Makki,
+                html: Gesichtsblock mit Handaußenkante / Schwalbenform,
+              ]
+            - [
+                html: Sonnal Godoro Bakkat Makki,
+                html: Handaußenkanteblock mit Unterstützung,
+              ]
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:
       - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
@@ -87,8 +93,8 @@ sections:
       - text: A = offensiv, B = defensiv-aktiv sowohl "auf der Linie" als auch mit "Verlassen der Linie"
       - html: <h4>Übungen mit Aufgabenstellung</h4>
       - itemize:
-        - html: 2 x 1 nachzeitig, gleichzeitig
-        - html: Sparring mit einfacher Aufgabenstellung
+          - html: 2 x 1 nachzeitig, gleichzeitig
+          - html: Sparring mit einfacher Aufgabenstellung
       - text: B verhält sich aktiv im Rahmen der Defensiv-Strategie und soll durch entsprechend unberechenbares Verhalten die Erfolgswahrscheinlichkeit des offensiven A wesentlich einschränken.
       - text: A wird durch das strategisch-taktische Verhalten von B seinerseits zur Optimierung der Offensiv-Strategie gezwungen. Das heißt zum einen, dass er einen Angriff für B unberechenbar aufbauen muss und zum anderen, dass der Angriff ganzheitlich abgesichert ist (Angriffsvorbereitung, -durchführung und -abschluss). Dadurch kann A zeigen, dass er die Offensiv-Strategie beherrscht.
   - title: Selbstverteidigung (Hosinsul)
