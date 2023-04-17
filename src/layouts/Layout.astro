@@ -10,7 +10,13 @@ interface Props {
 }
 
 const { BASE_URL } = import.meta.env
-const { frontmatter, title, initFlowbite = true, prose = true } = Astro.props
+const {
+    title,
+    frontmatter = {},
+    initFlowbite = true,
+    prose = true,
+    class: className = '',
+} = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -58,7 +64,7 @@ const { frontmatter, title, initFlowbite = true, prose = true } = Astro.props
                     <article
                         class:list={[
                             'prose max-w-none md:prose-base lg:prose-lg dark:prose-invert prose-p:text-justify',
-                            frontmatter.class,
+                            className || frontmatter.class,
                         ]}
                     >
                         <slot />

@@ -6,6 +6,7 @@ interface Props {
     external?: boolean
     download?: boolean | string
     appearance?: 'button' | 'link'
+    class?: string
 }
 
 const {
@@ -14,7 +15,7 @@ const {
     appearance = 'link',
     external = false,
     download = false,
-    class: className,
+    class: className = '',
 } = Astro.props
 ---
 
