@@ -11,8 +11,9 @@ interface Props {
 
 const { heading, parents = [], isFirst = false, isLast = false } = Astro.props
 
-// const headingId = createHash('sha256').update(heading).digest('hex')
-const id = [...parents, heading].map(toId).join('--')
+export const ID_SEPARATOR = '--'
+export const BODY_PREFIX = 'accordion-collapse-body---'
+const id = [...parents, heading].map(toId).join(ID_SEPARATOR)
 ---
 
 <div class="inline not-prose accordion-collapse-heading-wrapper">
@@ -27,8 +28,8 @@ const id = [...parents, heading].map(toId).join('--')
                 { 'border-t-0 rounded-t-none': !isFirst },
                 { 'rounded-b-none': !isLast },
             ]}
-            data-accordion-target={`#accordion-collapse-body--${id}`}
-            aria-controls={`accordion-collapse-body--${id}`}
+            data-accordion-target={`#${BODY_PREFIX}${id}`}
+            aria-controls={`${BODY_PREFIX}${id}`}
         >
             <span>{heading}</span>
             <svg
@@ -47,7 +48,7 @@ const id = [...parents, heading].map(toId).join('--')
     </h2>
 </div>
 <div
-    id={`accordion-collapse-body--${id}`}
+    id={`${BODY_PREFIX}${id}`}
     class="hidden"
     aria-labelledby={`accordion-collapse-heading--${id}`}
 >

@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import DownloadLink from '@components/links/DownloadLink.astro'
 import RelImage from '@components/RelImage.astro'
+import DownloadLink from '@components/links/DownloadLink.astro'
 import { toId } from '@components/utils'
 
 import Section, { Section as SectionType } from './Section.astro'
@@ -36,8 +36,8 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     <div class="border-b border-gray-200 dark:border-gray-700 not-prose">
         <ul
             class="flex flex-wrap -mb-px text-sm font-medium text-center"
-            id="myTab"
-            data-tabs-toggle="#myTabContent"
+            id="tabs"
+            data-tabs-toggle="#tabContents"
             role="tablist"
         >
             {
@@ -101,7 +101,7 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
             }
         </ul>
     </div>
-    <div id="myTabContent">
+    <div id="tabContents">
         {
             sections.map((section) => (
                 <div
@@ -110,11 +110,6 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     role="tabpanel"
                     aria-labelledby={`${section.id}-tab`}
                 >
-                    {/* section.icon && (
-                        <div class="absolute top-0 right-0 m-4 w-10 not-prose">
-                            <RelImage src={section.icon} />
-                        </div>
-                    )*/}
                     <>
                         {section.content?.map((content) => (
                             <Content content={content} />
@@ -145,9 +140,50 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     import Accordion from 'flowbite/lib/esm/components/accordion'
     import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
 
+    import { BODY_PREFIX, ID_SEPARATOR } from '@components/AccordionItem.astro'
+
     initTabs()
     initPopovers()
 
+    /** Avoid scroll jumping because the hash coincidentally matches an element id. */
+    const HASH_PREFIX = '_'
+
+    let itemIds: string[] = []
+    // Avoid invalid location hashes to cause errors (i.e. when entered by the user)
+    if (window.location.hash.startsWith(`#${HASH_PREFIX}`)) {
+        // Strip '#_'
+        const activeElementId = window.location.hash.slice(
+            1 + HASH_PREFIX.length,
+        )
+        const [tab, ...items] = activeElementId.split(ID_SEPARATOR)
+        const activeTabId = `#${tab}-tab`
+        itemIds = items.map(
+            (_, index) =>
+                `#${BODY_PREFIX}${tab}${ID_SEPARATOR}${items
+                    .slice(0, index + 1)
+                    .join(ID_SEPARATOR)}`,
+        )
+
+        // Tabs
+        if (activeElementId) {
+            document.querySelector(activeTabId).dispatchEvent(
+                new MouseEvent('click', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true,
+                }),
+            )
+        }
+    }
+
+    document.querySelectorAll('[data-tabs-target]').forEach((tabButton) => {
+        tabButton.addEventListener('click', () => {
+            const idSelector = tabButton.getAttribute('data-tabs-target')
+            window.location.hash = `#${HASH_PREFIX}${idSelector.slice(1)}`
+        })
+    })
+
+    // Accordion
     document
         .querySelectorAll('[data-accordion]')
         .forEach(function ($accordionEl) {
@@ -175,7 +211,11 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     active:
                         $triggerEl.getAttribute('aria-expanded') === 'true'
                             ? true
-                            : false,
+                            : itemIds.includes(
+                                  $triggerEl.getAttribute(
+                                      'data-accordion-target',
+                                  ),
+                              ),
                 })) as AccordionItem[]
 
             new Accordion(items, {
@@ -186,6 +226,14 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                 inactiveClasses: inactiveClasses
                     ? inactiveClasses
                     : 'text-gray-500 dark:text-gray-400',
+                onOpen: (accordion, item) => {
+                    console.log('opened', item.id)
+                    const semanticId = item.id.replace(BODY_PREFIX, '')
+                    console.log(semanticId)
+                    window.location.hash = `#${HASH_PREFIX}${semanticId.slice(
+                        1,
+                    )}`
+                },
             })
         })
 </script>
