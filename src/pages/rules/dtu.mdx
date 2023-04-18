@@ -5,32 +5,38 @@ title: 'Regelwerke der DTU'
 
 import DownloadLink from '@components/links/DownloadLink.astro'
 import RefLink from '@components/links/RefLink.astro'
+import RelImage from '@components/RelImage.astro'
 
 # Regelwerke der DTU
 
-<ul>
-    <li class="not-prose">
-        <DownloadLink
-            href="pdfs/wot.pdf"
-            text="Wettkampfordnung Zweikampf"
-            download="Wettkampfordnung Zweikampf WOT.pdf"
-        />
-    </li>
-    <li class="not-prose">
-        <DownloadLink
-            href="pdfs/wop.pdf"
-            text="Wettkampfordnung Poomsae"
-            download="Wettkampfordnung Poomsae WOP.pdf"
-        />
-    </li>
-    <li class="not-prose">
-        <DownloadLink
-            href="pdfs/po.pdf"
-            text="Prüfungsordnung"
-            download="Prüfungsordnung.pdf"
-        />
-    </li>
-</ul>
+<div class="flex">
+    <ul class="flex-none mr-16 md:mr-24">
+        <li class="not-prose">
+            <DownloadLink
+                href="pdfs/wot.pdf"
+                text="Wettkampfordnung Zweikampf"
+                download="Wettkampfordnung Zweikampf WOT.pdf"
+            />
+        </li>
+        <li class="not-prose">
+            <DownloadLink
+                href="pdfs/wop.pdf"
+                text="Wettkampfordnung Poomsae"
+                download="Wettkampfordnung Poomsae WOP.pdf"
+            />
+        </li>
+        <li class="not-prose">
+            <DownloadLink
+                href="pdfs/po.pdf"
+                text="Prüfungsordnung"
+                download="Prüfungsordnung.pdf"
+            />
+        </li>
+    </ul>
+    <div class="flex-none hidden sm:block w-16 md:w-auto">
+        <RelImage src="logos/dtu.png" />
+    </div>
+</div>
 
 <RefLink
     href="https://www.dtu.de/downloads/regelwerke-co"
