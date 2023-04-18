@@ -16,18 +16,67 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
 ---
 
 <Layout title="Prüfungskatalog" initFlowbite={false}>
-    <h1 class="inline mr-8">Prüfungskatalog</h1>
-    <DownloadLink
+    <div class="flex flex-wrap justify-between gap-4 md:gap-32 lg:gap-64">
+        <div class="flex-none">
+            <h1 class="inline">Prüfungskatalog</h1>
+        </div>
+        <div class="flex-grow">
+            <form id="searchForm">
+                <label
+                    for="searchInput"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                    >Search</label
+                >
+                <div class="relative min-w-[200px]">
+                    <div
+                        class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                    >
+                        <svg
+                            aria-hidden="true"
+                            class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            ><path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                            ></path></svg
+                        >
+                    </div>
+                    <input
+                        type="search"
+                        id="searchInput"
+                        class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="z. B. Il-Jang"
+                        required
+                    />
+                    <button
+                        type="submit"
+                        id="searchButton"
+                        class="text-white absolute right-2.5 bottom-2.5 font-medium rounded-lg text-sm px-4 py-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 disabled:bg-blue-400 disabled:dark:bg-blue-500 disabled:cursor-not-allowed"
+                        disabled>Suchen</button
+                    >
+                </div>
+            </form>
+        </div>
+    </div>
+    <p>
+        <DownloadLink
             href="pdfs/pruefungskatalog.pdf"
             text="PDF herunterladen"
             download="Prüfungskatalog.pdf"
         />
+    </p>
     <p>
         Anforderungen und Katalog stellen lediglich eine Empfehlung des
-        Vorstandes in Absprache mit dem Landesprüfungsreferenten des TVBB dar.<br />
-        Jede Prüfung setzt das Wissen der vorigen Grade voraus, d.&#8239;h. die
-        Überprüfung des Vorprogramms ist bei jeder Prüfung implizit -
-        insbesondere bisher erlernte Bewegungsformen.
+        Vorstandes in Absprache mit dem Landesprüfungsreferenten des TVBB dar.<br
+        />
+        Jede Prüfung setzt das Wissen der vorigen Grade voraus, d.&#8239;h. die Überprüfung
+        des Vorprogramms ist bei jeder Prüfung implizit - insbesondere bisher erlernte
+        Bewegungsformen.
     </p>
     <div class="border-b border-gray-200 dark:border-gray-700 not-prose">
         <ul
@@ -135,6 +184,7 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     import { initPopovers } from 'flowbite/lib/esm/components/popover'
     import Accordion from 'flowbite/lib/esm/components/accordion'
     import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
+    import Mousetrap from 'mousetrap'
 
     import { BODY_PREFIX, ID_SEPARATOR } from '@components/AccordionItem.astro'
 
@@ -232,4 +282,24 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                 },
             })
         })
+
+    // Search
+    const searchForm = document.querySelector('#searchForm') as HTMLFormElement
+    const searchInput = searchForm.querySelector('input')
+    const searchButton = searchForm.querySelector('button')
+    searchInput.addEventListener('keydown', (event) => {
+        searchButton.disabled =
+            event.key === 'Backspace' && searchInput.value.length === 1
+    })
+    searchForm.addEventListener('submit', (event) => {
+        event.preventDefault()
+        console.log(event, searchInput.value)
+    })
+
+    Mousetrap.bind(['command+f', 'ctrl+f'], () => {
+        console.log('command f or control f')
+        searchInput.focus()
+
+        return false // prevent default, stop bubbling
+    })
 </script>

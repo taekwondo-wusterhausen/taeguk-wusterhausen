@@ -7,6 +7,7 @@ interface Props {
     text?: string
     external?: boolean
     appearance?: 'button' | 'link'
+    class?: string
 }
 
 const {
@@ -15,6 +16,7 @@ const {
     text = 'Download',
     appearance = 'link',
     external = false,
+    class: className,
 } = Astro.props
 ---
 
@@ -28,7 +30,7 @@ const {
     {/* https://heroicons.dev/ */}
     <svg
         aria-hidden="true"
-        class="w-5 h-5 ml-1"
+        class:list={['w-5 h-5 ml-1', className]}
         fill="none"
         stroke="currentColor"
         stroke-width="1.5"
