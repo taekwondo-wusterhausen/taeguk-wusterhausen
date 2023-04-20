@@ -11,7 +11,7 @@ const tables = await Astro.glob('./de/*.md?')
     {
         tables.map((table, index) => (
             <AccordionItem
-                heading={table.frontmatter.title}
+                title={table.frontmatter.title}
                 isFirst={index === 0}
                 isLast={index === tables.length - 1}
             >

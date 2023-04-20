@@ -6,3 +6,16 @@ export function toId(str: string): string {
     // Make sure, it doesn't start with numbers.
     return alphanum.replace(/^(\d)/, '_$1')
 }
+
+
+export const ID_SEPARATOR = '--'
+export const BODY_PREFIX = 'accordion-collapse-body---'
+
+export function accordionId(titles: string[]): string {
+    return titles.map(toId).join(ID_SEPARATOR)
+}
+
+
+export function tabId(title: string): string {
+    return `${toId(title)}-tab`
+}

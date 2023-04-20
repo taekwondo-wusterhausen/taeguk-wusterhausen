@@ -1,0 +1,12 @@
+---
+import { tabId as _tabId, accordionId as _accordionId } from '@components/utils'
+import { Section as SectionType } from './Section.astro'
+
+export function tabId(section: SectionType): string {
+    return _tabId(section.title)
+}
+
+export function accordionId(sections: SectionType[]): string {
+    return _accordionId(sections.map(section => section.title))
+}
+---

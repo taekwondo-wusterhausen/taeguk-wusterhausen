@@ -1,19 +1,17 @@
 ---
 /** https://flowbite.com/docs/components/accordion/ */
-import { toId } from './utils'
+import { BODY_PREFIX, accordionId } from '@components/utils'
 
 interface Props {
-    heading: string
-    parents?: string[]
+    title: string
+    parentTitles?: string[]
     isFirst?: boolean
     isLast?: boolean
 }
 
-const { heading, parents = [], isFirst = false, isLast = false } = Astro.props
+const { title, parentTitles = [], isFirst = false, isLast = false } = Astro.props
 
-export const ID_SEPARATOR = '--'
-export const BODY_PREFIX = 'accordion-collapse-body---'
-const id = [...parents, heading].map(toId).join(ID_SEPARATOR)
+const id = accordionId([...parentTitles, title])
 ---
 
 <div class="inline not-prose accordion-collapse-heading-wrapper">
@@ -31,7 +29,7 @@ const id = [...parents, heading].map(toId).join(ID_SEPARATOR)
             data-accordion-target={`#${BODY_PREFIX}${id}`}
             aria-controls={`${BODY_PREFIX}${id}`}
         >
-            <span>{heading}</span>
+            <span>{title}</span>
             <svg
                 data-accordion-icon
                 class="w-6 h-6 shrink-0"

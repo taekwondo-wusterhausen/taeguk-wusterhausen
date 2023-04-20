@@ -6,6 +6,7 @@ import { toId } from '@components/utils'
 
 import Section, { Section as SectionType } from './Section.astro'
 import Content from './Content.astro'
+import {tabId} from './utils.astro'
 
 const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     (section) => ({
@@ -86,11 +87,12 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
             role="tablist"
         >
             {
-                sections.map((section, index) => (
+                sections.map((section) => (
                     <li class="mr-2" role="presentation">
                         <button
                             class="inline-flex p-4 border-b-2 rounded-t-lg"
-                            id={`${section.id}-tab`}
+                            // id={`${section.id}-tab`}
+                            id={tabId(section)}
                             data-tabs-target={`#${section.id}`}
                             data-popover-target={`popover-${section.id}`}
                             type="button"
@@ -153,7 +155,8 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     class="hidden relative p-4 shadow-sm rounded-lg rounded-t-none bg-gray-50 dark:bg-gray-800"
                     id={section.id}
                     role="tabpanel"
-                    aria-labelledby={`${section.id}-tab`}
+                    // aria-labelledby={`${section.id}-tab`}
+                    aria-labelledby={tabId(section)}
                 >
                     <>
                         {section.content?.map((content) => (
@@ -169,7 +172,7 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                                 {...subSection}
                                 isFirst={index === 0}
                                 isLast={index === section.sections.length - 1}
-                                parents={[section.title]}
+                                parentTitles={[section.title]}
                             />
                         ))}
                     </div>
@@ -179,6 +182,9 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     </div>
 </Layout>
 
+<script define:vars={{ sections }}>
+    window.sections = sections
+</script>
 <script>
     import { initTabs } from 'flowbite/lib/esm/components/tabs'
     import { initPopovers } from 'flowbite/lib/esm/components/popover'
@@ -186,7 +192,10 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
     import Mousetrap from 'mousetrap'
 
-    import { BODY_PREFIX, ID_SEPARATOR } from '@components/AccordionItem.astro'
+    import { BODY_PREFIX, ID_SEPARATOR } from '@components/utils'
+    import { Section as SectionType } from './Section.astro'
+
+    import { tabId, accordionId } from './utils.astro'
 
     initTabs()
     initPopovers()
@@ -210,6 +219,7 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     .join(ID_SEPARATOR)}`,
         )
 
+        // --------------------------------------------------------------------
         // Tabs
         if (activeElementId) {
             document.querySelector(activeTabId).dispatchEvent(
@@ -229,6 +239,7 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
         })
     })
 
+    // ------------------------------------------------------------------------
     // Accordion
     document
         .querySelectorAll('[data-accordion]')
@@ -273,9 +284,9 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     ? inactiveClasses
                     : 'text-gray-500 dark:text-gray-400',
                 onOpen: (accordion, item) => {
-                    console.log('opened', item.id)
+                    // console.log('opened', item.id)
                     const semanticId = item.id.replace(BODY_PREFIX, '')
-                    console.log(semanticId)
+                    // console.log(semanticId)
                     window.location.hash = `#${HASH_PREFIX}${semanticId.slice(
                         1,
                     )}`
@@ -283,7 +294,48 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
             })
         })
 
+    // ------------------------------------------------------------------------
     // Search
+    declare global {
+        var sections: SectionType[]
+    }
+
+    function search(query: string): SectionType[] {
+        const results = []
+
+        // TODO: fuzzy search
+        function recursiveSearch(section: SectionType, query: string, parents: SectionType[]) {
+            const queryLower = query.toLowerCase()
+            // console.log('SEARCHING for', queryLower, 'in')
+            // console.log(section.title +
+            //         section.content?.map((content) => JSON.stringify(content)))
+            if (
+                (
+                    section.title +
+                    section.content?.map((content) => JSON.stringify(content))
+                )
+                    .toLowerCase()
+                    .indexOf(queryLower) >= 0
+            ) {
+                results.push({
+                    section,
+                    id: parents.length === 0 ? tabId(section) : accordionId([...parents, section]),
+                    preview: '',
+                })
+            }
+            // Recursion
+            for (const subSection of section.sections ?? []) {
+                recursiveSearch(subSection, query, [...parents, section])
+            }
+        }
+
+        for (const section of window.sections) {
+            recursiveSearch(section, query, [])
+        }
+
+        return results
+    }
+
     const searchForm = document.querySelector('#searchForm') as HTMLFormElement
     const searchInput = searchForm.querySelector('input')
     const searchButton = searchForm.querySelector('button')
@@ -293,7 +345,9 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     })
     searchForm.addEventListener('submit', (event) => {
         event.preventDefault()
-        console.log(event, searchInput.value)
+        const searchQuery = searchInput.value
+        const results = search(searchQuery)
+        console.log(event, searchInput.value, results)
     })
 
     Mousetrap.bind(['command+f', 'ctrl+f'], () => {
