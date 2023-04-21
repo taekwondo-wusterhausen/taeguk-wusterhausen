@@ -7,15 +7,19 @@ export function toId(str: string): string {
     return alphanum.replace(/^(\d)/, '_$1')
 }
 
-
 export const ID_SEPARATOR = '--'
 export const BODY_PREFIX = 'accordion-collapse-body---'
 
+// TODO: rename
 export function accordionId(titles: string[]): string {
     return titles.map(toId).join(ID_SEPARATOR)
 }
 
-
 export function tabId(title: string): string {
     return `${toId(title)}-tab`
+}
+
+export function stripHtml(html: string): string {
+    const doc = new DOMParser().parseFromString(html, 'text/html')
+    return doc.body.innerText || ''
 }

@@ -2,18 +2,34 @@
 import Layout from '@layouts/Layout.astro'
 import RelImage from '@components/RelImage.astro'
 import DownloadLink from '@components/links/DownloadLink.astro'
-import { toId } from '@components/utils'
+import { stripHtml, toId } from '@components/utils'
 
 import Section, { Section as SectionType } from './Section.astro'
-import Content from './Content.astro'
-import {tabId} from './utils.astro'
+import Content, { Content as ContentType } from './Content.astro'
+import { NormalizedSection, tabId } from './utils.astro'
 
-const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
-    (section) => ({
-        id: toId(section.title),
+function normalizedSection(
+    section: SectionType,
+    parents: SectionType[],
+): NormalizedSection {
+    if (section.parentTitles?.length > 0) {
+        throw new Error('Section already has `parentTitles`')
+    }
+    return {
+        content: [], // Make sure it's not `undefined`
         ...section,
-    }),
-)
+        sections: (section.sections ?? []).map((subSection) =>
+            normalizedSection(subSection, [...parents, section]),
+        ),
+        id: toId(section.title),
+        parentTitles: parents.map((parent) => parent.title),
+    }
+}
+
+const sections: NormalizedSection[] = (
+    (await Astro.glob('./data/*.yml')) as SectionType[]
+).map((section) => normalizedSection(section, []))
+// console.log(sections[0].sections)
 ---
 
 <Layout title="Prüfungskatalog" initFlowbite={false}>
@@ -91,7 +107,6 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     <li class="mr-2" role="presentation">
                         <button
                             class="inline-flex p-4 border-b-2 rounded-t-lg"
-                            // id={`${section.id}-tab`}
                             id={tabId(section)}
                             data-tabs-target={`#${section.id}`}
                             data-popover-target={`popover-${section.id}`}
@@ -155,7 +170,6 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
                     class="hidden relative p-4 shadow-sm rounded-lg rounded-t-none bg-gray-50 dark:bg-gray-800"
                     id={section.id}
                     role="tabpanel"
-                    // aria-labelledby={`${section.id}-tab`}
                     aria-labelledby={tabId(section)}
                 >
                     <>
@@ -185,17 +199,24 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
 <script define:vars={{ sections }}>
     window.sections = sections
 </script>
+
 <script>
     import { initTabs } from 'flowbite/lib/esm/components/tabs'
     import { initPopovers } from 'flowbite/lib/esm/components/popover'
     import Accordion from 'flowbite/lib/esm/components/accordion'
     import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
+    import Fuse from 'fuse.js'
     import Mousetrap from 'mousetrap'
 
-    import { BODY_PREFIX, ID_SEPARATOR } from '@components/utils'
-    import { Section as SectionType } from './Section.astro'
+    import { BODY_PREFIX, ID_SEPARATOR, stripHtml } from '@components/utils'
+    import { Content as ContentType } from './Content.astro'
 
-    import { tabId, accordionId } from './utils.astro'
+    import { NormalizedSection } from './utils.astro'
+
+    /** See script above */
+    declare global {
+        var sections: NormalizedSection[]
+    }
 
     initTabs()
     initPopovers()
@@ -296,43 +317,106 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
 
     // ------------------------------------------------------------------------
     // Search
-    declare global {
-        var sections: SectionType[]
+    type SearchableSection = Pick<NormalizedSection, 'id' | 'parentTitles'> & {
+        stringified: string
+    }
+    // type SearchResult = {
+    //     id: string
+    //     hierarchy: string[]
+    //     indices: [number, number][]
+    // }
+
+    /** Doing this at build time doesn't work because using `jsdom` causes errors. */
+    function stringifyContent(content: ContentType): string {
+        if ('text' in content) {
+            return content.text
+        }
+        if ('html' in content) {
+            return stripHtml(content.html)
+        }
+        if ('enumerate' in content) {
+            return content.enumerate
+                .map((item) => stringifyContent(item))
+                .join('\n- ')
+        }
+        if ('itemize' in content) {
+            return content.itemize
+                .map((item) => stringifyContent(item))
+                .join('\n- ')
+        }
+        if ('table' in content) {
+            return (
+                content.table.head
+                    ?.map((row) =>
+                        row.map((cell) => stringifyContent(cell)).join(' '),
+                    )
+                    .join('\n') ??
+                '' +
+                    content.table.body
+                        .map((row) =>
+                            row.map((cell) => stringifyContent(cell)).join(' '),
+                        )
+                        .join('\n')
+            )
+        }
+        return ''
     }
 
-    function search(query: string): SectionType[] {
-        const results = []
-
-        // TODO: fuzzy search
-        function recursiveSearch(section: SectionType, query: string, parents: SectionType[]) {
-            const queryLower = query.toLowerCase()
-            // console.log('SEARCHING for', queryLower, 'in')
-            // console.log(section.title +
-            //         section.content?.map((content) => JSON.stringify(content)))
-            if (
-                (
-                    section.title +
-                    section.content?.map((content) => JSON.stringify(content))
+    function flattenedSections(
+        nestedSections: NormalizedSection[],
+    ): SearchableSection[] {
+        const flatSections: SearchableSection[] = []
+        nestedSections.forEach(
+            ({ id, title, content, parentTitles, sections }) => {
+                flatSections.push(
+                    {
+                        id,
+                        parentTitles,
+                        stringified:
+                            title +
+                                '\n\n' +
+                                content
+                                    ?.map((content) =>
+                                        stringifyContent(content),
+                                    )
+                                    .join('\n\n') ?? '',
+                    },
+                    ...flattenedSections(sections),
                 )
-                    .toLowerCase()
-                    .indexOf(queryLower) >= 0
-            ) {
-                results.push({
-                    section,
-                    id: parents.length === 0 ? tabId(section) : accordionId([...parents, section]),
-                    preview: '',
-                })
-            }
-            // Recursion
-            for (const subSection of section.sections ?? []) {
-                recursiveSearch(subSection, query, [...parents, section])
-            }
-        }
+            },
+        )
+        return flatSections
+    }
+    console.log('flattenedSections')
+    const flatSections = flattenedSections(window.sections)
+    console.log(flatSections)
 
-        for (const section of window.sections) {
-            recursiveSearch(section, query, [])
-        }
+    const minMatchCharLength = 4
+    const fuseOptions = {
+        // isCaseSensitive: false,
+        includeScore: true,
+        // shouldSort: false,
+        includeMatches: true,
+        findAllMatches: true,
+        minMatchCharLength,
+        // location: 0,
+        // threshold: 0.6,
+        // distance: 2000,
+        useExtendedSearch: true,
+        ignoreLocation: true,
+        // ignoreFieldNorm: true,
+        // fieldNormWeight: 1,
+        keys: ['stringified'],
+    }
+    const fuse = new Fuse(flatSections, fuseOptions)
 
+    function search(query: string): Fuse.FuseResult<SearchableSection>[] {
+        console.log('FUSE')
+        // console.log(fuse.search(`="${query}"`))
+        console.log(fuse.search(`'"${query}"`))
+        console.log(fuse.search(query))
+
+        const results = fuse.search(`'"${query}"`)
         return results
     }
 
@@ -341,7 +425,8 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     const searchButton = searchForm.querySelector('button')
     searchInput.addEventListener('keydown', (event) => {
         searchButton.disabled =
-            event.key === 'Backspace' && searchInput.value.length === 1
+            event.key === 'Backspace' ||
+            searchInput.value.length < minMatchCharLength - 1
     })
     searchForm.addEventListener('submit', (event) => {
         event.preventDefault()
@@ -353,7 +438,6 @@ const sections = ((await Astro.glob('./data/*.yml')) as SectionType[]).map(
     Mousetrap.bind(['command+f', 'ctrl+f'], () => {
         console.log('command f or control f')
         searchInput.focus()
-
         return false // prevent default, stop bubbling
     })
 </script>

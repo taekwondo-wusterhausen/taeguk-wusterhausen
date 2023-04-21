@@ -1,12 +1,21 @@
 ---
-import { tabId as _tabId, accordionId as _accordionId } from '@components/utils'
+import { accordionId as _accordionId, tabId as _tabId } from '@components/utils'
+import { Content as ContentType } from './Content.astro'
 import { Section as SectionType } from './Section.astro'
+
+export interface NormalizedSection extends SectionType {
+    id: string
+    parentTitles: string[]
+    content: ContentType[]
+    // stringifiedContent: string
+    sections: NormalizedSection[]
+}
 
 export function tabId(section: SectionType): string {
     return _tabId(section.title)
 }
 
 export function accordionId(sections: SectionType[]): string {
-    return _accordionId(sections.map(section => section.title))
+    return _accordionId(sections.map((section) => section.title))
 }
 ---

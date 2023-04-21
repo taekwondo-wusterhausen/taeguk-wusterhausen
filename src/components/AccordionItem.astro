@@ -9,7 +9,12 @@ interface Props {
     isLast?: boolean
 }
 
-const { title, parentTitles = [], isFirst = false, isLast = false } = Astro.props
+const {
+    title,
+    parentTitles = [],
+    isFirst = false,
+    isLast = false,
+} = Astro.props
 
 const id = accordionId([...parentTitles, title])
 ---
