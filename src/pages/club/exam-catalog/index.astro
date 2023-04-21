@@ -320,11 +320,11 @@ const sections: NormalizedSection[] = (
     type SearchableSection = Pick<NormalizedSection, 'id' | 'parentTitles'> & {
         stringified: string
     }
-    // type SearchResult = {
-    //     id: string
-    //     hierarchy: string[]
-    //     indices: [number, number][]
-    // }
+    type SearchResult = {
+        id: string
+        breadcrumbs: string[]
+        preview: string
+    }
 
     /** Doing this at build time doesn't work because using `jsdom` causes errors. */
     function stringifyContent(content: ContentType): string {
@@ -387,18 +387,18 @@ const sections: NormalizedSection[] = (
         )
         return flatSections
     }
-    console.log('flattenedSections')
     const flatSections = flattenedSections(window.sections)
-    console.log(flatSections)
+    console.log('flattenedSections', flatSections)
 
-    const minMatchCharLength = 4
-    const fuseOptions = {
+    const SEARCH_KEY = 'stringified'
+    const MIN_MATCH_CHAR_LENGTH = 4
+    const fuse = new Fuse(flatSections, {
         // isCaseSensitive: false,
         includeScore: true,
         // shouldSort: false,
         includeMatches: true,
         findAllMatches: true,
-        minMatchCharLength,
+        minMatchCharLength: MIN_MATCH_CHAR_LENGTH,
         // location: 0,
         // threshold: 0.6,
         // distance: 2000,
@@ -406,18 +406,43 @@ const sections: NormalizedSection[] = (
         ignoreLocation: true,
         // ignoreFieldNorm: true,
         // fieldNormWeight: 1,
-        keys: ['stringified'],
+        keys: [SEARCH_KEY],
+    })
+
+    function highlightMatches(value: string, indices: readonly [number, number][]): string {
+        let result = ''
+        // const reversedIndices = [...indices].reverse()
+        // let firstMatchStart: number
+        let lastMatchEnd: number
+        for (const [start, end] of indices) {
+            if (result.length === 0) {
+                result += value.slice(0, start)
+            }
+            if (lastMatchEnd) {
+                result += value.slice(lastMatchEnd, start)
+            }
+            result += (
+                '<strong>'
+                + value.slice(start, end + 1)
+                + '</strong>'
+            )
+            lastMatchEnd = end
+        }
+        result += value.slice(lastMatchEnd)
+        return result
     }
-    const fuse = new Fuse(flatSections, fuseOptions)
 
-    function search(query: string): Fuse.FuseResult<SearchableSection>[] {
-        console.log('FUSE')
+    function search(query: string): SearchResult[] {
         // console.log(fuse.search(`="${query}"`))
-        console.log(fuse.search(`'"${query}"`))
-        console.log(fuse.search(query))
-
-        const results = fuse.search(`'"${query}"`)
-        return results
+        // console.log(fuse.search(`'"${query}"`))
+        // console.log(fuse.search(query))
+        const results: Fuse.FuseResult<SearchableSection>[] = fuse.search(`'"${query}"`)
+        console.log(results)
+        return results.map(({item, matches = []}) => ({
+            id: item.id,
+            breadcrumbs: item.parentTitles,
+            preview: highlightMatches(item[SEARCH_KEY], matches[0].indices),
+        }))
     }
 
     const searchForm = document.querySelector('#searchForm') as HTMLFormElement
@@ -426,13 +451,13 @@ const sections: NormalizedSection[] = (
     searchInput.addEventListener('keydown', (event) => {
         searchButton.disabled =
             event.key === 'Backspace' ||
-            searchInput.value.length < minMatchCharLength - 1
+            searchInput.value.length < MIN_MATCH_CHAR_LENGTH - 1
     })
     searchForm.addEventListener('submit', (event) => {
         event.preventDefault()
         const searchQuery = searchInput.value
         const results = search(searchQuery)
-        console.log(event, searchInput.value, results)
+        console.log(results)
     })
 
     Mousetrap.bind(['command+f', 'ctrl+f'], () => {
