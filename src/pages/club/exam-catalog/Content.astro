@@ -1,12 +1,5 @@
 ---
-// prettier-ignore
-export type Content = { text: string }
-| { html: string }
-| { enumerate: Content[] }
-| { itemize: Content[] }
-| { table: { head?: Content[][], body: Content[][] } }
-| undefined // For some reason the content is undefined when building
-// NOTE: Indentation break astro compiler
+import { Content } from './types'
 
 interface Props {
     content: Content

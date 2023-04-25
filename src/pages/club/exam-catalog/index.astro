@@ -1,45 +1,24 @@
 ---
 import RelImage from '@components/RelImage.astro'
 import DownloadLink from '@components/links/DownloadLink.astro'
-import { toId } from '@components/utils'
 import Layout from '@layouts/Layout.astro'
 
 import Content from './Content.astro'
-import SearchBar from './SearchBar.astro'
-import Section, { Section as SectionType } from './Section.astro'
-import { NormalizedSection, tabId } from './utils.astro'
-
-function normalizedSection(
-    section: SectionType,
-    parents: SectionType[],
-): NormalizedSection {
-    if (section.parentTitles?.length > 0) {
-        throw new Error('Section already has `parentTitles`')
-    }
-    return {
-        content: [], // Make sure it's not `undefined`
-        ...section,
-        sections: (section.sections ?? []).map((subSection) =>
-            normalizedSection(subSection, [...parents, section]),
-        ),
-        id: toId(section.title),
-        parentTitles: parents.map((parent) => parent.title),
-    }
-}
+import { Search } from './Search.tsx'
+import Section from './Section.astro'
+import { NormalizedSection, Section as SectionType } from './types'
+import { normalizedSection, tabId } from './utils'
 
 const sections: NormalizedSection[] = (
     (await Astro.glob('./data/*.yml')) as SectionType[]
 ).map((section) => normalizedSection(section, []))
-// console.log(sections[0].sections)
 ---
 
 <Layout title="Prüfungskatalog" initFlowbite={false}>
-    <div class="flex flex-wrap justify-between gap-4 md:gap-32 lg:gap-64">
-        <div class="flex-none">
-            <h1 class="inline">Prüfungskatalog</h1>
-        </div>
-        <div class="flex-grow">
-            <SearchBar />
+    <div class="relative">
+        <h1>Prüfungskatalog</h1>
+        <div class="absolute bottom-0 right-0">
+            <Search client:only="react" sections={sections} />
         </div>
     </div>
     <p>
@@ -167,6 +146,7 @@ const sections: NormalizedSection[] = (
     import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
     import { initPopovers } from 'flowbite/lib/esm/components/popover'
     import { initTabs } from 'flowbite/lib/esm/components/tabs'
+    import Mousetrap from 'mousetrap'
 
     import { BODY_PREFIX, ID_SEPARATOR } from '@components/utils'
 
@@ -266,4 +246,26 @@ const sections: NormalizedSection[] = (
                 },
             })
         })
+
+    Mousetrap.bind(['command+f', 'ctrl+f'], () => {
+        document
+            .querySelector('button[data-modal-target="searchModel"]')
+            .dispatchEvent(
+                new MouseEvent('click', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true,
+                }),
+            )
+        return false // prevent default, stop bubbling
+    })
 </script>
+
+<!-- Does not work :/
+<style>
+    input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+        display: none !important;
+    }
+</style> -->

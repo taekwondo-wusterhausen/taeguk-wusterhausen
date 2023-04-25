@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
+import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
 import robotsTxt from 'astro-robots-txt'
@@ -12,7 +13,7 @@ export default defineConfig({
     experimental: {
         assets: true,
     },
-    integrations: [mdx(), sitemap(), tailwind(), robotsTxt()],
+    integrations: [mdx(), react(), robotsTxt(), sitemap(), tailwind()],
     vite: {
         plugins: [yaml()],
     },

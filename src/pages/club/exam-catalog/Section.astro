@@ -1,17 +1,7 @@
 ---
 import AccordionItem from '@components/AccordionItem.astro'
-import Content, { Content as ContentType } from './Content.astro'
-
-export interface Section {
-    title: string
-    isFirst: boolean
-    isLast: boolean
-    colors?: [string, string]
-    icon?: string
-    parentTitles?: string[]
-    content?: ContentType[]
-    sections?: Section[]
-}
+import Content from './Content.astro'
+import { Content as ContentType, Section } from './types'
 
 interface Props extends Section {}
 
