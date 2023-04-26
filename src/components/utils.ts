@@ -1,3 +1,8 @@
+export const HASH_PREFIX = '_'
+export const ID_SEPARATOR = '--'
+export const HEADING_PREFIX = 'accordion-collapse-heading--'
+export const BODY_PREFIX = 'accordion-collapse-body---'
+
 /**
  * Transforms the given string into a valid identifier.
  */
@@ -6,9 +11,6 @@ export function toId(str: string): string {
     // Make sure, it doesn't start with numbers.
     return alphanum.replace(/^(\d)/, '_$1')
 }
-
-export const ID_SEPARATOR = '--'
-export const BODY_PREFIX = 'accordion-collapse-body---'
 
 // TODO: rename
 export function accordionId(titles: string[]): string {

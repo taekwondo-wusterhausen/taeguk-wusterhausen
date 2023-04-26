@@ -1,6 +1,6 @@
 ---
 /** https://flowbite.com/docs/components/accordion/ */
-import { BODY_PREFIX, accordionId } from '@components/utils'
+import { BODY_PREFIX, HEADING_PREFIX, accordionId } from '@components/utils'
 
 interface Props {
     title: string
@@ -20,7 +20,7 @@ const id = accordionId([...parentTitles, title])
 ---
 
 <div class="inline not-prose accordion-collapse-heading-wrapper">
-    <h2 id={`accordion-collapse-heading--${id}`}>
+    <h2 id={`${HEADING_PREFIX}${id}`}>
         <button
             type="button"
             class:list={[
@@ -53,7 +53,7 @@ const id = accordionId([...parentTitles, title])
 <div
     id={`${BODY_PREFIX}${id}`}
     class="hidden"
-    aria-labelledby={`accordion-collapse-heading--${id}`}
+    aria-labelledby={`${HEADING_PREFIX}${id}`}
 >
     <div
         class:list={[

@@ -1,15 +1,15 @@
 import Fuse from 'fuse.js'
 
 import {
-    accordionId as _accordionId,
     tabId as _tabId,
-    toId,
+    accordionId,
     stripHtml,
+    toId,
 } from '@components/utils'
 import {
-    SEARCH_KEY,
     Content,
     NormalizedSection,
+    SEARCH_KEY,
     SearchResult,
     SearchableSection,
     Section,
@@ -17,10 +17,6 @@ import {
 
 export function tabId(section: Section): string {
     return _tabId(section.title)
-}
-
-export function accordionId(sections: Section[]): string {
-    return _accordionId(sections.map((section) => section.title))
 }
 
 // ****************************************************************************
@@ -188,7 +184,7 @@ export function search(
     )
     console.log(results)
     return results.map(({ item, matches = [] }) => ({
-        id: item.id,
+        id: accordionId([...item.parentTitles, item.title]),
         breadcrumbs: [...item.parentTitles, item.title],
         preview: highlightMatches(item[SEARCH_KEY], matches[0].indices),
     }))
