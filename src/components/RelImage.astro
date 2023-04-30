@@ -1,10 +1,10 @@
 ---
-interface Props {
+import { ImgAttributes } from 'astro:assets'
+
+interface Props extends ImgAttributes {
     src: string
-    [p: string]: any
 }
 
-const { BASE_URL } = import.meta.env
 const { src, ...props } = Astro.props
 ---
 

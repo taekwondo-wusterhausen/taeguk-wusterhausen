@@ -1,28 +1,34 @@
 ---
 /** https://flowbite.com/docs/components/gallery/ */
+import RelImage from '@components/RelImage.astro'
+
 interface Props {
     images: (string | { src: string; alt: string })[]
-    cols?: number
+    class?: string
 }
 
-const { images, cols = 3 } = Astro.props
+const { images, class: className } = Astro.props
 ---
 
-<div class={`grid grid-cols-${cols} gap-4`}>
+<div
+    {/* Passing the number of cols as prop and doing `grid-cols-${cols}`
+        doesn't work with the Tailwind integration. */}
+    class:list={[
+        `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 not-prose`,
+        className,
+    ]}
+>
     {
         images
             .map((img) =>
                 typeof img === 'string' ? { src: img, alt: '' } : img,
             )
             .map(({ src, alt }) => (
-                <div>
-                    {/* TODO: Use RelImage */}
-                    <img
-                        class="h-auto max-w-full rounded-lg opacity-95 hover:opacity-100 hover:shadow-xl"
-                        src={`${import.meta.env.BASE_URL}${src}`}
-                        alt={alt}
-                    />
-                </div>
+                <RelImage
+                    class="h-auto max-w-full rounded-lg opacity-95 hover:opacity-100 hover:shadow-xl"
+                    src={src}
+                    alt={alt}
+                />
             ))
     }
 </div>

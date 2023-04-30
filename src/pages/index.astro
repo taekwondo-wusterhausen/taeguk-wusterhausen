@@ -13,6 +13,7 @@ const bgImage = await getImage({ src: background, format: 'avif' })
 
 <Layout title="Startseite" prose={false}>
     <EventsCard
+        {/* TODO: Import from dates.md + filter */}
         events={[
             {
                 name: '1. Kupprüfung 2023',
@@ -27,7 +28,7 @@ const bgImage = await getImage({ src: background, format: 'avif' })
         style={`background-image: url(${bgImage.src});`}
     >
         <div class="flex-none hidden md:block w-16 md:w-auto">
-            <RelImage src="logos/tvbb_small.png" />
+            <RelImage src="logos/tvbb_small.png" alt="TVBB" />
         </div>
         <article
             class="flex-auto px-10 text-center prose md:text-base lg:text-lg"
@@ -44,11 +45,15 @@ const bgImage = await getImage({ src: background, format: 'avif' })
                 Wusterhausen
             </p>
             <p class="not-prose mt-12">
-                <RelImage class="inline" src="skorea_flag.gif" />
+                <RelImage
+                    class="inline"
+                    src="skorea_flag.gif"
+                    alt="Südkorea-Flagge"
+                />
             </p>
         </article>
         <div class="flex-none hidden md:block w-16 md:w-auto">
-            <RelImage src="logos/tjbb.png" />
+            <RelImage src="logos/tjbb.png" alt="TJBB" />
         </div>
     </div>
 </Layout>
