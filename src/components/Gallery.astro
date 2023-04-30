@@ -5,7 +5,6 @@ interface Props {
     cols?: number
 }
 
-const { BASE_URL } = import.meta.env
 const { images, cols = 3 } = Astro.props
 ---
 
@@ -17,6 +16,7 @@ const { images, cols = 3 } = Astro.props
             )
             .map(({ src, alt }) => (
                 <div>
+                    {/* TODO: Use RelImage */}
                     <img
                         class="h-auto max-w-full rounded-lg opacity-95 hover:opacity-100 hover:shadow-xl"
                         src={`${import.meta.env.BASE_URL}${src}`}
