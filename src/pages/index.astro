@@ -1,14 +1,8 @@
 ---
-import { getImage } from 'astro:assets'
-
 import Layout from '@layouts/Layout.astro'
 import EventsCard from '@components/cards/EventsCard.astro'
 import Taeguk from '@components/Taeguk.astro'
 import RelImage from '@components/RelImage.astro'
-
-import background from '@assets/bg.png'
-
-const bgImage = await getImage({ src: background, format: 'avif' })
 ---
 
 <Layout title="Startseite" prose={false}>
@@ -22,11 +16,7 @@ const bgImage = await getImage({ src: background, format: 'avif' })
             },
         ]}
     />
-    <div
-        id="mainContainer"
-        class="flex justify-between mt-8"
-        style={`background-image: url(${bgImage.src});`}
-    >
+    <div id="mainContainer" class="flex justify-between mt-8">
         <div class="flex-none hidden md:block w-16 md:w-auto">
             <RelImage src="logos/tvbb_small.png" alt="TVBB" />
         </div>

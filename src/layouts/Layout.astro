@@ -1,8 +1,13 @@
 ---
+import { getImage } from 'astro:assets'
+
 import Menu from '@components/menu/Menu.astro'
+
+import background from '@assets/bg.png'
 
 interface Props {
     title: string
+    bgImage?: boolean
     initFlowbite?: boolean
     /** For rendering Markdown */
     prose?: boolean
@@ -12,10 +17,11 @@ interface Props {
 const { BASE_URL } = import.meta.env
 const {
     title,
-    frontmatter = {},
+    bgImage = true,
     initFlowbite = true,
     prose = true,
     class: className = '',
+    frontmatter = {},
 } = Astro.props
 ---
 
@@ -57,6 +63,23 @@ const {
         <title>{title || frontmatter.title}</title>
     </head>
     <body class="antialiased mt-10 md:mt-14">
+        {
+            bgImage && (
+                <div
+                    class="fixed w-full h-full bg-center bg-no-repeat opacity-70 -z-10"
+                    style={
+                        `background-image: url(${
+                            (
+                                await getImage({
+                                    src: background,
+                                    format: 'avif',
+                                })
+                            ).src
+                        })`
+                    }
+                />
+            )
+        }
         <Menu />
         <main class="container md:mx-auto py-4">
             {
