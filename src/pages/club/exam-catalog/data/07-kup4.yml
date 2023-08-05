@@ -7,43 +7,6 @@ content:
   - text: Mann oder Frau zählt zu den Fortgeschrittenen, denn die Farbe Blau steht für den Himmel - und dem streckt sich die Pflanze entgegen.
   - text: '* formenerklärend: bei den Partnerübungen werden Bewegungsfolgen aus einer Poomse entnommen und in das Ilbo Taeryon eingefügt. Dabei können Technik-Veränderungen durchaus stattfinden. Ilbo Taeryon-Techniken müssen beidseitig beherrscht werden, das bedeutet, es wird sowohl links- und rechtsseitig angegriffen, wobei die gezeigten Techniken unterschiedlich sein können.'
 sections:
-  - title: Theorie
-    sections:
-      - title: Wiederholung Notwehrparagraph / Rechtsgrundlagen
-        content:
-          - html: <a href="#">siehe Notwehr</a>
-      - title: Welchen Sinn haben "formenerklärenden Übungen" im 1-Schritt-Kampf?
-        content:
-          - text: Bei formenerklärenden Partnerübungen werden Bewegungsfolgen aus einer Poomse entnommen und in das Ilbo Taeryon eingefügt. Dabei können Technik-Veränderungen durchaus stattfinden. Ilbo Taeryon-Techniken müssen beidseitig beherrscht werden, das bedeutet, es wird sowohl links- und rechtsseitig angegriffen, wobei die gezeigten Techniken unterschiedlich sein können. Dadurch soll das Verständnis der zwangsläufigen Abfolge einer Verteidigungshandlung und dem Aspekt der für Taekwondo typischen Defensiv-Haltung - erst passive Verteidigung (Block oder Ausweichen), dann aktive Verteidigung (Konter/Gegenangriff) geweckt und gestärkt werden. Da sich diese Bewegungsabläufe in jeder Poomse wiederholen, sind formenerklärende Ilbo Taeryons eine gute Ergänzung zu den formenorientierten Übungen.
-      - title: Was ist eine Strategie bzw. Taktik? (2 Beispiele)
-        content:
-          - text: Intelligentes Wettkampfverhalten setzt eine Wettkampfstrategie voraus. Unter Wettkampfstrategie versteht man das taktische Vorgehen während eines Wettkampfes. Sie beinhaltet einen schon vor dem Wettkampf erstellten Plan über Vorgehen und Verhalten während des Kampfes. Eine sportliche Taktik / Strategie ist die Gesamtheit der sportlichen Handlungen, die unter Beachtung
-          - itemize:
-              - html: der Wettkampfregeln
-              - html: des Gegnerverhaltens sowie
-              - html: der äußeren Bedingungen
-          - text: auf die volle Nutzung der eigenen Leistung im Sinne eines bestmöglichen Wettkampfergebnisses oder einer optimalen Leistung ausgerichtet sind.
-          - text: 'Die konkrte Handlung läuft in 5 Phasen ab:'
-          - enumerate:
-              - html: Wahrnehmung der Situation
-              - html: Interpretation der Situation
-              - html: Erstellen eines Aktionsprogramms
-              - html: Umsetzung des Aktionsprogramms
-              - html: Ergebnisanalyse
-          - text: 'Beispiele:'
-          - enumerate:
-              - html: direkter Angriff (ohne Vorbewegung), z. B. Paltung Hinterfuß
-              - html: Angriff mit Vorbewegung, z. B. Auslagewechsel-Paltung Hinterfuß
-              - html: Finte (indirekter Angriff), z. B. Doppel-Paltung, wobei 1. Kick nur der Täuschung dient
-              - html: direkter Konter (ohne Vorbewegung), z. B. Dwit-Chagi gegen Paltung
-              - html: provozierter Konter (Gegner locken), z. B. Paltung provozieren und diesen mit Doppel-Paltung abkontern
-          - text: Dei der Planung der Strategie ist der gegenerische Kampfstil zu berücksichtigen (z. B. Konterkämpfer). Die Strategie ist mit dem Coach abzustimmen und wird im eigentlichen Wettkampf häufig durch diesen vorgegeben bzw. empfohlen.
-      - title: Wettkampfregeln / Kampfleitergesten
-        content:
-          - html: <a href="#">siehe WOT</a>
-      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
-        content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
   - title: Poomse
     content:
       - html: <strong>Taeguk Sa-Jang</strong> (20 Bewegungen)
@@ -128,3 +91,40 @@ sections:
   - title: Bruchtest (Kyokpa)
     content:
       - text: '1 Technik: Ap Chagi / Dwit Chagi / Sonnal Bakkat Chigi'
+  - title: Theorie
+    sections:
+      - title: Wiederholung Notwehrparagraph / Rechtsgrundlagen
+        content:
+          - html: <a href="#">siehe Notwehr</a>
+      - title: Welchen Sinn haben "formenerklärenden Übungen" im 1-Schritt-Kampf?
+        content:
+          - text: Bei formenerklärenden Partnerübungen werden Bewegungsfolgen aus einer Poomse entnommen und in das Ilbo Taeryon eingefügt. Dabei können Technik-Veränderungen durchaus stattfinden. Ilbo Taeryon-Techniken müssen beidseitig beherrscht werden, das bedeutet, es wird sowohl links- und rechtsseitig angegriffen, wobei die gezeigten Techniken unterschiedlich sein können. Dadurch soll das Verständnis der zwangsläufigen Abfolge einer Verteidigungshandlung und dem Aspekt der für Taekwondo typischen Defensiv-Haltung - erst passive Verteidigung (Block oder Ausweichen), dann aktive Verteidigung (Konter/Gegenangriff) geweckt und gestärkt werden. Da sich diese Bewegungsabläufe in jeder Poomse wiederholen, sind formenerklärende Ilbo Taeryons eine gute Ergänzung zu den formenorientierten Übungen.
+      - title: Was ist eine Strategie bzw. Taktik? (2 Beispiele)
+        content:
+          - text: Intelligentes Wettkampfverhalten setzt eine Wettkampfstrategie voraus. Unter Wettkampfstrategie versteht man das taktische Vorgehen während eines Wettkampfes. Sie beinhaltet einen schon vor dem Wettkampf erstellten Plan über Vorgehen und Verhalten während des Kampfes. Eine sportliche Taktik / Strategie ist die Gesamtheit der sportlichen Handlungen, die unter Beachtung
+          - itemize:
+              - html: der Wettkampfregeln
+              - html: des Gegnerverhaltens sowie
+              - html: der äußeren Bedingungen
+          - text: auf die volle Nutzung der eigenen Leistung im Sinne eines bestmöglichen Wettkampfergebnisses oder einer optimalen Leistung ausgerichtet sind.
+          - text: 'Die konkrte Handlung läuft in 5 Phasen ab:'
+          - enumerate:
+              - html: Wahrnehmung der Situation
+              - html: Interpretation der Situation
+              - html: Erstellen eines Aktionsprogramms
+              - html: Umsetzung des Aktionsprogramms
+              - html: Ergebnisanalyse
+          - text: 'Beispiele:'
+          - enumerate:
+              - html: direkter Angriff (ohne Vorbewegung), z. B. Paltung Hinterfuß
+              - html: Angriff mit Vorbewegung, z. B. Auslagewechsel-Paltung Hinterfuß
+              - html: Finte (indirekter Angriff), z. B. Doppel-Paltung, wobei 1. Kick nur der Täuschung dient
+              - html: direkter Konter (ohne Vorbewegung), z. B. Dwit-Chagi gegen Paltung
+              - html: provozierter Konter (Gegner locken), z. B. Paltung provozieren und diesen mit Doppel-Paltung abkontern
+          - text: Dei der Planung der Strategie ist der gegenerische Kampfstil zu berücksichtigen (z. B. Konterkämpfer). Die Strategie ist mit dem Coach abzustimmen und wird im eigentlichen Wettkampf häufig durch diesen vorgegeben bzw. empfohlen.
+      - title: Wettkampfregeln / Kampfleitergesten
+        content:
+          - html: <a href="#">siehe WOT</a>
+      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
+        content:
+          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

@@ -6,6 +6,49 @@ icon: belts/3.png
 content:
   - text: Der Fortgeschrittene hat sein Können erneut unter Beweis gestellt.
 sections:
+  - title: Poomse
+    content:
+      - html: <strong>Taeguk Oh-Jang</strong> (20 Bewegungen)
+      - text: Die fünfte Form wird durch das Symbol "Son" des Windes versinnbildlicht, der schnell und kraftvoll ist, dabei aber unsichtbar. Trotz Stürmen und Tornados hat der Wind eigentlich eine gute Bedeutung. Der Wind verteilt die Saat über die Felder und zerstreut dunkle Wolken. Er symbolisiert die Kraft der Zerstörung, und die des Aufbaus. Die Bewegungen umfassen schnelle und plötzliche Richtungswechsel. Der Ellenbogenschlag und die Hammerfaust werden hier eingeführt. Das Prinzip des Windes wird durch die Wischbewegung der Hammerfaust und am Ende beim Gleiten in die Kreuzstellung dargestellt.
+  - title: Handtechnicken
+    content:
+      - html: <h5>Angriff</h5>
+      - text: Wiederholung der Techniken bis 4. Kup
+      - html: <h5>Abwehr</h5>
+      - table:
+          body:
+            - [
+                html: Olgul (Jebipum) Han Sonnal Bakkat Makki,
+                html: Gesichtsblock mit Handaußenkante / Schwalbenform,
+              ]
+            - [
+                html: Sonnal Godoro Bakkat Makki,
+                html: Handaußenkanteblock mit Unterstützung,
+              ]
+  - title: 1-Schritt-Kampf (Ilbo Taeryon)
+    content:
+      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
+      - text: Techniken aus den Formen 1 - 5, sowie Übungen, welche zur Taekwondo-SV hinführen
+  - title: Freikampf (Kyorugi)
+    content:
+      - html: <h4>Übungen mit Rollenteilung</h4>
+      - text: A = offensiv, B = defensiv-aktiv sowohl "auf der Linie" als auch mit "Verlassen der Linie"
+      - html: <h4>Übungen mit Aufgabenstellung</h4>
+      - itemize:
+          - html: 2 x 1 nachzeitig, gleichzeitig
+          - html: Sparring mit einfacher Aufgabenstellung
+      - text: B verhält sich aktiv im Rahmen der Defensiv-Strategie und soll durch entsprechend unberechenbares Verhalten die Erfolgswahrscheinlichkeit des offensiven A wesentlich einschränken.
+      - text: A wird durch das strategisch-taktische Verhalten von B seinerseits zur Optimierung der Offensiv-Strategie gezwungen. Das heißt zum einen, dass er einen Angriff für B unberechenbar aufbauen muss und zum anderen, dass der Angriff ganzheitlich abgesichert ist (Angriffsvorbereitung, -durchführung und -abschluss). Dadurch kann A zeigen, dass er die Offensiv-Strategie beherrscht.
+  - title: Selbstverteidigung (Hosinsul)
+    content:
+      - text: Freie Abwehr von Angriffen aus der langen, mittleren und Nahdistanz sowie aus Bodenlage.
+      - text: Bei Bodenlage liegt der Angegriffene am Boden und muss dafür sorgen, dass der Angreifer ihm nicht zu nahe kommt. Es empfiehlt sich, am Boden liegend kickbereit auf den Angreifer zu warten.
+  - title: Bruchtest (Kyokpa)
+    content:
+      - text: je 1 Hand- und Fußbruchtest
+      - enumerate:
+          - html: 'Hand: Sonnal Bakkat Chigi / Palkup Chigi'
+          - html: 'Fuß: Dollyo Chagi / Yop Chagi / Twio Ap Chagi'
   - title: Theorie
     sections:
       - title: Wie muss sich der Angreifer verhalten, wenn sich der Gegner aktiv verteidigen darf?
@@ -64,46 +107,3 @@ sections:
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
           - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
-  - title: Poomse
-    content:
-      - html: <strong>Taeguk Oh-Jang</strong> (20 Bewegungen)
-      - text: Die fünfte Form wird durch das Symbol "Son" des Windes versinnbildlicht, der schnell und kraftvoll ist, dabei aber unsichtbar. Trotz Stürmen und Tornados hat der Wind eigentlich eine gute Bedeutung. Der Wind verteilt die Saat über die Felder und zerstreut dunkle Wolken. Er symbolisiert die Kraft der Zerstörung, und die des Aufbaus. Die Bewegungen umfassen schnelle und plötzliche Richtungswechsel. Der Ellenbogenschlag und die Hammerfaust werden hier eingeführt. Das Prinzip des Windes wird durch die Wischbewegung der Hammerfaust und am Ende beim Gleiten in die Kreuzstellung dargestellt.
-  - title: Handtechnicken
-    content:
-      - html: <h5>Angriff</h5>
-      - text: Wiederholung der Techniken bis 4. Kup
-      - html: <h5>Abwehr</h5>
-      - table:
-          body:
-            - [
-                html: Olgul (Jebipum) Han Sonnal Bakkat Makki,
-                html: Gesichtsblock mit Handaußenkante / Schwalbenform,
-              ]
-            - [
-                html: Sonnal Godoro Bakkat Makki,
-                html: Handaußenkanteblock mit Unterstützung,
-              ]
-  - title: 1-Schritt-Kampf (Ilbo Taeryon)
-    content:
-      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
-      - text: Techniken aus den Formen 1 - 5, sowie Übungen, welche zur Taekwondo-SV hinführen
-  - title: Freikampf (Kyorugi)
-    content:
-      - html: <h4>Übungen mit Rollenteilung</h4>
-      - text: A = offensiv, B = defensiv-aktiv sowohl "auf der Linie" als auch mit "Verlassen der Linie"
-      - html: <h4>Übungen mit Aufgabenstellung</h4>
-      - itemize:
-          - html: 2 x 1 nachzeitig, gleichzeitig
-          - html: Sparring mit einfacher Aufgabenstellung
-      - text: B verhält sich aktiv im Rahmen der Defensiv-Strategie und soll durch entsprechend unberechenbares Verhalten die Erfolgswahrscheinlichkeit des offensiven A wesentlich einschränken.
-      - text: A wird durch das strategisch-taktische Verhalten von B seinerseits zur Optimierung der Offensiv-Strategie gezwungen. Das heißt zum einen, dass er einen Angriff für B unberechenbar aufbauen muss und zum anderen, dass der Angriff ganzheitlich abgesichert ist (Angriffsvorbereitung, -durchführung und -abschluss). Dadurch kann A zeigen, dass er die Offensiv-Strategie beherrscht.
-  - title: Selbstverteidigung (Hosinsul)
-    content:
-      - text: Freie Abwehr von Angriffen aus der langen, mittleren und Nahdistanz sowie aus Bodenlage.
-      - text: Bei Bodenlage liegt der Angegriffene am Boden und muss dafür sorgen, dass der Angreifer ihm nicht zu nahe kommt. Es empfiehlt sich, am Boden liegend kickbereit auf den Angreifer zu warten.
-  - title: Bruchtest (Kyokpa)
-    content:
-      - text: je 1 Hand- und Fußbruchtest
-      - enumerate:
-          - html: 'Hand: Sonnal Bakkat Chigi / Palkup Chigi'
-          - html: 'Fuß: Dollyo Chagi / Yop Chagi / Twio Ap Chagi'

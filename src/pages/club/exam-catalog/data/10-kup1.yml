@@ -6,6 +6,71 @@ icon: belts/1.png
 content:
   - text: Wer gerne schwarz sieht, hat es fast geschafft. Der Träger ist nun Dan-Anwärter.
 sections:
+  - title: Poomse
+    content:
+      - html: <strong>Taeguk Chil-Jang</strong> (25 Bewegungen)
+      - text: Das Symbol "Kan" dieser Form steht für den Berg. Er drückt durch seine unverrückbare, mächtige Silhouette selbst Festigkeit aus, ist aber durch seine spirituelle Bedeutung auch ein Garant für den festen Bestand des Universums. In allen Kulturen, so auch in der asiatischen, werden Berge gerne als Sitz von Klöstern und Heiligtümern gewählt. In alter Zeit glaubte man, die Berge seien der direkte Sitz der Götter. Der Mensch trachtet seine Festigkeit dadurch zu erringen, dass er geht, wenn er muss, und anhält, wenn dies geboten ist. Der Berg ist beständig, so wie der Schüler es sein muss, wenn er die Techniken in der Tigerstellung beginnt. Die Techniken bei dieser Form werden oft als Mehrfachkombinationen aus einer einzigen Stellung heraus ausgeführt und zeigen, dass ein guter Schüler Balance und Stärke sowohl in der Ruhe als auch in der Bewegung haben muss.
+  - title: Fußtechniken
+    content:
+      - table:
+          body:
+            - [html: Yop Chaolligi, html: Seitwärtsschwung]
+            - [
+                html: Dubal Dangsan Ap Chagi,
+                html: zweifacher Vorwärtstritt nacheinander im Sprung,
+              ]
+            - [
+                html: Twio Mom (Pandae) Dollyo Chagi,
+                html: gesprungener Fersendrehschlag,
+              ]
+  - title: Handtechnicken
+    content:
+      - html: <h5>Angriff</h5>
+      - table:
+          body:
+            - [
+                html: Olgul Jumok Danggyo Tok Baro Chi Jirugi,
+                html: ziehender Aufwärtsfauststoß zum Kinn,
+              ]
+      - html: <h5>Abwehr</h5>
+      - table:
+          body:
+            - [
+                html: Santul Makki,
+                html: 'Zweiarmblock, kombinierte Oben- / Unten-Abwehr',
+              ]
+            - [
+                html: Dungjumok Santul Makki,
+                html: 'Abwehr unten, Faustrückenschlag hinten',
+              ]
+  - title: 1-Schritt-Kampf (Ilbo Taeryon)
+    content:
+      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
+      - text: Techniken aus den Formen 1 - 7 sowie freies Programm mit technisch höherem Schwierigkeitsgrad - im Sinne des Vorführungsprogramms für die Prüfung zum 1. Dan
+  - title: Freikampf (Kyorugi)
+    content:
+      - html: <h4>freies Sparring, wobei technisch-taktische Aufgabenstellungen möglich sind</h4>
+      - text: Hier handelt es sich um den sog. "freien Kampf". Dieser kann jedoch - wie es auch im Wettkampf der Fall ist - z. B. zwischen den einzelnen Runden mit technisch-taktischen Aufgaben verbunden werden. So kann man in der Prüfung z. B. 1 Runde frei kämpfen lassen, um dann für die 2. Runde entsprechende technisch-taktische Aufgaben zu stellen und deren Umsetzung zu überprüfen.
+      - text: Das Stellen von technisch-taktischen Aufgaben kann "offen" oder "verdeckt" erfolgen. "Offen" heißt, dass beide Kämpfer die Aufgabe kennen während "verdeckt" bedeutet, dass jeder Kämpfer nur seine Aufgabe kennt - so wie es auch im Wettkampf der Fall ist. Die Aufgabe kann z. B. darin bestehen, die technisch-taktische Aufgabe des Gegners herauszufinden, diese zum Ende der Runde zu formulieren oder sich innerhalb der Runde auf diese Taktik entsprechend einzustellen (Gegentaktik). Ein derartiges Vorgehen ist innerhalb der Prüfung im Interesse der Ausbildung der Disziplin "Kampf" sinnvoll. Zu unterscheiden sind jedoch Breiten- und Leistungssportler z. B. in der Aufgabenstellung.
+  - title: Selbstverteidigung (Hosinsul)
+    content:
+      - text: In Raumnot sowie bei Überraschungsangriffen.
+      - html: <h4>SV-Situationen in Raumnot</h4>
+      - text: 'Lösungsfindung, bevor Raumnot entsteht. Verteidiger:'
+      - enumerate:
+          - html: auf dem Rücken liegend
+          - html: mit dem Rücken zur Wand
+          - html: in der Ecke stehend
+          - html: auf /an einem Stuhl / Tisch sitzend
+      - text: Da in diesen Situationen keine bzw. stark eingeschränkte Ausweichmöglichkeiten bestehen, ist der Verteidiger zur Anwendung von nicht taekwondo-spezifischen Verteidigungsmaßnahmen (siehe SV-Techniken) gezwungen - genauso wie nach "Überraschungsangriffen".
+      - html: <h4>Überraschungsangriffe</h4>
+      - text: Sind Situationen, in denen der Angriff nicht rechtzeitig wahrnehmbar ist und daher auch nicht vermieden oder mit taekwondo-spezifischen Maßnahmen beantwortet werden kann. Solche Situationen können im Alltag vorkommen und sind in der Prüfung zu konstruieren, z. B. Angreifer kommt von hinten / der Seite etc. Um die Angriffe trotz des Überraschungsmoments dennoch lösbar zu machen, müssen diese in der Prüfung auf Klammern, Halten, Würgen und Schubsen beschränkt werden.
+  - title: Bruchtest (Kyokpa)
+    content:
+      - text: je 1 Hand- und Fußbruchtest
+      - enumerate:
+          - html: 'Hand: Sonnal Dung Chigi / Baro oder Bandae Jirugi'
+          - html: 'Fuß: Pandae Dollyo Chagi / Twio Dollyo Chagi / Twio Dwit Chagi'
   - title: Theorie
     sections:
       - title: Möglichkeiten der "Ersten Hilfe" bei Trainings- und Wettkampfverletzungen?
@@ -137,68 +202,3 @@ sections:
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
           - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
-  - title: Poomse
-    content:
-      - html: <strong>Taeguk Chil-Jang</strong> (25 Bewegungen)
-      - text: Das Symbol "Kan" dieser Form steht für den Berg. Er drückt durch seine unverrückbare, mächtige Silhouette selbst Festigkeit aus, ist aber durch seine spirituelle Bedeutung auch ein Garant für den festen Bestand des Universums. In allen Kulturen, so auch in der asiatischen, werden Berge gerne als Sitz von Klöstern und Heiligtümern gewählt. In alter Zeit glaubte man, die Berge seien der direkte Sitz der Götter. Der Mensch trachtet seine Festigkeit dadurch zu erringen, dass er geht, wenn er muss, und anhält, wenn dies geboten ist. Der Berg ist beständig, so wie der Schüler es sein muss, wenn er die Techniken in der Tigerstellung beginnt. Die Techniken bei dieser Form werden oft als Mehrfachkombinationen aus einer einzigen Stellung heraus ausgeführt und zeigen, dass ein guter Schüler Balance und Stärke sowohl in der Ruhe als auch in der Bewegung haben muss.
-  - title: Fußtechniken
-    content:
-      - table:
-          body:
-            - [html: Yop Chaolligi, html: Seitwärtsschwung]
-            - [
-                html: Dubal Dangsan Ap Chagi,
-                html: zweifacher Vorwärtstritt nacheinander im Sprung,
-              ]
-            - [
-                html: Twio Mom (Pandae) Dollyo Chagi,
-                html: gesprungener Fersendrehschlag,
-              ]
-  - title: Handtechnicken
-    content:
-      - html: <h5>Angriff</h5>
-      - table:
-          body:
-            - [
-                html: Olgul Jumok Danggyo Tok Baro Chi Jirugi,
-                html: ziehender Aufwärtsfauststoß zum Kinn,
-              ]
-      - html: <h5>Abwehr</h5>
-      - table:
-          body:
-            - [
-                html: Santul Makki,
-                html: 'Zweiarmblock, kombinierte Oben- / Unten-Abwehr',
-              ]
-            - [
-                html: Dungjumok Santul Makki,
-                html: 'Abwehr unten, Faustrückenschlag hinten',
-              ]
-  - title: 1-Schritt-Kampf (Ilbo Taeryon)
-    content:
-      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
-      - text: Techniken aus den Formen 1 - 7 sowie freies Programm mit technisch höherem Schwierigkeitsgrad - im Sinne des Vorführungsprogramms für die Prüfung zum 1. Dan
-  - title: Freikampf (Kyorugi)
-    content:
-      - html: <h4>freies Sparring, wobei technisch-taktische Aufgabenstellungen möglich sind</h4>
-      - text: Hier handelt es sich um den sog. "freien Kampf". Dieser kann jedoch - wie es auch im Wettkampf der Fall ist - z. B. zwischen den einzelnen Runden mit technisch-taktischen Aufgaben verbunden werden. So kann man in der Prüfung z. B. 1 Runde frei kämpfen lassen, um dann für die 2. Runde entsprechende technisch-taktische Aufgaben zu stellen und deren Umsetzung zu überprüfen.
-      - text: Das Stellen von technisch-taktischen Aufgaben kann "offen" oder "verdeckt" erfolgen. "Offen" heißt, dass beide Kämpfer die Aufgabe kennen während "verdeckt" bedeutet, dass jeder Kämpfer nur seine Aufgabe kennt - so wie es auch im Wettkampf der Fall ist. Die Aufgabe kann z. B. darin bestehen, die technisch-taktische Aufgabe des Gegners herauszufinden, diese zum Ende der Runde zu formulieren oder sich innerhalb der Runde auf diese Taktik entsprechend einzustellen (Gegentaktik). Ein derartiges Vorgehen ist innerhalb der Prüfung im Interesse der Ausbildung der Disziplin "Kampf" sinnvoll. Zu unterscheiden sind jedoch Breiten- und Leistungssportler z. B. in der Aufgabenstellung.
-  - title: Selbstverteidigung (Hosinsul)
-    content:
-      - text: In Raumnot sowie bei Überraschungsangriffen.
-      - html: <h4>SV-Situationen in Raumnot</h4>
-      - text: 'Lösungsfindung, bevor Raumnot entsteht. Verteidiger:'
-      - enumerate:
-          - html: auf dem Rücken liegend
-          - html: mit dem Rücken zur Wand
-          - html: in der Ecke stehend
-          - html: auf /an einem Stuhl / Tisch sitzend
-      - text: Da in diesen Situationen keine bzw. stark eingeschränkte Ausweichmöglichkeiten bestehen, ist der Verteidiger zur Anwendung von nicht taekwondo-spezifischen Verteidigungsmaßnahmen (siehe SV-Techniken) gezwungen - genauso wie nach "Überraschungsangriffen".
-      - html: <h4>Überraschungsangriffe</h4>
-      - text: Sind Situationen, in denen der Angriff nicht rechtzeitig wahrnehmbar ist und daher auch nicht vermieden oder mit taekwondo-spezifischen Maßnahmen beantwortet werden kann. Solche Situationen können im Alltag vorkommen und sind in der Prüfung zu konstruieren, z. B. Angreifer kommt von hinten / der Seite etc. Um die Angriffe trotz des Überraschungsmoments dennoch lösbar zu machen, müssen diese in der Prüfung auf Klammern, Halten, Würgen und Schubsen beschränkt werden.
-  - title: Bruchtest (Kyokpa)
-    content:
-      - text: je 1 Hand- und Fußbruchtest
-      - enumerate:
-          - html: 'Hand: Sonnal Dung Chigi / Baro oder Bandae Jirugi'
-          - html: 'Fuß: Pandae Dollyo Chagi / Twio Dollyo Chagi / Twio Dwit Chagi'

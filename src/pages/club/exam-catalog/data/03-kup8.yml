@@ -7,37 +7,6 @@ content:
   - text: 'Gelb steht für dir Farbe des Samens, der gepflanzt wird. In diesem Fall ist damit gemeint: Der Grundstein für die Ausbildung des Schülers wird gelegt.'
   - text: '* wettkampforientiert: Freikampfübungen werden aus frei wählbaren Stellungen und Situationen heraus ausgeführt.'
 sections:
-  - title: Theorie
-    sections:
-      - title: Welchen Sinn haben die Formen?
-        content:
-          - text: Die Formen (Taeguk / Poomse) stellen einen imaginären Kampf gegen mehrere Angreifer dar. In vorgeschriebenen Bewegungsfolgen werden mögliche Reaktionen auf verschiedenste Angriffe eingeübt. Dies sollte beim Vortragen deutlich zu erkennen sein. Durch das ständige Wiederholen der Bewegungsabläufe werden diese automatisiert und optimiert. Jede Bewegung hat mindestens eine Anwendung. Der Ausübende sollte in der Lage sein, diese zu erklären.
-      - title: Wozu dient die Partnerübung "1-Schritt-Kampf"?
-        content:
-          - text: Der Einschrittkampf schult
-          - itemize:
-              - html: das Distanzgefühl
-              - html: die exakte Ausführung der Techniken
-              - html: das gemeinsame Üben mit dem Partner
-              - html: das Timing
-      - title: Wozu dienen die sogenannten "Steps"?
-        content:
-          - text: Das Steppen ermöglicht
-          - itemize:
-              - html: das Halten der Distanz (Ausweichen)
-              - html: das Positionieren in eine günstige Distanz für Folgetechniken
-              - html: die Lockerung der Muskulatur
-              - html: das Täuschen des Gegners
-      - title: Welchen Sinn haben die Pratzenübungen?
-        content:
-          - text: Pratzenübungen dienen
-          - itemize:
-              - html: der Schulung der Treffgenauigkeit
-              - html: der Verbesserung des Distanzgefühls
-              - html: einer Verbesserung der Techniken
-      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
-        content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
   - title: Überprüfung Vorprogramm (bisher erlernte Grundschultechniken)
     content:
       - text: siehe 10. und 9. Kup
@@ -83,3 +52,34 @@ sections:
   - title: Step-Schule
     content:
       - text: mit oder ohne Partner (2 bisher erlernte Grundtechniken mit und ohne Auslagewechsel, Ausfall-Schritt, One-Step, Drehung, Vorwärts- / Rückwärts-Step
+  - title: Theorie
+    sections:
+      - title: Welchen Sinn haben die Formen?
+        content:
+          - text: Die Formen (Taeguk / Poomse) stellen einen imaginären Kampf gegen mehrere Angreifer dar. In vorgeschriebenen Bewegungsfolgen werden mögliche Reaktionen auf verschiedenste Angriffe eingeübt. Dies sollte beim Vortragen deutlich zu erkennen sein. Durch das ständige Wiederholen der Bewegungsabläufe werden diese automatisiert und optimiert. Jede Bewegung hat mindestens eine Anwendung. Der Ausübende sollte in der Lage sein, diese zu erklären.
+      - title: Wozu dient die Partnerübung "1-Schritt-Kampf"?
+        content:
+          - text: Der Einschrittkampf schult
+          - itemize:
+              - html: das Distanzgefühl
+              - html: die exakte Ausführung der Techniken
+              - html: das gemeinsame Üben mit dem Partner
+              - html: das Timing
+      - title: Wozu dienen die sogenannten "Steps"?
+        content:
+          - text: Das Steppen ermöglicht
+          - itemize:
+              - html: das Halten der Distanz (Ausweichen)
+              - html: das Positionieren in eine günstige Distanz für Folgetechniken
+              - html: die Lockerung der Muskulatur
+              - html: das Täuschen des Gegners
+      - title: Welchen Sinn haben die Pratzenübungen?
+        content:
+          - text: Pratzenübungen dienen
+          - itemize:
+              - html: der Schulung der Treffgenauigkeit
+              - html: der Verbesserung des Distanzgefühls
+              - html: einer Verbesserung der Techniken
+      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
+        content:
+          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

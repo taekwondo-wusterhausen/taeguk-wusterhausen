@@ -7,6 +7,82 @@ content:
   - text: Rot steht für die Sonne, die über dem Himmel strahlt.
   - text: 'Taekwondo-Kämpfer sind erstmals gewarnt: Da kann einer schon was.'
 sections:
+  - title: Poomse
+    content:
+      - html: <strong>Taeguk Yuk-Jang</strong> (23 Bewegungen)
+      - text: |
+          Das Symbol "Kam" des Wassers kennzeichnet diese Form. Taeguk Yuk-Jang greift die Eigenschaften des Wassers auf: "Schwaches überwindet das Starke, Weiches überwindet das Harte". Wie das Wasser, dass formlos immer bergab fließt und alle Widerstände besiegt, fließen die Bewegungen der Poomse ineinander über. Der Schüler muss die sechste Form flüssig und mit sanfter Zuversicht ausführen, so als ob jede Bewegung eine natürliche Reaktion auf ein Hindernis oder eine Schwierigkeit ist, die es zu überwinden gilt. Die ungewöhnlichen Bewegungen der beiden Drehkicks, die hier zum ersten Mal auftauchen, erinnern daran, dass der Schüler sich - wie das Wasser - in jede Richtung bewegen kann.
+  - title: Fußtechniken
+    content:
+      - table:
+          body:
+            - [html: Bituro Chagi, html: Außendrehtritt]
+            - [
+                html: Baldabak Pyojok Sewo Chagi,
+                html: Tritt mit senkrechter Fußsohle auf den Punkt,
+              ]
+  - title: Handtechnicken
+    content:
+      - html: <h5>Angriff</h5>
+      - table:
+          body:
+            - [
+                html: Momtong Du Jumok Jechyo Jirugi,
+                html: beide umgedrehten Fäustestoßen zur Körpermitte,
+              ]
+            # TODO: Handtechnik?
+            - [
+                html: Momtong Murup Ollyo Chigi,
+                html: Knie schlägtaufwärts gegen Solarplexus,
+              ]
+      - html: <h5>Abwehr</h5>
+      - table:
+          body:
+            - [html: Gawi Makki, html: Scherenblock]
+            - [html: Dubon Gawi Makki, html: doppelter Scherenblock]
+  - title: Stellungen
+    content:
+      - table:
+          body:
+            - [html: Bom Sogi, html: Tigerstellung / kleine Rückwärtsstellung]
+            - [html: Hakdari Sogi, html: Kranichbeinstellung]
+  - title: 1-Schritt-Kampf (Ilbo Taeryon)
+    content:
+      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
+      - text: Techniken aus den Formen 1 - 6 sowie Übungen mit einem technisch höheren Schwierigkeitsgrad
+  - title: Freikampf (Kyorugi)
+    content:
+      - text: freies Sparring mit technischen (mit bestimmten Techniken angreifen / kontern) und taktischen Aufgabenstellungen
+      - html: <h4>Ziel der Aufgabe</h4>
+      - text: Die Aufgabe bleibt durch die Aufgabenstellung im Gegensatz zum sog. "freien Kampf" in ihrer Komplexität reduziert, daher eher lösbar für den Prüfling sowie besser zu beurteilen durch den Prüfer. In dieser Stufe der Ausbildung sollen nun sowohl Offensiv- als auch Defensiv-Strategie im Rahmen ihrer gesamten Möglichkeiten praktiziert werden.
+  - title: Selbstverteidigung (Hosinsul)
+    content:
+      - text: |
+          SV-Angriffe mit einem Stock (60-100 cm) bzw. Messer Messer: Stich von oben zum Kopf / Hals / Rumpf von außen nach innen / innen nach außen bzw. diagonal, zum Solarplexus, verdeckter Messerangriff (Messer liegt am Unterarm an und vollführt Schnittbewegung zum Hals)
+      - html: <h4>Mögliche Stock-Angriffe</h4>
+      - enumerate:
+          - html: von außen / innen zum Rumpf
+          - html: von außen / innen zum Kopf
+          - html: von außen / innen zum Knie
+          - html: von oben direkt zum Kopf
+          - html: Stich zum Solar-Plexus
+      - html: <h4>Mögliche Messer-Angriffe</h4>
+      - enumerate:
+          - html: Stich / Schnitt von außen / innen zum Hals - Klinge aufwärts
+          - html: Stich / Schnitt von außen / innen zum Rumpf - Klinge aufwärts
+          - html: Stich zum Solar-Plexus - Klinge aufwärts
+          - html: Stich im Halbkreis von außen zur Schulter - Klinge aufwärts
+          - html: Schnitt diagonal von Schulter zur Hüfte beidseitig - Klinge aufwärts
+          - html: Stich von oben zum Kopf - Klinge abwärts
+          - html: Stich von außen / innen zum Rumpf - Klinge abwärts
+          - html: verdeckter Messerangriff (Messer liegt am Unterarm, Schnittbewegung zum Hals - Klinge abwärts
+      - text: Angriffe mit einem Messer bzw. Stock stehen im Gegensatz zu den (konstruierten) Anforderungen der vorhergehenden Ausbildungsstufe. Während dort eine SV-Situation dargestellt wurde, in welcher der Angriff unvermeidbar bzw. bereits durchgeführt war, ist der Verteidiger hier gezwungen, den Angriff durch rechtzeitiges Ausweichen in Verbindung mit einer sichernden Abwehrbewegung zu vermeiden. Im Eingang entspricht diese SV-Situation also dem 1-Schritt-Kampf. Somit stellt diese Form des Angriffs in Verbindung mit der jetzt notwendigen Verteidigung innerhalb der Ausbildung eine Hinführung zur SV mit taekwondo-spezifischen Mitteln (Taekwondo-SV) dar.
+  - title: Bruchtest (Kyokpa)
+    content:
+      - text: je 1 Hand- und Fußbruchtest
+      - enumerate:
+          - html: 'Hand: Sonnal Bakkat Chigi / Baro o. Bandae Jirugi'
+          - html: 'Fuß: Dollyo Chagi / Tora Yop Chagi / Twio Yop Chagi / Dwit Chagi'
   - title: Theorie
     sections:
       - title: SV-Unterschiede Angriffe wie "Halten und Klammern" - Messer / Stock?
@@ -108,79 +184,3 @@ sections:
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
           - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
-  - title: Poomse
-    content:
-      - html: <strong>Taeguk Yuk-Jang</strong> (23 Bewegungen)
-      - text: |
-          Das Symbol "Kam" des Wassers kennzeichnet diese Form. Taeguk Yuk-Jang greift die Eigenschaften des Wassers auf: "Schwaches überwindet das Starke, Weiches überwindet das Harte". Wie das Wasser, dass formlos immer bergab fließt und alle Widerstände besiegt, fließen die Bewegungen der Poomse ineinander über. Der Schüler muss die sechste Form flüssig und mit sanfter Zuversicht ausführen, so als ob jede Bewegung eine natürliche Reaktion auf ein Hindernis oder eine Schwierigkeit ist, die es zu überwinden gilt. Die ungewöhnlichen Bewegungen der beiden Drehkicks, die hier zum ersten Mal auftauchen, erinnern daran, dass der Schüler sich - wie das Wasser - in jede Richtung bewegen kann.
-  - title: Fußtechniken
-    content:
-      - table:
-          body:
-            - [html: Bituro Chagi, html: Außendrehtritt]
-            - [
-                html: Baldabak Pyojok Sewo Chagi,
-                html: Tritt mit senkrechter Fußsohle auf den Punkt,
-              ]
-  - title: Handtechnicken
-    content:
-      - html: <h5>Angriff</h5>
-      - table:
-          body:
-            - [
-                html: Momtong Du Jumok Jechyo Jirugi,
-                html: beide umgedrehten Fäustestoßen zur Körpermitte,
-              ]
-            # TODO: Handtechnik?
-            - [
-                html: Momtong Murup Ollyo Chigi,
-                html: Knie schlägtaufwärts gegen Solarplexus,
-              ]
-      - html: <h5>Abwehr</h5>
-      - table:
-          body:
-            - [html: Gawi Makki, html: Scherenblock]
-            - [html: Dubon Gawi Makki, html: doppelter Scherenblock]
-  - title: Stellungen
-    content:
-      - table:
-          body:
-            - [html: Bom Sogi, html: Tigerstellung / kleine Rückwärtsstellung]
-            - [html: Hakdari Sogi, html: Kranichbeinstellung]
-  - title: 1-Schritt-Kampf (Ilbo Taeryon)
-    content:
-      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
-      - text: Techniken aus den Formen 1 - 6 sowie Übungen mit einem technisch höheren Schwierigkeitsgrad
-  - title: Freikampf (Kyorugi)
-    content:
-      - text: freies Sparring mit technischen (mit bestimmten Techniken angreifen / kontern) und taktischen Aufgabenstellungen
-      - html: <h4>Ziel der Aufgabe</h4>
-      - text: Die Aufgabe bleibt durch die Aufgabenstellung im Gegensatz zum sog. "freien Kampf" in ihrer Komplexität reduziert, daher eher lösbar für den Prüfling sowie besser zu beurteilen durch den Prüfer. In dieser Stufe der Ausbildung sollen nun sowohl Offensiv- als auch Defensiv-Strategie im Rahmen ihrer gesamten Möglichkeiten praktiziert werden.
-  - title: Selbstverteidigung (Hosinsul)
-    content:
-      - text: |
-          SV-Angriffe mit einem Stock (60-100 cm) bzw. Messer Messer: Stich von oben zum Kopf / Hals / Rumpf von außen nach innen / innen nach außen bzw. diagonal, zum Solarplexus, verdeckter Messerangriff (Messer liegt am Unterarm an und vollführt Schnittbewegung zum Hals)
-      - html: <h4>Mögliche Stock-Angriffe</h4>
-      - enumerate:
-          - html: von außen / innen zum Rumpf
-          - html: von außen / innen zum Kopf
-          - html: von außen / innen zum Knie
-          - html: von oben direkt zum Kopf
-          - html: Stich zum Solar-Plexus
-      - html: <h4>Mögliche Messer-Angriffe</h4>
-      - enumerate:
-          - html: Stich / Schnitt von außen / innen zum Hals - Klinge aufwärts
-          - html: Stich / Schnitt von außen / innen zum Rumpf - Klinge aufwärts
-          - html: Stich zum Solar-Plexus - Klinge aufwärts
-          - html: Stich im Halbkreis von außen zur Schulter - Klinge aufwärts
-          - html: Schnitt diagonal von Schulter zur Hüfte beidseitig - Klinge aufwärts
-          - html: Stich von oben zum Kopf - Klinge abwärts
-          - html: Stich von außen / innen zum Rumpf - Klinge abwärts
-          - html: verdeckter Messerangriff (Messer liegt am Unterarm, Schnittbewegung zum Hals - Klinge abwärts
-      - text: Angriffe mit einem Messer bzw. Stock stehen im Gegensatz zu den (konstruierten) Anforderungen der vorhergehenden Ausbildungsstufe. Während dort eine SV-Situation dargestellt wurde, in welcher der Angriff unvermeidbar bzw. bereits durchgeführt war, ist der Verteidiger hier gezwungen, den Angriff durch rechtzeitiges Ausweichen in Verbindung mit einer sichernden Abwehrbewegung zu vermeiden. Im Eingang entspricht diese SV-Situation also dem 1-Schritt-Kampf. Somit stellt diese Form des Angriffs in Verbindung mit der jetzt notwendigen Verteidigung innerhalb der Ausbildung eine Hinführung zur SV mit taekwondo-spezifischen Mitteln (Taekwondo-SV) dar.
-  - title: Bruchtest (Kyokpa)
-    content:
-      - text: je 1 Hand- und Fußbruchtest
-      - enumerate:
-          - html: 'Hand: Sonnal Bakkat Chigi / Baro o. Bandae Jirugi'
-          - html: 'Fuß: Dollyo Chagi / Tora Yop Chagi / Twio Yop Chagi / Dwit Chagi'

@@ -6,29 +6,6 @@ icon: belts/6.png
 content:
   - text: Grün steht für die Pflanze, die sich aus dem Samen entwickelt und zeigt, dass der Schüler sich wie die Pflanze Richtung Himmel erstreckt.
 sections:
-  - title: Theorie
-    sections:
-      - title: Gleichgewicht brechen
-        content:
-          - text: Das Brechen des Gleichgewichtes kann durch schieben oder ziehen des Körpers (evlt. beides in schneller Folge), Fußfeger oder diverse Hebel erreicht werden. Der Vorteil dabei besteht darin, dass der Gegner abgelenkt ist und man selber in der Lage, ist Folgetechniken anzusetzen. Der Gegner kann zu Boden gebracht werden (evtl. sogar hart auf den Boden Aufschlagen lassen) um ihn dort zu fixieren, oder die gewonnene Zeit für eine Flucht genutzt werden. Sollte man selber dabei zu Boden gehen ist es vorteilhaft, beim Fallen auf dem Angreifer zu landen. Kann das nicht realisiert werden, sollte sofort eine Abwehrstellung eingenommen werden, die eine Verteidigung am Boden (z.B. durch Treten) ermöglicht.
-      - title: Hebeltechnik
-        content:
-          - text: Hebeltechniken können sich gegen alle Gelenke richten. Unter Ausnutzung der Hebelgesetze wird das Gelenk in eine unnatürliche Richtung oder über das Ausmaß der normalen Bewegung hinaus bewegt. Der Gegner kann durch den entstehenden Schmerz unter Kontrolle gebracht werden oder das Gelenk so geschädigt werden, dass er kampfunfähig ist.
-      - title: Schlag- und Stoßtechniken
-        content:
-          - text: Bei einem Stoß ist die Bewegungsrichtung eine Gerade zum Gegner hin (z.B. Fauststoß). Ein Schlag erfolgt über eine Kreisbahn zum Gegner.
-      - title: Ausweichen auf der Linie
-        content:
-          - text: Ausweichen auf der Linie bedeutet, dass sich der Verteidiger passiv verhält, vor dem Angriff "zurückweicht" und so praktisch taekwondospezifisch mit einem (oder mehreren) Rückwärts-Step(s) einen Treffer nicht zulässt.
-          - text: Eine weitere passive Reaktion auf einen Angriff ist das Ausweichen über das Verlassen der Linie. Verlassen der Linie bedeutet, dass der Angegriffene nicht zurückweicht. Vielmehr weicht er dem Angriff mit bspw. einem Seitwärts-Step aus.
-          - text: Der Vorteil dieser Ausweichmöglichkeit gegenüber dem Zurückweichen besteht darin, dass die für einen Konter (aktive Verteidigung) erforderliche Distanz bereits besteht und die Kontertechnik unmittelbar erfolgen kann.
-      - title: Verhältnismäßigkeit der Mittel
-        content:
-          - text: Verhältnismäßigkeit der Mittel heißt, dass in einer Notwehrsituation (vgl. 7. Kup) für die Notwehrhandlung das relativ mildeste Mittel zu wählen. Juristen sprechen hierbei vom "Übermaßverbot".
-          - text: Der Angegriffene muss er sich jedoch auf Risiken bei der Verteidigung nicht einlassen. Ebenso ist eine "Flucht" nicht zwingend geboten, da das Recht dem Unrecht nicht weichen muss. Dennoch sollte sofern möglich auch eine Flucht in Erwägung gezogen werden, da diese bei Erfolg im Vergleich zu einer gewalttätigen Auseinandersetzung das intelligentere Mittel ist.
-      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
-        content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
   - title: Poomse
     content:
       - html: <strong>Taeguk Ih-Jang</strong> (18 Bewegungen)
@@ -117,3 +94,26 @@ sections:
           - html: Konter aus der Nahdistanz gegen Angriffe aus langer und mittlerer Distanz
       - text: Anwendung dieser SV-Techniken aus abgesprochenen Situationen heraus, d. h. der Eingang (Angriffstechnik) ist dem Verteidiger bekannt und der Angreifer leistet keinen Widerstand.
       - text: Bei der Anwendung von Fußfegern (in Verbindung mit Schulterzug, sodass der Angreifer zu Fall kommt) sowie bei Wurftechniken ist auf Fallschule sowie Absicherung durch Matten zu achten.
+  - title: Theorie
+    sections:
+      - title: Gleichgewicht brechen
+        content:
+          - text: Das Brechen des Gleichgewichtes kann durch schieben oder ziehen des Körpers (evlt. beides in schneller Folge), Fußfeger oder diverse Hebel erreicht werden. Der Vorteil dabei besteht darin, dass der Gegner abgelenkt ist und man selber in der Lage, ist Folgetechniken anzusetzen. Der Gegner kann zu Boden gebracht werden (evtl. sogar hart auf den Boden Aufschlagen lassen) um ihn dort zu fixieren, oder die gewonnene Zeit für eine Flucht genutzt werden. Sollte man selber dabei zu Boden gehen ist es vorteilhaft, beim Fallen auf dem Angreifer zu landen. Kann das nicht realisiert werden, sollte sofort eine Abwehrstellung eingenommen werden, die eine Verteidigung am Boden (z.B. durch Treten) ermöglicht.
+      - title: Hebeltechnik
+        content:
+          - text: Hebeltechniken können sich gegen alle Gelenke richten. Unter Ausnutzung der Hebelgesetze wird das Gelenk in eine unnatürliche Richtung oder über das Ausmaß der normalen Bewegung hinaus bewegt. Der Gegner kann durch den entstehenden Schmerz unter Kontrolle gebracht werden oder das Gelenk so geschädigt werden, dass er kampfunfähig ist.
+      - title: Schlag- und Stoßtechniken
+        content:
+          - text: Bei einem Stoß ist die Bewegungsrichtung eine Gerade zum Gegner hin (z.B. Fauststoß). Ein Schlag erfolgt über eine Kreisbahn zum Gegner.
+      - title: Ausweichen auf der Linie
+        content:
+          - text: Ausweichen auf der Linie bedeutet, dass sich der Verteidiger passiv verhält, vor dem Angriff "zurückweicht" und so praktisch taekwondospezifisch mit einem (oder mehreren) Rückwärts-Step(s) einen Treffer nicht zulässt.
+          - text: Eine weitere passive Reaktion auf einen Angriff ist das Ausweichen über das Verlassen der Linie. Verlassen der Linie bedeutet, dass der Angegriffene nicht zurückweicht. Vielmehr weicht er dem Angriff mit bspw. einem Seitwärts-Step aus.
+          - text: Der Vorteil dieser Ausweichmöglichkeit gegenüber dem Zurückweichen besteht darin, dass die für einen Konter (aktive Verteidigung) erforderliche Distanz bereits besteht und die Kontertechnik unmittelbar erfolgen kann.
+      - title: Verhältnismäßigkeit der Mittel
+        content:
+          - text: Verhältnismäßigkeit der Mittel heißt, dass in einer Notwehrsituation (vgl. 7. Kup) für die Notwehrhandlung das relativ mildeste Mittel zu wählen. Juristen sprechen hierbei vom "Übermaßverbot".
+          - text: Der Angegriffene muss er sich jedoch auf Risiken bei der Verteidigung nicht einlassen. Ebenso ist eine "Flucht" nicht zwingend geboten, da das Recht dem Unrecht nicht weichen muss. Dennoch sollte sofern möglich auch eine Flucht in Erwägung gezogen werden, da diese bei Erfolg im Vergleich zu einer gewalttätigen Auseinandersetzung das intelligentere Mittel ist.
+      - title: Terminologie der Grundtechniken auf deutsch und koreanisch
+        content:
+          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

@@ -10,27 +10,6 @@ content:
   - text: Generell muss beidseitig angegriffen werden (Faustangriff zum Kopf), sowohl mit der linken als auch mit der rechten Faust oder Fußangriff mit rechtem oder linkem Bein auf direktem Weg zum Partner mit abstellen des Angriffbeines nach vorne. Die Prüflinge merken anhand des Blockes sehr schnell, mit welcher Seite angegriffen wird. Es gibt keine Vorgabe, mit welcher Seite zuerst angegriffen wird.
   - text: '* formenorientiert: Techniken und Stellungen werden "traditionell" (in Grundschule) ohne oder mit leichtem Kontakt durchgeführt.'
 sections:
-  - title: Theorie
-    sections:
-      - title: Was ist Taekwondo?
-        content:
-          - text: siehe 10. Kup
-      - title: Kleine Geschichte des Taekwondo
-        content:
-          - text: Die Ursprünge des Taekwondo liegen in der historischen Frühgeschichte Koreas, das sich vor ca. 2.000 Jahren aus dem Königreichen Koguryo, Paekche und Silla zusammensetzte. Diese drei Dynastien schlossen sich zusammen, um ihr Land gegen Eindringlinge zu verteidigen.
-          - text: Überlieferungen zufolge übten sich die Soldaten der damaligen Zeit in der waffenlosen Kampfkunst, dem sogenannten Subak, einer spielerischen Art des unbewaffneten Kampfes, das auch in der einfachen Bevölkerung regen Zuspruch fand. Das Hauptaugenmerk wurde hierbei jedoch nicht so sehr auf die Kampftechnik gelegt, sondern diente vielmehr dem gesundheitlichen Aspekt, der Körperertüchtigung und natürlich auch der Selbstverteidigung. Aus allen bekannten und von Generation zu Generation überlieferten Techniken entwickelte sich bis gegen Ende des 17. Jahrhunderts das Taekyon, dem Vorläufer des heutigen modernen Taekwondo, bei dem das Hauptaugenmerk auf die Fußkampftechniken gelegt wurde.
-          - text: Während der japanischen Besatzungszeit (1909-1945) wurde die Ausübung aller koreanischen Kampfkünste verboten. Viele Koreaner trainierten deshalb heimlich. So wurde Taekwondo zum wichtigen Bestandteil der koreanischen Identität. Bereits ein Jahr nach der Befreiung gab es die ersten Versammlungen der größten Kampfsportschulen, bei denen versucht wurde, alle Kampfstile zu vereinen.
-          - text: Nach dem zweiten Weltkrieg und der Teilung in Nord- und Südkorea begann auch für Taekwondo ein geteiltes Zeitalter. In Nordkorea entwickelte sich unter General Choi Hong Hi das ITF (International Taekwondo Federation) System, in Südkorea unter Kim Un-Yong des WTF (World Taekwondo Federation) Taekwondo.
-          - text: Im April 1955 einigten sich die führenden Kampfsportexperten auf den Namen Taekwon-Do. 1971 wurde Taekwondo in Korea als Nationalsportart anerkannt und 1973 wurde die WTF offiziell gegründet. Im Mai 1973 wurde in der Sportarena des Kukkiwon, dem Taekwondozentrum der World Taekwondo Federation (WTF), die erste offizielle Weltmeisterschaft der Herren ausgetragen. Seit dieser Zeit werden diese im zweijährigen Rhythmus wiederholt. Seit 1979 gehen auch Frauen bei Weltmeisterschaften an den Start.
-          - text: Am 20.6.1981 wurde die Deutsche Taekwondo Union (DTU) gegründet. Wurde bisher nur Wettkampftaekwondo auf Weltebene ausgetragen, so fand 2006 auch die erste lange erwartete Weltmeisterschaft Formen statt.
-          - html: <h3>Die Koreanische Flagge</h3>
-          - text: Die südkoreanische Flagge selbst enthält noch vieles von der Philosophie und Mystik Asiens. Auf ihr ist das Yin-Yan Symbol dargestellt, die obere Hälfte rot (Yin), die unter blau (Yan). Damit soll zum Ausdruck gebracht werden, dass trotz einer ständigen Bewegung innerhalb der Sphäre die Idee von Gleichgewicht und Gegensatz der zentrale Gedanke ist und symbolisiert wird. Die drei ungebrochenen Linien links oben stehen für den Himmel die diagonal gegenüberliegenden drei gebrochenen Linie in der Mitte. Diese Anordnung bedeutet Feuer. Während das diagonale Gegenüber das Smbol für Wasser ist.
-      - title: Wiederholung der Verhaltensregeln im Dojang
-        content:
-          - text: siehe Theorie zum 10. Kup
-      - title: Fachbegriffe (Terminologie) der Grundtechniken auf deutsch und koreanisch
-        content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
   - title: Fußtechniken
     content:
       - table:
@@ -75,3 +54,24 @@ sections:
   - title: Step-Schule
     content:
       - text: mit oder ohne Partner (2 bisher erlernte Grundtechniken mit Auslagewechsel)
+  - title: Theorie
+    sections:
+      - title: Was ist Taekwondo?
+        content:
+          - text: siehe 10. Kup
+      - title: Kleine Geschichte des Taekwondo
+        content:
+          - text: Die Ursprünge des Taekwondo liegen in der historischen Frühgeschichte Koreas, das sich vor ca. 2.000 Jahren aus dem Königreichen Koguryo, Paekche und Silla zusammensetzte. Diese drei Dynastien schlossen sich zusammen, um ihr Land gegen Eindringlinge zu verteidigen.
+          - text: Überlieferungen zufolge übten sich die Soldaten der damaligen Zeit in der waffenlosen Kampfkunst, dem sogenannten Subak, einer spielerischen Art des unbewaffneten Kampfes, das auch in der einfachen Bevölkerung regen Zuspruch fand. Das Hauptaugenmerk wurde hierbei jedoch nicht so sehr auf die Kampftechnik gelegt, sondern diente vielmehr dem gesundheitlichen Aspekt, der Körperertüchtigung und natürlich auch der Selbstverteidigung. Aus allen bekannten und von Generation zu Generation überlieferten Techniken entwickelte sich bis gegen Ende des 17. Jahrhunderts das Taekyon, dem Vorläufer des heutigen modernen Taekwondo, bei dem das Hauptaugenmerk auf die Fußkampftechniken gelegt wurde.
+          - text: Während der japanischen Besatzungszeit (1909-1945) wurde die Ausübung aller koreanischen Kampfkünste verboten. Viele Koreaner trainierten deshalb heimlich. So wurde Taekwondo zum wichtigen Bestandteil der koreanischen Identität. Bereits ein Jahr nach der Befreiung gab es die ersten Versammlungen der größten Kampfsportschulen, bei denen versucht wurde, alle Kampfstile zu vereinen.
+          - text: Nach dem zweiten Weltkrieg und der Teilung in Nord- und Südkorea begann auch für Taekwondo ein geteiltes Zeitalter. In Nordkorea entwickelte sich unter General Choi Hong Hi das ITF (International Taekwondo Federation) System, in Südkorea unter Kim Un-Yong des WTF (World Taekwondo Federation) Taekwondo.
+          - text: Im April 1955 einigten sich die führenden Kampfsportexperten auf den Namen Taekwon-Do. 1971 wurde Taekwondo in Korea als Nationalsportart anerkannt und 1973 wurde die WTF offiziell gegründet. Im Mai 1973 wurde in der Sportarena des Kukkiwon, dem Taekwondozentrum der World Taekwondo Federation (WTF), die erste offizielle Weltmeisterschaft der Herren ausgetragen. Seit dieser Zeit werden diese im zweijährigen Rhythmus wiederholt. Seit 1979 gehen auch Frauen bei Weltmeisterschaften an den Start.
+          - text: Am 20.6.1981 wurde die Deutsche Taekwondo Union (DTU) gegründet. Wurde bisher nur Wettkampftaekwondo auf Weltebene ausgetragen, so fand 2006 auch die erste lange erwartete Weltmeisterschaft Formen statt.
+          - html: <h3>Die Koreanische Flagge</h3>
+          - text: Die südkoreanische Flagge selbst enthält noch vieles von der Philosophie und Mystik Asiens. Auf ihr ist das Yin-Yan Symbol dargestellt, die obere Hälfte rot (Yin), die unter blau (Yan). Damit soll zum Ausdruck gebracht werden, dass trotz einer ständigen Bewegung innerhalb der Sphäre die Idee von Gleichgewicht und Gegensatz der zentrale Gedanke ist und symbolisiert wird. Die drei ungebrochenen Linien links oben stehen für den Himmel die diagonal gegenüberliegenden drei gebrochenen Linie in der Mitte. Diese Anordnung bedeutet Feuer. Während das diagonale Gegenüber das Smbol für Wasser ist.
+      - title: Wiederholung der Verhaltensregeln im Dojang
+        content:
+          - text: siehe Theorie zum 10. Kup
+      - title: Fachbegriffe (Terminologie) der Grundtechniken auf deutsch und koreanisch
+        content:
+          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
