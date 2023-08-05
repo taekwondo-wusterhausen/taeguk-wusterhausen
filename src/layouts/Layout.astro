@@ -67,16 +67,14 @@ const {
             bgImage && (
                 <div
                     class="fixed w-full h-full bg-center bg-no-repeat opacity-70 -z-10"
-                    style={
-                        `background-image: url(${
-                            (
-                                await getImage({
-                                    src: background,
-                                    format: 'avif',
-                                })
-                            ).src
-                        })`
-                    }
+                    style={`background-image: url(${
+                        (
+                            await getImage({
+                                src: background,
+                                format: 'avif',
+                            })
+                        ).src
+                    })`}
                 />
             )
         }
