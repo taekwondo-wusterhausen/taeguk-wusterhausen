@@ -88,7 +88,7 @@ export function Button(
 ) {
     return (
         <button
-            className="block text-white bg-taeguk-blue-500 hover:bg-taeguk-blue-600 focus:ring-4 focus:outline-none focus:ring-taeguk-blue-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-taeguk-blue-400 dark:hover:bg-taeguk-blue-500 dark:focus:ring-taeguk-blue-600"
+            className="block text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-400 dark:hover:bg-blue-500 dark:focus:ring-blue-600"
             type="button"
             {...props}
         >

@@ -18,9 +18,9 @@ const isActive = wholeRoute === Astro.url.pathname
             'block py-2 hover:bg-gray-100 dark:hover:text-white',
             className,
             isTopLevel
-                ? 'pl-3 pr-4 text-gray-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent'
+                ? 'pl-3 pr-4 text-gray-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent'
                 : 'px-4 dark:hover:bg-gray-600',
-            { 'text-lime-500': isActive },
+            { 'text-blue-500': isActive },
         ]}
     >
         {label}

@@ -7,8 +7,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                // https://www.tailwindshades.com/#color=203.72881355932205%2C83.09859154929578%2C41.764705882352935&step-up=8&step-down=11&hue-shift=0&name=taeguk-blue&base-stop=5&v=1&overrides=e30%3D
-                'taeguk-blue': {
+                // https://www.tailwindshades.com/#color=203.72881355932205%2C83.09859154929578%2C41.764705882352935&step-up=8&step-down=11&hue-shift=0&name=blue&base-stop=5&v=1&overrides=e30%3D
+                'blue': {
                     DEFAULT: '#127DC3',
                     50: '#58B4F0',
                     100: '#4CAEEF',
