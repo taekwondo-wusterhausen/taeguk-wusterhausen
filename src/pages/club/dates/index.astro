@@ -10,7 +10,7 @@ import { Content as DatesTable } from './dates.md'
         <DatesTable />
     </div>
     {/* Used for inserting into table cells (for convenience) */}
-    <div id="event-icon" class="hidden">
+    <div id="event-icon" class="hidden text-taeguk-blue-500">
         <svg
             aria-hidden="true"
             class="w-5 h-5 ml-1"
@@ -28,6 +28,12 @@ import { Content as DatesTable } from './dates.md'
         </svg>
     </div>
 </Layout>
+
+<style>
+    svg {
+        stroke: rgb(18 125 195);
+    }
+</style>
 
 <script>
     import * as ics from 'ics'
