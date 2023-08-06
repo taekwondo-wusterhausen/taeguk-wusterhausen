@@ -2,6 +2,7 @@
 import { getImage } from 'astro:assets'
 
 import Menu from '@components/menu/Menu.astro'
+import Taeguk from '@components/Taeguk.astro'
 
 import background from '@assets/bg.png'
 
@@ -60,6 +61,7 @@ const {
             name="keywords"
             content="Taekwondo,TKD,Selbsverteidigung,Kampf,Freikampf,Kampfkunst,Kampfsport,Wusterhausen,Kyritz,Sport,Training"
         />
+        <link rel="sitemap" href={`${BASE_URL}sitemap-index.xml`} />
         <title>{title || frontmatter.title}</title>
     </head>
     <body class="antialiased mt-10 md:mt-14">
@@ -95,6 +97,119 @@ const {
                 )
             }
         </main>
+
+        <footer class="bg-blue-500 dark:bg-blue-600 mt-32">
+            <div class="w-full">
+                <div
+                    class="grid grid-cols-2 gap-12 px-6 md:px-12 lg:px-24 py-6 lg:py-8 md:grid-cols-3 text-sm text-white"
+                >
+                    <div>
+                        <h2 class="mb-6 text-sm font-bold uppercase">Verein</h2>
+                        <ul class="font-medium">
+                            <li class="mb-4">
+                                <a
+                                    href={`${BASE_URL}training`}
+                                    class="hover:underline">Training</a
+                                >
+                            </li>
+                            <li class="mb-4">
+                                <a
+                                    href={`${BASE_URL}club/dates`}
+                                    class="hover:underline">Termine</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href={`${BASE_URL}club/exam-catalog`}
+                                    class="hover:underline">Prüfungskatalog</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-bold uppercase">
+                            Downloads
+                        </h2>
+                        <ul class="font-medium">
+                            <li class="mb-4">
+                                <a
+                                    href={`${BASE_URL}pdfs/join/kids.pdf`}
+                                    download="Antragsformular für Kinder.pdf"
+                                    class="hover:underline">Antrag Kinder</a
+                                >
+                            </li>
+                            <li class="mb-4">
+                                <a
+                                    href={`${BASE_URL}pdfs/join/adults.pdf`}
+                                    download="Antragsformular für Erwachsene.pdf"
+                                    class="hover:underline">Antrag Erwachsene</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href={`${BASE_URL}pdfs/satzung.pdf`}
+                                    download="Satzung.pdf"
+                                    class="hover:underline">Satzung</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-bold uppercase">
+                            Rechtliche Hinweise
+                        </h2>
+                        <ul class="font-medium">
+                            <li class="mb-4">
+                                <a
+                                    href={`${BASE_URL}club/imprint`}
+                                    class="hover:underline">Impressum</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href={`${BASE_URL}club/privacy`}
+                                    class="hover:underline">Datenschutz</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="px-6 md:px-12 lg:px-24 py-6 lg:py-8 text-white">
+                    <h2 class="mb-6 text-sm font-bold uppercase">Disclaimer</h2>
+                    <p>
+                        Mit Urteil vom 12. Mai 1998 hat das Landgericht Hamburg
+                        entschieden, dass man durch die Ausbringung eines Links
+                        die Inhalte der gelinkten Seite ggf. mit zu verantworten
+                        hat. Dies kann - so das LG - nur dadurch verhindert
+                        werden, dass man sich ausdrücklich von diesen Inhalten
+                        distanziert. Wir haben auf diesen Seiten Links zu
+                        anderen Seiten im Internet gelegt. Für all diese Links
+                        gilt: Wir möchten ausdrücklich betonen, dass wir
+                        keinerlei Einfluss auf die Gestaltung und die Inhalte
+                        der verlinkten Seiten haben. Deshalb distanzieren wir
+                        uns hiermit ausdrücklich von allen Inhalten aller
+                        verlinkten Seiten auf dieser Homepage und machen uns
+                        deren Inhalte nicht zu eigen. Diese Erklärung gilt für
+                        alle auf dieser Homepage verwendeten Links und für alle
+                        Inhalte der Seiten, zu denen diese Links oder Banner
+                        führen.
+                    </p>
+                </div>
+                <div
+                    class="grid grid-cols-2 gap-12 px-6 md:px-12 lg:px-24 py-4 lg:py-6 md:grid-cols-3 text-sm bg-white dark:bg-gray-300 text-blue-500"
+                >
+                    <span>
+                        <a href="https://taeguk-wusterhausen.de">
+                            <Taeguk />
+                        </a>
+                    </span>
+                    <span class="hidden md:inline">2023</span>
+                    <span>
+                        <a href={`${BASE_URL}sitemap`}>Sitemap</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
         <init-flowbite data-should-init={initFlowbite ? 'true' : 'false'}
         ></init-flowbite>
     </body>

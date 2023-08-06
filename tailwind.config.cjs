@@ -8,7 +8,7 @@ module.exports = {
         extend: {
             colors: {
                 // https://www.tailwindshades.com/#color=203.72881355932205%2C83.09859154929578%2C41.764705882352935&step-up=8&step-down=11&hue-shift=0&name=blue&base-stop=5&v=1&overrides=e30%3D
-                'blue': {
+                blue: {
                     DEFAULT: '#127DC3',
                     50: '#58B4F0',
                     100: '#4CAEEF',
@@ -20,7 +20,7 @@ module.exports = {
                     700: '#0E5F94',
                     800: '#0C507D',
                     900: '#094166',
-                    950: '#083A5A'
+                    950: '#083A5A',
                 },
             },
         },

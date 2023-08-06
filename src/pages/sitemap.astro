@@ -1,0 +1,177 @@
+---
+import Layout from '@layouts/Layout.astro'
+import RefLink from '@components/links/RefLink.astro'
+---
+
+<Layout title="Sitemap">
+    <h1>Sitemap</h1>
+    <div class="not-prose">
+        <div
+            class="grid grid-cols-2 gap-12 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+        >
+            <div>
+                <h2 class="mb-6 text-sm font-bold uppercase">Taekwondo</h2>
+                <ul class="font-medium">
+                    <li>
+                        <RefLink
+                            href="taekwondo"
+                            text="Allgemein"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="taekwondo/history"
+                            text="Geschichte"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="taekwondo/techniques"
+                            text="Grundschule"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="taekwondo/one-step-sparring"
+                            text="Schrittkampf"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="taekwondo/sparring"
+                            text="Vollkontakt"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="taekwondo/poomse"
+                            text="Formen / Was ist Poomse?"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="taekwondo/poomse/overview"
+                            text="Formen / Übersicht"
+                            withArrow={false}
+                        />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-bold uppercase">Verein</h2>
+                <ul class="font-medium">
+                    <li>
+                        <RefLink
+                            href="training"
+                            text="Training"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="club/join"
+                            text="Mitglied werden"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="club/dates"
+                            text="Termine"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="club/exam-catalog"
+                            text="Prüfungskatalog"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="club/board"
+                            text="Vorstand"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="club/links"
+                            text="Links"
+                            withArrow={false}
+                        />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-bold uppercase">Regelwerke</h2>
+                <ul class="font-medium">
+                    <li>
+                        <RefLink
+                            href="rules/club"
+                            text="Satzung"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="rules/financial"
+                            text="Finanzordnung"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="rules/dtu"
+                            text="DTU"
+                            withArrow={false}
+                        />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-bold uppercase">
+                    Rechtliche Hinweise
+                </h2>
+                <ul class="font-medium">
+                    <li>
+                        <RefLink
+                            href="club/imprint"
+                            text="Impressum"
+                            withArrow={false}
+                        />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="club/privacy"
+                            text="Datenschutz"
+                            withArrow={false}
+                        />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-bold uppercase">Sonstiges</h2>
+                <ul class="font-medium">
+                    <li>
+                        <RefLink href="/" text="Startseite" withArrow={false} />
+                    </li>
+                    <li>
+                        <RefLink
+                            href="sitemap"
+                            text="Sitemap"
+                            withArrow={false}
+                        />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</Layout>
