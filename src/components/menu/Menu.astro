@@ -8,17 +8,19 @@ const { BASE_URL } = import.meta.env
 ---
 
 <nav
-    class="fixed w-full z-20 top-0 left-0 border-b px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+    class="fixed w-full z-20 top-0 left-0 px-2 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 h-[78px]"
 >
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href={BASE_URL} class="flex items-center">
+    <div
+        class="container flex flex-wrap items-center justify-between mx-auto h-full"
+    >
+        <a href={BASE_URL} class="flex items-center h-full">
             <img
                 src={`${BASE_URL}logo.png`}
-                class="h-6 sm:h-8 md:h-10 mr-3"
+                class="h-5/6 mr-3"
                 alt="Taeguk e. V. Logo"
             />
             <span
-                class="hidden lg:inline self-center font-semibold whitespace-nowrap dark:text-white"
+                class="hidden lg:inline self-center text-xl font-semibold whitespace-nowrap dark:text-white"
             >
                 <Taeguk />
             </span>
@@ -132,8 +134,40 @@ const { BASE_URL } = import.meta.env
     </div>
 </nav>
 
+<style>
+    /*
+     * Shrink Navigation Menu on Scroll.
+     * See https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
+     */
+    nav {
+        transition: height 0.35s;
+    }
+    nav.scrolled {
+        height: 52px;
+    }
+    nav.scrolled img ~ span {
+        transition: font-size 0.35s;
+    }
+    nav.scrolled img ~ span {
+        font-size: 1rem; /* text-base */
+        line-height: 1.5rem; /* text-base */
+    }
+</style>
+
 <script>
     import { initDropdowns } from 'flowbite/lib/esm/components/dropdown'
 
     initDropdowns()
+
+    const navbar = document.querySelector('nav')
+    window.addEventListener('scroll', (event) => {
+        if (
+            document.body.scrollTop > 70 ||
+            document.documentElement.scrollTop > 70
+        ) {
+            navbar.classList.add('scrolled')
+        } else {
+            navbar.classList.remove('scrolled')
+        }
+    })
 </script>
