@@ -2,8 +2,10 @@
 import RelImage from '@components/RelImage.astro'
 import Taeguk from '@components/Taeguk.astro'
 import EventsCard from '@components/cards/EventsCard.astro'
+import NewsCard from '@components/cards/NewsCard.astro'
 import Layout from '@layouts/Layout.astro'
-import { compiledContent } from '@pages/dates.md'
+import { compiledContent as datesHtml } from '@pages/dates.md'
+import { Content as News, compiledContent as newsHtml } from '@pages/news.md'
 
 /**
  * Custom parsing because structure is known and parsing does not work on server side.
@@ -15,7 +17,7 @@ import { compiledContent } from '@pages/dates.md'
  *  </tbody>
  * </table>
  */
-const table = compiledContent().trim()
+const table = datesHtml().trim()
 const tbody = table
     .split(/<\/?tbody>/g)[1]
     // strip leading '<tr>' and trailing '</tr>'
@@ -53,7 +55,18 @@ const upcomingEvents = events
 ---
 
 <Layout title="Startseite" prose={false}>
-    <EventsCard events={upcomingEvents} />
+    {
+        newsHtml().trim().length > 0 ? (
+            <div class="mx-auto w-full lg:w-3/4 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:gap-8">
+                <NewsCard>
+                    <News />
+                </NewsCard>
+                <EventsCard events={upcomingEvents} />
+            </div>
+        ) : (
+            <EventsCard events={upcomingEvents} />
+        )
+    }
     <div id="mainContainer" class="flex justify-between mt-8">
         <div class="flex-none hidden md:block w-16 md:w-auto">
             <RelImage src="logos/tvbb_small.png" alt="TVBB" />

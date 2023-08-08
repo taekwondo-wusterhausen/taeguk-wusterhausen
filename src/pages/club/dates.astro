@@ -1,11 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import Taeguk from '@components/Taeguk.astro'
 import { Content as DatesTable } from '@pages/dates.md'
 ---
 
 <Layout title="Termine">
-    <h1>Jahresplanung des <Taeguk /> 2023</h1>
+    <h1>Jahresplanung {new Date().getFullYear()}</h1>
     <div class="dates-table hover:prose-tr:bg-slate-100">
         <DatesTable />
     </div>
