@@ -12,7 +12,6 @@ export function toId(str: string): string {
     return alphanum.replace(/^(\d)/, '_$1')
 }
 
-// TODO: rename
 export function accordionId(titles: string[]): string {
     return titles.map(toId).join(ID_SEPARATOR)
 }

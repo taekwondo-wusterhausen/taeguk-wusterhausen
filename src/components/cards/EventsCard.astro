@@ -20,12 +20,12 @@ const { events } = Astro.props
         </h5>
         <RefLink href="club/dates" text="alle Termine" />
     </div>
-    <div class="flow-root">
-        <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+    <table class="table-fixed w-full">
+        <tbody>
             {
                 events.map(({ name, date, location }) => (
-                    <li class="px-1 py-1 sm:py-2 hover:bg-slate-100 rounded">
-                        <div class="flex items-center space-x-4">
+                    <tr class="hover:bg-slate-100 rounded">
+                        <td class="p-1 rounded-l">
                             <div class="flex-1 min-w-0">
                                 <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                                     {date}
@@ -34,13 +34,15 @@ const { events } = Astro.props
                                     {location}
                                 </p>
                             </div>
-                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                        </td>
+                        <td class="p-1 rounded-r">
+                            <div class="text-base font-semibold text-gray-900 dark:text-white truncate">
                                 {name}
                             </div>
-                        </div>
-                    </li>
+                        </td>
+                    </tr>
                 ))
             }
-        </ul>
-    </div>
+        </tbody>
+    </table>
 </div>

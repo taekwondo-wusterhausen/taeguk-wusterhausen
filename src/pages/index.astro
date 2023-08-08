@@ -1,21 +1,60 @@
 ---
-import Layout from '@layouts/Layout.astro'
-import EventsCard from '@components/cards/EventsCard.astro'
-import Taeguk from '@components/Taeguk.astro'
 import RelImage from '@components/RelImage.astro'
+import Taeguk from '@components/Taeguk.astro'
+import EventsCard from '@components/cards/EventsCard.astro'
+import Layout from '@layouts/Layout.astro'
+
+import { compiledContent } from './club/dates/dates.md'
+
+/**
+ * Custom parsing because structure is known and parsing does not work on server side.
+ *
+ * <table>
+ *  <thead><tr><th>Datum</th><th>Veranstaltung</th><th>Ort</th><th></th></tr></thead>
+ *  <tbody>
+ *      <tr><td>12.02.</td><td>offenes TJBB-Training Kyorugi</td><td>Dabendorf</td><td></td></tr>
+ *  </tbody>
+ * </table>
+ */
+const table = compiledContent().trim()
+const tbody = table
+    .split(/<\/?tbody>/g)[1]
+    // strip leading '<tr>' and trailing '</tr>'
+    .slice(4, -5)
+
+const events = tbody.split('</tr><tr>').map((row) =>
+    row
+        // strip leading '<td>' and trailing '</td>'
+        .slice(4, -5)
+        .split('</td><td>')
+        // discard empty calendar-icon column
+        .slice(0, -1),
+)
+const now = new Date()
+const index = events.findIndex(([date]) => {
+    let month: number
+    let day: number
+    // DD. - DD.MM. => use start date
+    if (date.includes('-')) {
+        ;[day, , month] = date.split('.').map(Number)
+    }
+    // DD.MM.
+    else {
+        ;[day, month] = date.split('.').map(Number)
+    }
+    return new Date(now.getFullYear(), month, day) >= now
+})
+const upcomingEvents = events
+    .slice(index, index + 3)
+    .map(([date, name, location]) => ({
+        name,
+        date,
+        location,
+    }))
 ---
 
 <Layout title="Startseite" prose={false}>
-    <EventsCard
-        {/* TODO: Import from dates.md + filter */}
-        events={[
-            {
-                name: '1. Kupprüfung 2023',
-                date: '01.04.',
-                location: 'kleine Halle',
-            },
-        ]}
-    />
+    <EventsCard events={upcomingEvents} />
     <div id="mainContainer" class="flex justify-between mt-8">
         <div class="flex-none hidden md:block w-16 md:w-auto">
             <RelImage src="logos/tvbb_small.png" alt="TVBB" />
