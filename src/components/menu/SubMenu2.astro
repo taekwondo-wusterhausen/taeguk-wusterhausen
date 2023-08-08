@@ -3,14 +3,16 @@ import MenuLink from '@components/menu/MenuLink.astro'
 
 interface Props {
     label: string
-    route: string
-    parentLabel: string
     routePrefix: string
+    parentLabel?: string
+    route?: string
 }
 
 const { BASE_URL } = import.meta.env
-const { label, route, parentLabel, routePrefix } = Astro.props
+const { label, parentLabel, routePrefix } = Astro.props
 const isActive = Astro.url.pathname.startsWith(BASE_URL + routePrefix)
+console.log('SubMenu2', Astro.url.pathname, BASE_URL, routePrefix)
+
 ---
 
 <li aria-labelledby=`${parentLabel}Link`>
