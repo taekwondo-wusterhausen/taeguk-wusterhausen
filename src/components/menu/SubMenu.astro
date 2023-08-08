@@ -1,6 +1,4 @@
 ---
-import MenuLink from '@components/menu/MenuLink.astro'
-
 interface Props {
     label: string
     routePrefix: string
@@ -9,7 +7,6 @@ interface Props {
 const { BASE_URL } = import.meta.env
 const { label, routePrefix } = Astro.props
 const isActive = Astro.url.pathname.startsWith(BASE_URL + routePrefix)
-console.log('SubMenu', Astro.url.pathname, BASE_URL, routePrefix, '=>', isActive)
 ---
 
 <li>

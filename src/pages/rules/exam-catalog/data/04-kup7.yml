@@ -6,6 +6,9 @@ icon: belts/7.png
 content:
   - text: 'Einfach ausgedrückt: Der Grundstein hat sich verfestigt.'
 sections:
+  - title: Überprüfung Vorprogramm
+    content:
+      - text: Bisher geprüfte Grundschultechniken.
   - title: Poomse
     content:
       - html: <strong>Taeguk Il-Jang</strong> (18 Bewegungen)

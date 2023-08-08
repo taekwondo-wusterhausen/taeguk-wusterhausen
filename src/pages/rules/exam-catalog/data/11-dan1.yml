@@ -10,6 +10,9 @@ content:
       </p>
   - text: Dem amtierenden WT-Präsidenten (World Taekwondo) wird der 10. Dan für das Bestehen seiner Amtszeit verliehen.
 sections:
+  - title: Überprüfung Vorprogramm
+    content:
+      - text: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
   - title: Poomse
     content:
       - html: <strong>Taeguk Pal-Jang</strong> (24 Bewegungen)

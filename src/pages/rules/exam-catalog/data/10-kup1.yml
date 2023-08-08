@@ -6,6 +6,9 @@ icon: belts/1.png
 content:
   - text: Wer gerne schwarz sieht, hat es fast geschafft. Der Träger ist nun Dan-Anwärter.
 sections:
+  - title: Überprüfung Vorprogramm
+    content:
+      - text: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
   - title: Poomse
     content:
       - html: <strong>Taeguk Chil-Jang</strong> (25 Bewegungen)
