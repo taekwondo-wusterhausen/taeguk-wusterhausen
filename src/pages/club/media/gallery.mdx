@@ -3,13 +3,61 @@ layout: '@layouts/Layout.astro'
 title: 'Galerie'
 ---
 
-# Fotogalerien
+import Gallery from '@components/Gallery.astro'
 
-...
+## Trainingslager
 
-# Vorführungen
+### Gnewikow 2014 (inkl. Prüfung)
 
-## Vorführung am 11.08.2011 in Holzhausen
+<Gallery
+    images={[...Array(9).keys()].map((i) => ({
+        src: `photos/camp/gnewikow/2014/${
+            i + 1 < 10 ? `0${i + 1}` : i + 1
+        }.jpg`,
+        alt: 'Trainingslager Gnewikow 2014',
+        loading: "lazy",
+    }))}
+/>
+
+### Eilenburg 2009
+
+<Gallery
+    images={[...Array(6).keys()].map((i) => ({
+        src: `photos/camp/eilenburg/2009/${
+            i + 1 < 10 ? `0${i + 1}` : i + 1
+        }.jpg`,
+        alt: 'Trainingslager Eilenburg 2009',
+        loading: "lazy",
+    }))}
+/>
+
+### Gnewikow 2007
+
+<Gallery
+    images={[...Array(9).keys()].map((i) => ({
+        src: `photos/camp/gnewikow/2007/${
+            i + 1 < 10 ? `0${i + 1}` : i + 1
+        }.jpg`,
+        alt: 'Trainingslager Gnewikow 2007',
+        loading: "lazy",
+    }))}
+/>
+
+## Vorführungen
+
+### Tag der Kinder und Jugend, Wusterhausen - Juni 2005
+
+<Gallery
+    images={[...Array(6).keys()].map((i) => ({
+        src: `photos/demo/2005/${
+            i + 1 < 10 ? `0${i + 1}` : i + 1
+        }.jpg`,
+        alt: 'Vorführung Wusterhausen 2005',
+        loading: "lazy",
+    }))}
+/>
+
+### Holzhausen - August 2011
 
 <div class="container">
     <div class="sm:hidden mx-auto w-60 max-w-full p-4 border-2 shadow-md rounded-lg aspect-video">
@@ -41,3 +89,29 @@ title: 'Galerie'
     />
 
 </div>
+
+## Lehrgänge und Prüfungen
+
+### Prüfung, Wusterhausen - Juli 2009
+
+<Gallery
+    images={[...Array(11).keys()].map((i) => ({
+        src: `photos/exam/2009/${
+            i + 1 < 10 ? `0${i + 1}` : i + 1
+        }.jpg`,
+        alt: 'Prüfung Wusterhausen 2009',
+        loading: "lazy",
+    }))}
+/>
+
+### Jiu-Jitsu Lehrgang, Neuruppin - 2006
+
+<Gallery
+    images={[...Array(19).keys()].map((i) => ({
+        src: `photos/course/neuruppin/2006/${
+            i + 1 < 10 ? `0${i + 1}` : i + 1
+        }.jpg`,
+        alt: 'Jiu-Jitsu Lehrgang Neuruppin 2006',
+        loading: "lazy",
+    }))}
+/>
