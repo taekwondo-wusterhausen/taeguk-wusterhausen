@@ -15,7 +15,7 @@ import Gallery from '@components/Gallery.astro'
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Trainingslager Gnewikow 2014',
-        loading: "lazy",
+        loading: 'lazy',
     }))}
 />
 
@@ -27,7 +27,7 @@ import Gallery from '@components/Gallery.astro'
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Trainingslager Eilenburg 2009',
-        loading: "lazy",
+        loading: 'lazy',
     }))}
 />
 
@@ -39,7 +39,7 @@ import Gallery from '@components/Gallery.astro'
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Trainingslager Gnewikow 2007',
-        loading: "lazy",
+        loading: 'lazy',
     }))}
 />
 
@@ -49,11 +49,9 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(6).keys()].map((i) => ({
-        src: `photos/demo/2005/${
-            i + 1 < 10 ? `0${i + 1}` : i + 1
-        }.jpg`,
+        src: `photos/demo/2005/${i + 1 < 10 ? `0${i + 1}` : i + 1}.jpg`,
         alt: 'Vorführung Wusterhausen 2005',
-        loading: "lazy",
+        loading: 'lazy',
     }))}
 />
 
@@ -96,11 +94,9 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(11).keys()].map((i) => ({
-        src: `photos/exam/2009/${
-            i + 1 < 10 ? `0${i + 1}` : i + 1
-        }.jpg`,
+        src: `photos/exam/2009/${i + 1 < 10 ? `0${i + 1}` : i + 1}.jpg`,
         alt: 'Prüfung Wusterhausen 2009',
-        loading: "lazy",
+        loading: 'lazy',
     }))}
 />
 
@@ -112,6 +108,6 @@ import Gallery from '@components/Gallery.astro'
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Jiu-Jitsu Lehrgang Neuruppin 2006',
-        loading: "lazy",
+        loading: 'lazy',
     }))}
 />

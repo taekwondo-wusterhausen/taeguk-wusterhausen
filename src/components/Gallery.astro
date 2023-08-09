@@ -4,7 +4,7 @@ import { ImgAttributes } from 'astro:assets'
 import RelImage from '@components/RelImage.astro'
 
 interface Props {
-    images: (string | { src: string; alt: string } & ImgAttributes)[]
+    images: (string | ({ src: string; alt: string } & ImgAttributes))[]
     class?: string
 }
 
