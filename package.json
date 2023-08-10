@@ -29,7 +29,7 @@
         "@tailwindcss/typography": "^0.5.9",
         "astro": "^2.1.7",
         "astro-robots-txt": "^0.4.1",
-        "flowbite": "^1.6.4",
+        "flowbite": "^1.6.6",
         "fuse.js": "^6.6.2",
         "ics": "^3.1.0",
         "mousetrap": "^1.6.5",
