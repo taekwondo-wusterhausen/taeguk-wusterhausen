@@ -1,7 +1,7 @@
 ---
 import AccordionItem from '@components/AccordionItem.astro'
 import Content from './Content.astro'
-import { Content as ContentType, Section } from './types'
+import { Section } from './types'
 
 interface Props extends Section {}
 
@@ -32,7 +32,11 @@ const {
                     </>
                 )}
                 {sections.length > 0 && (
-                    <div data-accordion="collapse">
+                    <div
+                        data-accordion="collapse"
+                        data-active-classes="bg-gray-100 dark:bg-gray-800 text-blue-500 dark:text-white"
+                        data-inactive-classes="text-gray-500 dark:text-gray-400"
+                    >
                         {sections.map((section, index) => (
                             <Astro.self
                                 {...section}

@@ -98,6 +98,7 @@ const sections: NormalizedSection[] = (
                                 <RelImage
                                     src={section.icon}
                                     class="w-12 mx-auto"
+                                    alt={section.title}
                                 />
                                 <div data-popper-arrow />
                             </div>
@@ -124,6 +125,8 @@ const sections: NormalizedSection[] = (
                     <div
                         class="max-w-screen-lg prose prose-table:w-full hover:prose-tr:bg-slate-100"
                         data-accordion="collapse"
+                        data-active-classes="bg-gray-100 dark:bg-gray-800 text-blue-500 dark:text-white"
+                        data-inactive-classes="text-gray-500 dark:text-gray-400"
                     >
                         {section.sections?.map((subSection, index) => (
                             <Section
@@ -145,8 +148,7 @@ const sections: NormalizedSection[] = (
 </script>
 
 <script>
-    import Accordion from 'flowbite/lib/esm/components/accordion'
-    import { AccordionItem } from 'flowbite/lib/esm/components/accordion/types'
+    import { initAccordions } from 'flowbite/lib/esm/components/accordion'
     import { initPopovers } from 'flowbite/lib/esm/components/popover'
     import { initTabs } from 'flowbite/lib/esm/components/tabs'
     import Mousetrap from 'mousetrap'
@@ -159,9 +161,9 @@ const sections: NormalizedSection[] = (
     } from '@components/utils'
 
     initTabs()
+    initAccordions()
     initPopovers()
 
-    let itemIds: string[] = []
     let activeElementId: string
     /** Avoid
      * 1. scroll jumping because the hash coincidentally matches an element id.
@@ -170,17 +172,10 @@ const sections: NormalizedSection[] = (
     if (window.location.hash.startsWith(`#${HASH_PREFIX}`)) {
         // Strip `#${HASH_PREFIX}`
         activeElementId = window.location.hash.slice(1 + HASH_PREFIX.length)
-        const [tab, ...items] = activeElementId.split(ID_SEPARATOR)
+        const [tab] = activeElementId.split(ID_SEPARATOR)
         const activeTabId = `#${tab}-tab`
-        itemIds = items.map(
-            (_, index) =>
-                `#${BODY_PREFIX}${tab}${ID_SEPARATOR}${items
-                    .slice(0, index + 1)
-                    .join(ID_SEPARATOR)}`,
-        )
 
-        // --------------------------------------------------------------------
-        // Tabs
+        // Open tab according to URL hash by triggering clicks
         if (activeElementId) {
             document.querySelector(activeTabId).dispatchEvent(
                 new MouseEvent('click', {
@@ -192,6 +187,7 @@ const sections: NormalizedSection[] = (
         }
     }
 
+    // Set URL hash on tab click
     document.querySelectorAll('[data-tabs-target]').forEach((tabButton) => {
         tabButton.addEventListener('click', () => {
             const idSelector = tabButton.getAttribute('data-tabs-target')
@@ -199,59 +195,32 @@ const sections: NormalizedSection[] = (
         })
     })
 
-    // ------------------------------------------------------------------------
-    // Accordion
-    document
-        .querySelectorAll('[data-accordion]')
-        .forEach(function ($accordionEl) {
-            var alwaysOpen = $accordionEl.getAttribute('data-accordion')
-            var activeClasses = $accordionEl.getAttribute('data-active-classes')
-            var inactiveClasses = $accordionEl.getAttribute(
-                'data-inactive-classes',
+    const triggerElements = document.querySelectorAll('[data-accordion-target]')
+    // Open accordion according to URL hash by triggering clicks
+    triggerElements.forEach((triggerEl) => {
+        const itemId = triggerEl.getAttribute('data-accordion-target')
+        const semanticId = itemId.slice(1).replace(BODY_PREFIX, '')
+        if (activeElementId.startsWith(semanticId)) {
+            triggerEl.dispatchEvent(
+                new MouseEvent('click', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true,
+                }),
             )
-            const targetCandidates = [
-                ...$accordionEl.querySelectorAll('[data-accordion-target]'),
-            ] as HTMLElement[]
-            // Group items by closest accordion parent to make nested accordions work.
-            const items = targetCandidates
-                .filter(
-                    ($triggerEl) =>
-                        $triggerEl.closest('[data-accordion]') === $accordionEl,
-                )
-                .map(($triggerEl) => ({
-                    id: $triggerEl.getAttribute('data-accordion-target'),
-                    triggerEl: $triggerEl,
-                    targetEl: document.querySelector(
-                        $triggerEl.getAttribute('data-accordion-target'),
-                    ),
-                    iconEl: $triggerEl.querySelector('[data-accordion-icon]'),
-                    active:
-                        $triggerEl.getAttribute('aria-expanded') === 'true'
-                            ? true
-                            : itemIds.includes(
-                                  $triggerEl.getAttribute(
-                                      'data-accordion-target',
-                                  ),
-                              ),
-                })) as AccordionItem[]
-
-            new Accordion(items, {
-                alwaysOpen: alwaysOpen === 'open' ? true : false,
-                activeClasses: activeClasses
-                    ? activeClasses
-                    : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
-                inactiveClasses: inactiveClasses
-                    ? inactiveClasses
-                    : 'text-gray-500 dark:text-gray-400',
-                onOpen: (accordion, item) => {
-                    const semanticId = item.id.replace(BODY_PREFIX, '')
-                    // Insert `HASH_PREFIX` after `semanticId`s '#'
-                    window.location.hash = `#${HASH_PREFIX}${semanticId.slice(
-                        1,
-                    )}`
-                },
-            })
+        }
+    })
+    // Set URL hash on accordion open
+    triggerElements.forEach((triggerEl) => {
+        triggerEl.addEventListener('click', (event) => {
+            if (triggerEl.getAttribute('aria-expanded') === 'true') {
+                const itemId = triggerEl.getAttribute('data-accordion-target')
+                const semanticId = itemId.replace(BODY_PREFIX, '')
+                // Insert `HASH_PREFIX` after `semanticId`s '#'
+                window.location.hash = `#${HASH_PREFIX}${semanticId.slice(1)}`
+            }
         })
+    })
 
     if (activeElementId) {
         setTimeout(() => {
