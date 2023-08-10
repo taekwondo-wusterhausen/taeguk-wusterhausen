@@ -182,7 +182,6 @@ export function search(
     const results: Fuse.FuseResult<SearchableSection>[] = fuse.search(
         `'"${query}"`,
     )
-    console.log(results)
     return results.map(({ item, matches = [] }) => ({
         id: accordionId([...item.parentTitles, item.title]),
         breadcrumbs: [...item.parentTitles, item.title],
