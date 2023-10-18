@@ -39,5 +39,5 @@ jobs:
           remote-password: ${{ secrets.DEPLOY_PASSWORD }}
           local-path: dist/
           remote-path: /
-          sync: delta
+          sync: full
           # debug: true
