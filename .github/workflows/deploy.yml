@@ -36,26 +36,8 @@ jobs:
           remote-protocol: sftp
           remote-host: ${{ secrets.DEPLOY_HOST }}
           remote-user: ${{ secrets.DEPLOY_USER }}
-          # ssh-private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
           remote-password: ${{ secrets.DEPLOY_PASSWORD }}
           local-path: dist/
           remote-path: /
-          sync: full
-          debug: true
-      # - name: Install, build, and upload your site output
-      #   uses: withastro/action@v0
-      #   with:
-      #       path: .  # The root location of your Astro project inside the repository. (optional)
-      #       node-version: 18  # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
-      #       # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
-      #       # resolve-dep-from-path: false # If the dependency file should be resolved from the root location of your Astro project. Defaults to `true`. (optional)
-  # deploy:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v1
+          sync: delta
+          # debug: true
