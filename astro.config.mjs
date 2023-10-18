@@ -8,8 +8,7 @@ import yaml from '@rollup/plugin-yaml'
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://jneuendorf.github.io',
-    base: '/taeguk-wusterhausen',
+    site: 'https://taeguk-wusterhausen.de',
     experimental: {
         assets: true,
     },
