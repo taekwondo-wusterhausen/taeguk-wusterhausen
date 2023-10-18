@@ -39,7 +39,7 @@ jobs:
           # ssh-private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
           remote-password: ${{ secrets.DEPLOY_PASSWORD }}
           local-path: dist/
-          # remote-path: "/var/www/example.com"
+          remote-path: /
           sync: delta
       # - name: Install, build, and upload your site output
       #   uses: withastro/action@v0
