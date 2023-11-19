@@ -14,4 +14,4 @@
 | 20. - 25.10. | 16. Vereins-Trainingscamp                                                      | Gnewikow       |     |
 | 19.11.       | offenes TJBB-Training Aikido                                                   | Dabendorf      |     |
 | 25.11.       | Nikolausturnier                                                                | Falkensee      |     |
-|              | Weihnachtsfeier                                                                | Lohm           |     |
+| 01.12.       | Weihnachtsfeier                                                                | Lohm           |     |
