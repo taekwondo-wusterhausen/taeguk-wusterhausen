@@ -23,25 +23,33 @@ const { events } = Astro.props
     <table class="table-fixed w-full">
         <tbody>
             {
-                events.map(({ name, date, location }) => (
-                    <tr class="hover:bg-slate-100 rounded">
-                        <td class="p-1 rounded-l w-[100px]">
-                            <div class="flex-1 min-w-0">
-                                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                    {date}
-                                </p>
-                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                    {location}
-                                </p>
-                            </div>
-                        </td>
-                        <td class="p-1 rounded-r">
-                            <div class="text-base font-semibold text-gray-900 dark:text-white truncate">
-                                {name}
-                            </div>
-                        </td>
-                    </tr>
-                ))
+                events.length > 0
+                    ? events.map(({ name, date, location }) => (
+                        <tr class="hover:bg-slate-100 rounded">
+                            <td class="p-1 rounded-l w-[100px]">
+                                <div class="flex-1 min-w-0">
+                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        {date}
+                                    </p>
+                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        {location}
+                                    </p>
+                                </div>
+                            </td>
+                            <td class="p-1 rounded-r">
+                                <div class="text-base font-semibold text-gray-900 dark:text-white truncate">
+                                    {name}
+                                </div>
+                            </td>
+                        </tr>
+                    ))
+                    : (
+                        <tr class="hover:bg-slate-100 rounded">
+                            <td class="p-1 rounded-l rounded-r">
+                                keine weiteren Termine dieses Jahr
+                            </td>
+                        </tr>
+                    )
             }
         </tbody>
     </table>

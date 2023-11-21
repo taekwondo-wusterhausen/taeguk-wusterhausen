@@ -35,15 +35,17 @@ const now = new Date()
 const index = events.findIndex(([date]) => {
     let month: number
     let day: number
-    // DD. - DD.MM. => use start date
-    if (date.includes('-')) {
+    // DD. - DD.MM. / DD. + DD.MM. => use start date
+    if (date.includes('-') || date.includes('+')) {
+        // 'DD. - DD.MM.' => ['DD', ' - DD', 'MM', '']
         ;[day, , month] = date.split('.').map(Number)
     }
     // DD.MM.
     else {
         ;[day, month] = date.split('.').map(Number)
     }
-    return new Date(now.getFullYear(), month, day) >= now
+    const utcDate = new Date(Date.UTC(now.getFullYear(), month - 1, day))
+    return utcDate >= now
 })
 const upcomingEvents = events
     .slice(index, index + 3)
