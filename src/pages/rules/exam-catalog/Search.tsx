@@ -54,12 +54,12 @@ export function Search(props: Props) {
     return (
         <>
             <Button
-                data-modal-target="searchModel"
-                data-modal-toggle="searchModel"
+                data-modal-target="searchModal"
+                data-modal-toggle="searchModal"
                 onClick={() => searchInputRef.current.focus()}
             />
             <div
-                id="searchModel"
+                id="searchModal"
                 tabIndex={-1}
                 aria-hidden="true"
                 className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-hidden md:inset-0 h-[calc(100%-1rem)] max-h-full not-prose"
@@ -115,7 +115,7 @@ export function Search(props: Props) {
                                     <button
                                         type="button"
                                         className="absolute top-[13px] right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                        data-modal-hide="searchModel"
+                                        data-modal-hide="searchModal"
                                     >
                                         <svg
                                             aria-hidden="true"

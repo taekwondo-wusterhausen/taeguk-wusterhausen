@@ -200,7 +200,7 @@ const sections: NormalizedSection[] = (
     triggerElements.forEach((triggerEl) => {
         const itemId = triggerEl.getAttribute('data-accordion-target')
         const semanticId = itemId.slice(1).replace(BODY_PREFIX, '')
-        if (activeElementId.startsWith(semanticId)) {
+        if (activeElementId && activeElementId.startsWith(semanticId)) {
             triggerEl.dispatchEvent(
                 new MouseEvent('click', {
                     view: window,
@@ -235,7 +235,7 @@ const sections: NormalizedSection[] = (
 
     Mousetrap.bind(['command+f', 'ctrl+f'], () => {
         document
-            .querySelector('button[data-modal-target="searchModel"]')
+            .querySelector('button[data-modal-target="searchModal"]')
             .dispatchEvent(
                 new MouseEvent('click', {
                     view: window,

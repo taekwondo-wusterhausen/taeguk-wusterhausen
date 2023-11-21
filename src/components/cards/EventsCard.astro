@@ -23,8 +23,8 @@ const { events } = Astro.props
     <table class="table-fixed w-full">
         <tbody>
             {
-                events.length > 0
-                    ? events.map(({ name, date, location }) => (
+                events.length > 0 ? (
+                    events.map(({ name, date, location }) => (
                         <tr class="hover:bg-slate-100 rounded">
                             <td class="p-1 rounded-l w-[100px]">
                                 <div class="flex-1 min-w-0">
@@ -43,13 +43,13 @@ const { events } = Astro.props
                             </td>
                         </tr>
                     ))
-                    : (
-                        <tr class="hover:bg-slate-100 rounded">
-                            <td class="p-1 rounded-l rounded-r">
-                                keine weiteren Termine dieses Jahr
-                            </td>
-                        </tr>
-                    )
+                ) : (
+                    <tr class="hover:bg-slate-100 rounded">
+                        <td class="p-1 rounded-l rounded-r">
+                            keine weiteren Termine dieses Jahr
+                        </td>
+                    </tr>
+                )
             }
         </tbody>
     </table>
