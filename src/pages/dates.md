@@ -13,5 +13,5 @@
 | 30.09.       | TVBB Masters / DTU-Final 9-Turnier Brandenburg                                 | Falkensee      |     |
 | 20. - 25.10. | 16. Vereins-Trainingscamp                                                      | Gnewikow       |     |
 | 19.11.       | offenes TJBB-Training Aikido                                                   | Dabendorf      |     |
-| 25.11.       | Nikolausturnier                                                                | Falkensee      |     |
+| 26.11.       | Nikolausturnier                                                                | Potsdam     |     |
 | 01.12.       | Weihnachtsfeier                                                                | Lohm           |     |

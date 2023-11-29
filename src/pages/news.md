@@ -1,7 +1,7 @@
 |              |                                             |
 | ------------ | ------------------------------------------- |
-| 20. - 25.10. | 16. Vereinscamp Gnewikow                    |
-| 28.10.       | Prüfungsvorbereitung kleine Halle 10:00 Uhr |
-| 04.11.       | Prüfung kleine Halle                        |
+| 24.11.       | Training kleine Halle                       |
+| 01.12.       | Weihnachtsfeier Lohm                        |
+| 22.12.       | letztes Training 2023                      |
 
-In den Ferien ist mittwochs kein Training!
+In den Ferien 23.12.2023 bis 05.01.2024 kein Training!
