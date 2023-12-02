@@ -1,6 +1,4 @@
 ---
-import RelImage from '@components/RelImage.astro'
-
 interface Props {
     href: string
     external?: boolean
@@ -18,7 +16,7 @@ const { href, external, src, alt } = Astro.props
 >
     {
         src && (
-            <RelImage
+            <img
                 class="my-auto p-4 object-contain w-36 h-full max-w-[9rem] min-w-[9rem]"
                 src={src}
                 alt={alt}

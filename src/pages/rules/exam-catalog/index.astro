@@ -1,5 +1,4 @@
 ---
-import RelImage from '@components/RelImage.astro'
 import DownloadLink from '@components/links/DownloadLink.astro'
 import Layout from '@layouts/Layout.astro'
 
@@ -95,7 +94,7 @@ const sections: NormalizedSection[] = (
                                 role="tooltip"
                                 class="absolute z-10 invisible inline-block w-20 p-4 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800"
                             >
-                                <RelImage
+                                <img
                                     src={section.icon}
                                     class="w-12 mx-auto"
                                     alt={section.title}

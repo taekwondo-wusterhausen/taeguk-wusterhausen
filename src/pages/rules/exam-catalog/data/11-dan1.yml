@@ -2,7 +2,7 @@ title: 1. Dan
 colors:
   - black
   - gold
-icon: belts/0.png
+icon: /belts/0.png
 content:
   - html: |
       <p>

@@ -1,7 +1,6 @@
 ---
 /** https://flowbite.com/docs/components/gallery/ */
-import { ImgAttributes } from 'astro:assets'
-import RelImage from '@components/RelImage.astro'
+import { ImgAttributes } from 'astro:assets';
 
 interface Props {
     images: (string | ({ src: string; alt: string } & ImgAttributes))[]
@@ -25,7 +24,7 @@ const { images, class: className } = Astro.props
                 typeof img === 'string' ? { src: img, alt: '' } : img,
             )
             .map(({ src, alt, ...props }) => (
-                <RelImage
+                <img
                     class="h-auto max-w-full rounded-lg opacity-95 hover:opacity-100 hover:shadow-xl"
                     src={src}
                     alt={alt}
