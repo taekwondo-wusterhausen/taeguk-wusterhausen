@@ -17,9 +17,12 @@ const isActive = Astro.url.pathname.startsWith(BASE_URL + routePrefix)
         data-dropdown-toggle=`${label}Dropdown`
         data-dropdown-placement="right-start"
         type="button"
-        class={'flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white' +
-            ' ' +
-            (isActive ? 'text-blue-500' : '')}
+        class:list={[
+            'flex items-center justify-between w-full px-4 py-2',
+            'hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white',
+            { 'text-blue-500': isActive },
+            { 'text-gray-700': !isActive },
+        ]}
     >
         {label}
         <!-- Chevron right -->
