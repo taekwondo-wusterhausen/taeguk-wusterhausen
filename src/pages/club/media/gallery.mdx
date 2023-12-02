@@ -11,7 +11,7 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(9).keys()].map((i) => ({
-        src: `photos/camp/gnewikow/2014/${
+        src: `/photos/camp/gnewikow/2014/${
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Trainingslager Gnewikow 2014',
@@ -23,7 +23,7 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(6).keys()].map((i) => ({
-        src: `photos/camp/eilenburg/2009/${
+        src: `/photos/camp/eilenburg/2009/${
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Trainingslager Eilenburg 2009',
@@ -35,7 +35,7 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(9).keys()].map((i) => ({
-        src: `photos/camp/gnewikow/2007/${
+        src: `/photos/camp/gnewikow/2007/${
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Trainingslager Gnewikow 2007',
@@ -49,7 +49,7 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(6).keys()].map((i) => ({
-        src: `photos/demo/2005/${i + 1 < 10 ? `0${i + 1}` : i + 1}.jpg`,
+        src: `/photos/demo/2005/${i + 1 < 10 ? `0${i + 1}` : i + 1}.jpg`,
         alt: 'Vorführung Wusterhausen 2005',
         loading: 'lazy',
     }))}
@@ -94,7 +94,7 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(11).keys()].map((i) => ({
-        src: `photos/exam/2009/${i + 1 < 10 ? `0${i + 1}` : i + 1}.jpg`,
+        src: `/photos/exam/2009/${i + 1 < 10 ? `0${i + 1}` : i + 1}.jpg`,
         alt: 'Prüfung Wusterhausen 2009',
         loading: 'lazy',
     }))}
@@ -104,7 +104,7 @@ import Gallery from '@components/Gallery.astro'
 
 <Gallery
     images={[...Array(19).keys()].map((i) => ({
-        src: `photos/course/neuruppin/2006/${
+        src: `/photos/course/neuruppin/2006/${
             i + 1 < 10 ? `0${i + 1}` : i + 1
         }.jpg`,
         alt: 'Jiu-Jitsu Lehrgang Neuruppin 2006',
