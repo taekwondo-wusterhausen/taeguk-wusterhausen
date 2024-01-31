@@ -4,4 +4,4 @@
 |        |            |
 |        |                       |
 
-In den Ferien 23.12.2023 bis 05.01.2024 kein Training!
+In den Ferien 05.-09.02. Training in der kleinen Halle!
