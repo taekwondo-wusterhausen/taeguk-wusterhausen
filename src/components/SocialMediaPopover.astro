@@ -1,0 +1,33 @@
+---
+import FacebookLink from '@components/links/FacebookLink.astro'
+import HomeLink from '@components/links/HomeLink.astro'
+import InstagramLink from '@components/links/InstagramLink.astro'
+
+interface Props {
+    id: string
+    homeUrl?: string
+    facebookUrl?: string
+    instagramUrl?: string
+}
+
+const { id, homeUrl, facebookUrl, instagramUrl } = Astro.props
+const urlCount = [homeUrl, facebookUrl, instagramUrl]
+    .map((url) => (url ? 1 : 0))
+    .reduce((a, b) => a + b, 0)
+console.log(urlCount)
+const widthClass = `w-${14 * urlCount}`
+---
+
+<div
+    data-popover
+    id={id}
+    role="tooltip"
+    class={`absolute z-10 invisible inline-block ${widthClass} transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0`}
+>
+    <div class="px-2 py-1 h-[50px] text-center">
+        {homeUrl && <HomeLink href={homeUrl} size={42} />}
+        {facebookUrl && <FacebookLink href={facebookUrl} size={42} />}
+        {instagramUrl && <InstagramLink href={instagramUrl} size={42} />}
+    </div>
+    <div data-popper-arrow></div>
+</div>

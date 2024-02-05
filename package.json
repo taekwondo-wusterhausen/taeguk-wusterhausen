@@ -5,12 +5,12 @@
     "version": "0.0.1",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jneuendorf/taeguk-wusterhausen.git"
+        "url": "git+https://github.com/taekwondo-wusterhausen/taeguk-wusterhausen.git"
     },
     "author": "Jim Neuendorf <jim.neuendorf@gmx.de>",
     "license": "UNLICENSED",
     "bugs": {
-        "url": "https://github.com/jneuendorf/taeguk-wusterhausen/issues"
+        "url": "https://github.com/taekwondo-wusterhausen/taeguk-wusterhausen/issues"
     },
     "homepage": "https://taekwondo-wusterhausen.de",
     "scripts": {
