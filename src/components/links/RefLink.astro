@@ -2,7 +2,7 @@
 /** https://flowbite.com/docs/typography/links/#icon-link */
 interface Props {
     href: string
-    text: string
+    text?: string
     external?: boolean
     download?: boolean | string
     appearance?: 'button' | 'link'
@@ -13,7 +13,7 @@ interface Props {
 
 const {
     href,
-    text,
+    text = '',
     appearance = 'link',
     external = false,
     download = false,
