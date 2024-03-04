@@ -1,4 +1,5 @@
 ---
+import RefLink from '@components/links/RefLink.astro'
 import Text from './Text.astro'
 import Heading from './Heading.astro'
 import * as Types from './types'
@@ -17,6 +18,10 @@ function isParagraph(content: Types.Content): content is { par: string } {
 
 function isHeading(content: Types.Content): content is Types.Heading {
     return content && 'heading' in content
+}
+
+function isLink(content: Types.Content): content is Types.Link {
+    return content && 'href' in content && 'text' in content
 }
 
 function isEnumeration(
@@ -41,9 +46,11 @@ const { content } = Astro.props
 ---
 
 <>
-    {
-        Array.isArray(content) ? (
-            content.map((c) => <Astro.self content={c} />)
+{
+    Array.isArray(content) ? (
+        content.map((c) => <Astro.self content={c} />)
+        ) : isLink(content) ? (
+            <RefLink withArrow={false} {...content} />
         ) : isText(content) ? (
             <span>
                 <Text {...content} />

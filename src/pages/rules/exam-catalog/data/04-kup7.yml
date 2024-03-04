@@ -99,8 +99,8 @@ sections:
     sections:
       - title: Notwehrbegriff
         content:
-          # TODO: link
-          # - html: <a href="#">siehe Notwehr</a>
+          - href: taekwondo/self-defense/legal
+            text: siehe Notwehr
           - par: Notwehr ist ein Begriff der Rechtssprache. Er bezeichnet die Verteidigung eines Menschen, die zur Abwehr eines rechtswidrigen, gegenwärtigen Angriffs durch einen anderen Menschen erforderlich ist (§ 32 StGB, § 227 BGB). Notwehr ist nicht strafbar und gilt auch im Zivilrecht nicht als unerlaubte Handlung. Unter einem Angriff versteht man dabei jede Bedrohung rechtlich geschützter Interessen durch menschliches Verhalten. Ein Angriff ist gegenwärtig, sobald diese Bedrohung unmittelbar bevorsteht, gerade stattfindet oder noch andauert. In jedem Fall entfällt die Rechtswidrigkeit des Angriffs immer dann, wenn zugunsten des Angreifers selbst ein Rechtfertigungsgrund eingreift (etwa Notwehr oder Notstand). Wenn bspw. ein Angegriffener eine Sache eines Dritten zuhilfe nimmt, um einen tätlichen Angriff gegen seine Person abzuwehren, darf der Dritte seinerseits nicht dem Angegriffenen die Sache wegnehmen. Für den Dritten liegt keine Notwehrlage vor, da die Verwendung und ggf. Beschädigung der Sache durch den Angegriffenen aufgrund dessen Notwehrlage gerechtfertigt ist. Eine Notwehr gegen eine Notwehrhandlung ist nicht möglich. Kennzeichnend für die Notwehr sind eine Notwehrlage und eine Notwehrhandlung.
           - heading: Notwehrlage
             level: 5

@@ -104,7 +104,8 @@ sections:
     sections:
       - title: Wiederholung Notwehrparagraph / Rechtsgrundlagen
         content:
-          - html: <a href="#">siehe Notwehr</a>
+          - href: taekwondo/self-defense/legal
+            text: siehe Notwehr
       - title: Welchen Sinn haben "formenerklärenden Übungen" im 1-Schritt-Kampf?
         content:
           - par: Bei formenerklärenden Partnerübungen werden Bewegungsfolgen aus einer Poomse entnommen und in das Ilbo Taeryon eingefügt. Dabei können Technik-Veränderungen durchaus stattfinden. Ilbo Taeryon-Techniken müssen beidseitig beherrscht werden, das bedeutet, es wird sowohl links- und rechtsseitig angegriffen, wobei die gezeigten Techniken unterschiedlich sein können. Dadurch soll das Verständnis der zwangsläufigen Abfolge einer Verteidigungshandlung und dem Aspekt der für Taekwondo typischen Defensiv-Haltung - erst passive Verteidigung (Block oder Ausweichen), dann aktive Verteidigung (Konter/Gegenangriff) geweckt und gestärkt werden. Da sich diese Bewegungsabläufe in jeder Poomse wiederholen, sind formenerklärende Ilbo Taeryons eine gute Ergänzung zu den formenorientierten Übungen.
@@ -133,7 +134,8 @@ sections:
           - par: Dei der Planung der Strategie ist der gegenerische Kampfstil zu berücksichtigen (z. B. Konterkämpfer). Die Strategie ist mit dem Coach abzustimmen und wird im eigentlichen Wettkampf häufig durch diesen vorgegeben bzw. empfohlen.
       - title: Wettkampfregeln / Kampfleitergesten
         content:
-          - html: <a href="#">siehe WOT</a>
+          - href: rules/dtu
+            text: siehe WOT
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
           - par: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

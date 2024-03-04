@@ -9,7 +9,15 @@ sections:
   - title: Was ist Taekwondo?
     content:
       - par: Taekwondo ist eine ca. 2000 Jahre alte koreanische Kampfsportart.
-      - html: <table><tr><td>Tae</td><td>Fuß, springen, treten, die Techniken mit dem Fuß</td></tr><tr><td>Kwon</td><td>Hand, schlagen, die Techniken mit der Hand</td></tr><tr><td>Do</td><td>der Weg, die Philosophie, die Art und Weise</td></tr><tr><td>Taekwondo</td><td>Der Weg mit Füßen und Händen zu kämpfen</td></tr></table>
+      - table:
+          body:
+            - [
+                text: Tae,
+                text: 'Fuß, springen, treten, die Techniken mit dem Fuß,'
+              ]
+            - [text: Kwon, text: 'Hand, schlagen, die Techniken mit der Hand']
+            - [text: Do, text: 'der Weg, die Philosophie, die Art und Weise']
+            - [text: Taekwondo, text: Der Weg mit Füßen und Händen zu kämpfen]
   - title: Verhaltensregeln im Training im Sinne der Dojang-Etikette
     content:
       - par: Vereinsregeln (Dojang-Etikette) des TKD - Vereins Taeguk e. V.

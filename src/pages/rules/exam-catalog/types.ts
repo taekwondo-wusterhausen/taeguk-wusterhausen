@@ -6,11 +6,16 @@ export type Text = {
     underline?: boolean
 }
 export type Heading = { heading: string; level: 1 | 2 | 3 | 4 | 5 | 6 }
+export type Link = {
+    href: string
+    text: string
+}
 
 export type Content =
     | Content[]
     | Text
     | Heading
+    | Link
     | { par: string }
     | { enumerate: Content[] }
     | { itemize: Content[] }
