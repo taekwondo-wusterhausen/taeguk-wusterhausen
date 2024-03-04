@@ -1,0 +1,10 @@
+---
+import * as Types from './types'
+
+type Props = Types.Heading
+
+const { heading, level } = Astro.props
+const Element = `h${level}`
+---
+
+<Element>{heading}</Element>

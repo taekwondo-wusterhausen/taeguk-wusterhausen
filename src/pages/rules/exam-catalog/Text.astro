@@ -1,0 +1,32 @@
+---
+import * as Types from './types'
+
+type Props = Types.Text & { text: string }
+
+const {
+    break: linebreak = false,
+    bold = false,
+    italic = false,
+    underline = false,
+    text,
+} = Astro.props
+---
+
+{
+    bold ? (
+        <strong>
+            <Astro.self italic={italic} underline={underline} text={text} />
+        </strong>
+    ) : italic ? (
+        <emph>
+            <Astro.self underline={underline} text={text} />
+        </emph>
+    ) : underline ? (
+        <span class="underline">
+            <Astro.self text={text} />
+        </span>
+    ) : (
+        text
+    )
+}
+{linebreak && <br />}

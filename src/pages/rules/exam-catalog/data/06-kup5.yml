@@ -4,102 +4,119 @@ colors:
   - blue
 icon: /belts/5.png
 content:
-  - text: Der Träger ist am Ende der Anfängerstufe angekommen.
+  - par: Der Träger ist am Ende der Anfängerstufe angekommen.
 sections:
   - title: Überprüfung Vorprogramm
     content:
-      - text: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
+      - par: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
   # - title: Stellungen
   #   content:
-  #     - text: Wiederholung der Stellungen bis 8. Kup
+  #     - par: Wiederholung der Stellungen bis 8. Kup
   # - title: Step-Schule
   #   content:
-  #     - text: Wiederholung der Steps vom 8. Kup, mit Partner
+  #     - par: Wiederholung der Steps vom 8. Kup, mit Partner
   #     - itemize:
-  #         - text: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
-  #         - text: Two-Step
-  #         - text: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
-  #         - text: Jagd-Step (Gleiten mit dem Standbein)
+  #         - par: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
+  #         - par: Two-Step
+  #         - par: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
+  #         - par: Jagd-Step (Gleiten mit dem Standbein)
   - title: Pratzenübungen
     content:
-      - html: <h4>Pratzenkampf</h4>
-      - text: formen- oder wettkampforientiert
-      - text: 'A: Pratzenhalter, B soll 2 Mal die Pratze treffen, dabei kann die 1. Technik festgelegt sein (z. B. 1. Technik mit dem vorderen Bein) und die 2. Technik entsprechend dem Pratzenangebot erfolgen.'
+      - heading: Pratzenkampf
+        level: 4
+      - par: formen- oder wettkampforientiert
+      - par: 'A: Pratzenhalter, B soll 2 Mal die Pratze treffen, dabei kann die 1. Technik festgelegt sein (z. B. 1. Technik mit dem vorderen Bein) und die 2. Technik entsprechend dem Pratzenangebot erfolgen.'
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:
-      - text: formenorientiert - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken). Vorführung eines technisch-praktischen Programms gegen Angriffe mit Halbkreistritt.
-      - html: <h4>Verteidigung</h4>
+      - par: formenorientiert - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken). Vorführung eines technisch-praktischen Programms gegen Angriffe mit Halbkreistritt.
+      - heading: Verteidigung
+        level: 4
       - itemize:
-          - html: wie beim 6. Kup
-          - html: Erweiterung des technisch-taktischen Programms
-      - html: <h4>Verteidigungsprinzipien</h4>
+          - text: wie beim 6. Kup
+          - text: Erweiterung des technisch-taktischen Programms
+      - heading: Verteidigungsprinzipien
+        level: 4
       - itemize:
-          - html: wie beim 6. Kup
+          - text: wie beim 6. Kup
   - title: Freikampf (Kyorugi)
     content:
-      - html: <h4>Übungen mit Rollenteilung</h4>
-      - text: A = offensiv, B = defensiv-aktiv (führt Gegentechniken vor-, gleich- und nachzeitig aus)
-      - html: <h4>Übungen mit Aufgabenstellung</h4>
-      - text: 'A greift B mit freier Technik an, B verteidigt sich aktiv auf der Linie, d. h. vor- oder rückwärts gehend wie folgt:'
+      - heading: Übungen mit Rollenteilung
+        level: 4
+      - par: A = offensiv, B = defensiv-aktiv (führt Gegentechniken vor-, gleich- und nachzeitig aus)
+      - heading: Übungen mit Aufgabenstellung
+        level: 4
+      - par: 'A greift B mit freier Technik an, B verteidigt sich aktiv auf der Linie, d. h. vor- oder rückwärts gehend wie folgt:'
       - itemize:
-          - html: 1 x 1 vorzeitig mit abgesprochenen Techniken<br>Die Partnerübung wird mit Halbkreisfußschlag 1 x 1 nachzeitig begonnen. A unterbricht mit einer vor- oder gleichzeitigen Gegentechnik den Rhythmus und "steigt somit aus der ursprünglichen Aufgabe aus".<br>Bei dieser Übung kommt es zur flüssigen Anwendung des Programms von Gegentechniken gegen den Angriff mit Halbkreisfußschlag, wie es bei den vorhergehenden Graduierungen innerhalb des 1-Schritt-Kampfes einstudiert und vorgeführt worden ist.
-          - html: '1 x 1 x 1 nachzeitig (A:B:A)<br>A 1: Angriff, B: ausweichen und wiederkommen, A 2: seinerseits nach dem eigenen Angriff sofort ausweichen (Treffer des Zurückschlagens von B vermeiden) und wiederkommen.<br>1 x 1 x 1 nachzeitig heißt, bzgl. der eigenen Verteidigung ist nur der sog. "Nachschlag" erlaubt.'
-      - text: Ziel der Übung ist es, dass der Angreifer lernt, unmittelbar nach seinem Angriff wieder beweglich und verteidigungsbereit zu sein.
+          - - par: 1 x 1 vorzeitig mit abgesprochenen Techniken
+            - text: Die Partnerübung wird mit Halbkreisfußschlag 1 x 1 nachzeitig begonnen. A unterbricht mit einer vor- oder gleichzeitigen Gegentechnik den Rhythmus und "steigt somit aus der ursprünglichen Aufgabe aus".
+              break: true
+            - text: Bei dieser Übung kommt es zur flüssigen Anwendung des Programms von Gegentechniken gegen den Angriff mit Halbkreisfußschlag, wie es bei den vorhergehenden Graduierungen innerhalb des 1-Schritt-Kampfes einstudiert und vorgeführt worden ist.
+          - - par: '1 x 1 x 1 nachzeitig (A:B:A)'
+            - text: 'A 1: Angriff, B: ausweichen und wiederkommen, A 2: seinerseits nach dem eigenen Angriff sofort ausweichen (Treffer des Zurückschlagens von B vermeiden) und wiederkommen.'
+              break: true
+            - text: 1 x 1 x 1 nachzeitig heißt, bzgl. der eigenen Verteidigung ist nur der sog. "Nachschlag" erlaubt.
+      - par: Ziel der Übung ist es, dass der Angreifer lernt, unmittelbar nach seinem Angriff wieder beweglich und verteidigungsbereit zu sein.
   - title: Selbstverteidigung (Hosinsul)
     content:
-      - text: Langsamens Lösen von SV-Angriffen und Anwendung von SV-Techniken bis zum Festlegen des Angreifers.
-      - text: 'Ein abgesprochenes und einstudiertes Programm gegen Angriffe aus der Nahdistanz wird langsam und ohne Widerstand des Partners vorgeführt (Umklammern von vorn / hinten: Arme eingeschlossen / Arme frei, Doppelnelson in aufrechter / nach unten gedrückter Stellung).'
+      - par: Langsamens Lösen von SV-Angriffen und Anwendung von SV-Techniken bis zum Festlegen des Angreifers.
+      - par: 'Ein abgesprochenes und einstudiertes Programm gegen Angriffe aus der Nahdistanz wird langsam und ohne Widerstand des Partners vorgeführt (Umklammern von vorn / hinten: Arme eingeschlossen / Arme frei, Doppelnelson in aufrechter / nach unten gedrückter Stellung).'
   - title: Poomse
     content:
-      - html: <strong>Taeguk Sam-Jang</strong> (18 Bewegungen)
-      - text: Die dritte Form wird symbolisiert durch das Zeichen "Ra" und entspricht dem Bild des Feuers. Das Feuer gibt den Menschen Wärme und Licht. Es kann aber Furcht und Schrecken verbreiten. Die Techniken dieser Form müssen mit Eifer und Enthusiasmus ausgeführt werden. Wie beim Flackern einer Flamme variieren die Bewegungen der Sam-Jang mit Energieausbrüchen zwischen schnelleren und langsameren Bewegungen. So folgen z. B. auf die Ap-Chagis sofort schnellere Doppelfauststöße.
+      - - text: Taeguk Sam-Jang
+          bold: true
+        - text: (18 Bewegungen)
+      - par: Die dritte Form wird symbolisiert durch das Zeichen "Ra" und entspricht dem Bild des Feuers. Das Feuer gibt den Menschen Wärme und Licht. Es kann aber Furcht und Schrecken verbreiten. Die Techniken dieser Form müssen mit Eifer und Enthusiasmus ausgeführt werden. Wie beim Flackern einer Flamme variieren die Bewegungen der Sam-Jang mit Energieausbrüchen zwischen schnelleren und langsameren Bewegungen. So folgen z. B. auf die Ap-Chagis sofort schnellere Doppelfauststöße.
   - title: Fußtechniken
     content:
       - table:
           body:
-            - [html: Murup Chigi, html: Kniestoß]
-            - [html: Huryo Chagi, html: Peitschenschlag]
-            - [html: Twio Ap Chagi, html: gesprungener Vorwärtsfußtritt]
-            - [html: Twio Dollyo Chagi, html: gesprungener Halbkreisfußtritt]
-            - [html: Tora Yop Chagi, html: gedrehter Seitwärtsfußtritt]
+            - [text: Murup Chigi, text: Kniestoß]
+            - [text: Huryo Chagi, text: Peitschenschlag]
+            - [text: Twio Ap Chagi, text: gesprungener Vorwärtsfußtritt]
+            - [text: Twio Dollyo Chagi, text: gesprungener Halbkreisfußtritt]
+            - [text: Tora Yop Chagi, text: gedrehter Seitwärtsfußtritt]
   - title: Handtechnicken
     content:
-      - html: <h5>Angriff</h5>
+      - heading: Angriff
+        level: 5
       - table:
           body:
             - [
-                html: Jebipum Mok Chigi,
-                html: Schlag mit Handaußenkante zum Hals / Schwalbenform,
+                text: Jebipum Mok Chigi,
+                text: Schlag mit Handaußenkante zum Hals / Schwalbenform,
               ]
             - [
-                html: Pyonsonkut Sewo Chigi,
-                html: Fingerspitzenstoß vertikal mit Nullo Makki,
+                text: Pyonsonkut Sewo Chigi,
+                text: Fingerspitzenstoß vertikal mit Nullo Makki,
               ]
-            - [html: Sonkut Ap Chirugi, html: Fingerspitzenstoß horizontal]
-            - [html: Du Songarak Ap Chirugi, html: Zweifingerstoß]
+            - [text: Sonkut Ap Chirugi, text: Fingerspitzenstoß horizontal]
+            - [text: Du Songarak Ap Chirugi, text: Zweifingerstoß]
             - [
-                html: Olgul Dungjumok Ap Chigi,
-                html: Schlag mit Faustrücken zum Gesicht,
+                text: Olgul Dungjumok Ap Chigi,
+                text: Schlag mit Faustrücken zum Gesicht,
               ]
             - [
-                html: Olgul Dungjumok Bakkat Chigi,
-                html: Faustrückenschlag zur Seite,
+                text: Olgul Dungjumok Bakkat Chigi,
+                text: Faustrückenschlag zur Seite,
               ]
-      - html: <h5>Abwehr</h5>
+      - heading: Abwehr
+        level: 5
       - table:
           body:
-            - [html: Nullo Makki, html: Abwärtsblock mit Handballen]
+            - [text: Nullo Makki, text: Abwärtsblock mit Handballen]
   - title: Theorie
     sections:
       - title: '"passive" und "aktive" Mittel des Verteidigers'
         content:
-          - html: <h4>Passive Verteidigung</h4>
-          - text: Bei der passiven Verteidigung wartet der Verteidiger auf den Angriff, um darauf zu reagieren. Geschieht meist in einer Situation die nicht sofort als Angriff erkannt werden kann.
-          - html: <h4>Aktive Verteidigung</h4>
-          - text: Bei der aktiven Verteidigung wird bereits vor dem unmittelbaren Angriff selbst angegriffen. Besonders bei mehreren Angreifern empfehlenswert oder bei einem hinzukommen bzw. einer Hilfeleistung innerhalb einer Notwehrsituation.
+          - heading: Passive Verteidigung
+            level: 4
+          - par: Bei der passiven Verteidigung wartet der Verteidiger auf den Angriff, um darauf zu reagieren. Geschieht meist in einer Situation die nicht sofort als Angriff erkannt werden kann.
+          - heading: Aktive Verteidigung
+            level: 4
+          - par: Bei der aktiven Verteidigung wird bereits vor dem unmittelbaren Angriff selbst angegriffen. Besonders bei mehreren Angreifern empfehlenswert oder bei einem hinzukommen bzw. einer Hilfeleistung innerhalb einer Notwehrsituation.
       - title: Wozu dient das Training der Beidseitigkeit (Techniken rechts / links)?
         content:
-          - text: Alle Techniken sollten rechts und links beherrscht werden. Es gibt Rechts- u. Linkshänder. In einer Selbstverteidigung oder Wettkampfsituation kann man sich seinen Gegner nicht aussuchen. Auch die aktuelle Position kann es verlangen, die weniger geübte Seite einzusetzen. Für einen Auslagen- oder Positionswechsel fehlt oft die Zeit.
+          - par: Alle Techniken sollten rechts und links beherrscht werden. Es gibt Rechts- u. Linkshänder. In einer Selbstverteidigung oder Wettkampfsituation kann man sich seinen Gegner nicht aussuchen. Auch die aktuelle Position kann es verlangen, die weniger geübte Seite einzusetzen. Für einen Auslagen- oder Positionswechsel fehlt oft die Zeit.
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+          - par: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

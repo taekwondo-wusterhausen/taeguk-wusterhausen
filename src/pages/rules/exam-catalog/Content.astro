@@ -1,29 +1,39 @@
 ---
-import { Content } from './types'
+import Text from './Text.astro'
+import Heading from './Heading.astro'
+import * as Types from './types'
 
 interface Props {
-    content: Content
+    content: Types.Content
 }
 
-function isText(content: Content): content is { text: string } {
-    return content && 'text' in content
+function isText(content: Types.Content): content is Types.Text {
+    return content && 'text' in content && typeof content.text === 'string'
 }
 
-function isHtml(content: Content): content is { html: string } {
-    return content && 'html' in content
+function isParagraph(content: Types.Content): content is { par: string } {
+    return content && 'par' in content && typeof content.par === 'string'
 }
 
-function isEnumeration(content: Content): content is { enumerate: Content[] } {
+function isHeading(content: Types.Content): content is Types.Heading {
+    return content && 'heading' in content
+}
+
+function isEnumeration(
+    content: Types.Content,
+): content is { enumerate: Types.Content[] } {
     return content && 'enumerate' in content
 }
 
-function isItemization(content: Content): content is { itemize: Content[] } {
+function isItemization(
+    content: Types.Content,
+): content is { itemize: Types.Content[] } {
     return content && 'itemize' in content
 }
 
 function isTable(
-    content: Content,
-): content is { table: { head?: Content[][]; body: Content[][] } } {
+    content: Types.Content,
+): content is { table: { head?: Types.Content[][]; body: Types.Content[][] } } {
     return content && 'table' in content
 }
 
@@ -32,15 +42,29 @@ const { content } = Astro.props
 
 <>
     {
-        isText(content) ? (
-            <p>{content.text}</p>
-        ) : isHtml(content) ? (
-            <span set:html={content.html} />
+        Array.isArray(content) ? (
+            content.map((c) => <Astro.self content={c} />)
+        ) : isText(content) ? (
+            <span>
+                <Text {...content} />
+            </span>
+        ) : isParagraph(content) ? (
+            <p>
+                {Array.isArray(content.par)
+                    ? content.par.map((c) => <Astro.self content={c} />)
+                    : content.par}
+            </p>
+        ) : isHeading(content) ? (
+            <Heading {...content} />
         ) : isEnumeration(content) ? (
             <ol>
                 {content.enumerate.map((item) => (
                     <li>
-                        <Astro.self content={item} />
+                        {Array.isArray(item) ? (
+                            item.map((c) => <Astro.self content={c} />)
+                        ) : (
+                            <Astro.self content={item} />
+                        )}
                     </li>
                 ))}
             </ol>
@@ -48,7 +72,11 @@ const { content } = Astro.props
             <ul>
                 {content.itemize.map((item) => (
                     <li>
-                        <Astro.self content={item} />
+                        {Array.isArray(item) ? (
+                            item.map((c) => <Astro.self content={c} />)
+                        ) : (
+                            <Astro.self content={item} />
+                        )}
                     </li>
                 ))}
             </ul>
@@ -60,7 +88,13 @@ const { content } = Astro.props
                             <tr>
                                 {row.map((cell) => (
                                     <th>
-                                        <Astro.self content={cell} />
+                                        {Array.isArray(cell) ? (
+                                            cell.map((c) => (
+                                                <Astro.self content={c} />
+                                            ))
+                                        ) : (
+                                            <Astro.self content={cell} />
+                                        )}
                                     </th>
                                 ))}
                             </tr>
@@ -72,7 +106,13 @@ const { content } = Astro.props
                         <tr>
                             {row.map((cell) => (
                                 <td>
-                                    <Astro.self content={cell} />
+                                    {Array.isArray(cell) ? (
+                                        cell.map((c) => (
+                                            <Astro.self content={c} />
+                                        ))
+                                    ) : (
+                                        <Astro.self content={cell} />
+                                    )}
                                 </td>
                             ))}
                         </tr>

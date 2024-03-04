@@ -1,6 +1,17 @@
+export type Text = {
+    text: string
+    break?: boolean
+    bold?: boolean
+    italic?: boolean
+    underline?: boolean
+}
+export type Heading = { heading: string; level: 1 | 2 | 3 | 4 | 5 | 6 }
+
 export type Content =
-    | { text: string }
-    | { html: string }
+    | Content[]
+    | Text
+    | Heading
+    | { par: string }
     | { enumerate: Content[] }
     | { itemize: Content[] }
     | { table: { head?: Content[][]; body: Content[][] } }
