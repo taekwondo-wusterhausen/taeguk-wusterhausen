@@ -7,18 +7,20 @@ content:
   - par: Weiß steht für das Nichts oder die Unschuld des Anfängers
 sections:
   - title: Was ist Taekwondo?
+    only: web
     content:
       - par: Taekwondo ist eine ca. 2000 Jahre alte koreanische Kampfsportart.
       - table:
           body:
             - [
                 text: Tae,
-                text: 'Fuß, springen, treten, die Techniken mit dem Fuß,'
+                text: 'Fuß, springen, treten, die Techniken mit dem Fuß,',
               ]
             - [text: Kwon, text: 'Hand, schlagen, die Techniken mit der Hand']
             - [text: Do, text: 'der Weg, die Philosophie, die Art und Weise']
             - [text: Taekwondo, text: Der Weg mit Füßen und Händen zu kämpfen]
   - title: Verhaltensregeln im Training im Sinne der Dojang-Etikette
+    only: web
     content:
       - par: Vereinsregeln (Dojang-Etikette) des TKD - Vereins Taeguk e. V.
       - enumerate:
@@ -32,3 +34,8 @@ sections:
           - text: Nach Beendigung des Trainings verneigt sich der Schüler vor seinem Sabom und dem Trainingsort mit Respekt und Dankbarkeit!
           - text: Im Training ist das Essen und Trinken untersagt, besonders Kaugummis sind verboten!
           - text: Vor dem Training sind sämtliche Schmuckstücke wie Ketten und Ringe abzulegen! Piercings sind zu entfernen oder abzutapen!
+  - title: Theorie
+    only: pdf
+    content:
+      - par: Verhaltensregeln im Training im Sinne der Dojang-Etikette
+      - par: Vereinsregeln (Dojang-Etikette) des TKD - Vereins Taeguk e. V.

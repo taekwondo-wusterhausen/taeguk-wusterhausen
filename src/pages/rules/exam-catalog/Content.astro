@@ -8,6 +8,10 @@ interface Props {
     content: Types.Content
 }
 
+function isWeb(content: Types.Content) {
+    return Array.isArray(content) || content.only === undefined || content.only === "web"
+}
+
 function isText(content: Types.Content): content is Types.Text {
     return content && 'text' in content && typeof content.text === 'string'
 }
@@ -17,7 +21,7 @@ function isParagraph(content: Types.Content): content is { par: string } {
 }
 
 function isHeading(content: Types.Content): content is Types.Heading {
-    return content && 'heading' in content
+    return content && 'heading' in content && 'level' in content
 }
 
 function isLink(content: Types.Content): content is Types.Link {
@@ -46,9 +50,11 @@ const { content } = Astro.props
 ---
 
 <>
-{
-    Array.isArray(content) ? (
-        content.map((c) => <Astro.self content={c} />)
+    {
+        Array.isArray(content) ? (
+            content.map((c) => <Astro.self content={c} />)
+        ) : !isWeb(content) ? (
+            null
         ) : isLink(content) ? (
             <RefLink withArrow={false} {...content} />
         ) : isText(content) ? (

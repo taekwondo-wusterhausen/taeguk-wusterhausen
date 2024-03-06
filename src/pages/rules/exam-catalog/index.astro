@@ -11,7 +11,7 @@ import { normalizedSection, tabId } from './utils'
 
 const sections: NormalizedSection[] = (
     (await Astro.glob('./data/*.yml')) as SectionType[]
-).map((section) => normalizedSection(section, []))
+).filter(({only = "web"}) => only === "web").map((section) => normalizedSection(section, []))
 ---
 
 <Layout title="Prüfungskatalog" initFlowbite={false}>
@@ -127,11 +127,11 @@ const sections: NormalizedSection[] = (
                         data-active-classes="bg-gray-100 dark:bg-gray-800 text-blue-500 dark:text-white"
                         data-inactive-classes="text-gray-500 dark:text-gray-400"
                     >
-                        {section.sections?.map((subSection, index) => (
+                        {section.sections?.filter(({only = "web"}) => only === "web").map((subSection, index, subSections) => (
                             <Section
                                 {...subSection}
                                 isFirst={index === 0}
-                                isLast={index === section.sections.length - 1}
+                                isLast={index === subSections.length - 1}
                                 parentTitles={[section.title]}
                             />
                         ))}

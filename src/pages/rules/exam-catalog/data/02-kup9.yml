@@ -6,10 +6,12 @@ icon: /belts/9.png
 content:
   - par: Diese Kombination ist selten zu sehen, da dieser Grad oft übersprungen wird.
   - par: Die Grundtechniken sollten gekonnt und gekannt werden. Die Prüflinge sollen die Techniken nicht nur vorzeigen können, sondern auch deren Fachbezeichnungen (deutsch / koreanisch) wissen. Diese Grundtechniken sollten nicht in einem isolierten Programm vorgeführt werden sondern sollen in der Anwendung im 1-Schritt-Kampf auftreten (Stellungen / Handtechniken) sowie an der Pratze angewendet werden (Beintechniken).
+  # TODO: andere Stelle 👇
   - heading: Ein-Schritt-Kampf (Hanbon Kyorugi / Ilbo Taeryon)
     level: 3
   - par: Generell muss beidseitig angegriffen werden (Faustangriff zum Kopf), sowohl mit der linken als auch mit der rechten Faust oder Fußangriff mit rechtem oder linkem Bein auf direktem Weg zum Partner mit abstellen des Angriffbeines nach vorne. Die Prüflinge merken anhand des Blockes sehr schnell, mit welcher Seite angegriffen wird. Es gibt keine Vorgabe, mit welcher Seite zuerst angegriffen wird.
-  - par: '* formenorientiert: Techniken und Stellungen werden "traditionell" (in Grundschule) ohne oder mit leichtem Kontakt durchgeführt.'
+  # TODO: andere Stelle (Fußnote) 👇
+  - par: 'formenorientiert: Techniken und Stellungen werden "traditionell" (in Grundschule) ohne oder mit leichtem Kontakt durchgeführt.'
 sections:
   - title: Fußtechniken
     content:
@@ -57,6 +59,7 @@ sections:
   - title: Step-Schule
     content:
       - par: mit oder ohne Partner (2 bisher erlernte Grundtechniken mit Auslagewechsel)
+  # TODO: 1-Schritt-Kampf + SV
   - title: Theorie
     sections:
       - title: Was ist Taekwondo?

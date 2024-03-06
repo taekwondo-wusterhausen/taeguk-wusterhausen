@@ -11,8 +11,10 @@ const {
     isLast,
     parentTitles = [],
     content: contents = [],
-    sections = [],
+    sections: _sections = [],
 } = Astro.props
+
+const sections = _sections.filter(({only = "web"}) => only === "web")
 ---
 
 <>
