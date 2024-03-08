@@ -18,9 +18,9 @@ const {
             <Astro.self italic={italic} underline={underline} text={text} />
         </strong>
     ) : italic ? (
-        <emph>
+        <em>
             <Astro.self underline={underline} text={text} />
-        </emph>
+        </em>
     ) : underline ? (
         <span class="underline">
             <Astro.self text={text} />

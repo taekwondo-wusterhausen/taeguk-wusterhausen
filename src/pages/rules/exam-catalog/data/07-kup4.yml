@@ -72,11 +72,11 @@ sections:
           body:
             - [
                 text: Apkkoa Sogi,
-                text: $1berkreuzstellung - Seitwärtsbewegung (unterstützender Fuß vorne),
+                text: Überkreuzstellung - Seitwärtsbewegung (unterstützender Fuß vorne),
               ]
             - [
                 text: Dwitkkoa Sogi,
-                text: $1berkreuzstellung - Vorwärtsbewegung (unterstützender Fuß hinten),
+                text: Überkreuzstellung - Vorwärtsbewegung (unterstützender Fuß hinten),
               ]
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:

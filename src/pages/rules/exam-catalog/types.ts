@@ -1,28 +1,32 @@
 export type Only = {
-    only?: "web" | "pdf"
+    only?: 'web' | 'pdf'
 }
 export type Text = Only & {
-    text: string
+    text: string | Content[]
     break?: boolean
     bold?: boolean
     italic?: boolean
     underline?: boolean
 }
-export type Heading = Only & { heading: string; level: 1 | 2 | 3 | 4 | 5 | 6 }
+export type Heading = Only & {
+    heading: string | Content[]
+    level: 1 | 2 | 3 | 4 | 5 | 6
+}
 export type Link = Only & {
-    href: string
+    href: string | Content[]
     text: string
 }
+export type Par = Only & { par: string | Content[] }
 
 export type Content =
-    | Content[]
+    | (Only & Content[])
     | Text
     | Heading
     | Link
-    | Only & { par: string }
-    | Only & { enumerate: Content[] }
-    | Only & { itemize: Content[] }
-    | Only & { table: { head?: Content[][]; body: Content[][] } }
+    | Par
+    | (Only & { enumerate: Content[] })
+    | (Only & { itemize: Content[] })
+    | (Only & { table: { head?: Content[][]; body: Content[][] } })
     | undefined
 
 export interface Section extends Only {

@@ -9,19 +9,38 @@ interface Props {
 }
 
 function isWeb(content: Types.Content) {
-    return Array.isArray(content) || content.only === undefined || content.only === "web"
+    return (
+        Array.isArray(content) ||
+        content.only === undefined ||
+        content.only === 'web'
+    )
 }
 
 function isText(content: Types.Content): content is Types.Text {
-    return content && 'text' in content && typeof content.text === 'string'
+    return (
+        content &&
+        'text' in content &&
+        (typeof content.text === 'string' || Array.isArray(content.text))
+    )
 }
 
-function isParagraph(content: Types.Content): content is { par: string } {
-    return content && 'par' in content && typeof content.par === 'string'
+function isParagraph(content: Types.Content): content is Types.Par {
+    return (
+        content &&
+        'par' in content &&
+        (typeof content.par === 'string' || Array.isArray(content.par))
+    )
 }
 
 function isHeading(content: Types.Content): content is Types.Heading {
-    return content && 'heading' in content && 'level' in content
+    return (
+        content &&
+        'heading' in content &&
+        (typeof content.heading === 'string' ||
+            Array.isArray(content.heading)) &&
+        'level' in content &&
+        typeof content.level === 'number'
+    )
 }
 
 function isLink(content: Types.Content): content is Types.Link {
@@ -53,13 +72,22 @@ const { content } = Astro.props
     {
         Array.isArray(content) ? (
             content.map((c) => <Astro.self content={c} />)
-        ) : !isWeb(content) ? (
-            null
-        ) : isLink(content) ? (
-            <RefLink withArrow={false} {...content} />
+        ) : !isWeb(content) ? null : isLink(content) ? (
+            <span>
+                {Array.isArray(content.href) ? (
+                    content.href.map((c) => <Astro.self content={c} />)
+                ) : (
+                    <RefLink withArrow={false} {...content as Types.Link & { href: string }} />
+                )}
+            </span>
+
         ) : isText(content) ? (
             <span>
-                <Text {...content} />
+                {Array.isArray(content.text) ? (
+                    content.text.map((c) => <Astro.self content={c} />)
+                ) : (
+                    <Text {...(content as Types.Text & { text: string })} />
+                )}
             </span>
         ) : isParagraph(content) ? (
             <p>
@@ -68,7 +96,11 @@ const { content } = Astro.props
                     : content.par}
             </p>
         ) : isHeading(content) ? (
-            <Heading {...content} />
+            <Heading {...content}>
+                    {Array.isArray(content.heading)
+                    ? content.heading.map((c) => <Astro.self content={c} />)
+                    : content.heading}
+            </Heading>
         ) : isEnumeration(content) ? (
             <ol>
                 {content.enumerate.map((item) => (

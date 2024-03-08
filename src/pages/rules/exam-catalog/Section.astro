@@ -14,7 +14,7 @@ const {
     sections: _sections = [],
 } = Astro.props
 
-const sections = _sections.filter(({only = "web"}) => only === "web")
+const sections = _sections.filter(({ only = 'web' }) => only === 'web')
 ---
 
 <>

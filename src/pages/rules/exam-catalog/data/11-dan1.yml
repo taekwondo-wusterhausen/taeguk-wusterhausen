@@ -4,7 +4,14 @@ colors:
   - gold
 icon: /belts/0.png
 content:
-  - par: Der Inhaber hat die farbigen Entwicklungsstufen durchlaufen und den Status eines Lehrers (Kyosah-nim) erreicht. Die DTU unterteilt hier in <em>Leistungsgrade</em> (1. bis 3. Dan) und <em>Lehrergrade</em> (ab dem 4. Dan). Träger des schwarzen Gürtel werden ab dem 4. Dan Meister (Sabum) genannt. Ab dem 5. Dan ist man Großmeister (Sabum-nim). Der 9. Dan ist der höchste, der in der koreanischen Kampfkunst vergeben wird. Der 10. Dan steht für eine Vollkommenheit, die eigentlich nicht erreicht werden kann. Daher trägt auch ein Großmeister den weißen Tobok, Zeichen lebenslangen Lernens.
+  - par:
+      - text: Der Inhaber hat die farbigen Entwicklungsstufen durchlaufen und den Status eines Lehrers (Kyosah-nim) erreicht. Die DTU unterteilt hier in
+      - text: Leistungsgrade
+        italic: true
+      - text: (1. bis 3. Dan) und
+      - text: Lehrergrade
+        italic: true
+      - text: (ab dem 4. Dan). Träger des schwarzen Gürtel werden ab dem 4. Dan Meister (Sabum) genannt. Ab dem 5. Dan ist man Großmeister (Sabum-nim). Der 9. Dan ist der höchste, der in der koreanischen Kampfkunst vergeben wird. Der 10. Dan steht für eine Vollkommenheit, die eigentlich nicht erreicht werden kann. Daher trägt auch ein Großmeister den weißen Tobok, Zeichen lebenslangen Lernens.
   - par: Dem amtierenden WT-Präsidenten (World Taekwondo) wird der 10. Dan für das Bestehen seiner Amtszeit verliehen.
 sections:
   - title: Überprüfung Vorprogramm

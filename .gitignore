@@ -1,8 +1,12 @@
 # build output
 dist/
 
-# generated types
+hefter/
+
+# generated
 .astro/
+src/typst/*.pdf
+src/typst/include/
 
 # dependencies
 node_modules/
