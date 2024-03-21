@@ -54,7 +54,7 @@
   show math.equation: set text(weight: 400)
   set heading(numbering: none)
   // show bibliography: set heading(numbering: "1.")
-  set enum(numbering: "(i.a)")
+  set enum(numbering: "1.a.")
   set quote(block: true, quotes: true)
 
   // Set paragraph spacing.
@@ -102,7 +102,7 @@
   ]
 
   // Main body.
-  outline(depth: 3)
+  outline(depth: 1)
   pagebreak()
   set page(numbering: "1", number-align: center)
   set par(justify: true)

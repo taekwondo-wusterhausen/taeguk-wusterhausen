@@ -11,6 +11,13 @@
 )
 
 #include "01-vereinsregeln.typ"
+#pagebreak()
 #include "02-flagge.typ"
+#pagebreak()
 #include "03-woerterbuch.typ"
+#pagebreak()
 #include "04-pruefungsinhalte.typ"
+#pagebreak()
+#include "05-poomse.typ"
+#pagebreak()
+#include "06-ilbo-taeryon.typ"

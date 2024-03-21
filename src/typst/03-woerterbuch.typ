@@ -1,5 +1,3 @@
-= Kleines Wörterbuch Koreanisch - Deutsch
-
 #let tab(..content) = {
     table(
         columns: (29%, 1fr),
@@ -7,6 +5,9 @@
         ..content,
     )
 }
+
+
+= Kleines Wörterbuch Koreanisch - Deutsch
 
 #tab(
     [Taekwondo], [Kunst des Fuß- und Handkampfes],

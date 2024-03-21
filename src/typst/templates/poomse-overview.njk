@@ -1,0 +1,19 @@
+#import "@preview/tablex:0.0.8": tablex
+
+#import "{{ TYPST_SRC }}/utils.typ": *
+
+
+#tablex(
+  {# columns: (3cm, 1fr), #}
+  columns: 5,
+  fill: (col, row) => if calc.odd(row) { luma(240) } else { white },
+  [], [*Trigramm*], [*Form*], [*Bild*], [*Bedeutung*],
+  {% for form in forms.slice(0, 8) %}
+  // ROW {{ loop.index }}
+    [{{ loop.index }}],
+    pub-img("{{ form.symbol }}", width: 1cm),
+    [{{ form.name }}],
+    [{{ form.metaphor }}],
+    [{{ form.meaning }}],
+  {% endfor %}
+)

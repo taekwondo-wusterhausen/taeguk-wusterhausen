@@ -1,0 +1,41 @@
+---
+type Form = {
+    name: string
+    symbol: string
+    description: string
+    techniques: number
+    metaphor?: string
+    meaning?: string
+}
+type Data = {
+    general: any
+    forms: Form[]
+}
+
+const [data] = await Astro.glob<Data>('./data.yml')
+---
+
+<table class="table-auto">
+    <thead>
+        <tr>
+            <th class="whitespace-nowrap">Symbol</th>
+            <th class="whitespace-nowrap">Name</th>
+            <th class="whitespace-nowrap">Bedeutung</th>
+            <th class="whitespace-nowrap">Bewegungen</th>
+        </tr>
+    </thead>
+    <tbody>
+        {
+            data.forms.map(({name, symbol, description, techniques}) => (
+                <tr>
+                    <td>
+                        <img src={symbol} />
+                    </td>
+                    <td class="whitespace-nowrap">{name}</td>
+                    <td>{description}</td>
+                    <td>{techniques}</td>
+                </tr>
+            ))
+        }
+    </tbody>
+</table>
