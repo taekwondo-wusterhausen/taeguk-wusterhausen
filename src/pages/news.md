@@ -1,7 +1,8 @@
 |              |                                         |
 | ------------ | --------------------------------------- |
-| 17.03.       | offenes TJBB-Training Technik Dabendorf |
-| 23.03.       | Mitgliederversammlung TVBB Dabendorf    |
+| 29.04.       | Theorieeinheit Kino Wusterhausen              
 | 26. - 28.04. | SV-Camp m. Alfred Gehlen Dabendorf      |
+| 27.04.       | Prüfungsvorbereitung                    |
+| 23.03.       | 1. Vereinsprüfung 2024                  |
 
-Am 23.03. und 01.04. Training in der kleinen Halle!
+Am 25.03. und 27.03. Training in der kleinen Halle!
