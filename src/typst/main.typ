@@ -21,3 +21,7 @@
 #include "05-poomse.typ"
 #pagebreak()
 #include "06-ilbo-taeryon.typ"
+#pagebreak()
+#include "07-notwehr.typ"
+#pagebreak()
+#include "08-hosinsul.typ"
