@@ -1,5 +1,3 @@
-#let point = sym.arrow.r
-
 = DTU-Selbstverteidigungskonzept
 
 *Angriffskatalog und Verteidigungsvorschläge für
@@ -11,7 +9,7 @@ Prüfungen bis zum 1. Dan*
 Ausweich- und Angriffsübungen aus der langen und mittleren Distanz.*
 
 Ausweichmanöver mit Eigensicherung gegen Angriffe mit Vorwärtsfußtritt und Fauststoß und einfache Übungen aus der Fallschule zur Verletzungsprävention \
-#point Fallen nach links, rechts und nach hinten
+#sym.arrow.r Fallen nach links, rechts und nach hinten
 
 
 == 7. Kup
@@ -182,23 +180,21 @@ Für die Verteidigung gegen Stock und Messer gehen wir von folgenden Angriffszon
 //   #underline[Verteidigung:] \
 //   ..
 
-Messer:
-Das Messer liegt in der Hand mit nach oben gerichteter Klinge
-☞ Stiche
-Angriff 1: von außen nach innen diagonal zum Kopf/Hals
-Angriff 2: von innen nach außen diagonal zum Kopf/Hals
-Angriff 3: wie Angriff 1nur zum Rumpf (Bauchhöhe)
-Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
-Angriff 5: gerader Stoß zum Bauch
-Angriff 6: Stich von unten nach oben zum Unterbauch
-Angriff 7: Stich von oben nach unten zum Hals
+=== Messer
+- Stiche: Das Messer liegt in der Hand mit nach oben gerichteter Klinge
+  - Angriff 1: von außen nach innen diagonal zum Kopf/Hals
+  - Angriff 2: von innen nach außen diagonal zum Kopf/Hals
+  - Angriff 3: wie Angriff 1 nur zum Rumpf (Bauchhöhe)
+  - Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
+  - Angriff 5: gerader Stoß zum Bauch
+  - Angriff 6: Stich von unten nach oben zum Unterbauch
+  - Angriff 7: Stich von oben nach unten zum Hals
 
-Das Messer liegt in der Hand mit nach oben gerichteter Klinge
-☞ Schneidbewegungen
-Angriff 1: von außen nach innen diagonal zum Kopf/Hals
-Angriff 2: von innen nach außen diagonal zum Kopf/Hals
-Angriff 3: wie Angriff 1 nur zum Rumpf (Bauchhöhe)
-Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
+- Schneidbewegungen: Das Messer liegt in der Hand mit nach oben gerichteter Klinge
+  - Angriff 1: von außen nach innen diagonal zum Kopf/Hals
+  - Angriff 2: von innen nach außen diagonal zum Kopf/Hals
+  - Angriff 3: wie Angriff 1 nur zum Rumpf (Bauchhöhe)
+  - Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
 
 Das Messer liegt in der Hand mit nach unten gerichteter Klinge
 Angriff 1: Stich von oben nach unten zum Hals
