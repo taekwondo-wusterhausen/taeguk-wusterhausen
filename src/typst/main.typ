@@ -25,3 +25,5 @@
 #include "07-notwehr.typ"
 #pagebreak()
 #include "08-hosinsul.typ"
+#pagebreak()
+#include "10-atmung.typ"
