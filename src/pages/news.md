@@ -5,4 +5,4 @@
 | 27.04.       | Prüfungsvorbereitung                    |
 | 04.05.       | 1. Vereinsprüfung 2024                  |
 
-Am 25.03. und 27.03. Training in der kleinen Halle!
+Am 05.04. Training in der kleinen Halle!
