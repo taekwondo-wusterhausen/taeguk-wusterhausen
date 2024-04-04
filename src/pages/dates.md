@@ -4,9 +4,9 @@
 | 17.02.       | DTU-Bundesbreitensportlehrgang                 | Falkensee    |     |
 | 17.03.       | offenes TJBB-Training Technik                  | Dabendorf    |     |
 | 23.03.       | Mitgliederversammlung TVBB                     | Dabendorf    |     |
-| 20.04.       | Prüfungsvorbereitung                           | Dossehalle   |     |
+| 27.04.       | Prüfungsvorbereitung                           | Dossehalle   |     |
 | 26. - 28.04. | SV-Camp mit Alfred Gehlen                      | Dabendorf    |     |
-| 04.05.       | 1. Vereins-Prüfung 2024                        | kleine Halle |     |
+| 04.05.       | 1. Vereins-Prüfung 2024                        | Dossehalle   |     |
 | 09.06.       | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
 |              | LEM Technik TVBB                               |              |     |
 |              | DAN-Vorbereitungslehrgang TVBB                 |              |     |
