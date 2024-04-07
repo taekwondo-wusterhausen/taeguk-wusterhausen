@@ -9,7 +9,6 @@
   subtitle: "",
   author: "",
   course: "",
-  abstract: [],
   body,
 ) = {
   // Set the document's basic properties.
@@ -20,8 +19,8 @@
       let page-counter = counter(page)
       let current-page = page-counter.at(loc)
 
-      // No header on title page
-      if current-page.first() > 1 {
+      // No header on title and greeting page
+      if current-page.first() > 2 {
         let headings-selector = (
           heading.where(level: 1)
           .or(heading.where(level: 2))
@@ -61,7 +60,6 @@
   show par: set block(above: BLOCK_SPACING, below: BLOCK_SPACING)
   set par(leading: 0.75em, justify: true)
 
-  // // Set run-in subheadings, starting at level 3.
   // Increase top-padding of level-2+ headings
   show heading: it => {
     if it.outlined {
@@ -71,6 +69,9 @@
       it
     }
   }
+
+  show link: underline
+
   set math.mat(gap: 0.66em)
 
 
@@ -89,17 +90,6 @@
       #course
     ])
   )
-
-  // Abstract.
-  pad(x: 3em, y: 2em)[
-    #align(center)[
-      #heading(outlined: false, numbering: none)[
-        // smallcaps not working for lang="de"
-        #text(0.85em)[A]#text(0.65em)[BSTRACT]
-      ]
-    ]
-    #par(justify: true, abstract)
-  ]
 
   // Main body.
   outline(depth: 1)

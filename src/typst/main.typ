@@ -5,11 +5,10 @@
   title: "Vereinshefter Taeguk e. V.",
   subtitle: "",
   author: "Taeguk e. V.",
-  abstract: [
-      ...
-  ],
 )
 
+#include "00-begruessung.typ"
+#pagebreak()
 #include "01-vereinsregeln.typ"
 #pagebreak()
 #include "02-flagge.typ"
