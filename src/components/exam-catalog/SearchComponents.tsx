@@ -1,5 +1,5 @@
 import { HASH_PREFIX } from '@components/utils'
-import { SearchResult } from './types'
+import type { SearchResult } from '@pages/rules/exam-catalog/types'
 
 const MAX_BREADCRUMB_LENGTH = 77 // + '...
 

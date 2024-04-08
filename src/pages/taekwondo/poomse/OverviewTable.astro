@@ -26,7 +26,7 @@ const [data] = await Astro.glob<Data>('./data.yml')
     </thead>
     <tbody>
         {
-            data.forms.map(({name, symbol, description, techniques}) => (
+            data.forms.map(({ name, symbol, description, techniques }) => (
                 <tr>
                     <td>
                         <img src={symbol} />

@@ -1,8 +1,8 @@
 ---
 import RefLink from '@components/links/RefLink.astro'
+import * as Types from '@pages/rules/exam-catalog/types'
 import Text from './Text.astro'
 import Heading from './Heading.astro'
-import * as Types from './types'
 
 interface Props {
     content: Types.Content
@@ -77,10 +77,12 @@ const { content } = Astro.props
                 {Array.isArray(content.href) ? (
                     content.href.map((c) => <Astro.self content={c} />)
                 ) : (
-                    <RefLink withArrow={false} {...content as Types.Link & { href: string }} />
+                    <RefLink
+                        withArrow={false}
+                        {...(content as Types.Link & { href: string })}
+                    />
                 )}
             </span>
-
         ) : isText(content) ? (
             <span>
                 {Array.isArray(content.text) ? (
@@ -96,8 +98,8 @@ const { content } = Astro.props
                     : content.par}
             </p>
         ) : isHeading(content) ? (
-            <Heading {...content}>
-                    {Array.isArray(content.heading)
+            <Heading level={content.level}>
+                {Array.isArray(content.heading)
                     ? content.heading.map((c) => <Astro.self content={c} />)
                     : content.heading}
             </Heading>

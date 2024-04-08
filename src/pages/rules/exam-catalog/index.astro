@@ -1,12 +1,12 @@
 ---
-import DownloadLink from '@components/links/DownloadLink.astro'
 import Layout from '@layouts/Layout.astro'
 
-import Content from './Content.astro'
-import { Search } from './Search.tsx'
-import { Button as SearchButton } from './SearchComponents.tsx'
-import Section from './Section.astro'
-import { NormalizedSection, Section as SectionType } from './types'
+import Content from '@components/exam-catalog/Content.astro'
+import { Search } from '@components/exam-catalog/Search.tsx'
+import { Button as SearchButton } from '@components/exam-catalog/SearchComponents.tsx'
+import Section from '@components/exam-catalog/Section.astro'
+import DownloadLink from '@components/links/DownloadLink.astro'
+import type { NormalizedSection, Section as SectionType } from './types'
 import { normalizedSection, tabId } from './utils'
 
 const sections: NormalizedSection[] = (
