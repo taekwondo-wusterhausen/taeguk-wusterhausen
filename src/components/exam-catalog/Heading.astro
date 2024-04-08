@@ -1,0 +1,10 @@
+---
+import * as Types from '@pages/rules/exam-catalog/types'
+
+type Props = Pick<Types.Heading, 'level'>
+
+const { level } = Astro.props
+const Element = `h${level}`
+---
+
+<Element><slot /></Element>
