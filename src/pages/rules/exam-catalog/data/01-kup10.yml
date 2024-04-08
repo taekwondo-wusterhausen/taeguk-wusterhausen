@@ -4,23 +4,38 @@ colors:
   - white
 icon: /belts/10.png
 content:
-  - text: Weiß steht für das Nichts oder die Unschuld des Anfängers
+  - par: Weiß steht für das Nichts oder die Unschuld des Anfängers
 sections:
   - title: Was ist Taekwondo?
+    only: web
     content:
-      - text: Taekwondo ist eine ca. 2000 Jahre alte koreanische Kampfsportart.
-      - html: <table><tr><td>Tae</td><td>Fuß, springen, treten, die Techniken mit dem Fuß</td></tr><tr><td>Kwon</td><td>Hand, schlagen, die Techniken mit der Hand</td></tr><tr><td>Do</td><td>der Weg, die Philosophie, die Art und Weise</td></tr><tr><td>Taekwondo</td><td>Der Weg mit Füßen und Händen zu kämpfen</td></tr></table>
+      - par: Taekwondo ist eine ca. 2000 Jahre alte koreanische Kampfsportart.
+      - table:
+          body:
+            - [
+                text: Tae,
+                text: 'Fuß, springen, treten, die Techniken mit dem Fuß,',
+              ]
+            - [text: Kwon, text: 'Hand, schlagen, die Techniken mit der Hand']
+            - [text: Do, text: 'der Weg, die Philosophie, die Art und Weise']
+            - [text: Taekwondo, text: Der Weg mit Füßen und Händen zu kämpfen]
   - title: Verhaltensregeln im Training im Sinne der Dojang-Etikette
+    only: web
     content:
-      - text: Vereinsregeln (Dojang-Etikette) des TKD - Vereins Taeguk e. V.
+      - par: Vereinsregeln (Dojang-Etikette) des TKD - Vereins Taeguk e. V.
       - enumerate:
-          - html: Jeder TKD-Schüler hat in ordentlichem und sauberem Tobok pünktlich im Dojang zu erscheinen!
-          - html: Beim Betreten des Dojang verneigt sich der Schüler vor seinem Sabom und vor dem Trainingsort mit Respekt!
-          - html: Der Schüler trainiert nach Anweisung des Sabom nach seinen besten M&ouml;glichkeiten! Besonderer Einsatz wird bei der Erwärmung zur Vermeidung von Verletzungen verlangt!
-          - html: Wer unentschuldigt zu spät kommt oder den Trainingsablauf st&ouml;rt, kann vom Training ausgeschlossen werden!
-          - html: Jeder Schüler trainiert so, dass er sich oder andere nicht verletzt!
-          - html: Das Dojang ist ein Ort der k&ouml;rperlichen Betätigung und der geistigen Entspannung. Während des Trainings sollte Ruhe herrschen!
-          - html: Ein Verlassen des Dojangs während des Trainings erfolgt ausschließlich nach Erlaubnis des Trainers!
-          - html: Nach Beendigung des Trainings verneigt sich der Schüler vor seinem Sabom und dem Trainingsort mit Respekt und Dankbarkeit!
-          - html: Im Training ist das Essen und Trinken untersagt, besonders Kaugummis sind verboten!
-          - html: Vor dem Training sind sämtliche Schmuckstücke wie Ketten und Ringe abzulegen! Piercings sind zu entfernen oder abzutapen!
+          - text: Jeder TKD-Schüler hat in ordentlichem und sauberem Tobok pünktlich im Dojang zu erscheinen!
+          - text: Beim Betreten des Dojang verneigt sich der Schüler vor seinem Sabom und vor dem Trainingsort mit Respekt!
+          - text: Der Schüler trainiert nach Anweisung des Sabom nach seinen besten Möglichkeiten! Besonderer Einsatz wird bei der Erwärmung zur Vermeidung von Verletzungen verlangt!
+          - text: Wer unentschuldigt zu spät kommt oder den Trainingsablauf stört, kann vom Training ausgeschlossen werden!
+          - text: Jeder Schüler trainiert so, dass er sich oder andere nicht verletzt!
+          - text: Das Dojang ist ein Ort der körperlichen Betätigung und der geistigen Entspannung. Während des Trainings sollte Ruhe herrschen!
+          - text: Ein Verlassen des Dojangs während des Trainings erfolgt ausschließlich nach Erlaubnis des Trainers!
+          - text: Nach Beendigung des Trainings verneigt sich der Schüler vor seinem Sabom und dem Trainingsort mit Respekt und Dankbarkeit!
+          - text: Im Training ist das Essen und Trinken untersagt, besonders Kaugummis sind verboten!
+          - text: Vor dem Training sind sämtliche Schmuckstücke wie Ketten und Ringe abzulegen! Piercings sind zu entfernen oder abzutapen!
+  - title: Theorie
+    only: pdf
+    content:
+      - par: Verhaltensregeln im Training im Sinne der Dojang-Etikette
+      - par: Vereinsregeln (Dojang-Etikette) des TKD - Vereins Taeguk e. V.

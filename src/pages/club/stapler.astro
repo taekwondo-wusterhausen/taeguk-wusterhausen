@@ -11,14 +11,12 @@ import DownloadLink from '@components/links/DownloadLink.astro'
         es ihn nur noch digital und er wird demnächst hier zum Download zur
         Verfügung stehen.
     </p>
-    <span class="opacity-75 pointer-events-none cursor-not-allowed">
-        <DownloadLink
-            href="#"
-            text="PDF herunterladen"
-            download="Vereinshefter.pdf"
-            external
-        />
-    </span>
+    <DownloadLink
+        href="pdfs/vereinshefter.pdf"
+        text="PDF herunterladen"
+        download="Vereinshefter.pdf"
+        external
+    />
 </Layout>
 
 <script>

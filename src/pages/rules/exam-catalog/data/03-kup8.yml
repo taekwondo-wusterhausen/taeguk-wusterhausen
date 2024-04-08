@@ -4,82 +4,84 @@ colors:
   - gold
 icon: /belts/8.png
 content:
-  - text: 'Gelb steht für dir Farbe des Samens, der gepflanzt wird. In diesem Fall ist damit gemeint: Der Grundstein für die Ausbildung des Schülers wird gelegt.'
-  - text: '* wettkampforientiert: Freikampfübungen werden aus frei wählbaren Stellungen und Situationen heraus ausgeführt.'
+  - par: 'Gelb steht für dir Farbe des Samens, der gepflanzt wird. In diesem Fall ist damit gemeint: Der Grundstein für die Ausbildung des Schülers wird gelegt.'
+  - par: '* wettkampforientiert: Freikampfübungen werden aus frei wählbaren Stellungen und Situationen heraus ausgeführt.'
 sections:
   - title: Überprüfung Vorprogramm
     content:
-      - text: Bisher geprüfte Grundschultechniken.
+      - par: Bisher geprüfte Grundschultechniken.
   - title: Fußtechniken
     content:
       - table:
           body:
             - [
-                html: (Paldung) Dollyo Chagi,
-                html: Halbkreisfußtritt mit dem Fußspann,
+                text: (Paldung) Dollyo Chagi,
+                text: Halbkreisfußtritt mit dem Fußspann,
               ]
-            - [html: Yop Chagi, html: Seitwärtsfußtritt]
-            - [html: Naeryo Chagi, html: Abwärtsschlag]
+            - [text: Yop Chagi, text: Seitwärtsfußtritt]
+            - [text: Naeryo Chagi, text: Abwärtsschlag]
             - [
-                html: Bakkat Naeryo Chagi,
-                html: Abwärtsschlag von innen nach außen,
+                text: Bakkat Naeryo Chagi,
+                text: Abwärtsschlag von innen nach außen,
               ]
-            - [html: An Naeryo Chagi, html: Abwärtsschlag von außen nach innen]
+            - [text: An Naeryo Chagi, text: Abwärtsschlag von außen nach innen]
   - title: Handtechnicken
     content:
-      - html: <h5>Angriff</h5>
+      - heading: Angriff
+        level: 4
       - table:
           body:
             - [
-                html: Momtong Dubon Jirugi,
-                html: Doppelfauststoß zum Solarplexus,
+                text: Momtong Dubon Jirugi,
+                text: Doppelfauststoß zum Solarplexus,
               ]
-            - [html: Olgul Dubon Jirugi, html: Doppelfauststoß zum Kopf]
-      - html: <h5>Abwehr</h5>
+            - [text: Olgul Dubon Jirugi, text: Doppelfauststoß zum Kopf]
+      - heading: Abwehr
+        level: 4
       - table:
           body:
             - [
-                html: Momtong Bakkat (Palmok) Makki,
-                html: Mitteblock von innen nach außen,
+                text: Momtong Bakkat (Palmok) Makki,
+                text: Mitteblock von innen nach außen,
               ]
-            - [html: Momtong Heycho Makki, html: Keilblock zur Körpermitte]
+            - [text: Momtong Heycho Makki, text: Keilblock zur Körpermitte]
   - title: Stellungen
     content:
       - table:
           body:
-            - [html: Dwitkubi Sogi, html: Rückwärtsstellung]
-            - [html: Junbi Sogi, html: Vorbereitungsstellung]
+            - [text: Dwitkubi Sogi, text: Rückwärtsstellung]
+            - [text: Junbi Sogi, text: Vorbereitungsstellung]
   - title: Step-Schule
     content:
-      - text: mit oder ohne Partner (2 bisher erlernte Grundtechniken mit und ohne Auslagewechsel, Ausfall-Schritt, One-Step, Drehung, Vorwärts- / Rückwärts-Step
+      - par: mit oder ohne Partner (2 bisher erlernte Grundtechniken mit und ohne Auslagewechsel, Ausfall-Schritt, One-Step, Drehung, Vorwärts- / Rückwärts-Step
   - title: Theorie
     sections:
       - title: Welchen Sinn haben die Formen?
         content:
-          - text: Die Formen (Taeguk / Poomse) stellen einen imaginären Kampf gegen mehrere Angreifer dar. In vorgeschriebenen Bewegungsfolgen werden mögliche Reaktionen auf verschiedenste Angriffe eingeübt. Dies sollte beim Vortragen deutlich zu erkennen sein. Durch das ständige Wiederholen der Bewegungsabläufe werden diese automatisiert und optimiert. Jede Bewegung hat mindestens eine Anwendung. Der Ausübende sollte in der Lage sein, diese zu erklären.
+          - par: Die Formen (Taeguk / Poomse) stellen einen imaginären Kampf gegen mehrere Angreifer dar. In vorgeschriebenen Bewegungsfolgen werden mögliche Reaktionen auf verschiedenste Angriffe eingeübt. Dies sollte beim Vortragen deutlich zu erkennen sein. Durch das ständige Wiederholen der Bewegungsabläufe werden diese automatisiert und optimiert. Jede Bewegung hat mindestens eine Anwendung. Der Ausübende sollte in der Lage sein, diese zu erklären.
       - title: Wozu dient die Partnerübung "1-Schritt-Kampf"?
         content:
-          - text: Der Einschrittkampf schult
+          - par: Der Einschrittkampf schult
           - itemize:
-              - html: das Distanzgefühl
-              - html: die exakte Ausführung der Techniken
-              - html: das gemeinsame Üben mit dem Partner
-              - html: das Timing
+              - text: das Distanzgefühl
+              - text: die exakte Ausführung der Techniken
+              - text: das gemeinsame Üben mit dem Partner
+              - text: das Timing
       - title: Wozu dienen die sogenannten "Steps"?
         content:
-          - text: Das Steppen ermöglicht
+          - par: Das Steppen ermöglicht
           - itemize:
-              - html: das Halten der Distanz (Ausweichen)
-              - html: das Positionieren in eine günstige Distanz für Folgetechniken
-              - html: die Lockerung der Muskulatur
-              - html: das Täuschen des Gegners
+              - text: das Halten der Distanz (Ausweichen)
+              - text: das Positionieren in eine günstige Distanz für Folgetechniken
+              - text: die Lockerung der Muskulatur
+              - text: das Täuschen des Gegners
       - title: Welchen Sinn haben die Pratzenübungen?
         content:
-          - text: Pratzenübungen dienen
+          - par: Pratzenübungen dienen
           - itemize:
-              - html: der Schulung der Treffgenauigkeit
-              - html: der Verbesserung des Distanzgefühls
-              - html: einer Verbesserung der Techniken
+              - text: der Schulung der Treffgenauigkeit
+              - text: der Verbesserung des Distanzgefühls
+              - text: einer Verbesserung der Techniken
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+          - par: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

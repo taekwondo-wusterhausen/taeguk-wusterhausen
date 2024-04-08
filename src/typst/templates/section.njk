@@ -1,0 +1,123 @@
+{% macro render_content(content) -%}
+{% if content | type == "Array" %}
+  {% for c in content %}
+    {{ render_content(c) }}
+  {% endfor %}
+{% elif content.only and content.only != "pdf" %}
+  // skipping web: {{ content | dump }}
+{% elif content.href and content.text %}
+  #link("{{ content.href }}")[
+    {{ content.text }}
+  ]
+{% elif content.text %}
+  {{ content.text }}
+{% elif content.par %}
+  #par[
+    {% if content.par | type == "Array" %}
+      {% for c in content.par %}
+        {{ render_content(c) }}
+      {% endfor %}
+    {% else %}
+      {{ content.par }}
+    {% endif %}
+  ]
+{% elif content.heading and content.level %}
+  #text(size: {{ 1.05 ** (6 - content.level) }}em)[
+    {{ content.heading }}
+  ]
+{% elif content.enumerate %}
+  #enum(
+    {% for item in content.enumerate %}
+    [
+      {% if item | type == "Array" %}
+        {% for c in item %}
+          {{ render_content(c) }}
+        {% endfor %}
+      {% else %}
+        {{ render_content(item) }}
+      {% endif %}
+    ],
+    {% endfor %}
+  )
+{% elif content.itemize %}
+  #list(
+    {% for item in content.itemize %}
+    [
+      {% if item | type == "Array" %}
+        {% for c in item %}
+          {{ render_content(c) }}
+        {% endfor %}
+      {% else %}
+        {{ render_content(item) }}
+      {% endif %}
+    ],
+    {% endfor %}
+  )
+{% elif content.table %}
+  {% if content.table.head %}
+      // TABLE.HEAD NOT SUPPORTED
+  {% endif %}
+  #tablex(
+    columns: {{ content.table.body[0] | length }},
+    stroke: none,
+    inset: (left: 0pt, right: 8pt, rest: 2pt),
+    {% for row in content.table.body %}
+      {% for cell in row %}
+        [
+          {{ render_content([cell]) }}
+        ],
+      {% endfor %}
+    {% endfor %}
+  )
+{% else %}
+  // INVALID CONTENT {{ content | dump }}
+{% endif %}
+{%- endmacro %}
+
+
+
+{% macro render_subsections(subsections) -%}
+// TODO: SUBSECTIONS...
+{% for subsection in subsections %}
+  - {{ subsection.title }}
+{% endfor %}
+{%- endmacro %}
+
+
+
+#import "@preview/tablex:0.0.8": tablex, colspanx, rowspanx
+
+{% if title not in ["10. Kup", "4. Kup", "1. Dan"] %}
+  #pagebreak()
+{% endif %}
+
+{# {{ render_content(content) }} #}
+
+#tablex(
+  columns: (3cm, 1fr),
+  fill: (col, row) => if calc.odd(row) { luma(240) } else { white },
+  colspanx(2)[#text(size: 11pt, weight: "semibold", "{{ title }}")], (),
+  {% for section in sections %}
+    {% set i = 1 %}
+    {% if section.only and section.only != "pdf" %}
+      // skipping web: {{ section | dump }}
+    {% else %}
+      // ROW {{ i }} ----------------------------------------
+      //
+      {% set i = i + 1 %}
+      underline("{{ section.title }}:"), [
+        {% for content in section.content %}
+          {{ render_content(content) }}
+        {% endfor %}
+        {% if section.sections %}
+          {{ render_subsections(section.sections) }}
+        {% endif %}
+        {# {% if not section.sections %}
+          {% if section.content | selectattr("table") | length == section.content | length %}
+            ...
+          {% endif %}
+        {% endif %} #}
+      ],
+    {% endif %}
+  {% endfor %}
+)

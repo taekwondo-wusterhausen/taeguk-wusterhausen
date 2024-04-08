@@ -4,125 +4,139 @@ colors:
   - green
 icon: /belts/7.png
 content:
-  - text: 'Einfach ausgedrückt: Der Grundstein hat sich verfestigt.'
+  - par: 'Einfach ausgedrückt: Der Grundstein hat sich verfestigt.'
 sections:
   - title: Überprüfung Vorprogramm
     content:
-      - text: Bisher geprüfte Grundschultechniken.
+      - par: Bisher geprüfte Grundschultechniken.
   - title: Poomse
     content:
-      - html: <strong>Taeguk Il-Jang</strong> (18 Bewegungen)
-      - text: Das Trigramm (Symbol "Keon") der ersten Form besteht aus drei ungebrochenen, männlichen Linien. Es steht für reines Yin und wird durch den Himmel und das Licht symbolisiert. Im I-Ging wird dem Himmel die Zeugungskraft zugeschrieben, im Gegensatz zur empfangenen Erde. Allgemeiner steht der Himmel für die Schöpfung und den Anfang des Seins. So ist auch Taeguk Il-Jang der Anfang und die Quelle aller weiterer Entwicklungen im Taekwondo. Die Form sollte in kraftvoller Frische in dem Bewusstsein ausgeführt werden, dass man etwas Neues beginnt.
+      - - text: Taeguk Il-Jang
+          bold: true
+        - text: (18 Bewegungen)
+      - par: Das Trigramm (Symbol "Keon") der ersten Form besteht aus drei ungebrochenen, männlichen Linien. Es steht für reines Yin und wird durch den Himmel und das Licht symbolisiert. Im I-Ging wird dem Himmel die Zeugungskraft zugeschrieben, im Gegensatz zur empfangenen Erde. Allgemeiner steht der Himmel für die Schöpfung und den Anfang des Seins. So ist auch Taeguk Il-Jang der Anfang und die Quelle aller weiterer Entwicklungen im Taekwondo. Die Form sollte in kraftvoller Frische in dem Bewusstsein ausgeführt werden, dass man etwas Neues beginnt.
   - title: Fußtechniken
     content:
       - table:
           body:
             - [
-                html: Apchuk Dollyo Chagi,
-                html: Halbkreistritt mit dem Fußballen,
+                text: Apchuk Dollyo Chagi,
+                text: Halbkreistritt mit dem Fußballen,
               ]
-            - [html: Paldung Chagi, html: 45°-Kick mit dem Fußspann]
+            - [text: Paldung Chagi, text: 45°-Kick mit dem Fußspann]
   - title: Handtechnicken
     content:
-      - html: <h4>Angriff</h4>
+      - heading: Angriff
+        level: 4
       - table:
           body:
             - [
-                html: Sonnal An Chigi,
-                html: Handkantenschlag von außen nach innen,
+                text: Sonnal An Chigi,
+                text: Handkantenschlag von außen nach innen,
               ]
-      - html: <h4>Abwehr</h4>
+      - heading: Abwehr
+        level: 4
       - table:
           body:
             - [
-                html: Yop Makki,
-                html: nur in Verbindung mit Juchum Sogi / Dwitkubi,
+                text: Yop Makki,
+                text: nur in Verbindung mit Juchum Sogi / Dwitkubi,
               ]
             - [
-                html: An Palmok Bakkat Makki,
-                html: Innenunterarmblock von innen nach außen,
+                text: An Palmok Bakkat Makki,
+                text: Innenunterarmblock von innen nach außen,
               ]
             - [
-                html: Han Sonnal Bakkat Makki,
-                html: Handkantenblock von innen nach außen mit einer Hand,
+                text: Han Sonnal Bakkat Makki,
+                text: Handkantenblock von innen nach außen mit einer Hand,
               ]
   - title: Stellungen
     content:
-      - text: Wiederholung der Stellungen bis 8. Kup
+      - par: Wiederholung der Stellungen bis 8. Kup
   - title: Step-Schule
     content:
-      - text: Wiederholung der Steps vom 8. Kup, mit Partner
+      - par: Wiederholung der Steps vom 8. Kup, mit Partner
       - itemize:
-          - html: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
-          - html: Two-Step
-          - html: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
-          - html: Jagd-Step (Gleiten mit dem Standbein)
+          - text: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
+          - text: Two-Step
+          - text: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
+          - text: Jagd-Step (Gleiten mit dem Standbein)
   - title: Pratzenübungen
     content:
-      - text: formen- oder wettkampforientiert, bisheriges Grundtechnikprogramm sowie Halbkreistritte bei angewandter Step-Schule (2x treffen mit Auslagewechsel)
+      - par: formen- oder wettkampforientiert, bisheriges Grundtechnikprogramm sowie Halbkreistritte bei angewandter Step-Schule (2x treffen mit Auslagewechsel)
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:
-      - text: formenorientiert - 5 Aktionen rechts / links (2x Hand-, 2x Fußtechniken). Vorführung eines technisch-praktischen Programms gegen Angriffe mit Halbkreistritt.
-      - html: <h4>Angriff</h4>
+      - par: formenorientiert - 5 Aktionen rechts / links (2x Hand-, 2x Fußtechniken). Vorführung eines technisch-praktischen Programms gegen Angriffe mit Halbkreistritt.
+      - heading: Angriff
+        level: 4
       - itemize:
-          - html: Halbkreistritt
-      - html: <h4>Verteidigung</h4>
+          - text: Halbkreistritt
+      - heading: Verteidigung
+        level: 4
       - itemize:
-          - html: Fauststoß
-          - html: Vorwärtsfußstoß
-          - html: Abwärts-, Kreis-, Halbkreisfußschlag
-      - html: <h4>Verteidigungsprinzipien</h4>
+          - text: Fauststoß
+          - text: Vorwärtsfußstoß
+          - text: Abwärts-, Kreis-, Halbkreisfußschlag
+      - heading: Verteidigungsprinzipien
+        level: 4
       - itemize:
-          - html: räumlich vielfältiges Ausweichen
-          - html: Ausweichen mit / ohne Abwehr bzw. Deckung
-          - html: 1 Gegentechnik nachzeitig
+          - text: räumlich vielfältiges Ausweichen
+          - text: Ausweichen mit / ohne Abwehr bzw. Deckung
+          - text: 1 Gegentechnik nachzeitig
   - title: Freikampf (Kyorugi)
     content:
       - itemize:
-          - html: wechselseitige Technikübung nach dem Rhythmus 1x1, Ausführung links und rechts
-          - html: Prinzip "Ausweichen und Wiederkommen" bei der Ausführung "1x1-nachzeitig"
-          - html: Technikausführung mit gleichzeitiger Deckung zur Eigensicherung" bei der Ausführung "1x1-gleichzeitig"
-          - html: 'Die Techniken sind für beide Partner gleich und vorher festzulegen: Ap Chagi / Dollyo Chagi / Paldung Chagi / Naeryo Chagi'
+          - text: wechselseitige Technikübung nach dem Rhythmus 1x1, Ausführung links und rechts
+          - text: Prinzip "Ausweichen und Wiederkommen" bei der Ausführung "1x1-nachzeitig"
+          - text: Technikausführung mit gleichzeitiger Deckung zur Eigensicherung" bei der Ausführung "1x1-gleichzeitig"
+          - text: 'Die Techniken sind für beide Partner gleich und vorher festzulegen: Ap Chagi / Dollyo Chagi / Paldung Chagi / Naeryo Chagi'
   - title: Selbstverteidigung (Hosinsul)
     content:
-      - text: Überprüfung von nicht taekwondo-spezifischen Angriffen wie Halten und Klammern (Haare ziehen von hinten, Schultern von hinten mit beiden Händen festhalten, Schultern von vorn mit gebeugtem / gestrecktem Arm / Armen, Revers mit gewinkeltem / gestrecktem Arm fassen) auf ihre Funktionalität.
-      - text: Dabei bedeutet "Funktionalität", dass der Angreifer den Verteidiger ein- oder beidhändig ergreift (Halten) und ihn durch Druck oder Zug aus dem Gleichgewicht bringt oder ihn umklammert (Funktionieren des Angriffs). Der Verteidiger versucht, sich - ohne Kenntnis SV-spezifischer Techniken - aus der Umklammerung zu befreien. Die Umklammerung muss fest ausgeführt werden, damit die Wirksamkeit gezeigt wird.
-      - text: Einfache Übungen aus der Fallschule mit der Hilfe des Partners (vorwärts / rückwärts).
+      - par: Überprüfung von nicht taekwondo-spezifischen Angriffen wie Halten und Klammern (Haare ziehen von hinten, Schultern von hinten mit beiden Händen festhalten, Schultern von vorn mit gebeugtem / gestrecktem Arm / Armen, Revers mit gewinkeltem / gestrecktem Arm fassen) auf ihre Funktionalität.
+      - par: Dabei bedeutet "Funktionalität", dass der Angreifer den Verteidiger ein- oder beidhändig ergreift (Halten) und ihn durch Druck oder Zug aus dem Gleichgewicht bringt oder ihn umklammert (Funktionieren des Angriffs). Der Verteidiger versucht, sich - ohne Kenntnis SV-spezifischer Techniken - aus der Umklammerung zu befreien. Die Umklammerung muss fest ausgeführt werden, damit die Wirksamkeit gezeigt wird.
+      - par: Einfache Übungen aus der Fallschule mit der Hilfe des Partners (vorwärts / rückwärts).
   - title: Theorie
     sections:
       - title: Notwehrbegriff
         content:
-          - html: <a href="#">siehe Notwehr</a>
-          - text: Notwehr ist ein Begriff der Rechtssprache. Er bezeichnet die Verteidigung eines Menschen, die zur Abwehr eines rechtswidrigen, gegenwärtigen Angriffs durch einen anderen Menschen erforderlich ist (§ 32 StGB, § 227 BGB). Notwehr ist nicht strafbar und gilt auch im Zivilrecht nicht als unerlaubte Handlung. Unter einem Angriff versteht man dabei jede Bedrohung rechtlich geschützter Interessen durch menschliches Verhalten. Ein Angriff ist gegenwärtig, sobald diese Bedrohung unmittelbar bevorsteht, gerade stattfindet oder noch andauert. In jedem Fall entfällt die Rechtswidrigkeit des Angriffs immer dann, wenn zugunsten des Angreifers selbst ein Rechtfertigungsgrund eingreift (etwa Notwehr oder Notstand). Wenn bspw. ein Angegriffener eine Sache eines Dritten zuhilfe nimmt, um einen tätlichen Angriff gegen seine Person abzuwehren, darf der Dritte seinerseits nicht dem Angegriffenen die Sache wegnehmen. Für den Dritten liegt keine Notwehrlage vor, da die Verwendung und ggf. Beschädigung der Sache durch den Angegriffenen aufgrund dessen Notwehrlage gerechtfertigt ist. Eine Notwehr gegen eine Notwehrhandlung ist nicht möglich. Kennzeichnend für die Notwehr sind eine Notwehrlage und eine Notwehrhandlung.
-          - html: <h5>Notwehrlage</h5>
-          - text: Eine Notwehrlage ist gegeben, wenn sich der Angriff gegen Leben, Körper, Gesundheit, Freiheit, Eigentum oder andere Rechtsgüter richtet. Der Angriff muss gegenwärtig sein, er darf noch nicht beendet sein (Rache ist also keine Notwehr). Eine Notwehrhandlung ist jedoch nur gerechtfertigt, wenn sie geeignet und erforderlich ist, den Angriff abzuwehren. Unerheblich ist, ob der Verteidiger selbst oder ein anderer angegeriffen wird; im zweiten Fall spricht man von Nothilfe.
-          - html: <h5>Notwehrhandlung</h5>
-          - text: Mit Notwehrhandlung bezeichnet man die Handlung, die der Verteidiger zur Abwehr des Angriffs vornimmt. Notwehr berechtigt nur zur erforderlichen Verteidigung. Erforderlich ist eine Verteidigung dann, wenn sie geeignet ist, den Angriff sicher und endgültig zu beenden. Der Notwehrübende hat dabei das relativ mildeste Mittel zu wählen, allerdings muss er sich auf Risiken bei der Verteidigung nicht einlassen. Ebenso ist eine "schimpfliche Flucht" zwingend notwendig, da das Recht dem Unrecht nicht weichen muss.
-          - text: 'Prinzipiell findet keine Abwägung zwischen den Rechten des Angegriffenen und des Angreifers statt, so dass die Verteidigungsmaßnahmen unter Umständen auch heftiger ausfallen können als die Tat des Angreifers (z. B. die Abwehr leichter Körperverletzung durch schwere Körperverletzung). In bestimmten Fällen wird vom Angegriffenen jedoch erwartet, dem Angriff auszuweichen: beispielsweise wenn es sich beim Angreifer um ein Kind oder einen Geisteskranken handelt. Das gleiche gilt, wenn der zu erwartende Schaden nur gering ist. Besonders im letzten Fall wird erwartet, dass die Verteidigungsmittel im rechten Verhältnis zur Tat stehen; die Gefährdung von Menschenleben ist also unzulässig, wenn sie dem Schutz eines minderwertigen Gutes dient. Überschreitet der Angegriffene die Grenzen der Notwehr jedoch aus Furcht, Schrecken oder Verwirrung (so genannter Notwehr-Exzess), wird er nicht bestraft.'
-          - html: <h5>Zur Abwehr</h5>
-          - text: Die Notwehr darf sich nur gegen den Angreifer richten. Werden andere in die Notwehrhandlung einbezogen, so kommen lediglich andere Rechtfertigungs- oder Entschuldigungsgründe (z. B. Notstand) in Betracht.
-          - html: <h5>Nothilfe</h5>
-          - text: Bei der Abwendung von Angriffen auf einen anderen spricht man von Nothilfe. Dabei ist zu beachten, dass eine "Staatsnothilfe", also eine Nothilfe zu Gunsten der Interessen der Allgemeinheit, in der Regel unzulässig ist.
-          - html: <h5>Notwehrprovokation</h5>
-          - text: Ein Sonderfall liegt vor, wenn der Angegriffene die Notwehrlage selbst (etwa durch Provokation des Angreifers) entweder mit Vorsatz oder auf andere Weise herbeigeführt hat. In diesem Fall spricht man von einer Notwehrprovokation.
-          - html: <h5>Notwehrexzess</h5>
-          - text: Überschreitet der Verteidiger das Maß der Notwehr, so liegt ein Notwehrexzess vor. Der Verteidiger handelt in diesem Fall rechtswidrig, kann aber dennoch straflos bleiben, wenn er aus Verwirrung, Furcht oder Schrecken (den sog. asthenischen Affekten) handelte, sodass es ihm an Schuldfähigkeit mangelt (vgl. § 33 StGB).
+          - href: taekwondo/self-defense/legal
+            text: siehe Notwehr
+          - par: Notwehr ist ein Begriff der Rechtssprache. Er bezeichnet die Verteidigung eines Menschen, die zur Abwehr eines rechtswidrigen, gegenwärtigen Angriffs durch einen anderen Menschen erforderlich ist (§ 32 StGB, § 227 BGB). Notwehr ist nicht strafbar und gilt auch im Zivilrecht nicht als unerlaubte Handlung. Unter einem Angriff versteht man dabei jede Bedrohung rechtlich geschützter Interessen durch menschliches Verhalten. Ein Angriff ist gegenwärtig, sobald diese Bedrohung unmittelbar bevorsteht, gerade stattfindet oder noch andauert. In jedem Fall entfällt die Rechtswidrigkeit des Angriffs immer dann, wenn zugunsten des Angreifers selbst ein Rechtfertigungsgrund eingreift (etwa Notwehr oder Notstand). Wenn bspw. ein Angegriffener eine Sache eines Dritten zuhilfe nimmt, um einen tätlichen Angriff gegen seine Person abzuwehren, darf der Dritte seinerseits nicht dem Angegriffenen die Sache wegnehmen. Für den Dritten liegt keine Notwehrlage vor, da die Verwendung und ggf. Beschädigung der Sache durch den Angegriffenen aufgrund dessen Notwehrlage gerechtfertigt ist. Eine Notwehr gegen eine Notwehrhandlung ist nicht möglich. Kennzeichnend für die Notwehr sind eine Notwehrlage und eine Notwehrhandlung.
+          - heading: Notwehrlage
+            level: 5
+          - par: Eine Notwehrlage ist gegeben, wenn sich der Angriff gegen Leben, Körper, Gesundheit, Freiheit, Eigentum oder andere Rechtsgüter richtet. Der Angriff muss gegenwärtig sein, er darf noch nicht beendet sein (Rache ist also keine Notwehr). Eine Notwehrhandlung ist jedoch nur gerechtfertigt, wenn sie geeignet und erforderlich ist, den Angriff abzuwehren. Unerheblich ist, ob der Verteidiger selbst oder ein anderer angegeriffen wird; im zweiten Fall spricht man von Nothilfe.
+          - heading: Notwehrhandlung
+            level: 5
+          - par: Mit Notwehrhandlung bezeichnet man die Handlung, die der Verteidiger zur Abwehr des Angriffs vornimmt. Notwehr berechtigt nur zur erforderlichen Verteidigung. Erforderlich ist eine Verteidigung dann, wenn sie geeignet ist, den Angriff sicher und endgültig zu beenden. Der Notwehrübende hat dabei das relativ mildeste Mittel zu wählen, allerdings muss er sich auf Risiken bei der Verteidigung nicht einlassen. Ebenso ist eine "schimpfliche Flucht" zwingend notwendig, da das Recht dem Unrecht nicht weichen muss.
+          - par: 'Prinzipiell findet keine Abwägung zwischen den Rechten des Angegriffenen und des Angreifers statt, so dass die Verteidigungsmaßnahmen unter Umständen auch heftiger ausfallen können als die Tat des Angreifers (z. B. die Abwehr leichter Körperverletzung durch schwere Körperverletzung). In bestimmten Fällen wird vom Angegriffenen jedoch erwartet, dem Angriff auszuweichen: beispielsweise wenn es sich beim Angreifer um ein Kind oder einen Geisteskranken handelt. Das gleiche gilt, wenn der zu erwartende Schaden nur gering ist. Besonders im letzten Fall wird erwartet, dass die Verteidigungsmittel im rechten Verhältnis zur Tat stehen; die Gefährdung von Menschenleben ist also unzulässig, wenn sie dem Schutz eines minderwertigen Gutes dient. Überschreitet der Angegriffene die Grenzen der Notwehr jedoch aus Furcht, Schrecken oder Verwirrung (so genannter Notwehr-Exzess), wird er nicht bestraft.'
+          - heading: Zur Abwehr
+            level: 5
+          - par: Die Notwehr darf sich nur gegen den Angreifer richten. Werden andere in die Notwehrhandlung einbezogen, so kommen lediglich andere Rechtfertigungs- oder Entschuldigungsgründe (z. B. Notstand) in Betracht.
+          - heading: Nothilfe
+            level: 5
+          - par: Bei der Abwendung von Angriffen auf einen anderen spricht man von Nothilfe. Dabei ist zu beachten, dass eine "Staatsnothilfe", also eine Nothilfe zu Gunsten der Interessen der Allgemeinheit, in der Regel unzulässig ist.
+          - heading: Notwehrprovokation
+            level: 5
+          - par: Ein Sonderfall liegt vor, wenn der Angegriffene die Notwehrlage selbst (etwa durch Provokation des Angreifers) entweder mit Vorsatz oder auf andere Weise herbeigeführt hat. In diesem Fall spricht man von einer Notwehrprovokation.
+          - heading: Notwehrexzess
+            level: 5
+          - par: Überschreitet der Verteidiger das Maß der Notwehr, so liegt ein Notwehrexzess vor. Der Verteidiger handelt in diesem Fall rechtswidrig, kann aber dennoch straflos bleiben, wenn er aus Verwirrung, Furcht oder Schrecken (den sog. asthenischen Affekten) handelte, sodass es ihm an Schuldfähigkeit mangelt (vgl. § 33 StGB).
       - title: Unterschiede zwischen traditionellem und modernem Einschrittkampf
         content:
-          - text: Der traditionelle Einschrittkampf ist ein formenerklärender Einschrittkampf. Der Angriff erfolgt auf traditionelle Art mit der Faust in Abgubi, die Konteraktionen werden kurz gehalten um die Techniken exakt zu demonstrieren. Geschult werden Distanzgefühl, Genauigkeit der Techniken, Anwendungsmöglichkeiten der Techniken, das Zusammenspiel mit dem Partner und die Kontrolle der Techniken.
-          - text: Der moderne Einschrittkampf orientiert sich am Freikampf. Er soll einen Übung hin zum Freikampf sein und erfolgt aus der Kampfstellung heraus. Angegriffen wird mit dem Dollyo-Chagi (Paldung), der im Freikampf am häufigsten auftretenden Technik. Geschult werden sollen Reaktion, Distanzgefühl, Kontrolle der Techniken (freikampforientiert) und das Ausweichen.
+          - par: Der traditionelle Einschrittkampf ist ein formenerklärender Einschrittkampf. Der Angriff erfolgt auf traditionelle Art mit der Faust in Abgubi, die Konteraktionen werden kurz gehalten um die Techniken exakt zu demonstrieren. Geschult werden Distanzgefühl, Genauigkeit der Techniken, Anwendungsmöglichkeiten der Techniken, das Zusammenspiel mit dem Partner und die Kontrolle der Techniken.
+          - par: Der moderne Einschrittkampf orientiert sich am Freikampf. Er soll einen Übung hin zum Freikampf sein und erfolgt aus der Kampfstellung heraus. Angegriffen wird mit dem Dollyo-Chagi (Paldung), der im Freikampf am häufigsten auftretenden Technik. Geschult werden sollen Reaktion, Distanzgefühl, Kontrolle der Techniken (freikampforientiert) und das Ausweichen.
       - title: Fachbegriffe der Step-Schule
         content:
           - itemize:
-              - html: Steppen auf der Stelle
-              - html: Auslagenwechsel
-              - html: Slide-Step
-              - html: Ein-Schritt-Technik One-Step
-              - html: Zwei-Schritt-Technik Two-Step
-              - html: Jagd-Step
-              - html: Rückwärts-Step
-              - html: X-Step / Kreuz-Step
-              - html: Seit-Step
+              - text: Steppen auf der Stelle
+              - text: Auslagenwechsel
+              - text: Slide-Step
+              - text: Ein-Schritt-Technik One-Step
+              - text: Zwei-Schritt-Technik Two-Step
+              - text: Jagd-Step
+              - text: Rückwärts-Step
+              - text: X-Step / Kreuz-Step
+              - text: Seit-Step
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+          - par: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

@@ -4,119 +4,129 @@ colors:
   - green
 icon: /belts/6.png
 content:
-  - text: Grün steht für die Pflanze, die sich aus dem Samen entwickelt und zeigt, dass der Schüler sich wie die Pflanze Richtung Himmel erstreckt.
+  - par: Grün steht für die Pflanze, die sich aus dem Samen entwickelt und zeigt, dass der Schüler sich wie die Pflanze Richtung Himmel erstreckt.
 sections:
   - title: Überprüfung Vorprogramm
     content:
-      - text: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
+      - par: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
   - title: Poomse
     content:
-      - html: <strong>Taeguk Ih-Jang</strong> (18 Bewegungen)
-      - text: Das Symbol "Tae" der Taeguk Ih-Jang ist der See. Es steht für Freude und Heiterkeit. Ein heiterer Mensch ist nicht von äußeren Impulsen abhängig, sondern besitzt eigenständige, innere Kraft. Seine Stimmung ist ruhig und ausgeglichen. Die Bewegungen der zweiten Form sollen deshalb entspannt und flüssig durchgeführt werden, dabei aber fest und kraftvoll. Die Taeguk Ih-Jang umfasst komplizierte Stellungswechsel, um dem Schüler zu größerer Balance zu verhelfen.
+      - - text: Taeguk Ih-Jang
+          bold: true
+        - text: (18 Bewegungen)
+      - par: Das Symbol "Tae" der Taeguk Ih-Jang ist der See. Es steht für Freude und Heiterkeit. Ein heiterer Mensch ist nicht von äußeren Impulsen abhängig, sondern besitzt eigenständige, innere Kraft. Seine Stimmung ist ruhig und ausgeglichen. Die Bewegungen der zweiten Form sollen deshalb entspannt und flüssig durchgeführt werden, dabei aber fest und kraftvoll. Die Taeguk Ih-Jang umfasst komplizierte Stellungswechsel, um dem Schüler zu größerer Balance zu verhelfen.
   # - title: Fußtechniken
   #   content:
   #     - table:
   #         body:
-  #           - [html: Apchuk Dollyo Chagi, html: Halbkreistritt mit dem Fußballen]
-  #           - [html: Paldung Chagi, html: 45°-Kick mit dem Fußspann]
+  #           - [text: Apchuk Dollyo Chagi, text: Halbkreistritt mit dem Fußballen]
+  #           - [text: Paldung Chagi, text: 45°-Kick mit dem Fußspann]
   - title: Handtechnicken
     content:
-      - html: <h4>Angriff</h4>
+      - heading: Angriff
+        level: 4
       - table:
           body:
-            - [html: Dungjumok Bakkat Chigi, html: Faustrückenschlag zur Seite]
-            - [html: Palkup Ollyo Chigi, html: Ellenbogebaufwärtsstoß]
-            - [html: Palkup Naeryo Chigi, html: Ellenbogenabwärtsschlag]
-            - [html: Palkup Yop Chigi, html: Ellenbogenseitwärtsschlag]
-            - [html: Ap Palkup Chigi, html: Ellenbogenstoß nach vorn]
-            - [html: Palkup Dollyo Chigi, html: Ellenbogendrehstoß]
-            - [html: Palkup Dwiro Chigi, html: Ellenbogenrückwärtsschlag]
-      - html: <h4>Abwehr</h4>
+            - [text: Dungjumok Bakkat Chigi, text: Faustrückenschlag zur Seite]
+            - [text: Palkup Ollyo Chigi, text: Ellenbogebaufwärtsstoß]
+            - [text: Palkup Naeryo Chigi, text: Ellenbogenabwärtsschlag]
+            - [text: Palkup Yop Chigi, text: Ellenbogenseitwärtsschlag]
+            - [text: Ap Palkup Chigi, text: Ellenbogenstoß nach vorn]
+            - [text: Palkup Dollyo Chigi, text: Ellenbogendrehstoß]
+            - [text: Palkup Dwiro Chigi, text: Ellenbogenrückwärtsschlag]
+      - heading: Abwehr
+        level: 4
       - table:
           body:
             - [
-                html: Godoro Sonnal Bakkat Makki,
-                html: Handkantenblock mit Unterstützung,
+                text: Godoro Sonnal Bakkat Makki,
+                text: Handkantenblock mit Unterstützung,
               ]
-            - [html: Godoro Bakkat Makki, html: Außenblock mit Unterstützung]
+            - [text: Godoro Bakkat Makki, text: Außenblock mit Unterstützung]
             - [
-                html: Sonnaldung Bakkat Makki,
-                html: Innenhandkantenblock von innen nach außen,
+                text: Sonnaldung Bakkat Makki,
+                text: Innenhandkantenblock von innen nach außen,
               ]
   # - title: Stellungen
   #   content:
-  #     - text: Wiederholung der Stellungen bis 8. Kup
+  #     - par: Wiederholung der Stellungen bis 8. Kup
   # - title: Step-Schule
   #   content:
-  #     - text: Wiederholung der Steps vom 8. Kup, mit Partner
+  #     - par: Wiederholung der Steps vom 8. Kup, mit Partner
   #     - itemize:
-  #         - text: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
-  #         - text: Two-Step
-  #         - text: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
-  #         - text: Jagd-Step (Gleiten mit dem Standbein)
+  #         - par: Auslagenwechsel hintenherum (Wechsel durch Drehung auf der Stelle)
+  #         - par: Two-Step
+  #         - par: X-Step (Fußwechsel auf der Stelle ohne Körperdrehung)
+  #         - par: Jagd-Step (Gleiten mit dem Standbein)
   - title: Pratzenübungen
     content:
-      - html: <h4>Pratzenkampf</h4>
-      - text: Formen- oder wettkampforientiert. Beide Partner bewegen sich freikampfähnlich, wobei A die Pratze im Stand in verschiedenen Stellungen (Zielvorgabe) anbietet, sodass B verschiedene Techniken auf die Pratze ausführen muss.
+      - heading: Pratzenkampf
+        level: 4
+      - par: Formen- oder wettkampforientiert. Beide Partner bewegen sich freikampfähnlich, wobei A die Pratze im Stand in verschiedenen Stellungen (Zielvorgabe) anbietet, sodass B verschiedene Techniken auf die Pratze ausführen muss.
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:
-      - text: formenorientiert - 7 Aktionen rechts / links (3x Hand-, 3x Fußtechniken). Vorführung des erweiterten technisch-taktischen Programms gegen Angriffe mit Halbkreisfußschlag.
-      - html: <h4>Angriff</h4>
+      - par: formenorientiert - 7 Aktionen rechts / links (3x Hand-, 3x Fußtechniken). Vorführung des erweiterten technisch-taktischen Programms gegen Angriffe mit Halbkreisfußschlag.
+      - heading: Angriff
+        level: 4
       - itemize:
-          - html: Halbkreisfußschlag
-      - html: <h4>Verteidigung</h4>
+          - text: Halbkreisfußschlag
+      - heading: Verteidigung
+        level: 4
       - itemize:
-          - html: siehe 7. Kup
-          - html: Seitwärts- / Rückwärtsfußstoß, Drehschlag
-      - html: <h4>Verteidigungsprinzipien</h4>
+          - text: siehe 7. Kup
+          - text: Seitwärts- / Rückwärtsfußstoß, Drehschlag
+      - heading: Verteidigungsprinzipien
+        level: 4
       - itemize:
-          - html: siehe 7. Kup
+          - text: siehe 7. Kup
   - title: Freikampf (Kyorugi)
     content:
-      - html: <h4>Übungen mit Rollenteilung</h4>
-      - text: A = offensiv, B = defensiv-passiv (Ausweichen mit Deckung)
-      - html: <h4>Übungen mit Aufgabenstellung</h4>
+      - heading: Übungen mit Rollenteilung
+        level: 4
+      - par: A = offensiv, B = defensiv-passiv (Ausweichen mit Deckung)
+      - heading: Übungen mit Aufgabenstellung
+        level: 4
       - itemize:
-          - html: B soll den Erfolg (Treffen) der Einzel-) Angriffe von A lediglich durch "Ausweichen auf der Linie" (vor- oder rückwärts) verhindern. A greift mit freier Technik an.
-          - html: A wird als Angreifer festgelegt auf die Bewegungskombination "Drehung und Halbkreisfußschlag", bleibt jedoch frei in der Wahl der Auslage und damit der Drehrichtung. B soll sich durch verteidigen durch "Ausweichen - seitlich" aus der Körperdrehrichtung des Angreifers herausbewegen. Durch diese "spielerische" Übung muss sich B durch "Verlassen der Linie" verteidigen (im Gegensatz zum "Ausweichen auf der Linie").
-          - html: '1 x 1 nachzeitig A: Angriff. B: Ausweichen und wiederkommen'
-          - html: 2 x 2 nachzeitig mit Eigensicherung und vorgegebenen Techniken. Nach dem Ausstieg sollten sich die beiden Partner in freikampfähnlicher Bewegung (ohne Technik) weiterbewegen und von hier aus wieder in 2 x 2 einsteigen.
-      - text: Ziel der Übung ist es, dass der Angreifer lernt, Technikkombinationen in seinen Angriff einzubauen und danach wieder verteidigungsbereit zu sein.
+          - text: B soll den Erfolg (Treffen) der Einzel-) Angriffe von A lediglich durch "Ausweichen auf der Linie" (vor- oder rückwärts) verhindern. A greift mit freier Technik an.
+          - text: A wird als Angreifer festgelegt auf die Bewegungskombination "Drehung und Halbkreisfußschlag", bleibt jedoch frei in der Wahl der Auslage und damit der Drehrichtung. B soll sich durch verteidigen durch "Ausweichen - seitlich" aus der Körperdrehrichtung des Angreifers herausbewegen. Durch diese "spielerische" Übung muss sich B durch "Verlassen der Linie" verteidigen (im Gegensatz zum "Ausweichen auf der Linie").
+          - text: '1 x 1 nachzeitig A: Angriff. B: Ausweichen und wiederkommen'
+          - text: 2 x 2 nachzeitig mit Eigensicherung und vorgegebenen Techniken. Nach dem Ausstieg sollten sich die beiden Partner in freikampfähnlicher Bewegung (ohne Technik) weiterbewegen und von hier aus wieder in 2 x 2 einsteigen.
+      - par: Ziel der Übung ist es, dass der Angreifer lernt, Technikkombinationen in seinen Angriff einzubauen und danach wieder verteidigungsbereit zu sein.
   - title: Selbstverteidigung (Hosinsul)
     content:
-      - text: Selbstverteidigungstechniken, die nicht taekwondo-spezifisch sind
+      - par: Selbstverteidigungstechniken, die nicht taekwondo-spezifisch sind
       - itemize:
-          - html: Hebeltechniken
-          - html: Fußfeger
-          - html: Wurftechniken
-          - html: einhändiges Würgen von vorn
-          - html: Schwitzkasten seitlich / von vorn
-          - html: zweihändiges Würgen von vorn / hinten / seitlich
-          - html: Unterarmwürgegriff von hinten
-          - html: Ziehen am Kragen von hinten mit gestrecktem Arm
-          - html: Konter aus der Nahdistanz gegen Angriffe aus langer und mittlerer Distanz
-      - text: Anwendung dieser SV-Techniken aus abgesprochenen Situationen heraus, d. h. der Eingang (Angriffstechnik) ist dem Verteidiger bekannt und der Angreifer leistet keinen Widerstand.
-      - text: Bei der Anwendung von Fußfegern (in Verbindung mit Schulterzug, sodass der Angreifer zu Fall kommt) sowie bei Wurftechniken ist auf Fallschule sowie Absicherung durch Matten zu achten.
+          - text: Hebeltechniken
+          - text: Fußfeger
+          - text: Wurftechniken
+          - text: einhändiges Würgen von vorn
+          - text: Schwitzkasten seitlich / von vorn
+          - text: zweihändiges Würgen von vorn / hinten / seitlich
+          - text: Unterarmwürgegriff von hinten
+          - text: Ziehen am Kragen von hinten mit gestrecktem Arm
+          - text: Konter aus der Nahdistanz gegen Angriffe aus langer und mittlerer Distanz
+      - par: Anwendung dieser SV-Techniken aus abgesprochenen Situationen heraus, d. h. der Eingang (Angriffstechnik) ist dem Verteidiger bekannt und der Angreifer leistet keinen Widerstand.
+      - par: Bei der Anwendung von Fußfegern (in Verbindung mit Schulterzug, sodass der Angreifer zu Fall kommt) sowie bei Wurftechniken ist auf Fallschule sowie Absicherung durch Matten zu achten.
   - title: Theorie
     sections:
       - title: Gleichgewicht brechen
         content:
-          - text: Das Brechen des Gleichgewichtes kann durch schieben oder ziehen des Körpers (evlt. beides in schneller Folge), Fußfeger oder diverse Hebel erreicht werden. Der Vorteil dabei besteht darin, dass der Gegner abgelenkt ist und man selber in der Lage, ist Folgetechniken anzusetzen. Der Gegner kann zu Boden gebracht werden (evtl. sogar hart auf den Boden Aufschlagen lassen) um ihn dort zu fixieren, oder die gewonnene Zeit für eine Flucht genutzt werden. Sollte man selber dabei zu Boden gehen ist es vorteilhaft, beim Fallen auf dem Angreifer zu landen. Kann das nicht realisiert werden, sollte sofort eine Abwehrstellung eingenommen werden, die eine Verteidigung am Boden (z.B. durch Treten) ermöglicht.
+          - par: Das Brechen des Gleichgewichtes kann durch schieben oder ziehen des Körpers (evlt. beides in schneller Folge), Fußfeger oder diverse Hebel erreicht werden. Der Vorteil dabei besteht darin, dass der Gegner abgelenkt ist und man selber in der Lage, ist Folgetechniken anzusetzen. Der Gegner kann zu Boden gebracht werden (evtl. sogar hart auf den Boden Aufschlagen lassen) um ihn dort zu fixieren, oder die gewonnene Zeit für eine Flucht genutzt werden. Sollte man selber dabei zu Boden gehen ist es vorteilhaft, beim Fallen auf dem Angreifer zu landen. Kann das nicht realisiert werden, sollte sofort eine Abwehrstellung eingenommen werden, die eine Verteidigung am Boden (z.B. durch Treten) ermöglicht.
       - title: Hebeltechnik
         content:
-          - text: Hebeltechniken können sich gegen alle Gelenke richten. Unter Ausnutzung der Hebelgesetze wird das Gelenk in eine unnatürliche Richtung oder über das Ausmaß der normalen Bewegung hinaus bewegt. Der Gegner kann durch den entstehenden Schmerz unter Kontrolle gebracht werden oder das Gelenk so geschädigt werden, dass er kampfunfähig ist.
+          - par: Hebeltechniken können sich gegen alle Gelenke richten. Unter Ausnutzung der Hebelgesetze wird das Gelenk in eine unnatürliche Richtung oder über das Ausmaß der normalen Bewegung hinaus bewegt. Der Gegner kann durch den entstehenden Schmerz unter Kontrolle gebracht werden oder das Gelenk so geschädigt werden, dass er kampfunfähig ist.
       - title: Schlag- und Stoßtechniken
         content:
-          - text: Bei einem Stoß ist die Bewegungsrichtung eine Gerade zum Gegner hin (z.B. Fauststoß). Ein Schlag erfolgt über eine Kreisbahn zum Gegner.
+          - par: Bei einem Stoß ist die Bewegungsrichtung eine Gerade zum Gegner hin (z.B. Fauststoß). Ein Schlag erfolgt über eine Kreisbahn zum Gegner.
       - title: Ausweichen auf der Linie
         content:
-          - text: Ausweichen auf der Linie bedeutet, dass sich der Verteidiger passiv verhält, vor dem Angriff "zurückweicht" und so praktisch taekwondospezifisch mit einem (oder mehreren) Rückwärts-Step(s) einen Treffer nicht zulässt.
-          - text: Eine weitere passive Reaktion auf einen Angriff ist das Ausweichen über das Verlassen der Linie. Verlassen der Linie bedeutet, dass der Angegriffene nicht zurückweicht. Vielmehr weicht er dem Angriff mit bspw. einem Seitwärts-Step aus.
-          - text: Der Vorteil dieser Ausweichmöglichkeit gegenüber dem Zurückweichen besteht darin, dass die für einen Konter (aktive Verteidigung) erforderliche Distanz bereits besteht und die Kontertechnik unmittelbar erfolgen kann.
+          - par: Ausweichen auf der Linie bedeutet, dass sich der Verteidiger passiv verhält, vor dem Angriff "zurückweicht" und so praktisch taekwondospezifisch mit einem (oder mehreren) Rückwärts-Step(s) einen Treffer nicht zulässt.
+          - par: Eine weitere passive Reaktion auf einen Angriff ist das Ausweichen über das Verlassen der Linie. Verlassen der Linie bedeutet, dass der Angegriffene nicht zurückweicht. Vielmehr weicht er dem Angriff mit bspw. einem Seitwärts-Step aus.
+          - par: Der Vorteil dieser Ausweichmöglichkeit gegenüber dem Zurückweichen besteht darin, dass die für einen Konter (aktive Verteidigung) erforderliche Distanz bereits besteht und die Kontertechnik unmittelbar erfolgen kann.
       - title: Verhältnismäßigkeit der Mittel
         content:
-          - text: Verhältnismäßigkeit der Mittel heißt, dass in einer Notwehrsituation (vgl. 7. Kup) für die Notwehrhandlung das relativ mildeste Mittel zu wählen. Juristen sprechen hierbei vom "Übermaßverbot".
-          - text: Der Angegriffene muss er sich jedoch auf Risiken bei der Verteidigung nicht einlassen. Ebenso ist eine "Flucht" nicht zwingend geboten, da das Recht dem Unrecht nicht weichen muss. Dennoch sollte sofern möglich auch eine Flucht in Erwägung gezogen werden, da diese bei Erfolg im Vergleich zu einer gewalttätigen Auseinandersetzung das intelligentere Mittel ist.
+          - par: Verhältnismäßigkeit der Mittel heißt, dass in einer Notwehrsituation (vgl. 7. Kup) für die Notwehrhandlung das relativ mildeste Mittel zu wählen. Juristen sprechen hierbei vom "Übermaßverbot".
+          - par: Der Angegriffene muss er sich jedoch auf Risiken bei der Verteidigung nicht einlassen. Ebenso ist eine "Flucht" nicht zwingend geboten, da das Recht dem Unrecht nicht weichen muss. Dennoch sollte sofern möglich auch eine Flucht in Erwägung gezogen werden, da diese bei Erfolg im Vergleich zu einer gewalttätigen Auseinandersetzung das intelligentere Mittel ist.
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+          - par: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).

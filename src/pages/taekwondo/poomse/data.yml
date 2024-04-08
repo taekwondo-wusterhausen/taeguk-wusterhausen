@@ -1,0 +1,143 @@
+general:
+  - text: bla
+# TODO: description2 ~= exam catalog data
+forms:
+  - name: Taeguk Il-Jang
+    symbol: /poomse/il-jang.gif
+    metaphor: der Himmel
+    meaning: Schöpferkraft, Stärke
+    description: Das Symbol "Keon" der Poomse Il-Jang steht für Himmel und Licht, damit alles gedeihen kann. Mit Himmel ist also die Schöpfung symbolisiert, der Anfang des Seins.
+    description2: Das Trigramm der ersten Form besteht aus drei ungebrochenen, männlichen Linien. Es steht für reines Yin und wird durch den Himmel und das Licht symbolisiert. Im I-Ging wird dem Himmel die Zeugungskraft zugeschrieben, im Gegensatz zur empfangenden Erde. Allgemeiner steht der Himmel für die Schöpfung und den Anfang des Seins. So ist auch der Taeguk Il-Jang der Anfang und die Quelle aller weiteren Entwicklungen im Taekwondo. Die Form sollte mit kraftvoller Frische ni dem Bewusstsein ausgeführt werden, dass man etwas Neues beginnt.
+    techniques: 18
+  - name: Taeguk Ih-Jang
+    symbol: /poomse/ih-jang.gif
+    metaphor: der See
+    meaning: Freude, Heiterkeit
+    description: Das Symbol "Tae" der Taeguk Ih-Jang symbolisiert Frohsinn und Glücklichkeit. Ein von Frohsinn geprägter Mensch verfügt über eine gefestigte innere Kraft, die ihn ausgeglichen und ruhig sein lässt.
+    description2: Das Symbol des Taeguk Ih-Jang ist der See. Er steht für Freude und Heiterkeit. Ein heiterer Mensch ist nicht von äußeren Impulsen abhängig, sondern besitzt eigenständige, innere Kraft. Seine Stimmung ist ruhig und ausgeglichen. Die Bewegungen der zweiten Form sollen deshalb entspannt und flüssig durchgeführt werden, dabei aber fest und kraftvoll. Der Taeguk lh-Jang umfasst komplizierte Stellungswechsel, um dem Schüler zu größerer Balance zu verhelfen.
+    techniques: 18
+  - name: Taeguk Sam-Jang
+    symbol: /poomse/sam-jang.gif
+    metaphor: das Feuer
+    meaning: Begeisterung
+    description: Taeguk Sam-Jang wird symbolisiert durch das Zeichen "Ra" des Feuers. Das Feuer gibt den Menschen Wärme und Licht. Es kann aber Furcht und Schrecken verbreiten.
+    description2: Die dritte Form entspricht dem Bild des Feuers. Die Techniken dieser Form müssen mit Eifer und Enthusiasmus ausgeführt werden. Wie beim Flackern einer Flamme variieren die Bewegungen mi Sam-Jang mit Energieausbrüchen zwischen schnelleren und langsameren Bewegungen. So folgen z. B. auf die Ap-Chagis sofort schnellere Doppelfauststöße.
+    techniques: 20
+  - name: Taeguk Sa-Jang
+    symbol: /poomse/sa-jang.gif
+    metaphor: der Donner
+    meaning: Wachstum, Bewegung
+    description: Das Symbol "Jin" der Taeguk Sa-Jang steht für den Donner. Donner und Blitze flößen dem Menschen Furcht ein. Donner bedeutet aber gleichzeitig auch Kraft und Macht.
+    description2: Die Bewegungen des Taeguk Sa-Jang stellen einen erheblichen Fortschritt gegenüber den ersten drei Formen dar. So entsprechen sie dem Symbol des Donners. Der Donner steht für Neubeginn und Bewegung, aber auch für Kraft und Macht. Das Prinzip des Donners kommt in den kräftigen Stellungen mit selbstbewussten Block- und Schlagbewegungen zum Ausdruck. Wie der Donner Regen mit sich bringt und so die Luft bei einem Gewitter bereinigt, so beginnt der Taeguk Sa-Jang dem Schüler das richtige Verständnis der Taekwondo-Techniken zu vermitteln.
+    techniques: 20
+  - name: Taeguk Oh-Jang
+    symbol: /poomse/oh-jang.gif
+    metaphor: der Wind
+    meaning: Sanftmut, Eindringlichkeit
+    description: Taeguk Oh-Jang steht unter dem Symbol "Son" des Windes. Trotz Stürme und Tornados hat der Wind eigentlich eine gute Bedeutung. Der Wind verteilt die Saat über die Felder und zerstreut dunkle Wolken. Er symbolisiert die Kraft der Zerstörung, und die des Aufbaus.
+    description2: Die fünfte Form wird durch den Wind versinnbildlicht, der schnell und kraftvoll ist, dabei aber unsichtbar. Die Bewegungen umfassen schnelle und plötzliche Richtungswechsel. Der Ellbogenschlag und Hammerfaust werden hier eingeführt. Das Prinzip des Windes wird durch die Wischbewegung der Hammerfaust und am Ende der Form beim Sprung in die Kreuzstellung dargestellt.
+    techniques: 20
+  - name: Taeguk Yuk-Jang
+    symbol: /poomse/yuk-jang.gif
+    metaphor: das Wasser
+    meaning: Tiefe, Gefahr
+    description: Das Symbol "Kam" des Wassers kennzeichnet diese Form. Wie das Wasser, dass immer bergab fließt, fließen die Bewegungen der Poomse ineinander über.
+    description2: >
+      Der Taeguk Yuk-Jang greift die Eigenschaften des Wassers auf: "Schwaches überwindet das Starke, Weiches überwindet das Harte". Wie das Wasser formlos ist und alle Widerstände besiegt, so muss der Schüler die sechste Form flüssig und mit sanfter Zuversicht ausführen, so als ob jede Bewegung eine natürliche Reaktion auf ein Hindernis oder eine Schwierigkeit ist, die über- wunden werden sol. Die ungewöhnlichen Bewegungen der beiden Drehkicks, die hier zum ersten Mal auftauchen, erinnern daran, dass der Schüler sich, wie das Wasser, ohne Zögern in jede Richtung bewegen kann.
+    techniques: 23
+  - name: Taeguk Chil-Jang
+    symbol: /poomse/chil-jang.gif
+    metaphor: der Berg
+    meaning: Ruhe, Festigkeit
+    description: Das Symbol "Kan" dieser Form steht für den Berg, Unverrückbar und Fest. Der Mensch trachtet seine Festigkeit dadurch zu erringen, dass er geht, wenn er muss, und anhält, wenn dies geboten ist.
+    description2: Das Bild der sieben Form ist der Berg. In allen Kulturen, so auch in der asiatischen, werden Berge gerne als Sitz von Klöstern und Heiligtümern gewählt. In alter Zeit glaubte man, die Berge seinen der direkte Sitz der Götter oder doch wenigstens eines speziellen Berggottes. Der Berg drückt deshalb durch seine unverrückbare, mächtige Silhouette selbst Festigkeit aus, ist aber durch seine spirituelle Bedeutung auch ein Garant für den festen Bestand des Universums. Der Berg ist beständig, so wie es der Schüler sein muss, wenn er die Techniken in der Tigerstellung beginnt. Die Techniken bei dieser Form werden oft als Mehrfachkombinationen aus einer einzigen Stellung heraus ausgeführt und zeigen so, dass ein guter Schüler Balance und Stärke sowohl in der Ruhe als auch in der Bewegung haben muss.
+    techniques: 25
+  - name: Taeguk Pal-Jang
+    symbol: /poomse/pal-jang.gif
+    metaphor: die Erde
+    meaning: Hingabe
+    description: Das achte und letzte Symbol "Kon" der Taeguk steht für die Erde. Die Erde ist die Mutter des Lebens. Sie macht die Fruchtbarkeit und die Schöpfung des Himmels möglich.
+    description2: Das Trigramm des Taeguk Pal-Jang besteht aus drei durchbrochenen, weiblichen Linien. Es steht für reines Yang, das durch die Erde symbolisiert wird. Im Buch der Wandlungen steht die Erde für empfangende Hingabe. Die Erde nimmt die kreative Kraft des Himmels auf und wird zum Ursprung des Lebens. Ebenso greift der Taeguk Pal-Jang alles bisher Gelernte auf und ist gleichzeitig die Grundlage, auf der die Formen der Dan-Grade aufbauen.
+    techniques: 24
+  - name: Poomse Koryo
+    symbol: /poomse/koryo.gif
+    metaphor:
+    meaning:
+    description: >
+      Koryo ist der Name einer Dynastie (918 - 1392 n. Chr.), aus dessen Name sich das Wort Korea abgeleitet hat.
+      Poomse Koryo spiegelt in ihren Bewegungen die geistige Haltung des "Koryo Volkes" wieder, das mit Überzeugung und starkem Willen einem mächtigen Gegner widerstand.
+    techniques: 30
+  - name: Poomse Kumgang
+    symbol: /poomse/kumgang.gif
+    metaphor:
+    meaning:
+    description: >
+      Mit dem Wort Kumgang sind im Koreanischen viele Begriffe verbunden.
+      So bedeutet das Wort selbst: zu fest, um zerbrochen zu werden. Kumgang ist aber auch die Bezeichnung der Buddhistischen Mönche für die Beendigung aller Seelenpein durch Weisheit und Tugend.
+      Der größte Berg Koreas, sowie ein Diamant wird Kumgang genannt. Entsprechend den Bedeutungen ist Kumgang eine Bewegungsform, die auf geistiger Kraft basiert, mit der Erhabenheit eines Berges und der Härte eines Diamanten vergleichbar.
+    techniques: 27
+  - name: Poomse Taebaek
+    symbol: /poomse/taebaek.gif
+    metaphor:
+    meaning:
+    description: >
+      Die Sage über die Gründung Koreas berichtet, dass um 2334 v. Chr. der legendäre Tangun auf dem Berg Taebaek, der heute Baekdu heißt, das Volk Koreas gründete.
+      Poomse Taebaek demonstriert nicht nur Genauigkeit und Schnelligkeit, sondern auch Strenge und Entschlossenheit.
+    techniques: 26
+  - name: Poomse Pyongwon
+    symbol: /poomse/pyongwon.gif
+    metaphor:
+    meaning:
+    description: >
+      Der Lebensraum des menschlichen Seins ist die Ebene.
+      Weite und fruchtbare Ebenen geben uns Nahrung.
+      Eine große und offene Ebene erstreckt sich endlos und gibt so dem Betrachter ein Gefühl der Erhabenheit.
+      Die Ebene mit ihrem Überfluß und der grenzenlosen Weite findet ihre Versinnbildlichung in der Poomse Pyongwon.
+    techniques: 25
+  - name: Poomse Sipjin
+    symbol: /poomse/sipjin.gif
+    metaphor:
+    meaning:
+    description: >
+      Die Poomse Sipjin steht für das dezimale System.
+      Die Zahl 10 ist Symbolfigur für endlose Entwicklung und Wachstum.
+      Wachstum ist nur bei einer systematischen und geregelten Ordnung wirkungsvoll.
+      Die Eigenart der Poomse Sipjin liegt in höchstem Abwechslungsreichtum und der geordneten Disziplin des dezimalen Systems.
+      Das Diagramm dieser Form ist das chin. Zeichen für 10.
+    techniques: 31
+  - name: Poomse Jitae
+    symbol: /poomse/jitae.gif
+    metaphor:
+    meaning:
+    description: >
+      Gemäß dem fernöstlichen Glauben, kommt alles aus der Erde hervor, und kehrt wieder in sie zurück.
+      Die Erde ist Beginn und Ende des Lebens.
+      Lebewesen und Natur formen und verändern sie fortdauernd.
+      Poomse Jitae vereinigt diese Eigenschaften in ihren Bewegungen.
+    techniques: 28
+  - name: Poomse Chonkwon
+    symbol: /poomse/chonkwon.gif
+    metaphor:
+    meaning:
+    description: >
+      In der alten Zeit wurde der Himmel als Herrscher über das Universum und die Menschen verehrt.
+      Man dachte der Himmel habe die Natur erschaffen.
+      Chonkwon ist durchdrungen von Bewegungen, die voll Frömmigkeit und Vitalität sind, wie ein Mensch, der in den Himmel blickt, oder wie ein Adler, der in den Himmel emporsteigt.
+    techniques: 27
+  - name: Poomse Hansu
+    symbol: /poomse/hansu.gif
+    metaphor:
+    meaning:
+    description: >
+      Wasser bildet Seen und Flüsse, angefangen mit einem einzelnen Tropfen.
+      Es ist still, aber auch wild und passt sich jeder Form an.
+      Die Eigenschaften des Wassers, sind typisch für diese Poomse.
+    techniques: 27
+  - name: Poomse Ilyo
+    symbol: /poomse/ilyo.gif
+    metaphor:
+    meaning:
+    description: >
+      Im Buddhismus nennt mann den Zustand der geistigen Ausbildung, in dem Körper und Geist zu einer Einheit verschmelzen, Ilyo.
+      Es ist die Aufgabe des Lernenden diesen Zustand zu suchen und eine Konzentration zu erreichen, in der es möglich ist, Übungen durchzuführen und das Weltliche abzulegen.
+    techniques: 23

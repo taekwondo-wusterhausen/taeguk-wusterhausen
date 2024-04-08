@@ -4,186 +4,205 @@ colors:
   - red
 icon: /belts/2.png
 content:
-  - text: Rot steht für die Sonne, die über dem Himmel strahlt.
-  - text: 'Taekwondo-Kämpfer sind erstmals gewarnt: Da kann einer schon was.'
+  - par: Rot steht für die Sonne, die über dem Himmel strahlt.
+  - par: 'Taekwondo-Kämpfer sind erstmals gewarnt: Da kann einer schon was.'
 sections:
   - title: Überprüfung Vorprogramm
     content:
-      - text: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
+      - par: Bisher geprüfte Grundschultechniken, insbesondere erlernte Formen.
   - title: Poomse
     content:
-      - html: <strong>Taeguk Yuk-Jang</strong> (23 Bewegungen)
-      - text: |
+      - - text: Taeguk Yuk-Jang
+          bold: true
+        - text: (23 Bewegungen)
+      - par: |
           Das Symbol "Kam" des Wassers kennzeichnet diese Form. Taeguk Yuk-Jang greift die Eigenschaften des Wassers auf: "Schwaches überwindet das Starke, Weiches überwindet das Harte". Wie das Wasser, dass formlos immer bergab fließt und alle Widerstände besiegt, fließen die Bewegungen der Poomse ineinander über. Der Schüler muss die sechste Form flüssig und mit sanfter Zuversicht ausführen, so als ob jede Bewegung eine natürliche Reaktion auf ein Hindernis oder eine Schwierigkeit ist, die es zu überwinden gilt. Die ungewöhnlichen Bewegungen der beiden Drehkicks, die hier zum ersten Mal auftauchen, erinnern daran, dass der Schüler sich - wie das Wasser - in jede Richtung bewegen kann.
   - title: Fußtechniken
     content:
       - table:
           body:
-            - [html: Bituro Chagi, html: Außendrehtritt]
+            - [text: Bituro Chagi, text: Außendrehtritt]
             - [
-                html: Baldabak Pyojok Sewo Chagi,
-                html: Tritt mit senkrechter Fußsohle auf den Punkt,
+                text: Baldabak Pyojok Sewo Chagi,
+                text: Tritt mit senkrechter Fußsohle auf den Punkt,
               ]
   - title: Handtechnicken
     content:
-      - html: <h5>Angriff</h5>
+      - heading: Angriff
+        level: 5
       - table:
           body:
             - [
-                html: Momtong Du Jumok Jechyo Jirugi,
-                html: beide umgedrehten Fäustestoßen zur Körpermitte,
+                text: Momtong Du Jumok Jechyo Jirugi,
+                text: beide umgedrehten Fäustestoßen zur Körpermitte,
               ]
             # TODO: Handtechnik?
             - [
-                html: Momtong Murup Ollyo Chigi,
-                html: Knie schlägtaufwärts gegen Solarplexus,
+                text: Momtong Murup Ollyo Chigi,
+                text: Knie schlägtaufwärts gegen Solarplexus,
               ]
-      - html: <h5>Abwehr</h5>
+      - heading: Abwehr
+        level: 5
       - table:
           body:
-            - [html: Gawi Makki, html: Scherenblock]
-            - [html: Dubon Gawi Makki, html: doppelter Scherenblock]
+            - [text: Gawi Makki, text: Scherenblock]
+            - [text: Dubon Gawi Makki, text: doppelter Scherenblock]
   - title: Stellungen
     content:
       - table:
           body:
-            - [html: Bom Sogi, html: Tigerstellung / kleine Rückwärtsstellung]
-            - [html: Hakdari Sogi, html: Kranichbeinstellung]
+            - [text: Bom Sogi, text: Tigerstellung / kleine Rückwärtsstellung]
+            - [text: Hakdari Sogi, text: Kranichbeinstellung]
   - title: 1-Schritt-Kampf (Ilbo Taeryon)
     content:
-      - text: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
-      - text: Techniken aus den Formen 1 - 6 sowie Übungen mit einem technisch höheren Schwierigkeitsgrad
+      - par: formenerklärend - 10 Aktionen rechts / links (4x Hand-, 4x Fußtechniken)
+      - par: Techniken aus den Formen 1 - 6 sowie Übungen mit einem technisch höheren Schwierigkeitsgrad
   - title: Freikampf (Kyorugi)
     content:
-      - text: freies Sparring mit technischen (mit bestimmten Techniken angreifen / kontern) und taktischen Aufgabenstellungen
-      - html: <h4>Ziel der Aufgabe</h4>
-      - text: Die Aufgabe bleibt durch die Aufgabenstellung im Gegensatz zum sog. "freien Kampf" in ihrer Komplexität reduziert, daher eher lösbar für den Prüfling sowie besser zu beurteilen durch den Prüfer. In dieser Stufe der Ausbildung sollen nun sowohl Offensiv- als auch Defensiv-Strategie im Rahmen ihrer gesamten Möglichkeiten praktiziert werden.
+      - par: freies Sparring mit technischen (mit bestimmten Techniken angreifen / kontern) und taktischen Aufgabenstellungen
+      - heading: Ziel der Aufgabe
+        level: 4
+      - par: Die Aufgabe bleibt durch die Aufgabenstellung im Gegensatz zum sog. "freien Kampf" in ihrer Komplexität reduziert, daher eher lösbar für den Prüfling sowie besser zu beurteilen durch den Prüfer. In dieser Stufe der Ausbildung sollen nun sowohl Offensiv- als auch Defensiv-Strategie im Rahmen ihrer gesamten Möglichkeiten praktiziert werden.
   - title: Selbstverteidigung (Hosinsul)
     content:
-      - text: |
+      - par: |
           SV-Angriffe mit einem Stock (60-100 cm) bzw. Messer Messer: Stich von oben zum Kopf / Hals / Rumpf von außen nach innen / innen nach außen bzw. diagonal, zum Solarplexus, verdeckter Messerangriff (Messer liegt am Unterarm an und vollführt Schnittbewegung zum Hals)
-      - html: <h4>Mögliche Stock-Angriffe</h4>
+      - heading: Mögliche Stock-Angriffe
+        level: 4
       - enumerate:
-          - html: von außen / innen zum Rumpf
-          - html: von außen / innen zum Kopf
-          - html: von außen / innen zum Knie
-          - html: von oben direkt zum Kopf
-          - html: Stich zum Solar-Plexus
-      - html: <h4>Mögliche Messer-Angriffe</h4>
+          - text: von außen / innen zum Rumpf
+          - text: von außen / innen zum Kopf
+          - text: von außen / innen zum Knie
+          - text: von oben direkt zum Kopf
+          - text: Stich zum Solar-Plexus
+      - heading: Mögliche Messer-Angriffe
+        level: 4
       - enumerate:
-          - html: Stich / Schnitt von außen / innen zum Hals - Klinge aufwärts
-          - html: Stich / Schnitt von außen / innen zum Rumpf - Klinge aufwärts
-          - html: Stich zum Solar-Plexus - Klinge aufwärts
-          - html: Stich im Halbkreis von außen zur Schulter - Klinge aufwärts
-          - html: Schnitt diagonal von Schulter zur Hüfte beidseitig - Klinge aufwärts
-          - html: Stich von oben zum Kopf - Klinge abwärts
-          - html: Stich von außen / innen zum Rumpf - Klinge abwärts
-          - html: verdeckter Messerangriff (Messer liegt am Unterarm, Schnittbewegung zum Hals - Klinge abwärts
-      - text: Angriffe mit einem Messer bzw. Stock stehen im Gegensatz zu den (konstruierten) Anforderungen der vorhergehenden Ausbildungsstufe. Während dort eine SV-Situation dargestellt wurde, in welcher der Angriff unvermeidbar bzw. bereits durchgeführt war, ist der Verteidiger hier gezwungen, den Angriff durch rechtzeitiges Ausweichen in Verbindung mit einer sichernden Abwehrbewegung zu vermeiden. Im Eingang entspricht diese SV-Situation also dem 1-Schritt-Kampf. Somit stellt diese Form des Angriffs in Verbindung mit der jetzt notwendigen Verteidigung innerhalb der Ausbildung eine Hinführung zur SV mit taekwondo-spezifischen Mitteln (Taekwondo-SV) dar.
+          - text: Stich / Schnitt von außen / innen zum Hals - Klinge aufwärts
+          - text: Stich / Schnitt von außen / innen zum Rumpf - Klinge aufwärts
+          - text: Stich zum Solar-Plexus - Klinge aufwärts
+          - text: Stich im Halbkreis von außen zur Schulter - Klinge aufwärts
+          - text: Schnitt diagonal von Schulter zur Hüfte beidseitig - Klinge aufwärts
+          - text: Stich von oben zum Kopf - Klinge abwärts
+          - text: Stich von außen / innen zum Rumpf - Klinge abwärts
+          - text: verdeckter Messerangriff (Messer liegt am Unterarm, Schnittbewegung zum Hals - Klinge abwärts
+      - par: Angriffe mit einem Messer bzw. Stock stehen im Gegensatz zu den (konstruierten) Anforderungen der vorhergehenden Ausbildungsstufe. Während dort eine SV-Situation dargestellt wurde, in welcher der Angriff unvermeidbar bzw. bereits durchgeführt war, ist der Verteidiger hier gezwungen, den Angriff durch rechtzeitiges Ausweichen in Verbindung mit einer sichernden Abwehrbewegung zu vermeiden. Im Eingang entspricht diese SV-Situation also dem 1-Schritt-Kampf. Somit stellt diese Form des Angriffs in Verbindung mit der jetzt notwendigen Verteidigung innerhalb der Ausbildung eine Hinführung zur SV mit taekwondo-spezifischen Mitteln (Taekwondo-SV) dar.
   - title: Bruchtest (Kyokpa)
     content:
-      - text: je 1 Hand- und Fußbruchtest
+      - par: je 1 Hand- und Fußbruchtest
       - enumerate:
-          - html: 'Hand: Sonnal Bakkat Chigi / Baro o. Bandae Jirugi'
-          - html: 'Fuß: Dollyo Chagi / Tora Yop Chagi / Twio Yop Chagi / Dwit Chagi'
+          - text: 'Hand: Sonnal Bakkat Chigi / Baro o. Bandae Jirugi'
+          - text: 'Fuß: Dollyo Chagi / Tora Yop Chagi / Twio Yop Chagi / Dwit Chagi'
   - title: Theorie
     sections:
       - title: SV-Unterschiede Angriffe wie "Halten und Klammern" - Messer / Stock?
         content:
-          - html: <h4>Halten und Klammern</h4>
-          - text: Hier handelt es sich um Angriffe aus der Nahdistanz (kurze Distanz), die durch bisher erlernte SV-Techniken abgewehrt werden können (vgl. SV-Programm ab 5. Kup)
-          - html: <h4>Messer / Stock</h4>
-          - text: Messer und Stock sind Waffen und damit Hilfsmittel, welche den Angriff in Wirkung und Gefährlichkeit um ein Vielfaches erhöhen. Beide Waffen verlängern den Arm des Angreifers unterschiedlich (Wirkungsbereich).
-          - html: <h4>Messer</h4>
-          - text: Der Wirkungsbereich einer Stichwaffe ist im Moment des Angriffs relativ klein. Durch diesen kleinen Aktionsradius bleibt der bewaffnete Angreifer sehr wendig und schnell. Dadurch kann eine Kette von gefährlichen Angriffen ohne übermäßige Ausholbewegungen erfolgen. Messer oder auch zerbrochene Flaschen werden so zu äußerst gefährlichen Stichwaffen.
-          - text: Durch die Möglichkeit der schnellen Folge mehrerer Angriffe haben Stichwaffen tatsächlich einen großen Wirkungsbereich, der lediglich von der maximalen Reichweite des Arms begrenzt wird. Daher muss nach Möglichkeit ein Abstand zum Angreifer gesucht werden, der außerhalb des Wirkungsbereiches der Waffe liegt. Ist eine Flucht nicht möglich, sollte versucht werden, die Bedrohung frühstmöglich und mit absoluter Sicherheit abzuwehren. Nach einem angemessenen aber hartem Konter muss für die Eigensicherung die Entwaffnung stattfinden.
-          - html: <h4>Stock</h4>
-          - text: Anders als das Messer (Stichwaffe) gehört der Stock (und ähnliche Gegenstände) zu den Schlagwaffen. Die Stocklänge hat Einfluss auf dessen Wirkung. Die Intensität des Angriffs wird durch Ausholen und Beschleunigung bestimmt. Die größte Wirkung haben Schlagwaffen im Bereich der "äußeren" Hälfte. Je länger eine Schlagwaffe ist, desto kräftiger sind zwar die Hiebe, aber desto unhandlicher und langsamer wird sie (Ausholbewegung wird länger).
-          - text: Der Wirkungsbereich ist größer als beim Messer, der Angreifer ist aber auch langsamer und weniger wendig. Da ein solcher Angriff in der kurzen Distanz seine Wirkung verliert, ist der Abstand schnellstens zu verkürzen, um so den Wirkungsbereich der Schlagwaffe zu verlassen. Der günstigste Moment hierfür ist während des Ausholens.
+          - heading: Halten und Klammern
+            level: 4
+          - par: Hier handelt es sich um Angriffe aus der Nahdistanz (kurze Distanz), die durch bisher erlernte SV-Techniken abgewehrt werden können (vgl. SV-Programm ab 5. Kup)
+          - heading: Messer / Stock
+            level: 4
+          - par: Messer und Stock sind Waffen und damit Hilfsmittel, welche den Angriff in Wirkung und Gefährlichkeit um ein Vielfaches erhöhen. Beide Waffen verlängern den Arm des Angreifers unterschiedlich (Wirkungsbereich).
+          - heading: Messer
+            level: 4
+          - par: Der Wirkungsbereich einer Stichwaffe ist im Moment des Angriffs relativ klein. Durch diesen kleinen Aktionsradius bleibt der bewaffnete Angreifer sehr wendig und schnell. Dadurch kann eine Kette von gefährlichen Angriffen ohne übermäßige Ausholbewegungen erfolgen. Messer oder auch zerbrochene Flaschen werden so zu äußerst gefährlichen Stichwaffen.
+          - par: Durch die Möglichkeit der schnellen Folge mehrerer Angriffe haben Stichwaffen tatsächlich einen großen Wirkungsbereich, der lediglich von der maximalen Reichweite des Arms begrenzt wird. Daher muss nach Möglichkeit ein Abstand zum Angreifer gesucht werden, der außerhalb des Wirkungsbereiches der Waffe liegt. Ist eine Flucht nicht möglich, sollte versucht werden, die Bedrohung frühstmöglich und mit absoluter Sicherheit abzuwehren. Nach einem angemessenen aber hartem Konter muss für die Eigensicherung die Entwaffnung stattfinden.
+          - heading: Stock
+            level: 4
+          - par: Anders als das Messer (Stichwaffe) gehört der Stock (und ähnliche Gegenstände) zu den Schlagwaffen. Die Stocklänge hat Einfluss auf dessen Wirkung. Die Intensität des Angriffs wird durch Ausholen und Beschleunigung bestimmt. Die größte Wirkung haben Schlagwaffen im Bereich der "äußeren" Hälfte. Je länger eine Schlagwaffe ist, desto kräftiger sind zwar die Hiebe, aber desto unhandlicher und langsamer wird sie (Ausholbewegung wird länger).
+          - par: Der Wirkungsbereich ist größer als beim Messer, der Angreifer ist aber auch langsamer und weniger wendig. Da ein solcher Angriff in der kurzen Distanz seine Wirkung verliert, ist der Abstand schnellstens zu verkürzen, um so den Wirkungsbereich der Schlagwaffe zu verlassen. Der günstigste Moment hierfür ist während des Ausholens.
       - title: Wie verändert sich die "Verhältnismäßigkeit der Mittel" bzgl. der Verteidigung gegen die vorher genannten Angriffsarten?
         content:
-          - text: Im Strafrecht sind Notwehr und Rechtfertigender Notstand nur dann gegeben, wenn der Grundsatz der Verhältnismäßigkeit beachtet wird und zur Gegenwehr das mildeste Mittel als angemessene Verteidigung wählt. Zur Wahrung dieses Rechtsgrundsatzes muss auf auf eine Ohrfeige anders reagiert werden als auf einen bewaffneten Angriff oder einen Angriff durch Mehrere.
-          - text: Grundsätzlich sollte man sich möglichst nicht in eine Situation begeben, die sich später zu einer Notwehrsituation entwickeln kann. Zur Vermeidung der körperlichen Auseinandersetzung sollte man auch eine Flucht in Erwägung ziehen. Besteht diese Möglichkeit nicht, sollte der Angreifer durch Reden beschwichtigt werden, wobei man eine aggressive Ausstrahlung vermeiden sollte. Zeitgleich sollte eine sichere Position und ein möglichst großer Abstand zum Gegener gesucht werden. Dieser ist ständig zu beobachten. Selbst sollte man versuchen, ruhig zu bleiben und tief zu atmen. Bleibt es bei der gegnerischen Aggression, ist die Kampfstellung einzunehmen. Man sollte gelassen wirken und dennoch klarstellen, dass eine konsequente Verteidigung erfolgen wird.
-          - text: Die letzte Stufe in der Notwehrsituation ist die Anwendung verhältnismäßiger Verteidigungstechniken. Unerwartete Angriffe erfodern sofortiges Handeln. Bei einer gefährlichen Notwehrsituation durch einen bewaffneten Angriff ist der Grundsatz der Verhältnismäßigkeit auch dann gewahrt, wenn die Verteidigung vorzeitig (Angriff Stichwaffe) oder gleichzeitig (Angriff Schlagwaffe) erfolgt, da bei einem nachzeitigen Handeln der Angriff bereits erfolgreich angebracht wurde und insbesondere bei einer Stichwaffe die eigene körperliche Unversehrtheit bedroht oder eine lebensgefährliche Verletzung erfolgt sein kann. Zu keinem Zeitpunkt sollte der Gegener unterschätzt werden. Daher ist dieser auch in einer harmlos erscheinenden Situation ständig zu beaobachten, um auf jede mögliche Lage gefasst zu sein.
+          - par: Im Strafrecht sind Notwehr und Rechtfertigender Notstand nur dann gegeben, wenn der Grundsatz der Verhältnismäßigkeit beachtet wird und zur Gegenwehr das mildeste Mittel als angemessene Verteidigung wählt. Zur Wahrung dieses Rechtsgrundsatzes muss auf auf eine Ohrfeige anders reagiert werden als auf einen bewaffneten Angriff oder einen Angriff durch Mehrere.
+          - par: Grundsätzlich sollte man sich möglichst nicht in eine Situation begeben, die sich später zu einer Notwehrsituation entwickeln kann. Zur Vermeidung der körperlichen Auseinandersetzung sollte man auch eine Flucht in Erwägung ziehen. Besteht diese Möglichkeit nicht, sollte der Angreifer durch Reden beschwichtigt werden, wobei man eine aggressive Ausstrahlung vermeiden sollte. Zeitgleich sollte eine sichere Position und ein möglichst großer Abstand zum Gegener gesucht werden. Dieser ist ständig zu beobachten. Selbst sollte man versuchen, ruhig zu bleiben und tief zu atmen. Bleibt es bei der gegnerischen Aggression, ist die Kampfstellung einzunehmen. Man sollte gelassen wirken und dennoch klarstellen, dass eine konsequente Verteidigung erfolgen wird.
+          - par: Die letzte Stufe in der Notwehrsituation ist die Anwendung verhältnismäßiger Verteidigungstechniken. Unerwartete Angriffe erfodern sofortiges Handeln. Bei einer gefährlichen Notwehrsituation durch einen bewaffneten Angriff ist der Grundsatz der Verhältnismäßigkeit auch dann gewahrt, wenn die Verteidigung vorzeitig (Angriff Stichwaffe) oder gleichzeitig (Angriff Schlagwaffe) erfolgt, da bei einem nachzeitigen Handeln der Angriff bereits erfolgreich angebracht wurde und insbesondere bei einer Stichwaffe die eigene körperliche Unversehrtheit bedroht oder eine lebensgefährliche Verletzung erfolgt sein kann. Zu keinem Zeitpunkt sollte der Gegener unterschätzt werden. Daher ist dieser auch in einer harmlos erscheinenden Situation ständig zu beaobachten, um auf jede mögliche Lage gefasst zu sein.
       - title: Welche Möglichkeiten beinhaltet die Defensiv-Strategie?
         content:
-          - html: <h4>defensiv-passiv</h4>
+          - heading: defensiv-passiv
+            level: 4
           - itemize:
-              - html: Ausweichen mit Deckung durch "Verlassen der Linie"
-              - html: Verteidigung mit Deckung durch "Ausweichen auf der Linie"
-          - text: Bei der Defensiv-Passive Verteidigung (vgl. 5 Kup) wartet der Verteidiger auf den Angriff, um darauf zu reagieren. Dies geschieht meist in einer Situation, die nicht sofort als Angriff erkannt werden kann.
-          - html: <h4>defensiv-aktiv</h4>
+              - text: Ausweichen mit Deckung durch "Verlassen der Linie"
+              - text: Verteidigung mit Deckung durch "Ausweichen auf der Linie"
+          - par: Bei der Defensiv-Passive Verteidigung (vgl. 5 Kup) wartet der Verteidiger auf den Angriff, um darauf zu reagieren. Dies geschieht meist in einer Situation, die nicht sofort als Angriff erkannt werden kann.
+          - heading: defensiv-aktiv
+            level: 4
           - itemize:
-              - html: Gegentechniken werden vor-, gleich- und nachzeitig ausgeführt
-              - html: Verteidigungsprinzip ausweichen und wiederkommen
-          - text: Defensiv-Aktives Verhalten im Rahmen der Defensiv-Strategie (vgl. 5. / 3. Kup) schränkt durch entsprechend unberechenbares Verhalten die Erfolgswahrscheinlichkeit des offensiven Angreifers wesentlich ein.
-          - text: Bei der aktiven Verteidigung wird bereits vor dem unmittelbaren Angriff selbst angegriffen. Besonders bei mehreren Angreifern empfehlenswert oder bei einem hinzukommen bzw. einer Hilfeleistung innerhalb einer Notwehrsituation.
+              - text: Gegentechniken werden vor-, gleich- und nachzeitig ausgeführt
+              - text: Verteidigungsprinzip ausweichen und wiederkommen
+          - par: Defensiv-Aktives Verhalten im Rahmen der Defensiv-Strategie (vgl. 5. / 3. Kup) schränkt durch entsprechend unberechenbares Verhalten die Erfolgswahrscheinlichkeit des offensiven Angreifers wesentlich ein.
+          - par: Bei der aktiven Verteidigung wird bereits vor dem unmittelbaren Angriff selbst angegriffen. Besonders bei mehreren Angreifern empfehlenswert oder bei einem hinzukommen bzw. einer Hilfeleistung innerhalb einer Notwehrsituation.
       - title: Warum ist ein Kampf mit "Rollenteilung" einfacher als der sog. "freie Kampf"?
         content:
-          - text: Mit beiden Mitteln soll der Wettkampf trainiert werden. Hierbei wird eine vorgegebene Rollenverteilung als Vorstufe zum Freikampf trainiert.
-          - html: <h4>Vorgabe der Aufgabenstellung (Rollenteilung)</h4>
-          - text: Vorteil dieser Methode gerade bei Wettkampfeinsteigern ist, dass die zu lösende Aufgabe weniger komplex ist als die realistische Wettkampfsituation. Beide Partner kennen anfangs die taktische Aufgabestellung des Partners und können so effektive Kombinationsmöglichkeiten trainieren.
-          - html: <strong>Folgende Rollenteilung (aus Sicht des Angreifers) ist möglich:</strong>
+          - par: Mit beiden Mitteln soll der Wettkampf trainiert werden. Hierbei wird eine vorgegebene Rollenverteilung als Vorstufe zum Freikampf trainiert.
+          - heading: Vorgabe der Aufgabenstellung (Rollenteilung)
+            level: 4
+          - par: Vorteil dieser Methode gerade bei Wettkampfeinsteigern ist, dass die zu lösende Aufgabe weniger komplex ist als die realistische Wettkampfsituation. Beide Partner kennen anfangs die taktische Aufgabestellung des Partners und können so effektive Kombinationsmöglichkeiten trainieren.
+          - text: 'Folgende Rollenteilung (aus Sicht des Angreifers) ist möglich:'
+            bold: true
           - enumerate:
-              - html: passiver Gegner
-              - html: aktiver Gegner mit feststehender gegnerischer Reaktion
-              - html: aktiver Gegner mit alternativer gegnerischer Reaktion
-              - html: aktiver Gegner mit variabler Reaktion (ohne Vorgabe)
-          - html: <h4>Freikampf</h4>
-          - text: Werden trainierte Wettkampfsituationen mit Aufgabenstellung beherrscht, kann zum Training unter Wettkampfbedingungen übergegangen werden.
+              - text: passiver Gegner
+              - text: aktiver Gegner mit feststehender gegnerischer Reaktion
+              - text: aktiver Gegner mit alternativer gegnerischer Reaktion
+              - text: aktiver Gegner mit variabler Reaktion (ohne Vorgabe)
+          - heading: Freikampf
+            level: 4
+          - par: Werden trainierte Wettkampfsituationen mit Aufgabenstellung beherrscht, kann zum Training unter Wettkampfbedingungen übergegangen werden.
           - enumerate:
-              - html: wettkampfmäßiges Sparring in Standardsituationen
-              - html: wettkampfmäßiges Sparring mit alternativer (einfacher) Aufgabenstellung
-              - html: freies Sparring mit freier Kombinationswahl
-          - html: <strong>Mit diesem methodischen Vorgehen werden die Grundsätze der Trainingsgestaltung umgesetzt:</strong>
+              - text: wettkampfmäßiges Sparring in Standardsituationen
+              - text: wettkampfmäßiges Sparring mit alternativer (einfacher) Aufgabenstellung
+              - text: freies Sparring mit freier Kombinationswahl
+          - text: 'Mit diesem methodischen Vorgehen werden die Grundsätze der Trainingsgestaltung umgesetzt:'
+            bold: true
           - enumerate:
-              - html: vom Leichten zum Schweren
-              - html: vom Bekannten zum Unbekannten
-              - html: vom Einfachen zum Komplexen
-          - html: |
-              Lernphase 1: Entwicklung der Grobkoordination<br>
-              Lernphase 2: Eintwicklung der Feinkoordination<br>
-              Lernphase 3: Stabilisierung der Feinkoordination / Entwicklung der Feinstkoordination (variable Verfügbarkeit)
-          - html: <h4>Methodik</h4>
+              - text: vom Leichten zum Schweren
+              - text: vom Bekannten zum Unbekannten
+              - text: vom Einfachen zum Komplexen
+          - text: 'Lernphase 1: Entwicklung der Grobkoordination'
+            break: true
+          - text: 'Lernphase 2: Eintwicklung der Feinkoordination'
+            break: true
+          - text: 'Lernphase 3: Stabilisierung der Feinkoordination / Entwicklung der Feinstkoordination (variable Verfügbarkeit)'
+          - heading: Methodik
+            level: 4
           - enumerate:
-              - html: Aneignung theoretischer Kenntnisse (z. B. erarbeiten taktischer Grundprinzipien)
-              - html: Varianten Lernen / Stabilisieren (Handlungspläne für komplexe Abrufbereitschaft stabilisieren)
-              - html: Lösungsmöglichkeiten optimieren (bei gleichen Situationen unter veränderten Bedingungen Alternativentscheidungen erarbeiten / treffen)
-              - html: Kampfhandlung optimieren (Lösen taktischer Aufgaben unter erschwerten Bedingungen)
+              - text: Aneignung theoretischer Kenntnisse (z. B. erarbeiten taktischer Grundprinzipien)
+              - text: Varianten Lernen / Stabilisieren (Handlungspläne für komplexe Abrufbereitschaft stabilisieren)
+              - text: Lösungsmöglichkeiten optimieren (bei gleichen Situationen unter veränderten Bedingungen Alternativentscheidungen erarbeiten / treffen)
+              - text: Kampfhandlung optimieren (Lösen taktischer Aufgaben unter erschwerten Bedingungen)
       - title: Wozu dient das sog. "Aufwärmtraining" und wie würdest Du dies als Trainer gestalten?
         content:
-          - text: Das Aufwärmtraining (Warm-Up) leitet die Trainingseinheit ein (Einstimmungsphase) und sollte ca. 1/3 der gesamte TE beinhalten. Sie soll die Sportler auf die zu erwartende Belastung im Hauptteil vorbereiten. Dazu ist es notwendig, dass der Ausgangspuls zu Beginn des Trainings langsam an den Belastungspuls (60 - 75% des max. Puls) herangeführt wird.
-          - text: Ziel des Warm-Up
+          - par: Das Aufwärmtraining (Warm-Up) leitet die Trainingseinheit ein (Einstimmungsphase) und sollte ca. 1/3 der gesamte TE beinhalten. Sie soll die Sportler auf die zu erwartende Belastung im Hauptteil vorbereiten. Dazu ist es notwendig, dass der Ausgangspuls zu Beginn des Trainings langsam an den Belastungspuls (60 - 75% des max. Puls) herangeführt wird.
+          - par: Ziel des Warm-Up
           - enumerate:
-              - html: physiologische Erwärmung
-              - html: psychologische Einstimmung
-              - html: '"warm werden" der Gruppe'
-          - text: Prinzipien der Erwärmung
+              - text: physiologische Erwärmung
+              - text: psychologische Einstimmung
+              - text: '"warm werden" der Gruppe'
+          - par: Prinzipien der Erwärmung
           - enumerate:
-              - html: Erwärmung der Organe und Muskeln
-              - html: Auswahl der Übungen vorbereitend auf die folgende Belastung
-          - text: Wirkung der Einstimmung
+              - text: Erwärmung der Organe und Muskeln
+              - text: Auswahl der Übungen vorbereitend auf die folgende Belastung
+          - par: Wirkung der Einstimmung
           - enumerate:
-              - html: erhöhte Übungsbereitschaft erreichen
-          - text: Das Aufwärmtraining ist vom Trainer so zu gestalten, dass grundsätzlich eine Vielzahl von Muskelgruppen angesprochen wird. Hierfür bieten sich Laufformen an, da so rd. 60% aller Muskeln beansprucht werden. Aber auch andere Bewegungsformen und Spiele (noch vorheriger Grunderwärmung) kommen als Gestaltungselemente in Betracht.
-          - text: Speziell für die anstehende Belastung im Hauptteil sind diese Muskeln intensiver zu beanspruchen. Im Taekwondo werden sportartbezogen grundsätzlich die Beinmuskeln mehr beansprucht und sind so auch intensiver zu kräftigen und zu erwärmen. Dem Aufwärmtraining ist das Stretching anzuschließen, um die Muskulatur locker und geschmeidig zu halten. Das Stretching, welches z. B. über die Funktionsgymnastik erfolgen kann, ist Bestandteil der Warm-Up-Phase.
-          - text: Der Übungsleiter sollte die Stimmung der Gruppe und der einzelnen Teilnehmer aufnehmen, diese anleiten, Anregungen zur Optimierung geben und die Teilnehmer ggf. mit einbeziehen. Sein Auftreten und Verhalten soll sachlich und positiv sein.
+              - text: erhöhte Übungsbereitschaft erreichen
+          - par: Das Aufwärmtraining ist vom Trainer so zu gestalten, dass grundsätzlich eine Vielzahl von Muskelgruppen angesprochen wird. Hierfür bieten sich Laufformen an, da so rd. 60% aller Muskeln beansprucht werden. Aber auch andere Bewegungsformen und Spiele (noch vorheriger Grunderwärmung) kommen als Gestaltungselemente in Betracht.
+          - par: Speziell für die anstehende Belastung im Hauptteil sind diese Muskeln intensiver zu beanspruchen. Im Taekwondo werden sportartbezogen grundsätzlich die Beinmuskeln mehr beansprucht und sind so auch intensiver zu kräftigen und zu erwärmen. Dem Aufwärmtraining ist das Stretching anzuschließen, um die Muskulatur locker und geschmeidig zu halten. Das Stretching, welches z. B. über die Funktionsgymnastik erfolgen kann, ist Bestandteil der Warm-Up-Phase.
+          - par: Der Übungsleiter sollte die Stimmung der Gruppe und der einzelnen Teilnehmer aufnehmen, diese anleiten, Anregungen zur Optimierung geben und die Teilnehmer ggf. mit einbeziehen. Sein Auftreten und Verhalten soll sachlich und positiv sein.
       - title: Welchen Sinn hat das sog. "Abwärmtraining" zum Schluss einer Trainingseinheit?
         content:
-          - text: Im Hauptteil erfolgt häufig eine optimale Belastung der Gruppe, wodurch muskuläre Reize gesetzt werden. Parallel dazu muss dem beanspruchten Körper auch in der Belastungsphase optimal Energie bereit gestellt werden.
-          - text: Dies erfolgt durch eine erhöhte Kreislauftätigkeit und den erhöhten Belastungspuls, um die Muskulatur mit Sauerstoff als Energiequelle zu versorgen. Diese Energiebereitstellung erfolgt durch die Blutbahn. Durch eine erhöhte Atemfrequenz gelangt der benötigte Sauerstoff über die Lunge in die Blutbahn. Das Kreislaufsystem transportiert den Sauerstoff zu den Muskeln. Durch den erhöhten Sauerstoffbedarf steigt der Puls, wodurch das mit Sauerstoff angereicherte Blut die Muskeln schneller erreicht.
-          - text: |
+          - par: Im Hauptteil erfolgt häufig eine optimale Belastung der Gruppe, wodurch muskuläre Reize gesetzt werden. Parallel dazu muss dem beanspruchten Körper auch in der Belastungsphase optimal Energie bereit gestellt werden.
+          - par: Dies erfolgt durch eine erhöhte Kreislauftätigkeit und den erhöhten Belastungspuls, um die Muskulatur mit Sauerstoff als Energiequelle zu versorgen. Diese Energiebereitstellung erfolgt durch die Blutbahn. Durch eine erhöhte Atemfrequenz gelangt der benötigte Sauerstoff über die Lunge in die Blutbahn. Das Kreislaufsystem transportiert den Sauerstoff zu den Muskeln. Durch den erhöhten Sauerstoffbedarf steigt der Puls, wodurch das mit Sauerstoff angereicherte Blut die Muskeln schneller erreicht.
+          - par: |
               Belastungspuls und die damit einhergehende Bereitstellung des Stress-Hormons Adrenalin müssen vor Ende des Trainings wieder auf Normalniveau "zurückgefahren" werden. Dies wird durch eine ruhige Ausklangphase der Trainingseinheit, dem Cool-Down erreicht. Hier haben sich folgende Übungsformen bewährt:
           - enumerate:
-              - html: Auslaufen (ggf. gebildetes Laktat wird teilweise bereits aus dem Muskel abgeführt)
-              - html: Dehnungsgymnastik (kontrahierte Muskulatur soll entspannen)
-              - html: Entspannungstraining
-              - html: Massage
-          - text: 'Ziel:'
+              - text: Auslaufen (ggf. gebildetes Laktat wird teilweise bereits aus dem Muskel abgeführt)
+              - text: Dehnungsgymnastik (kontrahierte Muskulatur soll entspannen)
+              - text: Entspannungstraining
+              - text: Massage
+          - par: 'Ziel:'
           - enumerate:
-              - html: Abbau von Konzentrationen und emotionaler Spannung
-              - html: Regenerationseinleitung im psychischen Bereich
-          - text: Das Cool Down wird häufig vernachlässigt oder überhaupt nicht durchgeführt. Häufig kommt es bis zum Ende Trainingseinheit zu einem "Wunsch-Spiel", was Puls und Emotionen noch erhöht, welche dann mit in die Kabine genommen und ggf. dort "ausgewertet" werden. Bei richtigem Einsatz des Cool Downs wird die Regenerationszeit erheblich verkürzt und die Sportler sind früher wieder belastbar. Besonders wichtig ist diese Regenration, wenn mehrmals in der Woche trainiert wird.
+              - text: Abbau von Konzentrationen und emotionaler Spannung
+              - text: Regenerationseinleitung im psychischen Bereich
+          - par: Das Cool Down wird häufig vernachlässigt oder überhaupt nicht durchgeführt. Häufig kommt es bis zum Ende Trainingseinheit zu einem "Wunsch-Spiel", was Puls und Emotionen noch erhöht, welche dann mit in die Kabine genommen und ggf. dort "ausgewertet" werden. Bei richtigem Einsatz des Cool Downs wird die Regenerationszeit erheblich verkürzt und die Sportler sind früher wieder belastbar. Besonders wichtig ist diese Regenration, wenn mehrmals in der Woche trainiert wird.
       - title: Terminologie der Grundtechniken auf deutsch und koreanisch
         content:
-          - text: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
+          - par: Entsprechend der relevaten Techniken (siehe Handtechnicken, Fußtechniken und Stellungen).
