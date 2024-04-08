@@ -1,3 +1,5 @@
+#import "utils.typ": *
+
 = DTU-Selbstverteidigungskonzept
 
 *Angriffskatalog und Verteidigungsvorschläge für
@@ -168,6 +170,8 @@ Abwehr von Überraschungsangriffen*
 == 1. Dan
 *Freie Abwehr gegen unbewaffnete und bewaffnete Angriffe aus verschiedenen Distanzen*
 
+#incomplete
+
 Die nachfolgenden Beschreibungen gehen jeweils von einem rechts geführten Angriff aus.
 
 === Angriffszonen
@@ -201,118 +205,118 @@ Angriff 1: Stich von oben nach unten zum Hals
 Angriff 2: Stich von außen nach innen zum Hals
 Angriff 3: Stich von innen nach außen zum Hals
 
-1. Variante:
-Das Messer liegt in der Hand mit nach oben gerichteter Klinge
-☞ Stiche
-Angriff 1: von außen nach innen diagonal zum Kopf/Hals
-Verteidigung:
+// 1. Variante:
+// Das Messer liegt in der Hand mit nach oben gerichteter Klinge
+// ☞ Stiche
+// Angriff 1: von außen nach innen diagonal zum Kopf/Hals
+// Verteidigung:
 
-Angriff 2: von innen nach außen diagonal zum Kopf/Hals
-Verteidigung:
+// Angriff 2: von innen nach außen diagonal zum Kopf/Hals
+// Verteidigung:
 
-Angriff 3: wie Angriff 1nur zum Rumpf (Bauchhöhe)
-Verteidigung:
+// Angriff 3: wie Angriff 1nur zum Rumpf (Bauchhöhe)
+// Verteidigung:
 
-Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
-Verteidigung:
+// Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
+// Verteidigung:
 
-Angriff 5: gerader Stoß zum Bauch
-Verteidigung:
+// Angriff 5: gerader Stoß zum Bauch
+// Verteidigung:
 
-Angriff 6: Stich von unten nach oben zum Unterbauch
-Verteidigung:
+// Angriff 6: Stich von unten nach oben zum Unterbauch
+// Verteidigung:
 
-Angriff 7: Stich von oben nach unten zum Hals
-Verteidigung:
-
-
-Das Messer liegt in der Hand mit nach oben gerichteter Klinge
-☞ Schneidbewegungen
-Angriff 1: von außen nach innen diagonal zum Kopf/Hals
-Verteidigung:
-
-Angriff 2: von innen nach außen diagonal zum Kopf/Hals
-Verteidigung:
-
-Angriff 3: wie Angriff 1 nur zum Rumpf (Bauchhöhe)
-Verteidigung:
-
-Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
-Verteidigung:
+// Angriff 7: Stich von oben nach unten zum Hals
+// Verteidigung:
 
 
-Das Messer liegt in der Hand mit nach unten gerichteter Klinge
-Angriff 1: Stich von oben nach unten zum Hals
-Verteidigung:
+// Das Messer liegt in der Hand mit nach oben gerichteter Klinge
+// ☞ Schneidbewegungen
+// Angriff 1: von außen nach innen diagonal zum Kopf/Hals
+// Verteidigung:
 
-Angriff 2: Stich von außen nach innen zum Hals
-Verteidigung:
+// Angriff 2: von innen nach außen diagonal zum Kopf/Hals
+// Verteidigung:
 
-Angriff 3: Stich von innen nach außen zum Hals
-Verteidigung:
+// Angriff 3: wie Angriff 1 nur zum Rumpf (Bauchhöhe)
+// Verteidigung:
+
+// Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
+// Verteidigung:
 
 
-Angriff 2: Stock von innen nach außen diagonal zum Kopf/Hals
-Verteidigung:
-Angriff 3: wie Angriff 1nur zum Rumpf (Bauchhöhe) Verteidigung:
-wie Angriff 1, nur dass der Block zunächst in der unteren Stufe erfolgt.
-Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
-Verteidigung:
-wie Angriff 2, nur dass der Block zunächst ni der unteren Stufe erfolgt.
-Angriff 5: gerader Stoß zum Bauch
-Verteidigung:
-Schritt zurück und mit der hinteren Hand den Stock zur Innenseite weglenken, gleichzeitig mit der vorderen Hand den Einstieg wie beim Angriff 2.
-Angriff 6: Schlag von oben zum Kopf
-Verteidigung:
-wie Angriff 1, nur dass der Block zunächst ni der oberen Stufe erfolgt.
-H .1 Dan
-Die nachfolgenden Beschreibungen gehen jeweils von einem rechts geführten Angriff aus.
-Messerangriffe:
-Das Messer liegt ni der Hand mit nach oben gerichteter Klinge →Stiche
-Angriff :1 von außen nach innen diagonal zum Kopf/Hals
-Verteidigung:
-Diagonal mit dem rechten Handrücken den Angriff aufnehmen und ni einer kreisförmigen Bewegung nach innen, unten weiterleiten. Den Arm unter Zuhilfenahme des Ellbogens in einen Kipphandhebel bringen und anschließend durch Griff entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
+// Das Messer liegt in der Hand mit nach unten gerichteter Klinge
+// Angriff 1: Stich von oben nach unten zum Hals
+// Verteidigung:
 
-Angriff 2: von innen nach außen diagonal zum Kopf/Hals
-Verteidigung:
-Mit der rechten Hand blocken und gleich mit der linken das Handgelenk des Angreifers fassen anschließend direkt mit dem rechten Ellbogen in einen Kipphandhebel bringen dabei durch Griff entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
-Angriff 3 : wie Angriff 1 nur zum Rumpf (Bauchhöhe)
-Verteidigung:
-Zunächst mit der linken Hand blocken/schützen und dann weiter, wie bei Angriff 1
-Angriff 4 : wie Angriff 2 nur zum Rumpf (Bauchhöhe) Verteidigung:
-wie bei Angriff 2
-Angriff 5:
-gerader Stoß zum Bauch Verteidigung:
-Mit der linken und gleich anschließend mit der rechten Hand horizontal den Arm des Angreifers nach innen ableiten; jetzt weiter wie bei Angriff 2.
-Angriff 6:
-Stich von unten nach oben zum Unterbauch
-Verteidigung:
-Zunächst mit der linken Hand blocken/schützen und dann mit der rechten Hand zusätzlich greifen und ni einer kreisförmigen Bewegung ni den Armstreckhebel bringen
-Angriff :7 Stich von oben nach unten zum Hals Verteidigung:
-wie Angriff 1
-b)
-Das Messer liegt in der Hand mit nach oben gerichteter Klinge › Schneidbewegungen
-Angriff 1:
-von außen nach innen diagonal zum Kopf/Hals
-Verteidigung:
-Block mit der linken Hand - dann diagonal mit dem rechten Handrücken den Angriff aufnehmen und in einer kreisförmigen Bewegung nach innen, unten weiterleiten. Den Arm unter Zuhilfenahme des Ellbogens ni einen Kipphandhebel bringen und anschließend durch Griff entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
-Angrif 2: von innen nach außen diagonal zum Kopf/Hals
-Verteidigung:
-Mti der rechten Hand blocken und gleich mit der linken das Handgelenk des Angreifers fassen anschließend direkt mit dem rechten Ellbogen in einen Kipphandhebel bringen dabei durch Grif entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
-Angrif 3 : wie Angriff 1nur zum Rumpf (Bauchhöhe) Verteidigung:
-wie Angriff 1
-Angriff :4 wie Angriff 2 nur zum Rumpf (Bauchhöhe) Verteidigung:
-wie Angriff 2
+// Angriff 2: Stich von außen nach innen zum Hals
+// Verteidigung:
 
-c) Das Messer liegt in der Hand mit nach unten gerichteter Klinge
-Angriff :1 Stich von oben nach unten zum Hals
-Verteidigung:
-Nach außen ausweichen und mit der rechten Hand den Arm des Angreifers nach unten
-in einer kreisförmigen Bewegung weiterleiten. Ggf. in einen Armstreckhebel bringen.
-Angriff 2: Stich von außen nach innen zum Hals
-Verteidigung:
-Linke Hand „blockt" den rechten Arm des Angreifers und führt den Arm in einer
-kreisförmigen Bewegung nach innen. Dadurch wird der Angreifer entwaffnet. Gleichzeitig mit der rechten Hand einen Schlag mit der Handkante zum Hals ausführen. Unter dem „Messerarm durchgreifen und Unterarm greifen. Abschluss mit einem Schultergelenkhebel.
-Angriff 3: Stich von innen nach außen zum Hals
-Verteidigung:
-Doppelblock mit den Unterarmen. Mit der linken Hand ins Gesicht schlagen. Anschließend bzw. gleichzeitig mit dem Knie in den Rücken stoßen.
+// Angriff 3: Stich von innen nach außen zum Hals
+// Verteidigung:
+
+
+// Angriff 2: Stock von innen nach außen diagonal zum Kopf/Hals
+// Verteidigung:
+// Angriff 3: wie Angriff 1nur zum Rumpf (Bauchhöhe) Verteidigung:
+// wie Angriff 1, nur dass der Block zunächst in der unteren Stufe erfolgt.
+// Angriff 4: wie Angriff 2 nur zum Rumpf (Bauchhöhe)
+// Verteidigung:
+// wie Angriff 2, nur dass der Block zunächst ni der unteren Stufe erfolgt.
+// Angriff 5: gerader Stoß zum Bauch
+// Verteidigung:
+// Schritt zurück und mit der hinteren Hand den Stock zur Innenseite weglenken, gleichzeitig mit der vorderen Hand den Einstieg wie beim Angriff 2.
+// Angriff 6: Schlag von oben zum Kopf
+// Verteidigung:
+// wie Angriff 1, nur dass der Block zunächst ni der oberen Stufe erfolgt.
+// H .1 Dan
+// Die nachfolgenden Beschreibungen gehen jeweils von einem rechts geführten Angriff aus.
+// Messerangriffe:
+// Das Messer liegt ni der Hand mit nach oben gerichteter Klinge →Stiche
+// Angriff :1 von außen nach innen diagonal zum Kopf/Hals
+// Verteidigung:
+// Diagonal mit dem rechten Handrücken den Angriff aufnehmen und ni einer kreisförmigen Bewegung nach innen, unten weiterleiten. Den Arm unter Zuhilfenahme des Ellbogens in einen Kipphandhebel bringen und anschließend durch Griff entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
+
+// Angriff 2: von innen nach außen diagonal zum Kopf/Hals
+// Verteidigung:
+// Mit der rechten Hand blocken und gleich mit der linken das Handgelenk des Angreifers fassen anschließend direkt mit dem rechten Ellbogen in einen Kipphandhebel bringen dabei durch Griff entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
+// Angriff 3 : wie Angriff 1 nur zum Rumpf (Bauchhöhe)
+// Verteidigung:
+// Zunächst mit der linken Hand blocken/schützen und dann weiter, wie bei Angriff 1
+// Angriff 4 : wie Angriff 2 nur zum Rumpf (Bauchhöhe) Verteidigung:
+// wie bei Angriff 2
+// Angriff 5:
+// gerader Stoß zum Bauch Verteidigung:
+// Mit der linken und gleich anschließend mit der rechten Hand horizontal den Arm des Angreifers nach innen ableiten; jetzt weiter wie bei Angriff 2.
+// Angriff 6:
+// Stich von unten nach oben zum Unterbauch
+// Verteidigung:
+// Zunächst mit der linken Hand blocken/schützen und dann mit der rechten Hand zusätzlich greifen und ni einer kreisförmigen Bewegung ni den Armstreckhebel bringen
+// Angriff :7 Stich von oben nach unten zum Hals Verteidigung:
+// wie Angriff 1
+// b)
+// Das Messer liegt in der Hand mit nach oben gerichteter Klinge › Schneidbewegungen
+// Angriff 1:
+// von außen nach innen diagonal zum Kopf/Hals
+// Verteidigung:
+// Block mit der linken Hand - dann diagonal mit dem rechten Handrücken den Angriff aufnehmen und in einer kreisförmigen Bewegung nach innen, unten weiterleiten. Den Arm unter Zuhilfenahme des Ellbogens ni einen Kipphandhebel bringen und anschließend durch Griff entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
+// Angrif 2: von innen nach außen diagonal zum Kopf/Hals
+// Verteidigung:
+// Mti der rechten Hand blocken und gleich mit der linken das Handgelenk des Angreifers fassen anschließend direkt mit dem rechten Ellbogen in einen Kipphandhebel bringen dabei durch Grif entgegen der Bewegungsrichtung entwaffnen und zu Boden bringen.
+// Angrif 3 : wie Angriff 1nur zum Rumpf (Bauchhöhe) Verteidigung:
+// wie Angriff 1
+// Angriff :4 wie Angriff 2 nur zum Rumpf (Bauchhöhe) Verteidigung:
+// wie Angriff 2
+
+// c) Das Messer liegt in der Hand mit nach unten gerichteter Klinge
+// Angriff :1 Stich von oben nach unten zum Hals
+// Verteidigung:
+// Nach außen ausweichen und mit der rechten Hand den Arm des Angreifers nach unten
+// in einer kreisförmigen Bewegung weiterleiten. Ggf. in einen Armstreckhebel bringen.
+// Angriff 2: Stich von außen nach innen zum Hals
+// Verteidigung:
+// Linke Hand „blockt" den rechten Arm des Angreifers und führt den Arm in einer
+// kreisförmigen Bewegung nach innen. Dadurch wird der Angreifer entwaffnet. Gleichzeitig mit der rechten Hand einen Schlag mit der Handkante zum Hals ausführen. Unter dem „Messerarm durchgreifen und Unterarm greifen. Abschluss mit einem Schultergelenkhebel.
+// Angriff 3: Stich von innen nach außen zum Hals
+// Verteidigung:
+// Doppelblock mit den Unterarmen. Mit der linken Hand ins Gesicht schlagen. Anschließend bzw. gleichzeitig mit dem Knie in den Rücken stoßen.

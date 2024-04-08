@@ -1,5 +1,6 @@
-#let BLOCK_SPACING = 1.2em
+#import "utils.typ": *
 
+#let BLOCK_SPACING = 1.2em
 
 // The project function defines how your document looks.
 // It takes your content and some metadata and formats it.
@@ -8,7 +9,6 @@
   title: "",
   subtitle: "",
   author: "",
-  course: "",
   body,
 ) = {
   // Set the document's basic properties.
@@ -63,7 +63,7 @@
   // Increase top-padding of level-2+ headings
   show heading: it => {
     if it.outlined {
-      pad(top: 0.5em, it)
+      pad(y: 0.5em, it)
     }
     else {
       it
@@ -81,19 +81,11 @@
     #block(text(weight: 600, 1.25em, subtitle))
   ]
 
-  // Author + course information.
-  pad(
-    top: 0.5em,
-    x: 2em,
-    align(center, strong[
-      #author \
-      #course
-    ])
-  )
-
   // Main body.
+  pad(y: 2cm, figure(pub-img("logo.png", width: 50%)))
   outline(depth: 1)
   pagebreak()
+
   set page(numbering: "1", number-align: center)
   set par(justify: true)
   //show: columns.with(2, gutter: 1.3em)

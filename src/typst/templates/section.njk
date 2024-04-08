@@ -87,7 +87,7 @@
 
 #import "@preview/tablex:0.0.8": tablex, colspanx, rowspanx
 
-{% if title != "10. Kup" %}
+{% if title not in ["10. Kup", "4. Kup", "1. Dan"] %}
   #pagebreak()
 {% endif %}
 

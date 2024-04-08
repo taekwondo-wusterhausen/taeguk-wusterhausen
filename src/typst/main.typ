@@ -25,4 +25,6 @@
 #pagebreak()
 #include "08-hosinsul.typ"
 #pagebreak()
+#include "09-kyorugi.typ"
+#pagebreak()
 #include "10-atmung.typ"

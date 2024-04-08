@@ -1,5 +1,5 @@
 #import "utils.typ": *
 
-= Notwehr
+= Freikampf
 
 #incomplete

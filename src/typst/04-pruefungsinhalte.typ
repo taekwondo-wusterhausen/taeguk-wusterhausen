@@ -11,6 +11,7 @@ Das vorliegende Werk ist unverbindlich und stellt lediglich eine Empfehlung des 
 #include "include/exam-catalog/kup6.typ"
 #include "include/exam-catalog/kup5.typ"
 
+#pagebreak()
 == 4. bis 1. Kup -- Fortgeschrittene
 
 #include "include/exam-catalog/kup4.typ"
@@ -18,6 +19,7 @@ Das vorliegende Werk ist unverbindlich und stellt lediglich eine Empfehlung des 
 #include "include/exam-catalog/kup2.typ"
 #include "include/exam-catalog/kup1.typ"
 
+#pagebreak()
 == 1. Dan -- Meister
 
 #include "include/exam-catalog/dan1.typ"

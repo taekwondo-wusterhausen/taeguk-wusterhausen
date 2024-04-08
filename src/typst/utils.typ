@@ -1,5 +1,3 @@
-#import "template.typ"
-
 // Narrow no-break space
 // https://en.wikipedia.org/wiki/Non-breaking_space#Width_variation
 #let thinsp = [\u{202F}]
@@ -8,9 +6,6 @@
 #let zB = [z.#thinsp\B.]
 #let ZB = [Z.#thinsp\B.]
 #let eV = [e.#thinsp\V.]
-
-#let bigskip = v(template.BLOCK_SPACING)
-#let medskip = v(template.BLOCK_SPACING / 2)
 
 #let public-dir = "../../public/"
 #let pub-img(path, ..args) = {
@@ -32,3 +27,5 @@
     )
 }
 // #img-right(lorem(100), square(height: 200pt, width: 200pt), bottomtext: lorem(100))
+
+#let incomplete = text(fill: red)[*_HINWEIS: Noch unvollständig!_*]
