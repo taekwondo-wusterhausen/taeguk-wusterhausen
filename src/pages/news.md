@@ -1,8 +1,8 @@
 |              |                                         |
 | ------------ | --------------------------------------- |
-| 26. - 28.04. | SV-Camp m. Alfred Gehlen Dabendorf      |
-| 27.04.       | Prüfungsvorbereitung                    |
-| 04.05.       | 1. Vereinsprüfung 2024                  |
+| 25.05.       | LEM Technik Potsdam                     |
+| 08.06.       | Lehrgang Prüfungsvorbereitung Kloster Lehnin|
+| 09.06.       | TJBB-Training Kyorugi Dabendorf         |
 |              |                                         |
 
 
