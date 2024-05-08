@@ -8,6 +8,7 @@
 | 27.04.       | Prüfungsvorbereitung                           | Dossehalle   |     |
 | 26. - 28.04. | SV-Camp mit Alfred Gehlen                      | Dabendorf    |     |
 | 04.05.       | 1. Vereins-Prüfung 2024                        | Dossehalle   |     |
+|              | LEM Technik TVBB                               | Potsdam      |     |
 | 09.06.       | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
 |              | LEM Technik TVBB                               |              |     |
 |              | DAN-Vorbereitungslehrgang TVBB                 |              |     |
