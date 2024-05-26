@@ -7,6 +7,8 @@
 #let ZB = [Z.#thinsp\B.]
 #let eV = [e.#thinsp\V.]
 
+#let si-unit(value, unit) = [#value#thinsp#unit]
+
 #let public-dir = "../../public/"
 #let pub-img(path, ..args) = {
     image(public-dir + path, ..args)
