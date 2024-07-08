@@ -14,7 +14,6 @@ const { id, homeUrl, facebookUrl, instagramUrl } = Astro.props
 const urlCount = [homeUrl, facebookUrl, instagramUrl]
     .map((url) => (url ? 1 : 0))
     .reduce((a, b) => a + b, 0)
-console.log(urlCount)
 const widthClass = `w-${14 * urlCount}`
 ---
 
