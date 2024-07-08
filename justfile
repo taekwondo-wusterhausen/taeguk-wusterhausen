@@ -5,6 +5,9 @@ TYPST_SRC := "/src/typst"
 info:
     just --list
 
+start:
+    bun run start
+
 stapler-section SRC DEST:
     @mkdir -p src/typst/include/exam-catalog/
     nunjucks \
