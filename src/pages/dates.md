@@ -8,10 +8,12 @@
 | 27.04.       | Prüfungsvorbereitung                           | Dossehalle   |     |
 | 26. - 28.04. | SV-Camp mit Alfred Gehlen                      | Dabendorf    |     |
 | 04.05.       | 1. Vereins-Prüfung 2024                        | Dossehalle   |     |
-| 09.06.       | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
-|              | LEM Technik TVBB                               |              |     |
+| 25.05.       | LEM Technik TVBB                               | Potsdam      |     |
+| 01.06.       | Elterntraining / Training Jugnedvertreter      | Dossehalle   |     |
 | 08.06.       | DAN-Vorbereitungslehrgang TVBB                 | Potsdam      |     |
-|              | Landes-DAN-Prüfung                             |              |     |
+| 08.06.       | Lehrgang Schwerpunkt Prüfungsvorbereitung      | Kloster-Lehnin|     |
+| 09.06.       | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
+| 09.06.       | Ju-Jutsu-Lehrgang Nervendrucktechniken         | Fehrbellin   |     |
 | 28.09.       | offenes TJBB-Training Selbstverteidigung       | Dabendorf    |     |
 |              | TVBB Masters / DTU-Final 9-Turnier Brandenburg |              |     |
 | 18. - 23.10. | 17. Vereins-Trainingscamp                      | Gnewikow     |     |
