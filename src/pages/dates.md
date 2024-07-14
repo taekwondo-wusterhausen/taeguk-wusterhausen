@@ -10,7 +10,7 @@
 | 04.05.       | 1. Vereins-Prüfung 2024                        | Dossehalle   |     |
 | 09.06.       | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
 |              | LEM Technik TVBB                               |              |     |
-|              | DAN-Vorbereitungslehrgang TVBB                 |              |     |
+| 08.06.       | DAN-Vorbereitungslehrgang TVBB                 | Potsdam      |     |
 |              | Landes-DAN-Prüfung                             |              |     |
 | 28.09.       | offenes TJBB-Training Selbstverteidigung       | Dabendorf    |     |
 |              | TVBB Masters / DTU-Final 9-Turnier Brandenburg |              |     |
