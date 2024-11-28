@@ -15,8 +15,11 @@
 | 09.06.       | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
 | 09.06.       | Ju-Jutsu-Lehrgang Nervendrucktechniken         | Fehrbellin   |     |
 | 28.09.       | offenes TJBB-Training Selbstverteidigung       | Dabendorf    |     |
-|              | TVBB Masters / DTU-Final 9-Turnier Brandenburg |              |     |
+| 12.10.       | TVBB Masters / DTU-Final 9-Turnier Brandenburg |              |     |
 | 18. - 23.10. | 17. Vereins-Trainingscamp                      | Gnewikow     |     |
-|              | offenes TJBB-Training Aikido                   |              |     |
-|              | Nikolausturnier                                |              |     |
-|              | Weihnachtsfeier                                | Lohm         |     |
+| 02.11.       | Prüfungsvorbereitung                           | kleine Halle |     |
+| 08.11.       | Herbstfeier                                    | Lohm         |     |
+| 09.11.       | 2. Vereins-Prüfung 2024                        | Dossehalle   |     |
+| 23.11.       | DAN-Vorbereitungslehrgang                      | Berlin       |     |
+| 08.12.       | Nikolausturnier                                | Potsdam      |     |
+| 14.12.       | Landes-DAN-Prüfung                             | Falkensee    |     |
