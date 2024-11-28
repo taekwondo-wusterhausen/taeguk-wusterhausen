@@ -1,9 +1,9 @@
 |              |                                         |
 | ------------ | --------------------------------------- |
-| 28.09.       | offenes TJBB-Training Selbstverteidigung|
-| 18.-23.10.   | 17. Vereins-Camp Gnewikow               |
-| 02.11.       | Prüfungsvorbereitung                    |
-| 09.11.       | 2. Vereins-Prüfung                      |
+| 08.12.       | Nikolausturnier Potsdam|
+| 20.12.   | letztes Training 2024               |
+| 06.01.       | erstes Training 2025                    |
+|        |                       |
 
 
-18.-31.07., Training kleine Halle, Dossehalle geschlossen
+29.11. - Training kleine Halle
