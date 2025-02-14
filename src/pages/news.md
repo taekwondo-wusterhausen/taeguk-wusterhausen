@@ -1,9 +1,10 @@
 |              |                                         |
 | ------------ | --------------------------------------- |
-| 08.12.       | Nikolausturnier Potsdam|
-| 20.12.   | letztes Training 2024               |
-| 06.01.       | erstes Training 2025                    |
-|        |                       |
+| 22.+23.02.   | SV-Camp mit Alfred Gehlen               |
+| 19.03.       | Mitgliederversammlung                   |
+| 30.03.       | Mitgliederversammlung TVBB              |
+| 12.04.       | Prüfungsvorbereitung                    |
+| 26.04.       | 1. Vereinsprüfung 2025                  |
 
 
-29.11. - Training kleine Halle
+21.+28.02. - Training kleine Halle
