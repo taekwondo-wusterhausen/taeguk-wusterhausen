@@ -1,8 +1,8 @@
 |              |                                         |
 | ------------ | --------------------------------------- |
 |              |                                        |
-|              | Herzlichen Glückwunsch an              |
-|              | Jacky und Max zum bestandenen 1. DAN   |
+|              | in den Sommerferien (28.07.-05.09.)              |
+|              | Freitags kein Training   |
 |              |                                        |
 |              |                                        |
 
