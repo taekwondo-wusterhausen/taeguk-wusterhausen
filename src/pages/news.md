@@ -1,9 +1,9 @@
-|              |                                         |
-| ------------ | --------------------------------------- |
-| 17.-22.10.   | 18. Vereins-Camp                       |
-| 25.10.       | Prüfungsvorbereitung                   |
-| 01.11.       | 2. Vereinsprüfung, 11:00 Uhr kleine Halle|
 |              |                                        |
+| ------------ | ---------------------------------------|
+| 28.11.       | Training kleine Halle                  |
+| 07.12.       | 19. Nikolausturnier Potsdam            |
+| 12.12.       | 18. Weihnachtsfeier Lohm               |
+| 19.12.       | letztes Training 2025                   |
 |              |                                        |
 
 
