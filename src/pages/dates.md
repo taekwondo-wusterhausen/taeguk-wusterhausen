@@ -4,7 +4,7 @@
 | 21.02.       | 1. Vereins-Prüfung 2026                        | Dossehalle   |     |
 | 07./08.03.   | SV-Camp mit Alfred Gehlen                      | Dabendorf    |     |
 | 25.03.       | Mitgliederversammlung                          | Bantikow     |     |
-| 10.05.       | LEM Technik TVBB                               | Potsdam      |     |
+| 09.05.       | LEM Technik TVBB                               | Dabendorf    |     |
 |        | DAN-Vorbereitungslehrgang TVBB                 | Potsdam      |     |
 |        | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
 |        | offenes TJBB-Training Selbstverteidigung       | Dabendorf    |     |
