@@ -1,9 +1,9 @@
 |              |                                        |
 | ------------ | ---------------------------------------|
-| 28.11.       | Training kleine Halle                  |
-| 07.12.       | 19. Nikolausturnier Potsdam            |
-| 12.12.       | Weihnachtsfeier Lohm               |
-| 19.12.       | letztes Training 2025                   |
+| 14.02.       | DTU-Lehrgang Falkensee                 |
+| 21.02.       | 1. Veeinsprüfung 2026                  |
+| 07./08.03.   | SV-Camp Dabendorf                      |
+| 25.03.       | Mitgliederversammlung Bantikow         |
 |              |                                        |
 
 
