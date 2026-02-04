@@ -1,22 +1,18 @@
 | Datum        | Veranstaltung                                  | Ort          |     |
 | ------------ | ---------------------------------------------- | ------------ | --- |
-| 08.02.       | DTU-Bundesbreitensportlehrgang                 | Falkensee    |     |
-| 22. - 23.02. | SV-Camp mit Alfred Gehlen                      | Dabendorf    |     |
-| 19.03.       | Mitgliederversammlung                          | Bantikow     |     |
-| 30.03.       | Mitgliederversammlung TVBB                     | Berlin       |     |
-| 12.04.       | Prüfungsvorbereitung                           | Dossehalle   |     |
-| 26.04.       | 1. Vereins-Prüfung 2025                        | Dossehalle   |     |
+| 14.02.       | DTU-Bundesbreitensportlehrgang                 | Falkensee    |     |
+| 21.02.       | 1. Vereins-Prüfung 2026                        | Dossehalle   |     |
+| 07./08.03.   | SV-Camp mit Alfred Gehlen                      | Dabendorf    |     |
+| 25.03.       | Mitgliederversammlung                          | Bantikow     |     |
 | 10.05.       | LEM Technik TVBB                               | Potsdam      |     |
-| 17.05.       | Jubiläumslehrgang Perfect Taekwondo            | Berlin       |     |
 |        | DAN-Vorbereitungslehrgang TVBB                 | Potsdam      |     |
-|        | Lehrgang Schwerpunkt Prüfungsvorbereitung      | Kloster-Lehnin|     |
 |        | offenes TJBB-Training Kyorugi                  | Dabendorf    |     |
 |        | offenes TJBB-Training Selbstverteidigung       | Dabendorf    |     |
-| 27.09.       | TVBB Masters / DTU-Final 7-Turnier Brandenburg | Falkensee    |     |
-| 17. - 22.10. | 18. Vereins-Trainingscamp                      | Gnewikow     |     |
+| 26.09.       | TVBB Masters / DTU-Final 7-Turnier Brandenburg | Falkensee    |     |
+| 16. - 21.10. | 19. Vereins-Trainingscamp                      | Gnewikow     |     |
 |        | Prüfungsvorbereitung                           | kleine Halle |     |
 |        | Herbstfeier                                    | Lohm         |     |
-|        | 2. Vereins-Prüfung 2025                        | Dossehalle   |     |
+|        | 2. Vereins-Prüfung 2026                        | Dossehalle   |     |
 |        | DAN-Vorbereitungslehrgang                      | Berlin       |     |
 |        | Nikolausturnier                                | Potsdam      |     |
 |        | Landes-DAN-Prüfung                             | Falkensee    |     |
