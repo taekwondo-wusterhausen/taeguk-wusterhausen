@@ -1,7 +1,7 @@
 |              |                                        |
 | ------------ | ---------------------------------------|
-| 09. Juli -   | in den Sommerferien                    |
-| 21. August   | Montags kein Training                  |
+| 09.07. - 21.08.  | in den Sommerferien Montags kein Training |
+|              |                                        |
 |              |                                        |
 |              |                                        |
 |              |                                        |
