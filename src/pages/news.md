@@ -1,7 +1,7 @@
 |              |                                        |
 | ------------ | ---------------------------------------|
-| 05.09.       | LEM Technik Dabendorf                  |
-|        |                   |
+| 09. Juli -   | in den Sommerferien 
+| 21. August   | Montags kein Training                |
 |    |                      |
 |        |          |
 |              |                                        |
