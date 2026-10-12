@@ -12,7 +12,9 @@
 | 09.05.       | LEM Technik TVBB                               | Dabendorf    |     |
 | 26.09.       | TVBB Masters / DTU-Final 7-Turnier Brandenburg | Falkensee    |     |
 | 16. - 21.10. | 19. Vereins-Trainingscamp                      | Gnewikow     |     |
-|        | 3. Vereins-Prüfung 2026                        | Dossehalle   |     |
+| 24.10.       | Prüfungsvorbereitung                           | Dossehalle   |     |
+| 31.10.       | 3. Vereins-Prüfung 2026                        | kleine Halle |     |
 |        | DAN-Vorbereitungslehrgang                      | Berlin       |     |
 |        | Nikolausturnier                                | Potsdam      |     |
-|        | Landes-DAN-Prüfung                             | Falkensee    |     |
+| 11.12.        | Weihnachtsfeier                                | Lohm        |     |
+| 12.12.        | Landes-DAN-Prüfung                             | Falkensee    |     |
