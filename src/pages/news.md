@@ -1,6 +1,6 @@
 |              |                                        |
 | ------------ | ---------------------------------------|
-| 09.07. - 21.08.  | in den Sommerferien Montags kein Training |
+| 30.10./13.11./27.11./11.12.  | Training kleine Halle |
 |              |                                        |
 |              |                                        |
 |              |                                        |
