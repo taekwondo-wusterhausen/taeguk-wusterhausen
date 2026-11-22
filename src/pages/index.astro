@@ -4,7 +4,11 @@ import Taeguk from '@components/Taeguk.astro'
 import EventsCard from '@components/cards/EventsCard.astro'
 import NewsCard from '@components/cards/NewsCard.astro'
 import Layout from '@layouts/Layout.astro'
-import { compiledContent as datesHtml } from '@pages/dates.md'
+import { parseEventDate, toIsoDate } from '@components/utils'
+import {
+    compiledContent as datesHtml,
+    frontmatter as datesFrontmatter,
+} from '@pages/dates.md'
 import { Content as News, compiledContent as newsHtml } from '@pages/news.md'
 
 /**
@@ -17,6 +21,7 @@ import { Content as News, compiledContent as newsHtml } from '@pages/news.md'
  *  </tbody>
  * </table>
  */
+const datesYear: number = datesFrontmatter.year
 const table = datesHtml().trim()
 const tbody = table
     .split(/<\/?tbody>/g)[1]
@@ -31,29 +36,13 @@ const events = tbody.split('</tr><tr>').map((row) =>
         // discard empty calendar-icon column
         .slice(0, -1),
 )
-const now = new Date()
-const index = events.findIndex(([date]) => {
-    let month: number
-    let day: number
-    // DD. - DD.MM. / DD. + DD.MM. => use start date
-    if (date.includes('-') || date.includes('+')) {
-        // 'DD. - DD.MM.' => ['DD', ' - DD', 'MM', '']
-        ;[day, , month] = date.split('.').map(Number)
-    }
-    // DD.MM.
-    else {
-        ;[day, month] = date.split('.').map(Number)
-    }
-    const utcDate = new Date(Date.UTC(now.getFullYear(), month - 1, day))
-    return utcDate >= now
-})
-const upcomingEvents = events
-    .slice(index, index + 3)
-    .map(([date, name, location]) => ({
-        name,
-        date,
-        location,
-    }))
+const allEvents = events.map(([date, name, location]) => ({
+    name,
+    date,
+    location,
+    // Filtered client-side because the page is static (built only on push).
+    end: toIsoDate(parseEventDate(date, datesYear).end),
+}))
 ---
 
 <Layout title="Startseite" prose={false}>
@@ -63,10 +52,10 @@ const upcomingEvents = events
                 <NewsCard>
                     <News />
                 </NewsCard>
-                <EventsCard events={upcomingEvents} />
+                <EventsCard events={allEvents} />
             </div>
         ) : (
-            <EventsCard events={upcomingEvents} />
+            <EventsCard events={allEvents} />
         )
     }
     <div id="mainContainer" class="flex justify-between mt-8">

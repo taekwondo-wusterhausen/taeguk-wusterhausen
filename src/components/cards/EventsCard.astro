@@ -3,7 +3,8 @@
 import RefLink from '@components/links/RefLink.astro'
 
 interface Props {
-    events: { name: string; date: string; location: string }[]
+    /** `end`: ISO date (YYYY-MM-DD) of the event's last day */
+    events: { name: string; date: string; location: string; end: string }[]
 }
 
 const { events } = Astro.props
@@ -23,34 +24,51 @@ const { events } = Astro.props
     <table class="table-fixed w-full">
         <tbody>
             {
-                events.length > 0 ? (
-                    events.map(({ name, date, location }) => (
-                        <tr class="hover:bg-slate-100 rounded">
-                            <td class="p-1 rounded-l w-[100px]">
-                                <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                        {date}
-                                    </p>
-                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                        {location}
-                                    </p>
-                                </div>
-                            </td>
-                            <td class="p-1 rounded-r">
-                                <div class="text-base font-semibold text-gray-900 dark:text-white truncate">
-                                    {name}
-                                </div>
-                            </td>
-                        </tr>
-                    ))
-                ) : (
-                    <tr class="hover:bg-slate-100 rounded">
-                        <td class="p-1 rounded-l rounded-r">
-                            keine weiteren Termine dieses Jahr
+                events.map(({ name, date, location, end }) => (
+                    <tr
+                        class="event hidden hover:bg-slate-100 rounded"
+                        data-end={end}
+                    >
+                        <td class="p-1 rounded-l w-[100px]">
+                            <div class="flex-1 min-w-0">
+                                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                    {date}
+                                </p>
+                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                    {location}
+                                </p>
+                            </div>
+                        </td>
+                        <td class="p-1 rounded-r">
+                            <div class="text-base font-semibold text-gray-900 dark:text-white truncate">
+                                {name}
+                            </div>
                         </td>
                     </tr>
-                )
+                ))
             }
+            <tr class="no-events hidden hover:bg-slate-100 rounded">
+                <td class="p-1 rounded-l rounded-r">
+                    keine weiteren Termine dieses Jahr
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
+
+<script>
+    // Runs in the browser so "today" is the visitor's date, not the build date.
+    const now = new Date()
+    const today = [now.getFullYear(), now.getMonth() + 1, now.getDate()]
+        .map((n) => String(n).padStart(2, '0'))
+        .join('-')
+    const upcoming = Array.from(
+        document.querySelectorAll<HTMLElement>('tr.event'),
+    )
+        .filter((tr) => tr.dataset.end >= today)
+        .slice(0, 3)
+    upcoming.forEach((tr) => tr.classList.remove('hidden'))
+    if (upcoming.length === 0) {
+        document.querySelector('tr.no-events').classList.remove('hidden')
+    }
+</script>
