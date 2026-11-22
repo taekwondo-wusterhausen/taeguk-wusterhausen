@@ -1,3 +1,8 @@
+---
+# Jahr der Termine unten (für Startseite und Kalender-Export)
+year: 2026
+---
+
 | Datum        | Veranstaltung                                  | Ort          |     |
 | ------------ | ---------------------------------------------- | ------------ | --- |
 | 14.02.       | DTU-Bundesbreitensportlehrgang                 | Falkensee    |     |

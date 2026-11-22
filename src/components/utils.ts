@@ -24,3 +24,39 @@ export function stripHtml(html: string): string {
     const doc = new DOMParser().parseFromString(html, 'text/html')
     return doc.body.innerText || ''
 }
+
+export type DateTuple = [number, number, number]
+
+/**
+ * Parses an event date from dates.md, e.g. '14.02.', '07./08.03.',
+ * '16. - 21.10.' or '30.12. - 02.01.', into inclusive start/end dates.
+ * Missing months are taken from the next part.
+ */
+export function parseEventDate(
+    date: string,
+    year: number,
+): { start: DateTuple; end: DateTuple } {
+    const parts = (date.match(/\d+\.(\d+\.)?/g) ?? []).map((part) =>
+        part.split('.').map((n) => parseInt(n, 10)),
+    )
+    for (let i = parts.length - 2; i >= 0; i--) {
+        if (Number.isNaN(parts[i][1])) {
+            parts[i][1] = parts[i + 1][1]
+        }
+    }
+    const [startDay, startMonth] = parts[0]
+    const [endDay, endMonth] = parts[parts.length - 1]
+    return {
+        start: [year, startMonth, startDay],
+        // Event crossing new year
+        end: [endMonth < startMonth ? year + 1 : year, endMonth, endDay],
+    }
+}
+
+/** [2026, 3, 7] => '2026-03-07' */
+export function toIsoDate([year, month, day]: DateTuple): string {
+    return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(
+        2,
+        '0',
+    )}`
+}
