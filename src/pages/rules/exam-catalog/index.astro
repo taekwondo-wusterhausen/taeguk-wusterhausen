@@ -81,13 +81,13 @@ const sections: NormalizedSection[] = (
                                     cx="12"
                                     cy="12"
                                     r="11"
-                                    fill={section.colors[0]}
+                                    fill={section.colors?.[0]}
                                 />
                                 <circle
                                     cx="12"
                                     cy="12"
                                     r="11"
-                                    fill={section.colors[1]}
+                                    fill={section.colors?.[1]}
                                     clip-path="url(#cut-off)"
                                 />
                             </svg>
@@ -123,11 +123,9 @@ const sections: NormalizedSection[] = (
                     role="tabpanel"
                     aria-labelledby={tabId(section)}
                 >
-                    <>
-                        {section.content?.map((content) => (
-                            <Content content={content} />
-                        ))}
-                    </>
+                    {section.content?.map((content) => (
+                        <Content content={content} />
+                    ))}
                     <div
                         class="max-w-screen-lg prose prose-table:w-full hover:prose-tr:bg-slate-100"
                         data-accordion="collapse"
@@ -151,10 +149,6 @@ const sections: NormalizedSection[] = (
     </div>
 </Layout>
 
-<script define:vars={{ sections }}>
-    window.sections = sections
-</script>
-
 <script>
     import { initAccordions } from 'flowbite/lib/esm/components/accordion'
     import { initPopovers } from 'flowbite/lib/esm/components/popover'
@@ -172,7 +166,7 @@ const sections: NormalizedSection[] = (
     initAccordions()
     initPopovers()
 
-    let activeElementId: string
+    let activeElementId: string | undefined
     /** Avoid
      * 1. scroll jumping because the hash coincidentally matches an element id.
      * 2. invalid location hashes to cause errors (i.e. when entered by the user)
@@ -185,7 +179,7 @@ const sections: NormalizedSection[] = (
 
         // Open tab according to URL hash by triggering clicks
         if (activeElementId) {
-            document.querySelector(activeTabId).dispatchEvent(
+            document.querySelector(activeTabId)?.dispatchEvent(
                 new MouseEvent('click', {
                     view: window,
                     bubbles: true,
@@ -199,16 +193,16 @@ const sections: NormalizedSection[] = (
     document.querySelectorAll('[data-tabs-target]').forEach((tabButton) => {
         tabButton.addEventListener('click', () => {
             const idSelector = tabButton.getAttribute('data-tabs-target')
-            window.location.hash = `#${HASH_PREFIX}${idSelector.slice(1)}`
+            window.location.hash = `#${HASH_PREFIX}${(idSelector ?? '').slice(1)}`
         })
     })
 
     const triggerElements = document.querySelectorAll('[data-accordion-target]')
     // Open accordion according to URL hash by triggering clicks
     triggerElements.forEach((triggerEl) => {
-        const itemId = triggerEl.getAttribute('data-accordion-target')
+        const itemId = triggerEl.getAttribute('data-accordion-target') ?? ''
         const semanticId = itemId.slice(1).replace(BODY_PREFIX, '')
-        if (activeElementId && activeElementId.startsWith(semanticId)) {
+        if (activeElementId?.startsWith(semanticId)) {
             triggerEl.dispatchEvent(
                 new MouseEvent('click', {
                     view: window,
@@ -220,9 +214,10 @@ const sections: NormalizedSection[] = (
     })
     // Set URL hash on accordion open
     triggerElements.forEach((triggerEl) => {
-        triggerEl.addEventListener('click', (event) => {
+        triggerEl.addEventListener('click', () => {
             if (triggerEl.getAttribute('aria-expanded') === 'true') {
-                const itemId = triggerEl.getAttribute('data-accordion-target')
+                const itemId =
+                    triggerEl.getAttribute('data-accordion-target') ?? ''
                 const semanticId = itemId.replace(BODY_PREFIX, '')
                 // Insert `HASH_PREFIX` after `semanticId`s '#'
                 window.location.hash = `#${HASH_PREFIX}${semanticId.slice(1)}`
@@ -245,7 +240,7 @@ const sections: NormalizedSection[] = (
     Mousetrap.bind(['command+f', 'ctrl+f'], () => {
         document
             .querySelector('button[data-modal-target="searchModal"]')
-            .dispatchEvent(
+            ?.dispatchEvent(
                 new MouseEvent('click', {
                     view: window,
                     bubbles: true,

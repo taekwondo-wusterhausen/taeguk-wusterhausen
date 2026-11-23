@@ -1,8 +1,13 @@
 ---
+import type { MarkdownInstance } from 'astro'
+
 import AccordionItem from '@components/AccordionItem.astro'
 
 const tables = Object.values(
-    import.meta.glob<any>('/src/content/terminology/*.{md,mdx}', { eager: true }),
+    import.meta.glob<MarkdownInstance<{ title: string }>>(
+        '/src/content/terminology/*.{md,mdx}',
+        { eager: true },
+    ),
 )
 ---
 

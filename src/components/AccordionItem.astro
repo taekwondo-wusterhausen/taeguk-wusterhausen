@@ -37,6 +37,7 @@ const id = accordionId([...parentTitles, title])
             <span>{title}</span>
             <svg
                 data-accordion-icon
+                aria-hidden="true"
                 class="w-6 h-6 shrink-0"
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -50,7 +51,7 @@ const id = accordionId([...parentTitles, title])
         </button>
     </h2>
 </div>
-<div
+<section
     id={`${BODY_PREFIX}${id}`}
     class="hidden"
     aria-labelledby={`${HEADING_PREFIX}${id}`}
@@ -63,4 +64,4 @@ const id = accordionId([...parentTitles, title])
     >
         <slot />
     </div>
-</div>
+</section>

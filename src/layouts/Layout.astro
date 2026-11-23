@@ -8,12 +8,15 @@ import background from '@assets/bg.png'
 import '../styles/tailwind.css'
 
 interface Props {
-    title: string
+    /** Falls back to `frontmatter.title` when used as a Markdown layout. */
+    title?: string
     bgImage?: boolean
     initFlowbite?: boolean
     /** For rendering Markdown */
     prose?: boolean
     class?: string
+    /** Passed by Astro when used as a Markdown layout. */
+    frontmatter?: { title?: string; class?: string }
 }
 
 const { BASE_URL } = import.meta.env

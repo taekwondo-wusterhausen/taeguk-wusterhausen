@@ -1,6 +1,6 @@
 ---
 import RefLink from '@components/links/RefLink.astro'
-import * as Types from '@pages/rules/exam-catalog/types'
+import type * as Types from '@pages/rules/exam-catalog/types'
 import Text from './Text.astro'
 import Heading from './Heading.astro'
 
@@ -11,14 +11,14 @@ interface Props {
 function isWeb(content: Types.Content) {
     return (
         Array.isArray(content) ||
-        content.only === undefined ||
-        content.only === 'web'
+        content?.only === undefined ||
+        content?.only === 'web'
     )
 }
 
 function isText(content: Types.Content): content is Types.Text {
     return (
-        content &&
+        content !== undefined &&
         'text' in content &&
         (typeof content.text === 'string' || Array.isArray(content.text))
     )
@@ -26,7 +26,7 @@ function isText(content: Types.Content): content is Types.Text {
 
 function isParagraph(content: Types.Content): content is Types.Par {
     return (
-        content &&
+        content !== undefined &&
         'par' in content &&
         (typeof content.par === 'string' || Array.isArray(content.par))
     )
@@ -34,7 +34,7 @@ function isParagraph(content: Types.Content): content is Types.Par {
 
 function isHeading(content: Types.Content): content is Types.Heading {
     return (
-        content &&
+        content !== undefined &&
         'heading' in content &&
         (typeof content.heading === 'string' ||
             Array.isArray(content.heading)) &&
@@ -44,25 +44,25 @@ function isHeading(content: Types.Content): content is Types.Heading {
 }
 
 function isLink(content: Types.Content): content is Types.Link {
-    return content && 'href' in content && 'text' in content
+    return content !== undefined && 'href' in content && 'text' in content
 }
 
 function isEnumeration(
     content: Types.Content,
 ): content is { enumerate: Types.Content[] } {
-    return content && 'enumerate' in content
+    return content !== undefined && 'enumerate' in content
 }
 
 function isItemization(
     content: Types.Content,
 ): content is { itemize: Types.Content[] } {
-    return content && 'itemize' in content
+    return content !== undefined && 'itemize' in content
 }
 
 function isTable(
     content: Types.Content,
 ): content is { table: { head?: Types.Content[][]; body: Types.Content[][] } } {
-    return content && 'table' in content
+    return content !== undefined && 'table' in content
 }
 
 const { content } = Astro.props

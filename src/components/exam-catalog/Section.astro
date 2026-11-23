@@ -26,13 +26,9 @@ const sections = _sections.filter(({ only = 'web' }) => only === 'web')
                 isLast={isLast}
                 parentTitles={parentTitles}
             >
-                {contents.length > 0 && (
-                    <>
-                        {contents.map((content) => (
-                            <Content content={content} />
-                        ))}
-                    </>
-                )}
+                {contents.map((content) => (
+                    <Content content={content} />
+                ))}
                 {sections.length > 0 && (
                     <div
                         data-accordion="collapse"

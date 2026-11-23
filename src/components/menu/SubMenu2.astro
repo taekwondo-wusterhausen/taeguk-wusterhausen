@@ -11,10 +11,10 @@ const { label, parentLabel, routePrefix } = Astro.props
 const isActive = Astro.url.pathname.startsWith(BASE_URL + routePrefix)
 ---
 
-<li aria-labelledby=`${parentLabel}Link`>
+<li aria-labelledby={`${parentLabel}Link`}>
     <button
-        id=`${label}Button`
-        data-dropdown-toggle=`${label}Dropdown`
+        id={`${label}Button`}
+        data-dropdown-toggle={`${label}Dropdown`}
         data-dropdown-placement="right-start"
         type="button"
         class:list={[
