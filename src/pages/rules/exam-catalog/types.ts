@@ -29,6 +29,9 @@ export type Content =
     | (Only & { table: { head?: Content[][]; body: Content[][] } })
     | undefined
 
+/**
+ * Top-level section of the exam catalog.
+ */
 export interface Section extends Only {
     title: string
     isFirst?: boolean

@@ -7,12 +7,12 @@ import {
     toId,
 } from '@components/utils'
 import {
-    Content,
-    NormalizedSection,
+    type Content,
+    type NormalizedSection,
     SEARCH_KEY,
-    SearchResult,
-    SearchableSection,
-    Section,
+    type SearchResult,
+    type SearchableSection,
+    type Section,
 } from './types'
 
 export function tabId(section: Section): string {
