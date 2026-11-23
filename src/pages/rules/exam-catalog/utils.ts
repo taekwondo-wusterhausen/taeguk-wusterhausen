@@ -1,11 +1,6 @@
-import Fuse from 'fuse.js'
+import type Fuse from 'fuse.js'
 
-import {
-    tabId as _tabId,
-    accordionId,
-    stripHtml,
-    toId,
-} from '@components/utils'
+import { tabId as _tabId, accordionId, toId } from '@components/utils'
 import {
     type Content,
     type NormalizedSection,
@@ -26,7 +21,7 @@ export function normalizedSection(
     section: Section,
     parents: Section[],
 ): NormalizedSection {
-    if (section.parentTitles?.length > 0) {
+    if (section.parentTitles?.length) {
         throw new Error('Section already has `parentTitles`')
     }
     return {
@@ -40,42 +35,37 @@ export function normalizedSection(
     }
 }
 
-/**
- * Doing this at build time doesn't work because `stripHtml` is using `jsdom.DOMParser`
- * which causes errors. */
 export function stringifyContent(content: Content): string {
-    if ('text' in content) {
+    if (content === undefined) {
+        return ''
+    }
+    if (Array.isArray(content)) {
+        return content.map(stringifyContent).join(' ')
+    }
+    const asText = (value: string | Content[]) =>
+        typeof value === 'string' ? value : stringifyContent(value)
+    if ('href' in content) {
         return content.text
     }
-    if ('html' in content) {
-        return stripHtml(content.html)
+    if ('text' in content) {
+        return asText(content.text)
+    }
+    if ('par' in content) {
+        return asText(content.par)
+    }
+    if ('heading' in content) {
+        return asText(content.heading)
     }
     if ('enumerate' in content) {
-        return content.enumerate
-            .map((item) => stringifyContent(item))
-            .join('\n- ')
+        return content.enumerate.map(stringifyContent).join('\n- ')
     }
     if ('itemize' in content) {
-        return content.itemize
-            .map((item) => stringifyContent(item))
-            .join('\n- ')
+        return content.itemize.map(stringifyContent).join('\n- ')
     }
-    if ('table' in content) {
-        return (
-            content.table.head
-                ?.map((row) =>
-                    row.map((cell) => stringifyContent(cell)).join(' '),
-                )
-                .join('\n') ??
-            '' +
-                content.table.body
-                    .map((row) =>
-                        row.map((cell) => stringifyContent(cell)).join(' '),
-                    )
-                    .join('\n')
-        )
-    }
-    return ''
+    const { head = [], body } = content.table
+    return [...head, ...body]
+        .map((row) => row.map(stringifyContent).join(' '))
+        .join('\n')
 }
 
 export function flattenedSections(
@@ -88,12 +78,7 @@ export function flattenedSections(
                 id,
                 title,
                 parentTitles,
-                stringified:
-                    title +
-                        '\n\n' +
-                        content
-                            ?.map((content) => stringifyContent(content))
-                            .join('\n\n') ?? '',
+                stringified: `${title}\n\n${content.map(stringifyContent).join('\n\n')}`,
             },
             ...flattenedSections(sections),
         )
@@ -113,7 +98,7 @@ export function highlightMatches(
     maxContextAfter: number = 30,
 ): string {
     let result = ''
-    let lastMatchEnd: number
+    let lastMatchEnd = 0
 
     for (const [start, end] of indices) {
         // Beginning to first match
