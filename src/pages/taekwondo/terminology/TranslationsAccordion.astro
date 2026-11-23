@@ -2,7 +2,7 @@
 import AccordionItem from '@components/AccordionItem.astro'
 
 const tables = Object.values(
-    import.meta.glob<any>('./de/*.{md,mdx}', { eager: true }),
+    import.meta.glob<any>('/src/content/terminology/*.{md,mdx}', { eager: true }),
 )
 ---
 
