@@ -1,3 +1,4 @@
+// biome-ignore lint/correctness/noUnusedVariables: used in the JSDoc types below
 const nunjucks = require("nunjucks")
 
 /**

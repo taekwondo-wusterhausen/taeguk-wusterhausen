@@ -66,13 +66,14 @@ export function ResultLink({
             <Breadcrumbs crumbs={result.breadcrumbs} />
             <p
                 className="text-sm py-1"
+                // biome-ignore lint/security/noDangerouslySetInnerHtml: preview is built from our own exam-catalog content
                 dangerouslySetInnerHTML={{ __html: result.preview }}
             />
         </a>
     )
 }
 
-export function NoResults(_props: any) {
+export function NoResults() {
     return (
         <div className="px-4 py-2 text-center text-gray-500 border-gray-200 dark:bg-gray-800 dark:border-gray-600">
             Gib einen Suchbegegriff ein und drücke Enter.

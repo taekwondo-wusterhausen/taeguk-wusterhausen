@@ -1,0 +1,26 @@
+{
+    "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
+    "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+    "files": { "includes": ["**", "!public"] },
+    "formatter": { "enabled": false },
+    "assist": { "enabled": false },
+    "html": { "experimentalFullSupportEnabled": true },
+    "overrides": [
+        {
+            "includes": ["src/pages/rules/exam-catalog/index.astro"],
+            "linter": {
+                "rules": {
+                    "a11y": {
+                        "noNoninteractiveElementToInteractiveRole": "off"
+                    }
+                }
+            }
+        },
+        {
+            "includes": ["src/styles/tailwind.css"],
+            "linter": {
+                "rules": { "suspicious": { "noUnknownAtRules": "off" } }
+            }
+        }
+    ]
+}
