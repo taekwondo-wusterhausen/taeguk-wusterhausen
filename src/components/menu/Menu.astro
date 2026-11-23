@@ -164,14 +164,11 @@ const { BASE_URL } = import.meta.env
     initDropdowns()
 
     const navbar = document.querySelector('nav')
-    window.addEventListener('scroll', (event) => {
-        if (
+    window.addEventListener('scroll', () => {
+        navbar?.classList.toggle(
+            'scrolled',
             document.body.scrollTop > 70 ||
-            document.documentElement.scrollTop > 70
-        ) {
-            navbar.classList.add('scrolled')
-        } else {
-            navbar.classList.remove('scrolled')
-        }
+                document.documentElement.scrollTop > 70,
+        )
     })
 </script>

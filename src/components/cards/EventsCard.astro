@@ -10,43 +10,37 @@ interface Props {
 const { events } = Astro.props
 ---
 
-<div
-    class="m-0 sm:mx-10 md:mx-0 px-4 py-2 sm:px-8 sm:py-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
->
+<div class="m-0 sm:mx-10 md:mx-0 px-4 py-2 sm:px-8 sm:py-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div class="flex items-center justify-between px-1 mb-4">
-        <h5
-            class="text-xl font-bold leading-none text-gray-900 dark:text-white"
-        >
+        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
             Anstehende Termine
         </h5>
         <RefLink href="club/dates" text="alle" />
     </div>
     <table class="table-fixed w-full">
         <tbody>
-            {
-                events.map(({ name, date, location, end }) => (
-                    <tr
-                        class="event hidden hover:bg-slate-100 rounded"
-                        data-end={end}
-                    >
-                        <td class="p-1 rounded-l w-[100px]">
-                            <div class="flex-1 min-w-0">
-                                <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                    {date}
-                                </p>
-                                <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                    {location}
-                                </p>
-                            </div>
-                        </td>
-                        <td class="p-1 rounded-r">
-                            <div class="text-base font-semibold text-gray-900 dark:text-white truncate">
-                                {name}
-                            </div>
-                        </td>
-                    </tr>
-                ))
-            }
+            {events.map(({ name, date, location, end }) => (
+                <tr
+                    class="event hidden hover:bg-slate-100 rounded"
+                    data-end={end}
+                >
+                    <td class="p-1 rounded-l w-[100px]">
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                {date}
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                {location}
+                            </p>
+                        </div>
+                    </td>
+                    <td class="p-1 rounded-r">
+                        <div class="text-base font-semibold text-gray-900 dark:text-white truncate">
+                            {name}
+                        </div>
+                    </td>
+                </tr>
+            ))}
             <tr class="no-events hidden hover:bg-slate-100 rounded">
                 <td class="p-1 rounded-l rounded-r">
                     keine weiteren Termine dieses Jahr
@@ -65,10 +59,12 @@ const { events } = Astro.props
     const upcoming = Array.from(
         document.querySelectorAll<HTMLElement>('tr.event'),
     )
-        .filter((tr) => tr.dataset.end >= today)
+        .filter((tr) => (tr.dataset.end ?? '') >= today)
         .slice(0, 3)
-    upcoming.forEach((tr) => tr.classList.remove('hidden'))
+    upcoming.forEach((tr) => {
+        tr.classList.remove('hidden')
+    })
     if (upcoming.length === 0) {
-        document.querySelector('tr.no-events').classList.remove('hidden')
+        document.querySelector('tr.no-events')?.classList.remove('hidden')
     }
 </script>

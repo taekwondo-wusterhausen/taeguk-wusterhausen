@@ -43,7 +43,7 @@ import { Content as DatesTable, frontmatter } from '@content/dates.md'
     import { parseEventDate, type DateTuple } from '@components/utils'
 
     const YEAR = Number(
-        document.querySelector<HTMLElement>('.dates-table').dataset.year,
+        document.querySelector<HTMLElement>('.dates-table')?.dataset.year,
     )
     const FILENAME_MAX_LENGTH = 35
 
@@ -89,13 +89,14 @@ import { Content as DatesTable, frontmatter } from '@content/dates.md'
         const anchor = document.createElement('a')
         anchor.href = url
         anchor.download = filename
-        anchor.innerHTML = document.querySelector('#event-icon').innerHTML
+        anchor.innerHTML =
+            document.querySelector('#event-icon')?.innerHTML ?? ''
         return anchor
     }
 
     document
-        .querySelectorAll('.dates-table tbody tr')
-        .forEach(async (tr: HTMLTableRowElement) => {
+        .querySelectorAll<HTMLTableRowElement>('.dates-table tbody tr')
+        .forEach(async (tr) => {
             const cells = tr.cells
             const date = cells[0].textContent
             const name = cells[1].textContent
@@ -108,7 +109,9 @@ import { Content as DatesTable, frontmatter } from '@content/dates.md'
                     title: name,
                     location,
                 }
-                cells[cells.length - 1].appendChild(await createEventLink(event))
+                cells[cells.length - 1].appendChild(
+                    await createEventLink(event),
+                )
             }
         })
 </script>

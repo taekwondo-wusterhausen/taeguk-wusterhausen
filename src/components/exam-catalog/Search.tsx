@@ -44,12 +44,12 @@ export function Search(props: Props) {
                 ignoreLocation: true,
                 keys: [SEARCH_KEY],
             }),
-        [],
+        [sections],
     )
 
     useLayoutEffect(() => {
         // See index.astro
-        document.querySelector('#staticSearchButton').classList.add('hidden')
+        document.querySelector('#staticSearchButton')?.classList.add('hidden')
     }, [])
     useEffect(() => {
         initModals()
@@ -60,7 +60,7 @@ export function Search(props: Props) {
             <Button
                 data-modal-target="searchModal"
                 data-modal-toggle="searchModal"
-                onClick={() => searchInputRef.current.focus()}
+                onClick={() => searchInputRef.current?.focus()}
             />
             <div
                 id="searchModal"
