@@ -6,13 +6,13 @@ interface Props {
 const { email } = Astro.props
 ---
 
-<a
-    role="button"
+<button
+    type="button"
     class="email-link text-blue-500 dark:text-blue-400 hover:underline"
     data-email={email}
 >
     {email}
-</a>
+</button>
 
 <script>
     /**
@@ -25,10 +25,10 @@ const { email } = Astro.props
     }
 
     document
-        .querySelectorAll('.email-link')
-        .forEach((link: HTMLAnchorElement) => {
+        .querySelectorAll<HTMLButtonElement>('.email-link')
+        .forEach((link) => {
             link.addEventListener('click', () => {
-                window.location.href = generateHref(link.dataset.email)
+                window.location.href = generateHref(link.dataset.email ?? '')
             })
         })
 </script>

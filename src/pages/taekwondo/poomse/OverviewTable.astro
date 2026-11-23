@@ -10,7 +10,7 @@ type Form = {
     meaning?: string
 }
 type Data = {
-    general: any
+    general: unknown
     forms: Form[]
 }
 
@@ -31,7 +31,7 @@ const data = rawData as Data
             data.forms.map(({ name, symbol, description, techniques }) => (
                 <tr>
                     <td>
-                        <img src={symbol} />
+                        <img src={symbol} alt="" />
                     </td>
                     <td class="whitespace-nowrap">{name}</td>
                     <td>{description}</td>
