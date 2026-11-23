@@ -20,6 +20,17 @@ interface Props {
 }
 
 const { BASE_URL } = import.meta.env
+// 1x/2x AVIF for high-density screens; CSS size stays at 420px.
+const bg = await getImage({
+    src: background,
+    width: 420,
+    densities: [1, 2],
+    format: 'avif',
+})
+const bgImageSet = `image-set(${bg.srcSet.values
+    .map(({ url, descriptor }) => `url("${url}") ${descriptor}`)
+    .join(', ')})`
+
 const {
     title,
     bgImage = true,
@@ -73,14 +84,7 @@ const {
             bgImage && (
                 <div
                     class="fixed w-full h-full bg-center bg-no-repeat opacity-70 -z-10"
-                    style={`background-image: url(${
-                        (
-                            await getImage({
-                                src: background,
-                                format: 'avif',
-                            })
-                        ).src
-                    })`}
+                    style={`background-image: ${bgImageSet}; background-size: 420px auto`}
                 />
             )
         }
