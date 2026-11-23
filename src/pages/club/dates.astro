@@ -1,6 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro'
-import { Content as DatesTable, frontmatter } from '@pages/dates.md'
+import { Content as DatesTable, frontmatter } from '@content/dates.md'
 ---
 
 <Layout title="Termine">
@@ -96,7 +96,7 @@ import { Content as DatesTable, frontmatter } from '@pages/dates.md'
     document
         .querySelectorAll('.dates-table tbody tr')
         .forEach(async (tr: HTMLTableRowElement) => {
-            const cells = Array.from(tr.childNodes)
+            const cells = tr.cells
             const date = cells[0].textContent
             const name = cells[1].textContent
             const location = cells[2].textContent
@@ -108,8 +108,7 @@ import { Content as DatesTable, frontmatter } from '@pages/dates.md'
                     title: name,
                     location,
                 }
-                const td = tr.lastChild as HTMLTableCellElement
-                td.appendChild(await createEventLink(event))
+                cells[cells.length - 1].appendChild(await createEventLink(event))
             }
         })
 </script>

@@ -1,9 +1,9 @@
 ---
 /** https://flowbite.com/docs/components/gallery/ */
-import { ImgAttributes } from 'astro:assets'
+import type { HTMLAttributes } from 'astro/types'
 
 interface Props {
-    images: (string | ({ src: string; alt: string } & ImgAttributes))[]
+    images: (string | ({ src: string; alt: string } & HTMLAttributes<'img'>))[]
     class?: string
 }
 

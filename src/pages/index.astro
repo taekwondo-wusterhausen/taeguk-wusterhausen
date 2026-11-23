@@ -8,8 +8,8 @@ import { parseEventDate, toIsoDate } from '@components/utils'
 import {
     compiledContent as datesHtml,
     frontmatter as datesFrontmatter,
-} from '@pages/dates.md'
-import { Content as News, compiledContent as newsHtml } from '@pages/news.md'
+} from '@content/dates.md'
+import { Content as News, compiledContent as newsHtml } from '@content/news.md'
 
 /**
  * Custom parsing because structure is known and parsing does not work on server side.
@@ -22,19 +22,10 @@ import { Content as News, compiledContent as newsHtml } from '@pages/news.md'
  * </table>
  */
 const datesYear: number = datesFrontmatter.year
-const table = datesHtml().trim()
-const tbody = table
-    .split(/<\/?tbody>/g)[1]
-    // strip leading '<tr>' and trailing '</tr>'
-    .slice(4, -5)
-
-const events = tbody.split('</tr><tr>').map((row) =>
-    row
-        // strip leading '<td>' and trailing '</td>'
-        .slice(4, -5)
-        .split('</td><td>')
-        // discard empty calendar-icon column
-        .slice(0, -1),
+const tbody = (await datesHtml()).split(/<\/?tbody>/)[1]
+// Regex instead of string slicing: tolerant of whitespace between tags.
+const events = [...tbody.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map(([, row]) =>
+    [...row.matchAll(/<td>([\s\S]*?)<\/td>/g)].map(([, cell]) => cell.trim()),
 )
 const allEvents = events.map(([date, name, location]) => ({
     name,
@@ -47,7 +38,7 @@ const allEvents = events.map(([date, name, location]) => ({
 
 <Layout title="Startseite" prose={false}>
     {
-        newsHtml().trim().length > 0 ? (
+        (await newsHtml()).trim().length > 0 ? (
             <div class="mx-auto w-full lg:w-3/4 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:gap-8">
                 <NewsCard>
                     <News />

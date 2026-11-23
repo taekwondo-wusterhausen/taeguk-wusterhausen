@@ -10,7 +10,12 @@ import type { NormalizedSection, Section as SectionType } from './types'
 import { normalizedSection, tabId } from './utils'
 
 const sections: NormalizedSection[] = (
-    (await Astro.glob('./data/*.yml')) as SectionType[]
+    Object.values(
+        import.meta.glob<SectionType>('./data/*.yml', {
+            eager: true,
+            import: 'default',
+        }),
+    )
 )
     .filter(({ only = 'web' }) => only === 'web')
     .map((section) => normalizedSection(section, []))

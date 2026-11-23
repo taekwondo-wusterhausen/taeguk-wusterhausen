@@ -18,6 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node (Astro 7 needs >= 22.23)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
       - name: Download, install, and setup Bun
         uses: oven-sh/setup-bun@v1
         with:

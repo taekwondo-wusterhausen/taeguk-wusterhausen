@@ -2,10 +2,10 @@ import { initModals } from 'flowbite/lib/esm/components/modal'
 import Fuse from 'fuse.js'
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 
-import type {
-    NormalizedSection,
+import {
+    type NormalizedSection,
     SEARCH_KEY,
-    SearchResult,
+    type SearchResult,
 } from '@pages/rules/exam-catalog/types'
 import { flattenedSections, search } from '@pages/rules/exam-catalog/utils'
 import { Button, NoResults, ResultLink } from './SearchComponents'
