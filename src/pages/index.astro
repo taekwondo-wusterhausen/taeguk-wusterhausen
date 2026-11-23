@@ -1,9 +1,13 @@
 ---
+import { Image } from 'astro:assets'
+
 import SocialMediaPopover from '@components/SocialMediaPopover.astro'
 import Taeguk from '@components/Taeguk.astro'
 import EventsCard from '@components/cards/EventsCard.astro'
 import NewsCard from '@components/cards/NewsCard.astro'
 import Layout from '@layouts/Layout.astro'
+import tjbbLogo from '@assets/logos/tjbb.png'
+import tvbbLogo from '@assets/logos/tvbb.png'
 import { parseEventDate, toIsoDate } from '@components/utils'
 import {
     compiledContent as datesHtml,
@@ -51,8 +55,10 @@ const allEvents = events.map(([date, name, location]) => ({
     }
     <div id="mainContainer" class="flex justify-between mt-8">
         <div class="flex-none hidden md:block w-16 md:w-auto">
-            <img
-                src="/logos/tvbb_small.png"
+            <Image
+                src={tvbbLogo}
+                width={90}
+                densities={[1, 2, 3]}
                 alt="TVBB"
                 class="cursor-pointer"
                 data-popover-target="popover-tvbb"
@@ -89,8 +95,10 @@ const allEvents = events.map(([date, name, location]) => ({
             </p>
         </article>
         <div class="flex-none hidden md:block w-16 md:w-auto">
-            <img
-                src="/logos/tjbb.png"
+            <Image
+                src={tjbbLogo}
+                width={100}
+                densities={[1, 2, 3]}
                 alt="TJBB"
                 class="cursor-pointer"
                 data-popover-target="popover-tjbb"
