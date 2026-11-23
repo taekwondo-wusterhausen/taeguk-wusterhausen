@@ -1,0 +1,169 @@
+---
+/**
+ * Waving South Korean flag (replaces the old 68x50 GIF).
+ *
+ * The flag is cut into thin vertical slices that move up and down with a phase
+ * shift, which makes a wave travel from the pole to the free end. A repeating
+ * light/dark gradient moves along at the same speed for the folds; it is one
+ * continuous band (shown through every slice), so slices have no visible steps.
+ */
+interface Props {
+    class?: string
+}
+const { class: className = '' } = Astro.props
+
+const FLAG_X = 8 // flag starts right of the pole
+const FLAG_Y = 8
+const FLAG_W = 72
+const FLAG_H = 48
+const SLICES = 48
+const PERIOD = 1.5 // seconds, same as the GIF
+const AMPLITUDE = 3.5 // at the free end, in viewBox units
+
+const sliceW = FLAG_W / SLICES
+const slices = Array.from({ length: SLICES }, (_, i) => {
+    const t = i / (SLICES - 1)
+    return {
+        x: FLAG_X + i * sliceW,
+        amplitude: (AMPLITUDE * t).toFixed(2),
+        // One wavelength across the flag, travelling away from the pole.
+        // (Negative delays only: elements must not wait for their start.)
+        delay: (-(1 - t) * PERIOD).toFixed(3),
+        shade: (0.9 * t).toFixed(2),
+    }
+})
+---
+
+<svg
+    class={className}
+    viewBox="0 0 84 66"
+    role="img"
+    aria-label="Südkorea-Flagge"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <defs>
+        <g id="wf-flag">
+            <svg
+                x={FLAG_X}
+                y={FLAG_Y}
+                width={FLAG_W}
+                height={FLAG_H}
+                viewBox="-36 -24 72 48"
+            >
+                <path d="M-36-24h72v48h-72z" fill="#fff"></path>
+                <g transform="rotate(-56.3099325)">
+                    <g id="wf-b2">
+                        <path
+                            id="wf-b"
+                            d="M-6-26H6v2H-6zm0 3H6v2H-6zm0 3H6v2H-6z"></path>
+                        <use xlink:href="#wf-b" y="44"></use>
+                    </g>
+                    <path stroke="#fff" d="M0,17v10"></path>
+                    <path fill="#cd2e3a" d="M0-12A12 12 0 0 1 0 12z"></path>
+                    <path
+                        fill="#0047a0"
+                        d="M0-12A12 12 0 0 0 0 12 6 6 0 0 0 0 0z"></path>
+                    <circle cy="-6" fill="#cd2e3a" r="6"></circle>
+                </g>
+                <g transform="rotate(-123.6900675)">
+                    <use xlink:href="#wf-b2"></use>
+                    <path stroke="#fff" d="M0-23.5v3M0,17v3.5M0,23.5v3"></path>
+                </g>
+            </svg>
+        </g>
+        <linearGradient id="wf-pole" x1="0" x2="1">
+            <stop offset="0" stop-color="#8a8577"></stop>
+            <stop offset="0.4" stop-color="#f2efe6"></stop>
+            <stop offset="1" stop-color="#9c978a"></stop>
+        </linearGradient>
+        <radialGradient id="wf-knob" cx="0.35" cy="0.35" r="0.7">
+            <stop offset="0" stop-color="#fff3b0"></stop>
+            <stop offset="0.5" stop-color="#d4a82a"></stop>
+            <stop offset="1" stop-color="#7a5a10"></stop>
+        </radialGradient>
+        <linearGradient
+            id="wf-fold"
+            gradientUnits="userSpaceOnUse"
+            x1="0"
+            x2={FLAG_W}
+            spreadMethod="repeat"
+        >
+            <stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
+            <stop offset="0.25" stop-color="#fff" stop-opacity="0.45"></stop>
+            <stop offset="0.5" stop-color="#fff" stop-opacity="0"></stop>
+            <stop offset="0.5" stop-color="#000" stop-opacity="0"></stop>
+            <stop offset="0.75" stop-color="#000" stop-opacity="0.35"></stop>
+            <stop offset="1" stop-color="#000" stop-opacity="0"></stop>
+        </linearGradient>
+        {
+            slices.map(({ x }, i) => (
+                <clipPath id={`wf-c${i}`}>
+                    {/* Slight overlap avoids hairline seams between slices. */}
+                    <rect x={x - 0.15} y="0" width={sliceW + 0.3} height="66" />
+                </clipPath>
+            ))
+        }
+    </defs>
+
+    <rect x="4" y="4" width="3" height="62" fill="url(#wf-pole)"></rect>
+    <circle cx="5.5" cy="3.5" r="2.8" fill="url(#wf-knob)"></circle>
+
+    {
+        slices.map(({ amplitude, delay, shade }, i) => (
+            <g
+                class="wf-slice"
+                clip-path={`url(#wf-c${i})`}
+                style={`--a:${amplitude};animation-delay:${delay}s`}
+            >
+                <use href="#wf-flag" />
+                <rect
+                    class="wf-fold"
+                    x={FLAG_X - FLAG_W}
+                    y={FLAG_Y}
+                    width={FLAG_W * 2}
+                    height={FLAG_H}
+                    fill="url(#wf-fold)"
+                    opacity={shade}
+                />
+            </g>
+        ))
+    }
+</svg>
+
+<style
+    define:vars={{
+        half: `${PERIOD / 2}s`,
+        period: `${PERIOD}s`,
+        'flag-w': `${FLAG_W}px`,
+    }}
+>
+    .wf-slice {
+        animation: wf-wave var(--half) ease-in-out infinite alternate both;
+    }
+    .wf-fold {
+        animation: wf-fold var(--period) linear infinite both;
+    }
+    @keyframes wf-wave {
+        from {
+            transform: translateY(calc(var(--a) * -1px));
+        }
+        to {
+            transform: translateY(calc(var(--a) * 1px));
+        }
+    }
+    @keyframes wf-fold {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(var(--flag-w));
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .wf-slice,
+        .wf-fold {
+            animation: none;
+        }
+    }
+</style>
