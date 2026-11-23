@@ -1,7 +1,9 @@
 ---
 import AccordionItem from '@components/AccordionItem.astro'
 
-const tables = await Astro.glob('./de/*.md?')
+const tables = Object.values(
+    import.meta.glob<any>('./de/*.{md,mdx}', { eager: true }),
+)
 ---
 
 <div

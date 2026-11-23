@@ -38,7 +38,7 @@ const allEvents = events.map(([date, name, location]) => ({
 
 <Layout title="Startseite" prose={false}>
     {
-        newsHtml().trim().length > 0 ? (
+        (await newsHtml()).trim().length > 0 ? (
             <div class="mx-auto w-full lg:w-3/4 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:gap-8">
                 <NewsCard>
                     <News />
